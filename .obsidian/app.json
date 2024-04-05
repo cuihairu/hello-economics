@@ -1,0 +1,22 @@
+{
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "alwaysUpdateLinks": true,
+  "showLineNumber": true,
+  "showFrontmatter": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "/",
+  "attachmentFolderPath": "./img/introduction/2",
+  "useMarkdownLinks": true,
+  "spellcheck": true,
+  "strictLineBreaks": true,
+  "readableLineLength": false,
+  "spellcheckLanguages": [
+    "zh-CN",
+    "en"
+  ]
+}

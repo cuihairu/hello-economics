@@ -1,0 +1,219 @@
+{
+  "main": {
+    "id": "f82d82f560557e1e",
+    "type": "split",
+    "children": [
+      {
+        "id": "0166f6f5c02252ce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "151d094606b761b1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b59f672ab1c98a24",
+    "type": "split",
+    "children": [
+      {
+        "id": "edd54ca2d71545ea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a3729c8c57ddbb2c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c6cfa1ab750a5acb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e6b3a825c2a9ce6d",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "510a2ea53660e051",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "838345fb1abda4db",
+    "type": "split",
+    "children": [
+      {
+        "id": "08bac767b2cc2211",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4767e4a6c9ab6d2e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "231cf1ab56b1f0ec",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1e85705892aaeeab",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "df006c8c8be5bfae",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          },
+          {
+            "id": "65e15b63dc4749c3",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "workspaces:管理工作区布局": false
+    }
+  },
+  "active": "151d094606b761b1",
+  "lastOpenFiles": [
+    "金融学-笔记.md",
+    "books/高鸿业 西方经济学 微观部分 第八版8版 课后习题答案详解解析 fc_0_split.pdf",
+    "books/高鸿业 西方经济学 宏观部分 第八版8版 课后习题答案详解解析 fc_0_split.pdf",
+    "books/金融学+习题集+第六版.pdf",
+    "books/金融学 第六版 曹龙骐.pdf",
+    "books/财政学（第十版）.pdf",
+    "books/西方经济学（第八版） 微观部分 高鸿业.pdf",
+    "books/西方经济学 宏观部分 第八版 高鸿业主编.pdf",
+    "books/同等学力英语-第六版.pdf",
+    "books/同等学力英语-第六版-词汇.pdf",
+    "books/西方经济学导论 第4版(高清).pdf",
+    "英语-构词.md",
+    "社会主义经济理论-精要.md",
+    "财政学-笔记.md",
+    "西方经济学-精要.md",
+    "社会主义经济理论-习题.md",
+    "README.md",
+    "英语-阅读理解.md",
+    "英语-写作模板.md",
+    "英语-同义词替换.md",
+    "经济学-术语.md",
+    "西方经济学导论-笔记.md",
+    "西方经济学-习题.md",
+    "西方经济学-计算题.md",
+    "微观经济学-笔记.md",
+    "财政学-习题.md",
+    "货币银行学-习题.md",
+    "国际经济学-习题.md",
+    "国际经济学-精要.md",
+    "().md",
+    "经济学-数学基础.md",
+    "货币银行学-精要.md",
+    "宏观经济学-笔记.md",
+    "词汇题型.md",
+    "流程.md",
+    "img/exercises/international/9-1.png",
+    "img/exercises/international/8-3.png",
+    "img/exercises/international/8-2.png",
+    "img/exercises/international/8-1.png",
+    "img/exercises/international/5-1.png",
+    "img/exercises/international/4-4.png",
+    "img/exercises/international/4-3.png",
+    "img/exercises/international/4-2.png",
+    "img/exercises/international/4-1.png",
+    "img/exercises/international/3-4.png"
+  ]
+}
