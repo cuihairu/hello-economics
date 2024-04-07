@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "source",
+                "file": "金融学-笔记.md",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "金融学-笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "金融学-笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "金融学-笔记.md"
               }
             }
           },
@@ -170,6 +170,9 @@
   },
   "active": "151d094606b761b1",
   "lastOpenFiles": [
+    "金融学.xmind",
+    "经济学-术语.md",
+    "README.md",
     "金融学-笔记.md",
     "books/高鸿业 西方经济学 微观部分 第八版8版 课后习题答案详解解析 fc_0_split.pdf",
     "books/高鸿业 西方经济学 宏观部分 第八版8版 课后习题答案详解解析 fc_0_split.pdf",
@@ -186,11 +189,9 @@
     "财政学-笔记.md",
     "西方经济学-精要.md",
     "社会主义经济理论-习题.md",
-    "README.md",
     "英语-阅读理解.md",
     "英语-写作模板.md",
     "英语-同义词替换.md",
-    "经济学-术语.md",
     "西方经济学导论-笔记.md",
     "西方经济学-习题.md",
     "西方经济学-计算题.md",
