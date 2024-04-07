@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "金融学-笔记.md",
-                "mode": "preview",
+                "file": "社会主义经济理论.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "金融学-笔记.md",
+                "file": "社会主义经济理论.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "金融学-笔记.md",
+                "file": "社会主义经济理论.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "金融学-笔记.md"
+                "file": "社会主义经济理论.md"
               }
             }
           },
@@ -170,10 +170,24 @@
   },
   "active": "151d094606b761b1",
   "lastOpenFiles": [
-    "金融学.xmind",
+    "西方经济学导论-笔记.md",
+    "西方经济学.md",
+    "社会主义经济理论.md",
+    "经济学-数学基础.md",
     "经济学-术语.md",
-    "README.md",
     "金融学-笔记.md",
+    "货币银行学.md",
+    "国际经济学.md",
+    "财政学.md",
+    "西方经济学-精要.md",
+    "社会主义经济理论-精要.md",
+    "货币银行学-精要.md",
+    "宏观经济学-笔记.md",
+    "财政学-笔记.md",
+    "国际经济学-精要.md",
+    "README.md",
+    "西方经济学-计算题.md",
+    "金融学.xmind",
     "books/高鸿业 西方经济学 微观部分 第八版8版 课后习题答案详解解析 fc_0_split.pdf",
     "books/高鸿业 西方经济学 宏观部分 第八版8版 课后习题答案详解解析 fc_0_split.pdf",
     "books/金融学+习题集+第六版.pdf",
@@ -183,27 +197,12 @@
     "books/西方经济学 宏观部分 第八版 高鸿业主编.pdf",
     "books/同等学力英语-第六版.pdf",
     "books/同等学力英语-第六版-词汇.pdf",
-    "books/西方经济学导论 第4版(高清).pdf",
     "英语-构词.md",
-    "社会主义经济理论-精要.md",
-    "财政学-笔记.md",
-    "西方经济学-精要.md",
-    "社会主义经济理论-习题.md",
     "英语-阅读理解.md",
     "英语-写作模板.md",
     "英语-同义词替换.md",
-    "西方经济学导论-笔记.md",
-    "西方经济学-习题.md",
-    "西方经济学-计算题.md",
     "微观经济学-笔记.md",
-    "财政学-习题.md",
-    "货币银行学-习题.md",
-    "国际经济学-习题.md",
-    "国际经济学-精要.md",
     "().md",
-    "经济学-数学基础.md",
-    "货币银行学-精要.md",
-    "宏观经济学-笔记.md",
     "词汇题型.md",
     "流程.md",
     "img/exercises/international/9-1.png",
