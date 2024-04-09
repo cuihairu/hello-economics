@@ -155,8 +155,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,7 +168,7 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "df006c8c8be5bfae",
+  "active": "151d094606b761b1",
   "lastOpenFiles": [
     "西方经济学.md",
     "社会主义经济理论.md",
