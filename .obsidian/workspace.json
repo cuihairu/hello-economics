@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "社会主义经济理论.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -38,7 +38,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabeticalReverse"
               }
             }
           },
@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "838345fb1abda4db",
@@ -168,17 +167,21 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "df006c8c8be5bfae",
+  "active": "151d094606b761b1",
   "lastOpenFiles": [
     "西方经济学.md",
-    "社会主义经济理论.md",
-    "财政学.md",
-    "西方经济学导论-笔记.md",
-    "经济学-数学基础.md",
+    "英语-阅读理解.md",
     "经济学-术语.md",
-    "金融学-笔记.md",
+    "西方经济学-计算题.md",
+    "西方经济学-数学基础.md",
+    "other/西方经济学导论-笔记.md",
+    "other/微观经济学-笔记.md",
+    "other/金融学-笔记.md",
+    "other",
     "货币银行学.md",
+    "财政学.md",
     "国际经济学.md",
+    "社会主义经济理论.md",
     "西方经济学-精要.md",
     "社会主义经济理论-精要.md",
     "货币银行学-精要.md",
@@ -186,7 +189,6 @@
     "财政学-笔记.md",
     "国际经济学-精要.md",
     "README.md",
-    "西方经济学-计算题.md",
     "金融学.xmind",
     "books/高鸿业 西方经济学 微观部分 第八版8版 课后习题答案详解解析 fc_0_split.pdf",
     "books/高鸿业 西方经济学 宏观部分 第八版8版 课后习题答案详解解析 fc_0_split.pdf",
@@ -196,12 +198,9 @@
     "books/西方经济学（第八版） 微观部分 高鸿业.pdf",
     "books/西方经济学 宏观部分 第八版 高鸿业主编.pdf",
     "books/同等学力英语-第六版.pdf",
-    "books/同等学力英语-第六版-词汇.pdf",
     "英语-构词.md",
-    "英语-阅读理解.md",
     "英语-写作模板.md",
     "英语-同义词替换.md",
-    "微观经济学-笔记.md",
     "().md",
     "词汇题型.md",
     "流程.md",
