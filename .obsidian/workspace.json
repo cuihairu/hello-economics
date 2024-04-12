@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "社会主义经济理论.md",
+                "file": "微观经济学-笔记.md",
                 "mode": "source",
                 "source": true
               }
@@ -61,7 +61,7 @@
             "id": "e6b3a825c2a9ce6d",
             "type": "leaf",
             "state": {
-              "type": "starred",
+              "type": "graph",
               "state": {}
             }
           },
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "社会主义经济理论.md",
+                "file": "微观经济学-笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "社会主义经济理论.md",
+                "file": "微观经济学-笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "社会主义经济理论.md"
+                "file": "微观经济学-笔记.md"
               }
             }
           },
@@ -154,7 +154,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,16 +170,21 @@
   },
   "active": "151d094606b761b1",
   "lastOpenFiles": [
+    "img/introduction/2/Pasted image 20240412195034.png",
+    "微观经济学-笔记.md",
+    "img/note",
+    "img/未命名文件夹",
+    "未命名 1.canvas",
+    "未命名.canvas",
+    "社会主义经济理论.md",
+    "notes/金融学-笔记.md",
+    "notes/西方经济学导论-笔记.md",
     "西方经济学-数学基础.md",
     "西方经济学-计算题.md",
-    "社会主义经济理论.md",
     "经济学-术语.md",
     "西方经济学.md",
     "英语-阅读理解.md",
-    "other/西方经济学导论-笔记.md",
-    "other/微观经济学-笔记.md",
-    "other/金融学-笔记.md",
-    "other",
+    "notes",
     "货币银行学.md",
     "财政学.md",
     "国际经济学.md",
@@ -196,8 +202,6 @@
     "books/金融学 第六版 曹龙骐.pdf",
     "books/财政学（第十版）.pdf",
     "books/西方经济学（第八版） 微观部分 高鸿业.pdf",
-    "books/西方经济学 宏观部分 第八版 高鸿业主编.pdf",
-    "books/同等学力英语-第六版.pdf",
     "英语-构词.md",
     "英语-写作模板.md",
     "英语-同义词替换.md",
@@ -212,7 +216,6 @@
     "img/exercises/international/4-4.png",
     "img/exercises/international/4-3.png",
     "img/exercises/international/4-2.png",
-    "img/exercises/international/4-1.png",
-    "img/exercises/international/3-4.png"
+    "img/exercises/international/4-1.png"
   ]
 }

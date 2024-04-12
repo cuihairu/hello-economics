@@ -10,7 +10,7 @@
   "showFrontmatter": true,
   "newFileLocation": "folder",
   "newFileFolderPath": "/",
-  "attachmentFolderPath": "./img/introduction/2",
+  "attachmentFolderPath": "img/note",
   "useMarkdownLinks": true,
   "spellcheck": true,
   "strictLineBreaks": true,
