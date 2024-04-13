@@ -18,5 +18,6 @@
   "spellcheckLanguages": [
     "zh-CN",
     "en"
-  ]
+  ],
+  "newLinkFormat": "absolute"
 }
