@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "微观经济学-笔记.md",
-                "mode": "source",
+                "file": "社会主义经济理论.md",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "微观经济学-笔记.md",
+                "file": "社会主义经济理论.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "微观经济学-笔记.md",
+                "file": "社会主义经济理论.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "微观经济学-笔记.md"
+                "file": "社会主义经济理论.md"
               }
             }
           },
@@ -170,23 +170,23 @@
   },
   "active": "151d094606b761b1",
   "lastOpenFiles": [
+    "微观经济学-笔记.md",
+    "README.md",
+    "社会主义经济理论.md",
+    "img/note/Pasted image 20240413182953.png",
+    "img/note/Pasted image 20240413182646.png",
+    "img/note/Pasted image 20240413182258.png",
+    "img/note/Pasted image 20240413181920.png",
+    "img/note/Pasted image 20240413180452.png",
+    "img/note/Pasted image 20240413173153.png",
     "img/note/Pasted image 20240413150933.png",
     "img/note/Pasted image 20240413150223.png",
     "img/note/Pasted image 20240413145904.png",
     "img/note/Pasted image 20240413142017.png",
-    "img/note/Pasted image 20240413141353.png",
-    "img/note/Pasted image 20240413105924.png",
-    "img/note/Pasted image 20240413104648.png",
-    "img/note/Pasted image 20240413102910.png",
-    "img/note/Pasted image 20240413102720.png",
-    "img/note/Pasted image 20240413102206.png",
-    "img/note/Pasted image 20240413101414.png",
-    "微观经济学-笔记.md",
     "img/note",
     "img/未命名文件夹",
     "未命名 1.canvas",
     "未命名.canvas",
-    "社会主义经济理论.md",
     "notes/金融学-笔记.md",
     "notes/西方经济学导论-笔记.md",
     "西方经济学-数学基础.md",
@@ -204,7 +204,6 @@
     "宏观经济学-笔记.md",
     "财政学-笔记.md",
     "国际经济学-精要.md",
-    "README.md",
     "金融学.xmind",
     "books/高鸿业 西方经济学 微观部分 第八版8版 课后习题答案详解解析 fc_0_split.pdf",
     "books/高鸿业 西方经济学 宏观部分 第八版8版 课后习题答案详解解析 fc_0_split.pdf",
