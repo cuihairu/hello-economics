@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "社会主义经济理论.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true
               }
             }
@@ -154,8 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
