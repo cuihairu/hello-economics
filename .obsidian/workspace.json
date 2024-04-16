@@ -73,11 +73,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "838345fb1abda4db",
@@ -169,8 +171,8 @@
   },
   "active": "151d094606b761b1",
   "lastOpenFiles": [
-    "财政学.md",
     "社会主义经济理论.md",
+    "财政学.md",
     "微观经济学-笔记.md",
     "README.md",
     "img/note/Pasted image 20240413182953.png",
