@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "微观经济学-笔记.md",
+                "file": "社会主义经济理论.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "微观经济学-笔记.md",
+                "file": "社会主义经济理论.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "微观经济学-笔记.md",
+                "file": "社会主义经济理论.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "微观经济学-笔记.md"
+                "file": "社会主义经济理论.md"
               }
             }
           },
@@ -154,8 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -170,9 +169,9 @@
   },
   "active": "aef5120e16ea4ae8",
   "lastOpenFiles": [
+    "微观经济学-笔记.md",
     "社会主义经济理论.md",
     "财政学.md",
-    "微观经济学-笔记.md",
     "README.md",
     "img/note/Pasted image 20240413182953.png",
     "img/note/Pasted image 20240413182646.png",
