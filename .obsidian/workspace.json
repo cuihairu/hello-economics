@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "英语真题考点词汇.md",
+                "file": "社会主义经济理论.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "英语真题考点词汇.md",
+                "file": "社会主义经济理论.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "英语真题考点词汇.md",
+                "file": "社会主义经济理论.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "英语真题考点词汇.md"
+                "file": "社会主义经济理论.md"
               }
             }
           },
@@ -167,7 +167,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,10 +183,13 @@
   },
   "active": "bfdac5ae8ffb7151",
   "lastOpenFiles": [
-    "社会主义经济理论.md",
     "英语真题考点词汇.md",
-    "英语-阅读理解.md",
+    "英语-写作模板.md",
     "英语-同义词替换.md",
+    "英语-构词.md",
+    "英语-阅读理解.md",
+    "社会主义经济理论.md",
+    "西方经济学-数学基础.md",
     "微观经济学-笔记.md",
     "财政学.md",
     "README.md",
@@ -205,7 +209,6 @@
     "未命名.canvas",
     "notes/金融学-笔记.md",
     "notes/西方经济学导论-笔记.md",
-    "西方经济学-数学基础.md",
     "西方经济学-计算题.md",
     "经济学-术语.md",
     "西方经济学.md",
@@ -225,8 +228,6 @@
     "books/金融学 第六版 曹龙骐.pdf",
     "books/财政学（第十版）.pdf",
     "books/西方经济学（第八版） 微观部分 高鸿业.pdf",
-    "英语-构词.md",
-    "英语-写作模板.md",
     "().md",
     "词汇题型.md",
     "流程.md"
