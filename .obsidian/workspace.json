@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "社会主义经济理论.md",
+                "file": "微观经济学-笔记.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "838345fb1abda4db",
@@ -106,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "社会主义经济理论.md",
+                "file": "微观经济学-笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "社会主义经济理论.md",
+                "file": "微观经济学-笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "社会主义经济理论.md"
+                "file": "微观经济学-笔记.md"
               }
             }
           },
@@ -183,26 +184,27 @@
   },
   "active": "bfdac5ae8ffb7151",
   "lastOpenFiles": [
+    "img/note/Pasted image 20240420185613.png",
+    "img/note/Pasted image 20240420185600.png",
+    "img/note/Pasted image 20240420184516.png",
+    "img/note/Pasted image 20240420184444.png",
+    "img/note/Pasted image 20240420184210.png",
+    "西方经济学-数学基础.md",
+    "README.md",
+    "社会主义经济理论.md",
     "英语真题考点词汇.md",
     "英语-写作模板.md",
     "英语-同义词替换.md",
     "英语-构词.md",
     "英语-阅读理解.md",
-    "社会主义经济理论.md",
-    "西方经济学-数学基础.md",
     "微观经济学-笔记.md",
     "财政学.md",
-    "README.md",
     "img/note/Pasted image 20240413182953.png",
     "img/note/Pasted image 20240413182646.png",
     "img/note/Pasted image 20240413182258.png",
     "img/note/Pasted image 20240413181920.png",
     "img/note/Pasted image 20240413180452.png",
     "img/note/Pasted image 20240413173153.png",
-    "img/note/Pasted image 20240413150933.png",
-    "img/note/Pasted image 20240413150223.png",
-    "img/note/Pasted image 20240413145904.png",
-    "img/note/Pasted image 20240413142017.png",
     "img/note",
     "img/未命名文件夹",
     "未命名 1.canvas",
@@ -229,7 +231,6 @@
     "books/财政学（第十版）.pdf",
     "books/西方经济学（第八版） 微观部分 高鸿业.pdf",
     "().md",
-    "词汇题型.md",
-    "流程.md"
+    "词汇题型.md"
   ]
 }
