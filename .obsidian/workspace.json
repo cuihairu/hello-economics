@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "英语-同义词替换.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bfdac5ae8ffb7151",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "微观经济学-笔记.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "838345fb1abda4db",
@@ -181,28 +167,27 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "bfdac5ae8ffb7151",
+  "active": "aef5120e16ea4ae8",
   "lastOpenFiles": [
+    "英语-写作模板.md",
+    "英语-同义词替换.md",
+    "微观经济学-笔记.md",
+    "img/note/Pasted image 20240422173725.png",
+    "img/note/Pasted image 20240422171015.png",
+    "img/note/Pasted image 20240422164830.png",
+    "img/note/Pasted image 20240422164437.png",
+    "img/note/Pasted image 20240422163737.png",
+    "img/note/Pasted image 20240422145018.png",
+    "img/note/Pasted image 20240422144019.png",
+    "img/note/Pasted image 20240422141538.png",
     "img/note/Pasted image 20240422104423.png",
     "img/note/Pasted image 20240422102649.png",
-    "img/note/Pasted image 20240422102252.png",
-    "img/note/Pasted image 20240422100903.png",
-    "img/note/Pasted image 20240422095112.png",
-    "img/note/Pasted image 20240422092413.png",
-    "img/note/Pasted image 20240422092309.png",
-    "img/note/Pasted image 20240421175515.png",
-    "img/note/Pasted image 20240421163714.png",
-    "img/note/Pasted image 20240421163704.png",
-    "img/note/Pasted image 20240421163641.png",
     "西方经济学-数学基础.md",
     "README.md",
     "社会主义经济理论.md",
     "英语真题考点词汇.md",
-    "英语-写作模板.md",
-    "英语-同义词替换.md",
     "英语-构词.md",
     "英语-阅读理解.md",
-    "微观经济学-笔记.md",
     "财政学.md",
     "img/note",
     "img/未命名文件夹",
