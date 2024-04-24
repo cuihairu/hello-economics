@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "微观经济学-笔记.md",
+                "file": "英语-写作模板.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "838345fb1abda4db",
@@ -94,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "微观经济学-笔记.md",
+                "file": "英语-写作模板.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "微观经济学-笔记.md",
+                "file": "英语-写作模板.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "微观经济学-笔记.md"
+                "file": "英语-写作模板.md"
               }
             }
           },
@@ -168,8 +167,10 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "aef5120e16ea4ae8",
+  "active": "a3729c8c57ddbb2c",
   "lastOpenFiles": [
+    "英语真题考点词汇.md",
+    "微观经济学-笔记.md",
     "img/note/Pasted image 20240423185007.png",
     "img/note/Pasted image 20240423184315.png",
     "img/note/Pasted image 20240423175655.png",
@@ -180,14 +181,11 @@
     "img/note/Pasted image 20240423161903.png",
     "img/note/Pasted image 20240423161513.png",
     "img/note/Pasted image 20240423160215.png",
-    "img/note/Pasted image 20240423150041.png",
     "英语-写作模板.md",
     "英语-同义词替换.md",
-    "微观经济学-笔记.md",
     "西方经济学-数学基础.md",
     "README.md",
     "社会主义经济理论.md",
-    "英语真题考点词汇.md",
     "英语-构词.md",
     "英语-阅读理解.md",
     "财政学.md",
