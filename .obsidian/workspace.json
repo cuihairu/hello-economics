@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "英语-写作模板.md",
+                "file": "货币银行学.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "英语-写作模板.md",
+                "file": "货币银行学.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "英语-写作模板.md",
+                "file": "货币银行学.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "英语-写作模板.md"
+                "file": "货币银行学.md"
               }
             }
           },
@@ -154,7 +154,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -167,8 +168,9 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "a3729c8c57ddbb2c",
+  "active": "aef5120e16ea4ae8",
   "lastOpenFiles": [
+    "英语-写作模板.md",
     "英语真题考点词汇.md",
     "微观经济学-笔记.md",
     "img/note/Pasted image 20240423185007.png",
@@ -181,7 +183,6 @@
     "img/note/Pasted image 20240423161903.png",
     "img/note/Pasted image 20240423161513.png",
     "img/note/Pasted image 20240423160215.png",
-    "英语-写作模板.md",
     "英语-同义词替换.md",
     "西方经济学-数学基础.md",
     "README.md",
