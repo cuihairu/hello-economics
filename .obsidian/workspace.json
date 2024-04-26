@@ -154,8 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -170,6 +169,8 @@
   },
   "active": "aef5120e16ea4ae8",
   "lastOpenFiles": [
+    "README.md",
+    "货币银行学.md",
     "英语-写作模板.md",
     "英语真题考点词汇.md",
     "微观经济学-笔记.md",
@@ -185,7 +186,6 @@
     "img/note/Pasted image 20240423160215.png",
     "英语-同义词替换.md",
     "西方经济学-数学基础.md",
-    "README.md",
     "社会主义经济理论.md",
     "英语-构词.md",
     "英语-阅读理解.md",
@@ -200,7 +200,6 @@
     "经济学-术语.md",
     "西方经济学.md",
     "notes",
-    "货币银行学.md",
     "国际经济学.md",
     "西方经济学-精要.md",
     "社会主义经济理论-精要.md",
