@@ -18,6 +18,30 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5537ecc7c13c1054",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "经济学-名人.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2b14edf31d04dc4d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -77,8 +101,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "838345fb1abda4db",
@@ -170,6 +193,10 @@
   },
   "active": "80fcc088227c996a",
   "lastOpenFiles": [
+    "经济学-名人.md",
+    "西方经济学-计算题.md",
+    "经济学-理论.md",
+    "README.md",
     "img/note/Pasted image 20240430202109.png",
     "img/note/Pasted image 20240430182944.png",
     "img/note/Pasted image 20240430182629.png",
@@ -180,18 +207,15 @@
     "img/note/Pasted image 20240430181450.png",
     "img/note/Pasted image 20240430181338.png",
     "img/note/Pasted image 20240430175813.png",
-    "img/note/Pasted image 20240430175337.png",
     "社会主义经济理论.md",
     "英语-写作模板.md",
     "英语-阅读理解.md",
-    "西方经济学-计算题.md",
     "经济学-名词解释.md",
     "经济学-术语.md",
     "西方经济学-数学基础.md",
     "英语-同义词替换.md",
     "英语-构词.md",
     "西方经济学.md",
-    "README.md",
     "货币银行学.md",
     "英语真题考点词汇.md",
     "微观经济学-笔记.md",
@@ -216,7 +240,6 @@
     "books/金融学+习题集+第六版.pdf",
     "books/金融学 第六版 曹龙骐.pdf",
     "books/财政学（第十版）.pdf",
-    "books/西方经济学（第八版） 微观部分 高鸿业.pdf",
-    "().md"
+    "books/西方经济学（第八版） 微观部分 高鸿业.pdf"
   ]
 }
