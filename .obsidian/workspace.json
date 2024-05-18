@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "西方经济学-计算题.md",
+                "file": "英语-写作模板.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "西方经济学-计算题.md",
+                "file": "英语-写作模板.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "西方经济学-计算题.md",
+                "file": "英语-写作模板.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "西方经济学-计算题.md"
+                "file": "英语-写作模板.md"
               }
             }
           },
@@ -154,7 +154,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,13 +170,14 @@
   },
   "active": "80fcc088227c996a",
   "lastOpenFiles": [
-    "财政学.md",
-    "西方经济学-数学基础.md",
     "西方经济学-计算题.md",
     "英语-写作模板.md",
-    "英语真题考点词汇.md",
-    "经济学-术语.md",
+    "西方经济学-数学基础.md",
+    "微观经济学-笔记.md",
     "经济学-名人.md",
+    "经济学-术语.md",
+    "财政学.md",
+    "英语真题考点词汇.md",
     "经济学-理论.md",
     "社会主义经济理论.md",
     "img/note/Pasted image 20240504222023.png",
@@ -195,7 +197,6 @@
     "西方经济学.md",
     "README.md",
     "货币银行学.md",
-    "微观经济学-笔记.md",
     "img/note",
     "img/未命名文件夹",
     "未命名 1.canvas",
