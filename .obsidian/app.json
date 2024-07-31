@@ -15,9 +15,6 @@
   "spellcheck": true,
   "strictLineBreaks": true,
   "readableLineLength": false,
-  "spellcheckLanguages": [
-    "zh-CN",
-    "en"
-  ],
+  "spellcheckLanguages": null,
   "newLinkFormat": "absolute"
 }

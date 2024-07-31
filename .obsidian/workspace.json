@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "英语-写作模板.md",
+                "file": "西方经济学.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "英语-写作模板.md",
+                "file": "西方经济学.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "英语-写作模板.md",
+                "file": "西方经济学.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "英语-写作模板.md"
+                "file": "西方经济学.md"
               }
             }
           },
@@ -149,13 +149,11 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -170,52 +168,53 @@
   },
   "active": "80fcc088227c996a",
   "lastOpenFiles": [
+    "western/需求与供给.md",
+    "SUMMARY.md",
+    "西方经济学.md",
+    "math/Readme.md",
+    "international/Readme.md",
+    "socialist/Readme.md",
+    "english/Readme.md",
+    "notes/西方经济学导论-笔记.md",
+    "math/西方经济学-数学基础.md",
+    "western/Readme.md",
+    "micro/Readme.md",
+    "micro",
+    "monetary",
+    "finance",
+    "english",
+    "international",
+    "western",
+    "socialist",
+    "math",
+    "src/SUMMARY.md",
+    "book/book.toml",
+    "book/elasticlunr.min.js",
+    "book/favicon.svg",
+    "book/favicon.png",
+    "book/FontAwesome/fonts/fontawesome-webfont.svg",
+    "book/img/note/Pasted image 20240413142017.png",
+    "book/img/note/Pasted image 20240413141353.png",
+    "book/img/note/Pasted image 20240413105924.png",
+    "book/img/note/Pasted image 20240413104648.png",
+    "book/img/note/Pasted image 20240413102910.png",
+    "book/img/note/Pasted image 20240413102720.png",
+    "book/img/note/Pasted image 20240413102206.png",
+    "chapter_1.md",
+    "img/exercises/finance/2-2.png.md",
+    "src/en/英语真题考点词汇.md",
+    "src/chapter_1.md",
+    "src/en/英语-写作模板.md",
     "西方经济学-计算题.md",
-    "英语-写作模板.md",
-    "西方经济学-数学基础.md",
     "微观经济学-笔记.md",
     "经济学-名人.md",
     "经济学-术语.md",
     "财政学.md",
-    "英语真题考点词汇.md",
     "经济学-理论.md",
     "社会主义经济理论.md",
-    "img/note/Pasted image 20240504222023.png",
-    "img/note/Pasted image 20240504221937.png",
-    "img/note/Pasted image 20240504221614.png",
-    "img/note/Pasted image 20240504215532.png",
-    "img/note/Pasted image 20240504170409.png",
-    "img/note/Pasted image 20240503080117.png",
-    "img/note/Pasted image 20240503080054.png",
-    "img/note/Pasted image 20240503080042.png",
-    "img/note/Pasted image 20240503075048.png",
-    "img/note/Pasted image 20240502223914.png",
-    "英语-阅读理解.md",
+    "src/en/英语-阅读理解.md",
     "经济学-名词解释.md",
-    "英语-同义词替换.md",
-    "英语-构词.md",
-    "西方经济学.md",
-    "README.md",
-    "货币银行学.md",
-    "img/note",
-    "img/未命名文件夹",
     "未命名 1.canvas",
-    "未命名.canvas",
-    "notes/金融学-笔记.md",
-    "notes/西方经济学导论-笔记.md",
-    "notes",
-    "国际经济学.md",
-    "西方经济学-精要.md",
-    "社会主义经济理论-精要.md",
-    "货币银行学-精要.md",
-    "宏观经济学-笔记.md",
-    "财政学-笔记.md",
-    "金融学.xmind",
-    "books/高鸿业 西方经济学 微观部分 第八版8版 课后习题答案详解解析 fc_0_split.pdf",
-    "books/高鸿业 西方经济学 宏观部分 第八版8版 课后习题答案详解解析 fc_0_split.pdf",
-    "books/金融学+习题集+第六版.pdf",
-    "books/金融学 第六版 曹龙骐.pdf",
-    "books/财政学（第十版）.pdf",
-    "books/西方经济学（第八版） 微观部分 高鸿业.pdf"
+    "未命名.canvas"
   ]
 }
