@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "西方经济学.md",
+                "file": "SUMMARY.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "4e2b923e0d650694",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SUMMARY.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "西方经济学.md",
+                "file": "SUMMARY.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "西方经济学.md",
+                "file": "SUMMARY.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "西方经济学.md"
+                "file": "SUMMARY.md"
               }
             }
           },
@@ -166,30 +179,44 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "80fcc088227c996a",
+  "active": "4e2b923e0d650694",
   "lastOpenFiles": [
-    "western/需求与供给.md",
+    "西方经济学-计算题.md",
+    "README.md",
+    "微观经济学-笔记.md",
+    "经济学-术语.md",
+    "经济学-名人.md",
     "SUMMARY.md",
-    "西方经济学.md",
-    "math/Readme.md",
-    "international/Readme.md",
-    "socialist/Readme.md",
-    "english/Readme.md",
-    "notes/西方经济学导论-笔记.md",
-    "math/西方经济学-数学基础.md",
-    "western/Readme.md",
-    "micro/Readme.md",
+    "经济学-理论.md",
+    "货币银行学.md",
+    "monetary/内外均衡理论.md",
+    "monetary/国际货币体系.md",
+    "monetary/国际货币体系",
+    "monetary/汇率理论.md",
+    "monetary/货币政策.md",
+    "monetary/金融监管体系.md",
+    "monetary/金融市场.md",
+    "monetary/金融中介体系.md",
+    "western/宏观经济学的意见分歧.md",
+    "monetary/通货膨胀与通货紧缩.md",
+    "monetary/利率理论.md",
+    "monetary/货币供求理论.md",
+    "international/经济全球化趋势.md",
+    "国际经济学.md",
+    "international/经济一体化与国际经济秩序分析.md",
+    "international/经济一体化与国际经济秩序分析.m",
+    "international/宏观经济的内外均衡.md",
+    "international/要素的国际流动.md",
+    "international/汇率决定的一般理论.md",
+    "international/国际收支分析.md",
+    "社会主义经济制度的本质特征",
+    "soc",
+    "weste",
+    "js/mermaid-init.js",
+    "js/mermaid.min.js",
+    "js",
+    "新建文件夹",
     "micro",
-    "monetary",
-    "finance",
-    "english",
-    "international",
-    "western",
-    "socialist",
-    "math",
-    "src/SUMMARY.md",
-    "book/book.toml",
-    "book/elasticlunr.min.js",
     "book/favicon.svg",
     "book/favicon.png",
     "book/FontAwesome/fonts/fontawesome-webfont.svg",
@@ -200,20 +227,6 @@
     "book/img/note/Pasted image 20240413102910.png",
     "book/img/note/Pasted image 20240413102720.png",
     "book/img/note/Pasted image 20240413102206.png",
-    "chapter_1.md",
-    "img/exercises/finance/2-2.png.md",
-    "src/en/英语真题考点词汇.md",
-    "src/chapter_1.md",
-    "src/en/英语-写作模板.md",
-    "西方经济学-计算题.md",
-    "微观经济学-笔记.md",
-    "经济学-名人.md",
-    "经济学-术语.md",
-    "财政学.md",
-    "经济学-理论.md",
-    "社会主义经济理论.md",
-    "src/en/英语-阅读理解.md",
-    "经济学-名词解释.md",
     "未命名 1.canvas",
     "未命名.canvas"
   ]
