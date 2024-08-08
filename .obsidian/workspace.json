@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SUMMARY.md",
+                "file": "socialist/Readme.md",
                 "mode": "source",
                 "source": true
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SUMMARY.md",
+                "file": "socialist/Readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SUMMARY.md",
+                "file": "socialist/Readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SUMMARY.md"
+                "file": "socialist/Readme.md"
               }
             }
           },
@@ -180,8 +180,9 @@
   },
   "active": "80fcc088227c996a",
   "lastOpenFiles": [
-    "math/统计学基础.md",
     "SUMMARY.md",
+    "western/Readme.md",
+    "math/统计学基础.md",
     "math/概率论基础.md",
     "math/线性空间与线性变换.md",
     "math/特征值与特征向量.md",
@@ -205,7 +206,6 @@
     "western/市场失灵和微观经济政策.md",
     "western/一般均衡论和福利经济学.md",
     "western/市场理论.md",
-    "western/生产和成本论.md",
     "monetary/国际货币体系",
     "international/经济一体化与国际经济秩序分析.m",
     "社会主义经济制度的本质特征",
