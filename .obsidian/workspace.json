@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "socialist/Readme.md",
+                "file": "SUMMARY.md",
                 "mode": "source",
                 "source": true
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "socialist/Readme.md",
+                "file": "SUMMARY.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "socialist/Readme.md",
+                "file": "SUMMARY.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "socialist/Readme.md"
+                "file": "SUMMARY.md"
               }
             }
           },
@@ -180,8 +180,18 @@
   },
   "active": "80fcc088227c996a",
   "lastOpenFiles": [
+    "monetary/Readme.md",
     "SUMMARY.md",
+    "finance/Readme.md",
+    "international/Readme.md",
     "western/Readme.md",
+    "math/Readme.md",
+    "socialist/Readme.md",
+    "经济学-名人.md",
+    "经济学-术语.md",
+    "微观经济学-笔记.md",
+    "西方经济学-计算题.md",
+    "english/Readme.md",
     "math/统计学基础.md",
     "math/概率论基础.md",
     "math/线性空间与线性变换.md",
@@ -194,18 +204,8 @@
     "math/数列与极限.md",
     "math/集合与逻辑.md",
     "math/西方经济学-数学基础.md",
-    "西方经济学-计算题.md",
     "western/宏观经济学的意见分歧.md",
     "western/通货膨胀理论.md",
-    "western/经济增长.md",
-    "western/总需求和总供给分析.md",
-    "western/宏观经济政策.md",
-    "western/产品市场和货币市场的一般均衡.md",
-    "western/简单国民收入决定理论.md",
-    "western/宏观经济活动与宏观经济学.md",
-    "western/市场失灵和微观经济政策.md",
-    "western/一般均衡论和福利经济学.md",
-    "western/市场理论.md",
     "monetary/国际货币体系",
     "international/经济一体化与国际经济秩序分析.m",
     "社会主义经济制度的本质特征",
