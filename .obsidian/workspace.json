@@ -13,10 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SUMMARY.md",
+                "file": "western/效用论.md",
                 "mode": "source",
                 "source": true
-              }
+              },
+              "icon": "lucide-file",
+              "title": "效用论"
             }
           },
           {
@@ -28,7 +30,9 @@
                 "file": "western/效用论.md",
                 "mode": "source",
                 "source": true
-              }
+              },
+              "icon": "lucide-file",
+              "title": "效用论"
             }
           }
         ]
@@ -50,8 +54,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabeticalReverse"
-              }
+                "sortOrder": "alphabeticalReverse",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
             }
           },
           {
@@ -66,7 +73,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
             }
           },
           {
@@ -74,7 +83,9 @@
             "type": "leaf",
             "state": {
               "type": "graph",
-              "state": {}
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
             }
           },
           {
@@ -82,14 +93,16 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 357.5
   },
   "right": {
     "id": "838345fb1abda4db",
@@ -105,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SUMMARY.md",
+                "file": "western/效用论.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +126,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "效用论 的反向链接列表"
             }
           },
           {
@@ -122,10 +137,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SUMMARY.md",
+                "file": "西方经济学-计算题.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "西方经济学-计算题 的出链列表"
             }
           },
           {
@@ -135,8 +152,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              }
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
             }
           },
           {
@@ -145,8 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SUMMARY.md"
-              }
+                "file": "西方经济学-计算题.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "西方经济学-计算题 的大纲"
             }
           },
           {
@@ -158,7 +184,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
             }
           }
         ]
@@ -180,17 +208,20 @@
   },
   "active": "80fcc088227c996a",
   "lastOpenFiles": [
-    "monetary/Readme.md",
+    "西方经济学-计算题.md",
+    "经济学-术语.md",
+    "socialist/社会主义市场经济条件下的政府调节.md",
+    "socialist/向社会主义市场经济体制的渐进过渡.md",
     "SUMMARY.md",
+    "socialist/社会主义经济制度的本质特征.md",
+    "monetary/Readme.md",
     "finance/Readme.md",
     "international/Readme.md",
     "western/Readme.md",
     "math/Readme.md",
     "socialist/Readme.md",
     "经济学-名人.md",
-    "经济学-术语.md",
     "微观经济学-笔记.md",
-    "西方经济学-计算题.md",
     "english/Readme.md",
     "math/统计学基础.md",
     "math/概率论基础.md",
@@ -203,9 +234,6 @@
     "math/常见求和公式.md",
     "math/数列与极限.md",
     "math/集合与逻辑.md",
-    "math/西方经济学-数学基础.md",
-    "western/宏观经济学的意见分歧.md",
-    "western/通货膨胀理论.md",
     "monetary/国际货币体系",
     "international/经济一体化与国际经济秩序分析.m",
     "社会主义经济制度的本质特征",
