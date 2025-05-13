@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "western/效用论.md",
+                "file": "western/需求与供给.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "效用论"
+              "title": "需求与供给"
             }
           },
           {
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "western/效用论.md",
+                "file": "western/需求与供给.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +128,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "效用论 的反向链接列表"
+              "title": "需求与供给 的反向链接列表"
             }
           },
           {
@@ -208,11 +208,12 @@
   },
   "active": "80fcc088227c996a",
   "lastOpenFiles": [
+    "SUMMARY.md",
+    "western/效用论.md",
     "西方经济学-计算题.md",
     "经济学-术语.md",
     "socialist/社会主义市场经济条件下的政府调节.md",
     "socialist/向社会主义市场经济体制的渐进过渡.md",
-    "SUMMARY.md",
     "socialist/社会主义经济制度的本质特征.md",
     "monetary/Readme.md",
     "finance/Readme.md",
@@ -233,7 +234,6 @@
     "math/微分学基础.md",
     "math/常见求和公式.md",
     "math/数列与极限.md",
-    "math/集合与逻辑.md",
     "monetary/国际货币体系",
     "international/经济一体化与国际经济秩序分析.m",
     "社会主义经济制度的本质特征",
