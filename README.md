@@ -17,7 +17,7 @@
 
 - [推荐书籍](https://www.alipan.com/s/LrwNPb7dt1N)
 - [《经济学学科综合水平全国统一考试大纲及指南》](https://pan.baidu.com/s/10UYr5-AF_OYrhEicuqGJMA?pwd=9999)
--  [《社会主义市场经济理论》](https://pan.baidu.com/s/10UYr5-AF_OYrhEicuqGJMA?pwd=9999)
+- [《社会主义市场经济理论》](https://pan.baidu.com/s/10UYr5-AF_OYrhEicuqGJMA?pwd=9999)
 
 
 ### 笔记
