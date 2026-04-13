@@ -4,11 +4,9 @@ language = "en"
 src = "./"
 title = "Hello Economics"
 
-[preprocessor.katex]
-after = ["links"]
-
 [preprocessor.mermaid]
 command = "mdbook-mermaid"
 
 [output.html]
-additional-js = ["js/mermaid.min.js", "js/mermaid-init.js"]
+additional-css = ["css/katex.min.css"]
+additional-js = ["js/katex.min.js", "js/auto-render.min.js", "js/katex-init.js", "js/mermaid.min.js", "js/mermaid-init.js"]
