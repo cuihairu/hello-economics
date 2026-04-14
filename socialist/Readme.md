@@ -52,7 +52,7 @@
 - 子问题 1：为什么不能只追求 GDP 增长。
   对应章节：[社会主义经济增长与经济发展](/Users/cui/Workspaces/hello-economics/socialist/社会主义经济增长与经济发展.md)
 - 子问题 2：为什么增长以后还要做产业和经济结构调整。
-  对应章节：[社会主义市场经济条件条件下的经济结构调整](/Users/cui/Workspaces/hello-economics/socialist/社会主义市场经济条件条件下的经济结构调整.md)
+  对应章节：[社会主义市场经济条件下的经济结构调整](/Users/cui/Workspaces/hello-economics/socialist/社会主义市场经济条件下的经济结构调整.md)
 - 子问题 3：社会主义市场经济为什么必须处理对外开放与全球分工。
   对应章节：[社会主义对外经济关系](/Users/cui/Workspaces/hello-economics/socialist/社会主义对外经济关系.md)
 - 子问题 4：市场起作用以后，政府为什么仍然重要，而且角色还变得更复杂。
