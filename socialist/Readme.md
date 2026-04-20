@@ -92,6 +92,10 @@
 如果你要单独按会议看时间、名称、做了哪些事情，以及这些会议对应教材哪些章节，直接看这里：
 
 - [中国共产党重要会议与社会主义经济体制演进](/Users/cui/Workspaces/hello-economics/socialist/中国共产党重要会议与社会主义经济体制演进.md)
+- [高频大题速背骨架](/Users/cui/Workspaces/hello-economics/socialist/社会主义经济学高频大题速背骨架.md)
+- [最后20题](/Users/cui/Workspaces/hello-economics/socialist/社会主义经济学最后20题.md)
+- [考前1小时速背版](/Users/cui/Workspaces/hello-economics/socialist/社会主义经济学考前1小时速背版.md)
+- [简答题模板版](/Users/cui/Workspaces/hello-economics/socialist/社会主义经济学简答题模板版.md)
 
 ## 四、按复习顺序应该怎么读
 
@@ -101,6 +105,10 @@
 2. 再读 [历史进程梳理](/Users/cui/Workspaces/hello-economics/socialist/History.md)，把理论推进顺序理出来。
 3. 再读 [中国共产党重要会议与社会主义经济体制演进](/Users/cui/Workspaces/hello-economics/socialist/中国共产党重要会议与社会主义经济体制演进.md)，把理论变化和会议节点对起来。
 4. 然后按“制度基础 -> 市场化改革 -> 企业与分配 -> 发展与治理”顺序回到各章。
+5. 最后用 [高频大题速背骨架](/Users/cui/Workspaces/hello-economics/socialist/社会主义经济学高频大题速背骨架.md) 做压缩记忆和默写训练。
+6. 再用 [最后20题](/Users/cui/Workspaces/hello-economics/socialist/社会主义经济学最后20题.md) 做临考冲刺。
+7. 考前最后 1 小时只看 [考前1小时速背版](/Users/cui/Workspaces/hello-economics/socialist/社会主义经济学考前1小时速背版.md)。
+8. 简答题不会写就套 [简答题模板版](/Users/cui/Workspaces/hello-economics/socialist/社会主义经济学简答题模板版.md)。
 
 ## 五、最后把整门课压成一句话
 
