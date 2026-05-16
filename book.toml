@@ -5,7 +5,7 @@ src = "./"
 title = "Hello Economics"
 
 [build]
-build-dir = "../hello-economics-book"
+build-dir = "book"
 
 [preprocessor.mermaid]
 command = "mdbook-mermaid"
