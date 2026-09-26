@@ -1,0 +1,33 @@
+# 构建校验：只验证站点能完整构建，不部署
+name: Build site
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 12
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Regenerate glossary data
+        run: pnpm glossary
+      - name: Check internal links
+        run: node scripts/check-links.cjs
+      - name: Build site
+        run: pnpm build
