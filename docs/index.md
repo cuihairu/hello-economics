@@ -109,7 +109,7 @@ import { TIMELINE } from './.vitepress/theme/data/timeline'
 <ol class="threads">
   <li>
     <h3><a href="/timeline">理论时间线</a></h3>
-    <p>1516 年《乌托邦》到 2019 年RCT减贫实验，49 个节点串起理论的出现顺序，每个节点都回答「为什么是这个时候」。</p>
+    <p>1516 年《乌托邦》到 2019 年的实验经济学减贫研究，{{ TIMELINE.length }} 个节点串起理论的出现顺序，每个节点都回答「为什么是这个时候」。</p>
   </li>
   <li>
     <h3><a href="/people">名人篇</a></h3>

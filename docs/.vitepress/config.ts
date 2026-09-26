@@ -176,10 +176,12 @@ export default defineConfig({
           { text: '9 · 线性空间与线性变换', link: '/math/线性空间与线性变换' },
           { text: '10 · 概率论基础', link: '/math/概率论基础' },
           { text: '11 · 统计学基础', link: '/math/统计学基础' },
+          { text: '12 · 最优化方法与经济学应用', link: '/math/最优化方法' },
         ]},
       ],
       '/reference/': [
-        { text: '参考笔记', items: [
+        { text: '参考资料', items: [
+          { text: '参考书目', link: '/reference/参考书目' },
           { text: '微观经济学笔记', link: '/reference/微观经济学-笔记' },
           { text: '西方经济学导论笔记', link: '/reference/notes/西方经济学导论-笔记' },
           { text: '金融学笔记', link: '/reference/notes/金融学-笔记' },
