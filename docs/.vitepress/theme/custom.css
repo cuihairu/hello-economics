@@ -1,0 +1,479 @@
+/* ============================================================
+   Hello Economics · 账本红线（ledger-line）
+   世界：经济学的两件老物件——账本的秩序，编年史的脉络线。
+   色彩策略：Committed。账本绿承载身份；纸面/墨面中性底；无第二强调色。
+   ============================================================ */
+
+:root {
+  /* 账本绿 */
+  --vp-c-brand-1: #0b6b4e;
+  --vp-c-brand-2: #095841;
+  --vp-c-brand-3: #0b6b4e;
+  --vp-c-brand-soft: rgba(11, 107, 78, 0.09);
+
+  /* 纸面 */
+  --vp-c-bg: #f7f6f2;
+  --vp-c-bg-alt: #f1efe9;
+  --vp-c-bg-soft: #fdfcf9;
+  --vp-c-border: #e2dfd6;
+  --vp-c-divider: #e6e3da;
+  --vp-c-gutter: #e6e3da;
+
+  /* 墨色文字（偏绿的近黑，非纯黑） */
+  --vp-c-text-1: #1f2921;
+  --vp-c-text-2: #4a554e;
+  --vp-c-text-3: #79837b;
+
+  --vp-font-display: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN',
+    'Songti SC', SimSun, Georgia, serif;
+  --vp-font-body: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', 'Noto Sans CJK SC', 'Segoe UI', sans-serif;
+  --vp-font-mono: ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace;
+
+  /* 脉络线 */
+  --spine-color: #c9c5b8;
+  --spine-node: #0b6b4e;
+
+  /* 组件覆写 */
+  --vp-c-sponsor: #0b6b4e;
+  --vp-home-hero-name-color: transparent;
+  --vp-sidebar-bg-color: var(--vp-c-bg-alt);
+  --vp-nav-bg-color: var(--vp-c-bg);
+}
+
+.dark {
+  /* 墨面：深绿近黑 */
+  --vp-c-bg: #141b17;
+  --vp-c-bg-alt: #101612;
+  --vp-c-bg-soft: #1a231e;
+  --vp-c-border: #273229;
+  --vp-c-divider: #243029;
+  --vp-c-gutter: #243029;
+  --vp-c-text-1: #e2e6df;
+  --vp-c-text-2: #a9b3aa;
+  --vp-c-text-3: #6f7a70;
+  --vp-c-brand-1: #57b98c;
+  --vp-c-brand-2: #6fca9e;
+  --vp-c-brand-3: #57b98c;
+  --vp-c-brand-soft: rgba(87, 185, 140, 0.12);
+  --spine-color: #2c3a31;
+  --spine-node: #57b98c;
+}
+
+/* ---------- 基础 ---------- */
+
+body {
+  font-family: var(--vp-font-body);
+  font-size: 16.5px;
+  line-height: 1.85;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(11, 107, 78, 0.22);
+}
+.dark ::selection {
+  background: rgba(87, 185, 140, 0.28);
+}
+
+/* 浏览器表面（craft floor：滚动条、焦点环属于设计） */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-border);
+  border-radius: 5px;
+  border: 2px solid var(--vp-c-bg);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-text-3);
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+}
+
+/* ---------- 标题：衬线报头 ---------- */
+
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4,
+.VPHomeHero .name,
+.VPHomeHero .text {
+  font-family: var(--vp-font-display);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.vp-doc h1 {
+  font-size: 1.9rem;
+  line-height: 1.4;
+}
+
+.vp-doc h2 {
+  font-size: 1.4rem;
+  margin-top: 3rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--vp-c-border);
+}
+
+.vp-doc h2 .header-anchor,
+.vp-doc h3 .header-anchor {
+  font-family: var(--vp-font-body);
+}
+
+/* ---------- 正文链接：账本绿 + 划线 ---------- */
+
+.vp-doc :not(h1, h2, h3, h4, h5, h6) a {
+  color: var(--vp-c-brand-1);
+  text-decoration: underline;
+  text-decoration-color: rgba(11, 107, 78, 0.35);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+.vp-doc :not(h1, h2, h3, h4, h5, h6) a:hover {
+  text-decoration-color: var(--vp-c-brand-1);
+}
+
+/* ---------- 引用与提示：账本批注 ---------- */
+
+.vp-doc blockquote {
+  margin: 1.2rem 0;
+  padding: 0.2rem 1.2rem;
+  border-left: 1px solid var(--vp-c-text-3);
+  background: var(--vp-c-bg-soft);
+  border-radius: 4px;
+  color: var(--vp-c-text-2);
+}
+.vp-doc blockquote p {
+  margin: 0.6rem 0;
+}
+
+/* ---------- 表格：账目行 ---------- */
+
+.vp-doc table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+.vp-doc th {
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: var(--vp-c-text-3);
+  border-bottom: 1.5px solid var(--vp-c-text-3);
+  background: transparent;
+}
+.vp-doc td {
+  border-bottom: 1px solid var(--vp-c-border);
+  font-variant-numeric: tabular-nums;
+}
+.vp-doc tr {
+  background: transparent;
+}
+.vp-doc tr:nth-child(2n) {
+  background: var(--vp-c-bg-soft);
+}
+
+/* ---------- 公式 ---------- */
+
+.vp-doc mjx-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 2px;
+}
+.vp-doc mjx-container[display='true'] {
+  margin: 1.2rem 0;
+}
+
+/* ---------- 代码 ---------- */
+
+.vp-doc :not(pre, h1, h2, h3, h4, h5, h6) > code {
+  font-family: var(--vp-font-mono);
+  font-size: 0.85em;
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-2);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+.dark .vp-doc :not(pre, h1, h2, h3, h4, h5, h6) > code {
+  color: var(--vp-c-brand-2);
+}
+
+/* ---------- 侧边栏：脉络线指示 ---------- */
+
+.VPSidebarItem.level-2.is-active > .item .indicator,
+.VPSidebarItem.level-1.is-active > .item .indicator {
+  background: var(--spine-node);
+}
+.VPSidebar .group {
+  border-color: var(--vp-c-border);
+}
+
+/* ---------- 课程 Tab（doc-before 槽位） ---------- */
+
+.course-tabs {
+  margin: 0 0 1.6rem;
+  border-bottom: 1px solid var(--vp-c-border);
+  display: flex;
+  gap: 0.25rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.course-tabs::-webkit-scrollbar {
+  display: none;
+}
+.course-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0.85rem 0.6rem;
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  white-space: nowrap;
+  transition: color 0.2s, border-color 0.2s;
+}
+.course-tab:hover {
+  color: var(--vp-c-text-1);
+}
+.course-tab.is-active {
+  color: var(--vp-c-brand-1);
+  border-bottom-color: var(--spine-node);
+  font-weight: 600;
+}
+.course-tab svg {
+  width: 17px;
+  height: 17px;
+  flex: none;
+  stroke: currentColor;
+}
+
+/* ---------- 脉络线（时间线/首页共用骨架） ---------- */
+
+.spine {
+  position: relative;
+}
+.spine::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  bottom: 0.2rem;
+  width: 2px;
+  background: var(--spine-color);
+}
+
+/* ---------- 首页 hero ---------- */
+
+.ledger-hero {
+  padding: 4.5rem 0 2.5rem;
+}
+.hero-kicker {
+  font-family: var(--vp-font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  color: var(--vp-c-brand-1);
+  margin: 0 0 0.9rem;
+}
+.hero-title {
+  font-family: var(--vp-font-display);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0 0 1.1rem;
+}
+.hero-lede {
+  font-size: 1.05rem;
+  color: var(--vp-c-text-2);
+  max-width: 36em;
+  margin: 0 0 1.6rem;
+}
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.4rem;
+  margin: 0;
+  font-family: var(--vp-font-mono);
+  font-size: 0.82rem;
+  color: var(--vp-c-text-3);
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--vp-c-border);
+}
+
+/* ---------- 首页：课程目录行 ---------- */
+
+.home-h2 {
+  font-family: var(--vp-font-display);
+  font-size: 1.35rem;
+  margin: 3.5rem 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--vp-c-border);
+}
+
+.course-index {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--vp-c-border);
+}
+.course-index li + li {
+  border-top: 1px solid var(--vp-c-border);
+}
+.course-index a {
+  display: grid;
+  grid-template-columns: 1.4rem 1fr auto;
+  column-gap: 1rem;
+  align-items: center;
+  padding: 1.05rem 0.4rem;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.course-index a:hover {
+  background: var(--vp-c-bg-soft);
+}
+.course-index svg {
+  grid-row: span 2;
+  width: 22px;
+  height: 22px;
+  color: var(--vp-c-text-3);
+  stroke: currentColor;
+  transition: color 0.15s;
+}
+.course-index a:hover svg {
+  color: var(--vp-c-brand-1);
+}
+.ci-body {
+  display: grid;
+  grid-template-columns: 2.2rem auto 1fr;
+  column-gap: 0.8rem;
+  align-items: baseline;
+}
+.ci-num {
+  font-family: var(--vp-font-mono);
+  font-size: 0.78rem;
+  color: var(--vp-c-text-3);
+}
+.ci-name {
+  font-family: var(--vp-font-display);
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--vp-c-text-1);
+}
+.ci-why {
+  font-size: 0.9rem;
+  color: var(--vp-c-text-3);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ci-go {
+  font-family: var(--vp-font-mono);
+  font-size: 0.8rem;
+  color: var(--vp-c-text-3);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.course-index a:hover .ci-go {
+  color: var(--vp-c-brand-1);
+}
+
+/* ---------- 首页：三条阅读线索 ---------- */
+
+.threads {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 1.4rem;
+}
+.threads li {
+  position: relative;
+  padding: 0.2rem 0 1.5rem;
+}
+.threads li::before {
+  content: '';
+  position: absolute;
+  left: -1.4rem;
+  top: 0.75rem;
+  bottom: -0.2rem;
+  width: 2px;
+  background: var(--spine-color);
+}
+.threads li:last-child::before {
+  bottom: auto;
+  height: 0.8rem;
+}
+.threads li::after {
+  content: '';
+  position: absolute;
+  left: calc(-1.4rem - 3.5px);
+  top: 0.65rem;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--spine-node);
+  box-shadow: 0 0 0 3px var(--vp-c-bg);
+}
+.threads h3 {
+  font-family: var(--vp-font-display);
+  font-size: 1.08rem;
+  margin: 0 0 0.25rem;
+}
+.threads h3 a {
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+}
+.threads h3 a:hover {
+  color: var(--vp-c-brand-1);
+}
+.threads p {
+  margin: 0;
+  color: var(--vp-c-text-2);
+  font-size: 0.94rem;
+  max-width: 42em;
+}
+
+.colophon {
+  margin: 3.5rem 0 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--vp-c-border);
+  font-size: 0.85rem;
+  color: var(--vp-c-text-3);
+  max-width: 46em;
+}
+
+/* ---------- 响应式 ---------- */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .vp-doc h1 {
+    font-size: 1.6rem;
+  }
+  .ledger-hero {
+    padding: 2.5rem 0 1.5rem;
+  }
+  .course-tab {
+    padding: 0.5rem 0.65rem;
+  }
+  .course-tab svg {
+    display: none;
+  }
+  .ci-body {
+    grid-template-columns: 1fr;
+    row-gap: 0.1rem;
+  }
+  .ci-why {
+    white-space: normal;
+  }
+  .ci-go {
+    display: none;
+  }
+}
