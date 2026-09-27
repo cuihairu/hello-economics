@@ -59,7 +59,6 @@ export default defineConfig({
       { text: '理论时间线', link: '/timeline' },
       { text: '名人篇', link: '/people' },
       { text: '术语篇', link: '/glossary' },
-      { text: '基础数据', link: '/data/Readme' },
     ],
     // 侧边栏全部由 theme/data/courses.ts 生成：章节、tab、首页共用同一份目录
     sidebar: Object.fromEntries(

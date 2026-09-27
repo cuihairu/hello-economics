@@ -248,28 +248,6 @@ export const COURSES: Course[] = [
       },
     ],
   },
-  {
-    id: 'data',
-    label: '基础数据',
-    base: '/data',
-    readme: '/data/Readme',
-    blurb: '理论要落地就得先有数：这一课整理指标的口径、来源与常见的读错方式。',
-    icon: {
-      paths: ['M4 20h16M4 20V4', 'M8 20v-5M12 20v-9M16 20v-6M20 20v-12', 'M6 9l4-3 4 4 5-5'],
-    },
-    aux: [aux('data', 'Readme', '课程导论')],
-    chapters: [
-      {
-        text: '章节',
-        items: [
-          ch(1, '国民经济核算数据', 'data'),
-          ch(2, '货币与金融数据', 'data'),
-          ch(3, '财政与国际收支数据', 'data'),
-          ch(4, '数据来源与口径', 'data'),
-        ],
-      },
-    ],
-  },
 ]
 
 /** 参考资料：不进课程切换条，只在首页书架与侧边栏出现 */
