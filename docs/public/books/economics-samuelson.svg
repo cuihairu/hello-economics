@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="330" height="500" viewBox="0 0 330 500" role="img" aria-label="经济学">
+  <rect width="330" height="500" fill="#0c3a2d"/>
+  <rect x="14" y="14" width="302" height="472" fill="none" stroke="#e8e0cd" stroke-width="1.5"/>
+  <rect x="21" y="21" width="288" height="458" fill="none" stroke="#e8e0cd" stroke-width="0.6"/>
+  <text x="165" y="74" text-anchor="middle" font-family="'Noto Serif SC','Source Han Serif SC','Source Han Serif CN',serif" font-size="17" letter-spacing="7" fill="#c9bfa4">1948</text>
+  <line x1="106" y1="94" x2="150" y2="94" stroke="#c9bfa4" stroke-width="1"/>
+  <rect x="161.5" y="90.5" width="7" height="7" transform="rotate(45 165 94)" fill="#c9bfa4"/>
+  <line x1="180" y1="94" x2="224" y2="94" stroke="#c9bfa4" stroke-width="1"/>
+  <g font-family="'Noto Serif SC','Source Han Serif SC','Source Han Serif CN',serif">
+  <text x="165" y="247.5" text-anchor="middle" font-size="46" font-weight="600" letter-spacing="3" fill="#f0e9d8">经济学</text>
+  </g>
+  <line x1="86" y1="398" x2="244" y2="398" stroke="#c9bfa4" stroke-width="0.6"/>
+  <text x="165" y="428" text-anchor="middle" font-family="'Noto Serif SC','Source Han Serif SC','Source Han Serif CN',serif" font-size="15" letter-spacing="2" fill="#d8d0ba">保罗·萨缪尔森</text>
+</svg>

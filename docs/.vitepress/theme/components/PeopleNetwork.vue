@@ -1,6 +1,17 @@
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
+import { computed, ref, watch, onMounted, onBeforeUnmount } from 'vue'
 import { PEOPLE, PEOPLE_BY_ID, FIELD_LABELS, type Person } from '../data/people'
+
+// 支持 #person-id 深链（名著页等外部入口直达词条）
+const openFromHash = () => {
+  const id = decodeURIComponent(location.hash.slice(1))
+  if (id && PEOPLE_BY_ID[id]) selectedId.value = id
+}
+onMounted(() => {
+  openFromHash()
+  window.addEventListener('hashchange', openFromHash)
+})
+onBeforeUnmount(() => window.removeEventListener('hashchange', openFromHash))
 
 // 时代分段（与理论时间线的分期保持一致，出生年决定归属）
 const ERA_BANDS = [
