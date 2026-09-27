@@ -62,7 +62,6 @@ export const COURSES: Course[] = [
       aux('western', 'Readme', '课程导论'),
       aux('western', 'History', '理论推进链'),
       aux('western', '西方经济学公式总览', '公式总览'),
-      aux('western', 'IS-AS模型通俗讲解', 'IS-AS 模型通俗讲解'),
       aux('western', '宏观经济模型演进', '宏观经济模型演进'),
     ],
     chapters: [
