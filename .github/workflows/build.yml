@@ -1,5 +1,7 @@
-# 构建校验：只验证站点能完整构建，不部署
-name: Build site
+# vitepress 站点构建 + 部署 GitHub Pages（替换此前的 build-only：
+# Pages 是 workflow 模式，没有 deploy-pages 步骤时线上永远停留在
+# 旧 mdBook 时代的最后一次部署产物 —— 2026-09-27 "打开还是 mdbook" 的根因）
+name: Deploy site
 
 on:
   push:
@@ -9,6 +11,13 @@ on:
 
 permissions:
   contents: read
+  pages: write # deploy-pages 发布到 GitHub Pages
+  id-token: write # Pages OIDC 鉴权
+
+# 部署串行：不打断进行中的部署（打断会留下半套产物）
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -31,3 +40,23 @@ jobs:
         run: node scripts/check-links.cjs
       - name: Build site
         run: pnpm build
+      # PR 只校验不部署：产物留给 push main 的部署 job
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vitepress/dist
+
+  deploy:
+    # 只有 push main / 手动触发才真正发布
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
