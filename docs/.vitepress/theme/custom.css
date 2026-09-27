@@ -60,6 +60,22 @@
   --spine-node: #57b98c;
 }
 
+/* ---------- layout:page 容器：居中行宽 ---------- */
+/* VitePress 对 layout:page 不提供容器样式，内容会从视口左缘铺满全宽；
+   这里自建与首页默认一致的居中行宽（1152px），两侧留出纸边 */
+
+.VPPage {
+  max-width: calc(1152px + 48px);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (min-width: 768px) {
+  .VPPage {
+    padding: 0 32px;
+  }
+}
+
 /* ---------- 基础 ---------- */
 
 body {
