@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
+import { withBase } from 'vitepress'
 import { GLOSSARY, COURSES, type GlossaryEntry } from '../data/glossary'
 
 const query = ref('')
@@ -76,7 +77,7 @@ const countAll = (c: string) => GLOSSARY.filter((e) => e.course === c).length
       </header>
       <p class="where">
         出现于「{{ selected.course }}」<template v-if="selected.source">
-          · <a class="source" :href="selected.source">回到原文</a></template>
+          · <a class="source" :href="withBase(selected.source)">回到原文</a></template>
       </p>
       <!-- 定义由构建脚本预渲染为 HTML（含公式 SVG） -->
       <!-- eslint-disable-next-line vue/no-v-html -->

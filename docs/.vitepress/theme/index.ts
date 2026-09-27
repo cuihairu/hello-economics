@@ -2,6 +2,7 @@ import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import './custom.css'
 import CourseTabs from './components/CourseTabs.vue'
+import CourseShelf from './components/CourseShelf.vue'
 import TheoryTimeline from './components/TheoryTimeline.vue'
 import PeopleNetwork from './components/PeopleNetwork.vue'
 import GlossaryView from './components/GlossaryView.vue'
@@ -17,5 +18,6 @@ export default {
     app.component('TheoryTimeline', TheoryTimeline)
     app.component('PeopleNetwork', PeopleNetwork)
     app.component('GlossaryView', GlossaryView)
+    app.component('CourseShelf', CourseShelf)
   },
 }
