@@ -1,3 +1,9 @@
 allowBuilds:
   esbuild: true
   vue-demi: true
+# Dependabot 告警清零：vite 全线无 5.x 补丁版（最小修复 6.4.2/6.4.3），
+# 故强制 vite ^6.4.3；esbuild ≥0.25.0、launch-editor ≥2.14.1 同批清掉
+overrides:
+  vite: ^6.4.3
+  esbuild: ^0.25.0
+  launch-editor: ^2.14.1
