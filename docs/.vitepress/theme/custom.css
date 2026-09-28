@@ -81,7 +81,7 @@
 body {
   font-family: var(--vp-font-body);
   font-size: 16.5px;
-  line-height: 1.85;
+  line-height: 1.75;
   text-rendering: optimizeLegibility;
 }
 
@@ -112,6 +112,47 @@ body {
 :focus-visible {
   outline: 2px solid var(--vp-c-brand-1);
   outline-offset: 2px;
+}
+
+/* ---------- 中文正文排印：段首缩进 · 行距 · 块间距 ---------- */
+/* 缩进只在主题层做（text-indent），源文里不敲全角空格；
+   列表、引用、表格、提示容器内的段落按阅读习惯不缩进 */
+
+.vp-doc p {
+  text-indent: 2em;
+  margin: 1.05em 0;
+}
+.vp-doc li p,
+.vp-doc blockquote p,
+.vp-doc th p,
+.vp-doc td p,
+.vp-doc .custom-block p {
+  text-indent: 0;
+}
+
+/* 标题与正文的呼吸：h2 下留一段、h3 上留半段 */
+.vp-doc h2 {
+  margin-bottom: 1rem;
+}
+.vp-doc h3 {
+  margin: 2rem 0 0.8rem;
+}
+
+/* 块级内容的上下留白统一口径 */
+.vp-doc table {
+  margin: 1.4rem 0;
+}
+.vp-doc th,
+.vp-doc td {
+  line-height: 1.6;
+}
+.vp-doc li {
+  margin: 0.35rem 0;
+}
+/* 图片单独成段时居中排，与上下文拉开 */
+.vp-doc p > img:only-child {
+  display: block;
+  margin: 1rem auto;
 }
 
 /* ---------- 标题：衬线报头 ---------- */
