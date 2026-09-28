@@ -71,12 +71,21 @@ const PLAIN_ESCAPES = new Set([
   '\\\\','\\,','\\;','\\:','\\!','\\ ','\\{','\\}','\\%','\\&','\\#','\\$','\\_','\\|','\\.',
 ])
 
-/** 剥掉代码围栏与行内代码，避免把代码内容当公式扫 */
+/** 剥掉代码围栏与行内代码，避免把代码内容当公式扫。
+ *  围栏内容逐行置空（保留换行结构）——若用跨行正则整体删除，
+ *  围栏前后两段会并成一行，既错位行号又造出幻影配对。 */
 function stripCode(src) {
-  return src
-    .replace(/^```[\s\S]*?^```/gm, '')
-    .replace(/~~~[\s\S]*?~~~/g, '')
-    .replace(/`[^`\n]*`/g, '')
+  const lines = src.split('\n')
+  let inFence = false
+  for (let i = 0; i < lines.length; i++) {
+    if (/^\s*(```|~~~)/.test(lines[i])) {
+      inFence = !inFence
+      lines[i] = ''
+      continue
+    }
+    if (inFence) lines[i] = ''
+  }
+  return lines.join('\n').replace(/`[^`\n]*`/g, '')
 }
 
 function* walk(dir) {
@@ -122,6 +131,7 @@ for (const file of walk(DOCS)) {
   lines.forEach((line, i) => {
     let displayCount = 0
     let noDisplay = ''
+    const delimPos = []
     for (let pos = 0; pos < line.length; ) {
       const idx = line.indexOf('$$', pos)
       if (idx === -1) {
@@ -130,6 +140,7 @@ for (const file of walk(DOCS)) {
       }
       if (isDisplayDelim(line, idx)) {
         displayCount++
+        delimPos.push(idx)
         noDisplay += line.slice(pos, idx)
         pos = idx + 2
       } else {
@@ -141,6 +152,19 @@ for (const file of walk(DOCS)) {
     const inlineDollars = (noDisplay.replace(/\\\$/g, '').match(/\$/g) || []).length
     if (inlineDollars % 2 !== 0 && !inDisplay) {
       problems.push(`${rel}:${i + 1} 行内 $ 不配对（${inlineDollars} 个）——公式可能原样显示`)
+    }
+    // display 定界符必须贴行边界（trim 后行首或行尾，多行块的开/闭行各占一侧）。
+    // 嵌在段落中间的 $$A$$（如「$$A$$或者：$$B$$」连写）markdown-it-mathjax3
+    // 不按块解析，会漏出字面 $$（利率理论/要素的国际流动曾实测中招）。
+    for (const idx of delimPos) {
+      const before = line.slice(0, idx)
+      const after = line.slice(idx + 2)
+      if (before.trim() !== '' && after.trim() !== '') {
+        problems.push(
+          `${rel}:${i + 1} $$ 行中嵌入——display 公式须独立成块（定界符贴行首/行尾，段内嵌用行内 $…$）`
+        )
+        break
+      }
     }
     inDisplay = inDisplay !== (displayCount % 2 === 1)
   })
