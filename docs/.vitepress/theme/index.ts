@@ -1,5 +1,6 @@
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
+import 'katex/dist/katex.min.css'
 import './custom.css'
 import CourseTabs from './components/CourseTabs.vue'
 import CourseShelf from './components/CourseShelf.vue'

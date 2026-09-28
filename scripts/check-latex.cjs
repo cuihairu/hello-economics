@@ -2,7 +2,9 @@
 // 全库 LaTeX 健康校验：防公式渲染回归。
 // 背景：需求与供给.md 曾把 \infty 误写成 \infin（非法命令，MathJax 渲染为
 // 错误提示/原文），上线后才被发现。本脚本在构建前拦住两类病灶：
-//   1. 非法命令：\command 不在白名单（MathJax 3 支持的命令全集）内；
+//   1. 非法命令：\command 不在白名单（站点渲染器 KaTeX 支持的命令全集，
+//      第二十批从 MathJax 换装 KaTeX 时逐条审计对齐：剔除 KaTeX 不支持
+//      的 \label/\ref）内；
 //   2. 定界符丢失：行内 $ 不配对（奇数个）或 $$ 块不闭合，公式原样外漏。
 // 扫描范围 docs/**/*.md；代码围栏与行内代码中的 $ 与 \ 不参与判定。
 // 白名单按「站内已用 + MathJax 常用」维护：新增合法命令被误报时，先确认
@@ -48,7 +50,7 @@ const WHITELIST = new Set([
   'mathbin','mathrel','mathord','stackrel','overset','underset','substack','phantom','hphantom',
   'vphantom','smash','displaystyle','textstyle','scriptstyle','scriptscriptstyle',
   'quad','qquad','thinspace','medspace','thickspace','negthinspace','negmedspace',
-  'negthickspace','enspace','hspace','limits','nolimits','notag','nonumber','label','ref',
+  'negthickspace','enspace','hspace','limits','nolimits','notag','nonumber',
   'color','textcolor','boxed','fbox','cancel','bcancel','xcancel','sout',
   // 逻辑与集合杂项
   'forall','exists','nexists','neg','lnot','land','lor','implies','iff','models','vdash',

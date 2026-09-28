@@ -239,7 +239,7 @@ const countAll = (c: string) => GLOSSARY.filter((e) => e.course === c).length
   line-height: 1.75;
   color: var(--vp-c-text-1);
 }
-.def :deep(mjx-container) {
+.def :deep(.katex-display) {
   overflow-x: auto;
   max-width: 100%;
 }

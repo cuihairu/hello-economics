@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import mathjax3 from 'markdown-it-mathjax3'
+import { katex as katexPlugin } from '@mdit/plugin-katex'
 import { COURSES, REFERENCE_COURSE, sidebarFor } from './theme/data/courses'
 
 // 部署在 GitHub 项目页 cuihairu.github.io/hello-economics/ 下，
@@ -23,7 +23,12 @@ export default defineConfig({
   lastUpdated: false,
   markdown: {
     config(md) {
-      md.use(mathjax3)
+      // KaTeX 系渲染：SSR 输出纯 HTML（span.katex），客户端不重绘——
+      // 替换 markdown-it-mathjax3（mjx 自定义元素曾致含公式页 hydration
+      // mismatch + 每个 display 公式双绘，见 todo 第五批/第二十批）。
+      // throwOnError: false 让非法命令渲染为红色原文而非构建失败，
+      // 构建期由 scripts/check-latex.cjs、构建后由 check-rendered-math 兜底。
+      md.use(katexPlugin, { throwOnError: false })
     },
   },
   themeConfig: {

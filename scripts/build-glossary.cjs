@@ -7,7 +7,8 @@ const root = resolve(__dirname, '..')
 const MarkdownIt = require('markdown-it')
 const mdit = new MarkdownIt({ html: false })
 try {
-  mdit.use(require('markdown-it-mathjax3'))
+  // 与站点渲染器保持一致（config.ts 同款 KaTeX），词条里的公式随主站换装
+  mdit.use(require('@mdit/plugin-katex').katex, { throwOnError: false })
 } catch {
   // 公式预渲染失败时退化为纯文本渲染
 }

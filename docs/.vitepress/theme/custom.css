@@ -239,13 +239,18 @@ body {
 
 /* ---------- 公式 ---------- */
 
-.vp-doc mjx-container {
+/* KaTeX：横向放不下时滚动，display 块上下留白与 mjx 时代口径一致 */
+.vp-doc .katex-display {
+  margin: 1.2rem 0;
+}
+.vp-doc .katex-display > .katex {
   overflow-x: auto;
   overflow-y: hidden;
   padding-bottom: 2px;
 }
-.vp-doc mjx-container[display='true'] {
-  margin: 1.2rem 0;
+/* 校验兜底渲染出的红色错误原文（throwOnError: false）一眼可辨 */
+.vp-doc .katex-error {
+  color: var(--vp-c-danger-1);
 }
 
 /* ---------- 代码 ---------- */
