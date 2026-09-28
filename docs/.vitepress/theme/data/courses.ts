@@ -52,6 +52,37 @@ const aux = (base: string, title: string, text: string): CatalogItem => ({
 
 export const COURSES: Course[] = [
   {
+    id: 'math',
+    label: '数学基础',
+    base: '/math',
+    readme: '/math/Readme',
+    blurb: '经济学把数学当脚手架：微积分找最优点，矩阵解均衡，统计做检验。',
+    icon: { paths: ['M17 5H8l5 7-5 7h9'] },
+    aux: [
+      aux('math', 'Readme', '课程导论'),
+      aux('math', '西方经济学-数学基础', '西方经济学-数学基础'),
+    ],
+    chapters: [
+      {
+        text: '章节',
+        items: [
+          ch(1, '集合与逻辑', 'math'),
+          ch(2, '数列与极限', 'math'),
+          ch(3, '常见求和公式', 'math'),
+          ch(4, '微分学基础', 'math'),
+          ch(5, '积分学基础', 'math'),
+          ch(6, '微分方程', 'math'),
+          ch(7, '矩阵与行列式', 'math'),
+          ch(8, '特征值与特征向量', 'math'),
+          ch(9, '线性空间与线性变换', 'math'),
+          ch(10, '概率论基础', 'math'),
+          ch(11, '统计学基础', 'math'),
+          ch(12, '最优化方法与经济学应用', 'math'),
+        ],
+      },
+    ],
+  },
+  {
     id: 'western',
     label: '西方经济学',
     base: '/western',
@@ -212,37 +243,6 @@ export const COURSES: Course[] = [
           ch(8, '社会主义市场经济条件下的经济结构调整', 'socialist'),
           ch(9, '社会主义对外经济关系', 'socialist'),
           ch(10, '社会主义市场经济条件下的政府调节', 'socialist'),
-        ],
-      },
-    ],
-  },
-  {
-    id: 'math',
-    label: '数学基础',
-    base: '/math',
-    readme: '/math/Readme',
-    blurb: '经济学把数学当脚手架：微积分找最优点，矩阵解均衡，统计做检验。',
-    icon: { paths: ['M17 5H8l5 7-5 7h9'] },
-    aux: [
-      aux('math', 'Readme', '课程导论'),
-      aux('math', '西方经济学-数学基础', '西方经济学-数学基础'),
-    ],
-    chapters: [
-      {
-        text: '章节',
-        items: [
-          ch(1, '集合与逻辑', 'math'),
-          ch(2, '数列与极限', 'math'),
-          ch(3, '常见求和公式', 'math'),
-          ch(4, '微分学基础', 'math'),
-          ch(5, '积分学基础', 'math'),
-          ch(6, '微分方程', 'math'),
-          ch(7, '矩阵与行列式', 'math'),
-          ch(8, '特征值与特征向量', 'math'),
-          ch(9, '线性空间与线性变换', 'math'),
-          ch(10, '概率论基础', 'math'),
-          ch(11, '统计学基础', 'math'),
-          ch(12, '最优化方法与经济学应用', 'math'),
         ],
       },
     ],
