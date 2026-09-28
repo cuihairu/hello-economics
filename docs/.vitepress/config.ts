@@ -60,6 +60,7 @@ export default defineConfig({
       { text: '名人篇', link: '/people' },
       { text: '名著篇', link: '/books' },
       { text: '术语篇', link: '/glossary' },
+      { text: '关于', link: '/about' },
     ],
     // 侧边栏全部由 theme/data/courses.ts 生成：章节、tab、首页共用同一份目录
     sidebar: Object.fromEntries(
