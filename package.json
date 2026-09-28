@@ -7,7 +7,8 @@
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
-    "glossary": "node scripts/build-glossary.cjs"
+    "glossary": "node scripts/build-glossary.cjs",
+    "check:latex": "node scripts/check-latex.cjs"
   },
   "devDependencies": {
     "markdown-it": "^15.0.2",

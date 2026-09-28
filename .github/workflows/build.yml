@@ -38,6 +38,8 @@ jobs:
         run: pnpm glossary
       - name: Check internal links
         run: node scripts/check-links.cjs
+      - name: Check LaTeX health
+        run: node scripts/check-latex.cjs
       - name: Build site
         run: pnpm build
       # PR 只校验不部署：产物留给 push main 的部署 job
