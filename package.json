@@ -8,6 +8,7 @@
     "build": "vitepress build docs && node scripts/check-rendered-math.cjs",
     "preview": "vitepress preview docs",
     "glossary": "node scripts/build-glossary.cjs",
+    "test": "node --test \"tests/*.test.mjs\"",
     "check:latex": "node scripts/check-latex.cjs"
   },
   "devDependencies": {
