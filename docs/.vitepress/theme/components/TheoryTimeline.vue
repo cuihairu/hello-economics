@@ -2,6 +2,7 @@
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { withBase } from 'vitepress'
 import { TIMELINE, FIELD_LABELS, ERAS, type TimelineEvent } from '../data/timeline'
+import { useReducedMotion } from '../composables/useReducedMotion'
 
 // 理论时间线：一条拖着走的编年线。
 //   · 按住轨道横向拖动 = 沿时间走；Shift + 滚轮 = 平移；Ctrl/⌘ + 滚轮 = 缩放
@@ -66,6 +67,28 @@ const cardW = computed(() => (isTight.value ? 150 : narrow.value ? 150 : mid.val
 const showCards = computed(() => pxPerYear.value >= (narrow.value ? 22 : CARD_MIN_PX))
 /** 节点间隔小于一个圆点直径（10px）时，圆点会糊成一条粗杠；改画 2px 短线，疏密反而更准 */
 const isRug = computed(() => pxPerYear.value < 9)
+
+/* ---------- 动画（第二十八批）：轨道缓动 CSS 状态类驱动，入场/详情/退场全走 v-motion ---------- */
+
+// 系统声明减少动态效果：v-motion 变体初态即终态整体旁路；
+// 轨道缓动/缩放淡化/呼吸/退场淡出另有 CSS media 块兜底（三层防线与 GlossaryView 同构）
+const reducedMotion = useReducedMotion()
+
+// 卡片入场：进入视口交错淡入（拖动轨道把卡片带进视口同样触发——IO 尊重 transform 与 overflow 裁剪）。
+// 节点层（全览短墨线态）不做入场动画：全览读的是墨的疏密，入场动画会盖住疏密本身
+const cardInitial = computed(() => (reducedMotion.value ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }))
+const cardVisible = (k: number) =>
+  reducedMotion.value
+    ? { opacity: 1, y: 0 }
+    : { opacity: 1, y: 0, transition: { duration: 360, ease: 'easeOut', delay: Math.min(k * 45, 420) } }
+
+// 详情面板换场：选中变化时内层 key 重绑，v-motion 指令重新挂载重放淡入上浮
+const detailInitial = computed(() => (reducedMotion.value ? { opacity: 1, y: 0 } : { opacity: 0, y: 12 }))
+const detailEnter = computed(() =>
+  reducedMotion.value
+    ? { opacity: 1, y: 0 }
+    : { opacity: 1, y: 0, transition: { duration: 240, ease: 'easeOut' } },
+)
 
 const trackWidth = computed(() => SPAN * pxPerYear.value)
 const maxOffset = computed(() => Math.max(0, trackWidth.value - viewW.value))
@@ -161,6 +184,28 @@ const ticks = computed(() => {
 
 /* ---------- 平移与缩放 ---------- */
 
+/** 程序性平移（节点入视野 / 方向键平移 / 缩放锚定 / 筛选回弹）：开一个 260ms 缓动窗口。
+ *  拖动与滚轮是连续输入，offset 逐帧直绑 style、不加过渡（跟手红线）；缓动只属于松手后的吸附 */
+const gliding = ref(false)
+let glideTimer: number | undefined
+const glide = (fn: () => void) => {
+  if (reducedMotion.value) {
+    fn()
+    return
+  }
+  gliding.value = true
+  fn()
+  window.clearTimeout(glideTimer)
+  glideTimer = window.setTimeout(() => (gliding.value = false), 300)
+}
+
+/** 缩放档位切换：几何密度一帧换完，轨道做一次快速压暗回放盖住跳变；
+ *  animationend 事件驱动摘类，不落定时器（呼吸动画的 animationend 会冒泡上来，按始发元素过滤） */
+const zoomFade = ref(false)
+const onTrackAnimationEnd = (e: AnimationEvent) => {
+  if (e.target === e.currentTarget) zoomFade.value = false
+}
+
 let pointerId: number | null = null
 let startX = 0
 let startOffset = 0
@@ -217,7 +262,10 @@ const zoomAt = (pxInViewport: number, dir: number, exact?: number) => {
   if (next === zoomIndex.value && exact === undefined) return
   zoomIndex.value = next
   const px = ZOOMS[next].fit ? fitPx.value : ZOOMS[next].pxPerYear
-  offset.value = clampOffset(pxInViewport - (anchor - AXIS_FROM) * px)
+  if (!reducedMotion.value) zoomFade.value = true
+  glide(() => {
+    offset.value = clampOffset(pxInViewport - (anchor - AXIS_FROM) * px)
+  })
 }
 
 const setZoom = (i: number) => zoomAt(viewW.value / 2, 0, i)
@@ -232,9 +280,13 @@ const reveal = (index: number) => {
   if (!p) return
   const half = (showCards.value ? cardW.value : 20) / 2 + 20
   const viewLeft = -offset.value
-  if (p.x - half < viewLeft) offset.value = clampOffset(offset.value + (viewLeft - (p.x - half)))
+  if (p.x - half < viewLeft) glide(() => {
+    offset.value = clampOffset(offset.value + (viewLeft - (p.x - half)))
+  })
   else if (p.x + half > viewLeft + viewW.value)
-    offset.value = clampOffset(offset.value - ((p.x + half) - (viewLeft + viewW.value)))
+    glide(() => {
+      offset.value = clampOffset(offset.value - ((p.x + half) - (viewLeft + viewW.value)))
+    })
 }
 
 const select = (index: number, move = true) => {
@@ -253,7 +305,9 @@ const onKeydown = (e: KeyboardEvent) => {
   const at = list.findIndex((q) => q.i === selected.value)
   if (e.shiftKey && (e.key === 'ArrowLeft' || e.key === 'ArrowRight')) {
     e.preventDefault()
-    offset.value = clampOffset(offset.value + (e.key === 'ArrowRight' ? -140 : 140))
+    glide(() => {
+      offset.value = clampOffset(offset.value + (e.key === 'ArrowRight' ? -140 : 140))
+    })
     return
   }
   switch (e.key) {
@@ -325,11 +379,14 @@ onUnmounted(() => {
   narrowQuery?.removeEventListener('change', syncBreakpoints)
   midQuery?.removeEventListener('change', syncBreakpoints)
   window.removeEventListener('resize', measure)
+  window.clearTimeout(glideTimer)
 })
 
 watch(filter, () => {
   selected.value = null
-  offset.value = clampOffset(offset.value)
+  glide(() => {
+    offset.value = clampOffset(offset.value)
+  })
 })
 
 const filterOptions: Filter[] = ['all', ...fields]
@@ -392,7 +449,12 @@ const eraLabel = (era: { from: number; to: number }) =>
       <div
         ref="viewport"
         class="tl-viewport"
-        :class="{ 'is-dragging': dragging, 'is-plain': !showCards, 'is-rug': isRug }"
+        :class="{
+          'is-dragging': dragging,
+          'is-gliding': gliding,
+          'is-plain': !showCards,
+          'is-rug': isRug,
+        }"
         tabindex="0"
         role="group"
         aria-label="经济学理论时间线，可拖动浏览"
@@ -405,7 +467,9 @@ const eraLabel = (era: { from: number; to: number }) =>
       >
         <div
           class="tl-track"
+          :class="{ 'is-zooming': zoomFade }"
           :style="{ width: trackWidth + 'px', transform: `translate3d(${offset}px,0,0)` }"
+          @animationend="onTrackAnimationEnd"
         >
           <div class="tl-eras" aria-hidden="true">
             <div
@@ -434,26 +498,32 @@ const eraLabel = (era: { from: number; to: number }) =>
 
           <div class="tl-spine" aria-hidden="true" />
 
-          <div
-            v-for="p in placed"
-            :key="p.index"
-            :class="[
-              'tl-event',
-              `lane-${p.lane}`,
-              { 'is-selected': selected === p.index, 'is-nudged': p.nudge < 0 },
-            ]"
-            :style="{ left: p.x + 'px', '--nudge': p.nudge + 'px' }"
-            :data-index="p.index"
-          >
-            <button
-              v-if="showCards && !p.noRoom"
-              type="button"
-              class="tl-card"
-              tabindex="-1"
-              :class="{ 'is-tight': isTight }"
-              :aria-pressed="selected === p.index"
-              @click.stop="onCardClick(p.index)"
+          <!-- 筛选切换：非匹配节点退场淡出（leave 走 CSS opacity；入场交给卡片上的 v-motion 交错，属性不撞车）；
+               位置重排（车道/年份注记重算）一帧换完，不做 move FLIP——left 是 layout 属性，动了就破红线 -->
+          <TransitionGroup name="ev">
+            <div
+              v-for="(p, k) in placed"
+              :key="p.index"
+              :class="[
+                'tl-event',
+                `lane-${p.lane}`,
+                { 'is-selected': selected === p.index, 'is-nudged': p.nudge < 0 },
+              ]"
+              :style="{ left: p.x + 'px', '--nudge': p.nudge + 'px' }"
+              :data-index="p.index"
             >
+              <button
+                v-if="showCards && !p.noRoom"
+                v-motion
+                :initial="cardInitial"
+                :visible-once="cardVisible(k)"
+                type="button"
+                class="tl-card"
+                tabindex="-1"
+                :class="{ 'is-tight': isTight }"
+                :aria-pressed="selected === p.index"
+                @click.stop="onCardClick(p.index)"
+              >
               <span class="tl-card-year">{{ p.e.year }}</span>
               <span class="tl-card-title">{{ p.e.title }}</span>
               <span v-if="!isTight && p.e.who" class="tl-card-who">{{ p.e.who }}</span>
@@ -470,6 +540,7 @@ const eraLabel = (era: { from: number; to: number }) =>
               <span v-if="showYear(p)" class="tl-node-year">{{ p.e.year }}</span>
             </button>
           </div>
+          </TransitionGroup>
         </div>
       </div>
 
@@ -488,21 +559,24 @@ const eraLabel = (era: { from: number; to: number }) =>
     </div>
 
     <div class="tl-detail" aria-live="polite">
-      <template v-if="current">
-        <p class="d-year">{{ current.year }}</p>
-        <h3 class="d-title">{{ current.title }}</h3>
-        <p class="d-meta">
-          <span v-if="current.who">{{ current.who }}</span>
-          <span class="d-field">{{ FIELD_LABELS[current.field] }}</span>
-          <span v-if="currentEra" class="d-era">{{ currentEra.name }}</span>
+      <!-- 换场层：选中变化时 key 重绑，v-motion 重挂重放淡入上浮（只动 opacity/transform，高度交由布局自然变化） -->
+      <div v-motion :key="selected ?? 'empty'" :initial="detailInitial" :enter="detailEnter">
+        <template v-if="current">
+          <p class="d-year">{{ current.year }}</p>
+          <h3 class="d-title">{{ current.title }}</h3>
+          <p class="d-meta">
+            <span v-if="current.who">{{ current.who }}</span>
+            <span class="d-field">{{ FIELD_LABELS[current.field] }}</span>
+            <span v-if="currentEra" class="d-era">{{ currentEra.name }}</span>
+          </p>
+          <p class="d-why">{{ current.why }}</p>
+          <a v-if="current.link" class="d-more" :href="withBase(current.link)">进入相关章节</a>
+        </template>
+        <p v-else class="d-empty">
+          这条线上一共 {{ TIMELINE.length }} 个节点，从 {{ firstEvent.year }} 年的{{ firstEvent.title }}，到
+          {{ lastEvent.year }} 年的{{ lastEvent.title }}。拖到想看的年代，点一个节点，读它当初要回答的问题。
         </p>
-        <p class="d-why">{{ current.why }}</p>
-        <a v-if="current.link" class="d-more" :href="withBase(current.link)">进入相关章节</a>
-      </template>
-      <p v-else class="d-empty">
-        这条线上一共 {{ TIMELINE.length }} 个节点，从 {{ firstEvent.year }} 年的{{ firstEvent.title }}，到
-        {{ lastEvent.year }} 年的{{ lastEvent.title }}。拖到想看的年代，点一个节点，读它当初要回答的问题。
-      </p>
+      </div>
     </div>
 
     <details class="tl-list">
@@ -647,6 +721,24 @@ const eraLabel = (era: { from: number; to: number }) =>
 .tl-track {
   position: absolute;
   inset: 0 auto 0 0;
+  /* 跟手红线：默认零过渡（拖动/滚轮逐帧直绑 transform）；只有程序性跳转的
+     is-gliding 窗口（且不在拖动中）开 transform 缓动——松手吸附才有缓动，拖动永远即时 */
+  will-change: transform;
+}
+.tl-viewport.is-gliding:not(.is-dragging) .tl-track {
+  transition: transform 0.26s cubic-bezier(0.25, 0.7, 0.3, 1);
+}
+/* 缩放档位切换：几何一帧换完，快速压暗回放盖住密度跳变（opacity-only，合成层） */
+.tl-track.is-zooming {
+  animation: tl-zoomfade 0.22s ease-out;
+}
+@keyframes tl-zoomfade {
+  from {
+    opacity: 0.45;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .tl-eras,
@@ -732,9 +824,23 @@ const eraLabel = (era: { from: number; to: number }) =>
   cursor: pointer;
   transition: transform 0.15s ease-out;
 }
-.tl-node:hover,
+.tl-node:hover {
+  transform: scale(1.5);
+}
+/* 选中呼吸：无限脉冲循环超出 v-motion 变体模型（一次性过渡）的表达域，keyframes 只动
+   transform，同为合成层；0/100% 即静态选中态，reduce 下 animation 置 none 自然回落 */
 .tl-event.is-selected .tl-node {
   transform: scale(1.5);
+  animation: tl-breathe 2.2s ease-in-out infinite;
+}
+@keyframes tl-breathe {
+  0%,
+  100% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1.85);
+  }
 }
 .tl-node:focus-visible {
   outline: 2px solid var(--vp-c-brand-1);
@@ -770,6 +876,10 @@ const eraLabel = (era: { from: number; to: number }) =>
   opacity: 1;
   transform: none;
 }
+/* 极密档的选中态是加长墨线（改的是盒子几何），呼吸的 transform 循环会盖掉它，关掉 */
+.tl-viewport.is-rug .tl-event.is-selected .tl-node {
+  animation: none;
+}
 .tl-viewport.is-rug .tl-node-year {
   top: 17px;
 }
@@ -786,6 +896,15 @@ const eraLabel = (era: { from: number; to: number }) =>
 }
 .tl-event.is-nudged .tl-node {
   background: var(--vp-c-text-3);
+}
+
+/* 筛选退场：被筛掉的节点原地淡出后卸载（opacity-only；入场不在此处，由卡片 v-motion 交错负责） */
+.ev-leave-active {
+  transition: opacity 0.22s ease-in;
+  pointer-events: none;
+}
+.ev-leave-to {
+  opacity: 0;
 }
 
 .tl-card {
@@ -1113,6 +1232,23 @@ const eraLabel = (era: { from: number; to: number }) =>
   .tl-node,
   .chip {
     transition: none;
+  }
+  /* 轨道缓动/缩放淡化/选中呼吸/退场淡出全部直达终态（script 侧 glide/zoomFade 已旁路，这里是兜底） */
+  .tl-viewport.is-gliding:not(.is-dragging) .tl-track {
+    transition: none;
+  }
+  .tl-track.is-zooming {
+    animation: none;
+    opacity: 1;
+  }
+  .tl-event.is-selected .tl-node {
+    animation: none;
+  }
+  .ev-leave-active {
+    transition: none;
+  }
+  .ev-leave-to {
+    opacity: 1;
   }
 }
 </style>

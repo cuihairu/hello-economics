@@ -2,6 +2,7 @@
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { withBase } from 'vitepress'
 import { SHELF, type ChapterGroup, type CatalogItem } from '../data/courses'
+import { useReducedMotion } from '../composables/useReducedMotion'
 
 // 首页书架：一门课一个 tab（西方经济学按内容拆成微观 / 宏观两个 tab）。
 // 目录来自 theme/data/courses.ts —— 与侧边栏、课程切换条同一份数据，不会各自漂移。
@@ -80,6 +81,15 @@ const rowsOf = (items: CatalogItem[]): Row[] =>
 const groups = computed<{ text: string; rows: Row[] }[]>(() =>
   current.value.groups.map((g: ChapterGroup) => ({ text: g.text, rows: rowsOf(g.items) })),
 )
+
+// 章节组列表交错入场：面板换场（Transition out-in）重建 DOM 时 v-motion 重挂重放；
+// reduce 时初态即终态旁路（与 GlossaryView/PeopleNetwork 同构）
+const reducedMotion = useReducedMotion()
+const groupInitial = computed(() => (reducedMotion.value ? { opacity: 1, y: 0 } : { opacity: 0, y: 12 }))
+const groupVisible = (i: number) =>
+  reducedMotion.value
+    ? { opacity: 1, y: 0 }
+    : { opacity: 1, y: 0, transition: { duration: 300, ease: 'easeOut', delay: Math.min(i * 70, 280) } }
 </script>
 
 <template>
@@ -135,7 +145,14 @@ const groups = computed<{ text: string; rows: Row[] }[]>(() =>
       <p class="sp-blurb">{{ current.blurb }}</p>
 
       <div class="sp-groups">
-        <div v-for="g in groups" :key="g.text" class="sp-group">
+        <div
+          v-for="(g, i) in groups"
+          :key="g.text"
+          v-motion
+          :initial="groupInitial"
+          :visible-once="groupVisible(i)"
+          class="sp-group"
+        >
           <h4 class="sp-group-title">{{ g.text }}</h4>
           <ol class="sp-list">
             <li v-for="r in g.rows" :key="r.link">
