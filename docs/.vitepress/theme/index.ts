@@ -1,6 +1,7 @@
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import 'katex/dist/katex.min.css'
+import { MotionPlugin } from '@vueuse/motion'
 import './custom.css'
 import CourseTabs from './components/CourseTabs.vue'
 import CourseShelf from './components/CourseShelf.vue'
@@ -17,6 +18,7 @@ export default {
     })
   },
   enhanceApp({ app }) {
+    app.use(MotionPlugin)
     app.component('TheoryTimeline', TheoryTimeline)
     app.component('PeopleNetwork', PeopleNetwork)
     app.component('GlossaryView', GlossaryView)

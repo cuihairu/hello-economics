@@ -122,14 +122,15 @@ const groups = computed<{ text: string; rows: Row[] }[]>(() =>
       </button>
     </div>
 
-    <div
-      :key="current.id"
-      class="shelf-panel"
-      role="tabpanel"
-      :id="panelId"
-      :aria-labelledby="tabId(active)"
-      tabindex="0"
-    >
+    <Transition name="shelf" mode="out-in">
+      <div
+        :key="current.id"
+        class="shelf-panel"
+        role="tabpanel"
+        :id="panelId"
+        :aria-labelledby="tabId(active)"
+        tabindex="0"
+      >
       <p class="sp-kicker">{{ current.kicker }}</p>
       <p class="sp-blurb">{{ current.blurb }}</p>
 
@@ -161,6 +162,38 @@ const groups = computed<{ text: string; rows: Row[] }[]>(() =>
           <path d="M4 12h15M13 6l6 6-6 6" />
         </svg>
       </a>
-    </div>
+      </div>
+    </Transition>
   </section>
 </template>
+
+<style scoped>
+/* tab 切换换场：出快入慢，首挂载不动画（Transition 默认无 appear），SSR 首屏无闪烁 */
+.shelf-enter-active {
+  transition: opacity 0.26s ease-out, transform 0.26s ease-out;
+}
+.shelf-leave-active {
+  transition: opacity 0.14s ease-in, transform 0.14s ease-in;
+}
+.shelf-enter-from {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.shelf-leave-to {
+  opacity: 0;
+  transform: translateY(-6px);
+}
+
+/* 系统声明减少动态效果：tab 换场直达终态 */
+@media (prefers-reduced-motion: reduce) {
+  .shelf-enter-active,
+  .shelf-leave-active {
+    transition: none;
+  }
+  .shelf-enter-from,
+  .shelf-leave-to {
+    opacity: 1;
+    transform: none;
+  }
+}
+</style>

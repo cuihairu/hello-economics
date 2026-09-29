@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, watch, onMounted, onBeforeUnmount } from 'vue'
 import { PEOPLE, PEOPLE_BY_ID, FIELD_LABELS, type Person } from '../data/people'
+import { useReducedMotion } from '../composables/useReducedMotion'
 
 // 支持 #person-id 深链（名著页等外部入口直达词条）
 const openFromHash = () => {
@@ -12,6 +13,20 @@ onMounted(() => {
   window.addEventListener('hashchange', openFromHash)
 })
 onBeforeUnmount(() => window.removeEventListener('hashchange', openFromHash))
+
+// 人物卡片滚动入场：系统声明减少动态效果时初态即终态，弹簧动画旁路
+const reducedMotion = useReducedMotion()
+const cardInitial = computed(() =>
+  reducedMotion.value ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 },
+)
+const cardVisible = (i: number) =>
+  reducedMotion.value
+    ? { opacity: 1, y: 0 }
+    : {
+        opacity: 1,
+        y: 0,
+        transition: { type: 'spring', stiffness: 240, damping: 28, delay: Math.min(i * 35, 315) },
+      }
 
 // 时代分段（与理论时间线的分期保持一致，出生年决定归属）
 const ERA_BANDS = [
@@ -73,7 +88,8 @@ const span = (p: Person) => {
     </div>
 
     <!-- 人物详情：影响网络 -->
-    <article v-if="selected" class="detail">
+    <Transition name="panel">
+      <article v-if="selected" class="detail">
       <header class="detail-head">
         <div>
           <h2>{{ selected.name }}</h2>
@@ -141,11 +157,18 @@ const span = (p: Person) => {
           </div>
         </div>
       </div>
-    </article>
+      </article>
+    </Transition>
 
     <!-- 人物卡片目录 -->
     <ul class="cards">
-      <li v-for="p in people" :key="p.id">
+      <li
+        v-for="(p, i) in people"
+        :key="p.id"
+        v-motion
+        :initial="cardInitial"
+        :visible-once="cardVisible(i)"
+      >
         <button
           :class="['card', { 'is-active': selectedId === p.id }]"
           @click="toggle(p.id)"
@@ -190,6 +213,32 @@ const span = (p: Person) => {
   font-size: 0.75rem;
   opacity: 0.65;
   font-variant-numeric: tabular-nums;
+}
+
+/* 详情面板开合 */
+.panel-enter-active {
+  transition: opacity 0.26s ease-out, transform 0.26s ease-out;
+}
+.panel-leave-active {
+  transition: opacity 0.16s ease-in, transform 0.16s ease-in;
+}
+.panel-enter-from,
+.panel-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+/* 系统声明减少动态效果：详情面板开合直达终态 */
+@media (prefers-reduced-motion: reduce) {
+  .panel-enter-active,
+  .panel-leave-active {
+    transition: none;
+  }
+  .panel-enter-from,
+  .panel-leave-to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /* 详情 */

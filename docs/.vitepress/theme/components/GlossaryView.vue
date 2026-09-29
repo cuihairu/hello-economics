@@ -2,10 +2,25 @@
 import { computed, ref, watch } from 'vue'
 import { withBase } from 'vitepress'
 import { GLOSSARY, COURSES, type GlossaryEntry } from '../data/glossary'
+import { useReducedMotion } from '../composables/useReducedMotion'
 
 const query = ref('')
 const course = ref<'all' | string>('all')
 const selected = ref<GlossaryEntry | null>(null)
+
+// 词条组滚动入场：系统声明减少动态效果时初态即终态，动画旁路
+const reducedMotion = useReducedMotion()
+const groupInitial = computed(() =>
+  reducedMotion.value ? { opacity: 1, y: 0 } : { opacity: 0, y: 14 },
+)
+const groupVisible = (i: number) =>
+  reducedMotion.value
+    ? { opacity: 1, y: 0 }
+    : {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 320, ease: 'easeOut', delay: Math.min(i * 60, 240) },
+      }
 
 // CJK 逐字匹配 + 拉丁词元匹配，280 余条数据无需分词库
 const normalize = (s: string) =>
@@ -70,19 +85,21 @@ const countAll = (c: string) => GLOSSARY.filter((e) => e.course === c).length
     </div>
 
     <!-- 词条详情 -->
-    <article v-if="selected" class="detail">
-      <header class="detail-head">
-        <h2>{{ selected.term }}</h2>
-        <button class="close" aria-label="关闭词条" @click="selected = null">✕</button>
-      </header>
-      <p class="where">
-        出现于「{{ selected.course }}」<template v-if="selected.source">
-          · <a class="source" :href="withBase(selected.source)">回到原文</a></template>
-      </p>
-      <!-- 定义由构建脚本预渲染为 HTML（含公式 SVG） -->
-      <!-- eslint-disable-next-line vue/no-v-html -->
-      <div class="def" v-html="selected.def" />
-    </article>
+    <Transition name="panel">
+      <article v-if="selected" class="detail">
+        <header class="detail-head">
+          <h2>{{ selected.term }}</h2>
+          <button class="close" aria-label="关闭词条" @click="selected = null">✕</button>
+        </header>
+        <p class="where">
+          出现于「{{ selected.course }}」<template v-if="selected.source">
+            · <a class="source" :href="withBase(selected.source)">回到原文</a></template>
+        </p>
+        <!-- 定义由构建脚本预渲染为 HTML（含公式 SVG） -->
+        <!-- eslint-disable-next-line vue/no-v-html -->
+        <div class="def" v-html="selected.def" />
+      </article>
+    </Transition>
 
     <p class="hint" v-if="searching">
       命中 {{ filtered.length }} 条
@@ -101,8 +118,16 @@ const countAll = (c: string) => GLOSSARY.filter((e) => e.course === c).length
       </li>
     </ul>
 
-    <!-- 目录态：按课程分组 -->
-    <section v-else v-for="g in groups" :key="g.course" class="group">
+    <!-- 目录态：按课程分组（visible-once：滚动到才入场，SSR 首屏不受影响） -->
+    <section
+      v-if="!searching"
+      v-for="(g, i) in groups"
+      :key="g.course"
+      v-motion
+      :initial="groupInitial"
+      :visible-once="groupVisible(i)"
+      class="group"
+    >
       <h2>{{ g.course }} <span class="g-count">{{ g.entries.length }}</span></h2>
       <ul class="terms">
         <li v-for="e in g.entries" :key="e.term">
@@ -185,6 +210,32 @@ const countAll = (c: string) => GLOSSARY.filter((e) => e.course === c).length
   font-size: 0.75rem;
   opacity: 0.65;
   font-variant-numeric: tabular-nums;
+}
+
+/* 详情面板开合 */
+.panel-enter-active {
+  transition: opacity 0.26s ease-out, transform 0.26s ease-out;
+}
+.panel-leave-active {
+  transition: opacity 0.16s ease-in, transform 0.16s ease-in;
+}
+.panel-enter-from,
+.panel-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+/* 系统声明减少动态效果：详情面板开合直达终态 */
+@media (prefers-reduced-motion: reduce) {
+  .panel-enter-active,
+  .panel-leave-active {
+    transition: none;
+  }
+  .panel-enter-from,
+  .panel-leave-to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /* 详情 */
