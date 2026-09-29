@@ -5,15 +5,21 @@
 //   2. 连续 3 行以上空行（异常空行堆叠）
 //   3. SVG 之外的写死行内样式（排版补丁应回主题层）
 //   4. 行首 4+ 半角空格（Markdown 会解析成代码块，属异常结构；围栏内不算）
-// 用法：node scripts/check-typography.cjs [--fix]
+// 用法：node scripts/check-typography.cjs [扫描目录] [--fix]
 //   --fix 自动修 1、2 两类（可安全自动化的），3、4 只报告人工处理。
 
 const fs = require('fs')
 const path = require('path')
 
 const ROOT = path.resolve(__dirname, '..')
-const DOCS = path.join(ROOT, 'docs')
-const FIX = process.argv.includes('--fix')
+// 用法：node scripts/check-typography.cjs [扫描目录] [--fix]（目录默认 docs，
+// 供 tests/ 夹具自测复用；--fix 自动修 1、2 两类）
+const ARGV = process.argv.slice(2)
+const FIX = ARGV.includes('--fix')
+const DOCS = (() => {
+  const dir = ARGV.find((a) => !a.startsWith('--'))
+  return dir ? path.resolve(ROOT, dir) : path.join(ROOT, 'docs')
+})()
 
 function* walk(dir) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {

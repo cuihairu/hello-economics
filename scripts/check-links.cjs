@@ -1,11 +1,17 @@
 // 站内死链检查：解析 docs/**/*.md 的相对 .md 链接，报告指向不存在文件的引用
-// 用法：node scripts/check-links.cjs
+// 用法：node scripts/check-links.cjs [扫描目录]（默认 docs；传入目录时站内
+// 绝对路径 /xxx.md 也相对该目录解析——供 tests/ 夹具自测复用）
 const { readFileSync, existsSync } = require('fs')
 const { resolve, dirname } = require('path')
-const { execSync } = require('child_process')
+const { execFileSync } = require('child_process')
 
 const root = resolve(__dirname, '..')
-const files = execSync('find docs -name "*.md"', { cwd: root }).toString().trim().split('\n')
+const target = process.argv[2] || 'docs'
+const files = execFileSync('find', [target, '-name', '*.md'], { cwd: root })
+  .toString()
+  .trim()
+  .split('\n')
+  .filter(Boolean)
 
 const RE = /!?\[[^\]]*\]\(([^)]+)\)/g
 const bad = []
@@ -24,11 +30,11 @@ for (const f of files) {
     if (!ref.endsWith('.md')) continue
     total++
     try { ref = decodeURIComponent(ref) } catch {}
-    // 指向 / 开头的站点绝对路径
-    const target = ref.startsWith('/')
-      ? resolve(root, 'docs', ref.slice(1))
+    // 指向 / 开头的站点绝对路径（相对扫描根目录解析）
+    const dest = ref.startsWith('/')
+      ? resolve(root, target, ref.slice(1))
       : resolve(dirname(abs), ref)
-    if (!existsSync(target)) bad.push(`${f} -> ${m[1]}`)
+    if (!existsSync(dest)) bad.push(`${f} -> ${m[1]}`)
   }
 }
 

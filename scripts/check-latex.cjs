@@ -14,7 +14,8 @@ const fs = require('fs')
 const path = require('path')
 
 const ROOT = path.resolve(__dirname, '..')
-const DOCS = path.join(ROOT, 'docs')
+// 用法：node scripts/check-latex.cjs [扫描目录]（默认 docs，供 tests/ 夹具自测复用）
+const DOCS = process.argv[2] ? path.resolve(ROOT, process.argv[2]) : path.join(ROOT, 'docs')
 
 const WHITELIST = new Set([
   // 希腊字母（小写/变体/大写）
