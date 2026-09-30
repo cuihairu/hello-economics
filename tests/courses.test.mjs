@@ -91,3 +91,13 @@ test('sidebarFor / chapterCount 与数据一致', () => {
   }
   assert.deepEqual(sidebarFor('no-such-course'), [])
 })
+
+// western 课程 aux 项目应包含导言、历史进程与公式总览与模型演进四项
+test('western aux 项目完整性', () => {
+  const western = ALL_COURSES.find((c) => c.id === 'western')
+  assert.ok(western, 'western 课程应存在')
+  const auxLabels = western.aux.map((a) => a.text)
+  assert.deepEqual(auxLabels, [
+    '课程导论', '理论推进链', '公式总览', '宏观经济模型演进',
+  ], 'western aux 项目应为：课程导论、理论推进链、公式总览、宏观经济模型演进')
+})
