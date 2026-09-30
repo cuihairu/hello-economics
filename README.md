@@ -14,14 +14,16 @@
 - **理论时间线**：16 世纪至今，经济理论的出现与发展历史线
 - **名人篇**：经济学家的影响网络——提出了什么、影响了谁、受谁影响
 - **术语篇**：专业名词词典，支持搜索与目录浏览
+- **名著篇**：经济学名著书架，按出版年份与流派浏览
 
 ## 仓库结构
 
-| 目录 | 内容 |
+| 路径 | 内容 |
 | :--- | :--- |
-| `docs/` | VitePress 站点（章节内容、时间线、名人、术语数据与组件） |
-| `western/` `monetary/` `finance/` `international/` `socialist/` | 五门课源内容（迁入 `docs/` 前的原始整理） |
-| `math/` | 数学基础：经济学推理所需的最小数学集 |
+| `docs/` | VitePress 站点：六门课正文与导论页（`docs/western/` `docs/math/` 等）、时间线/名人/术语/名著页面、主题数据与 Vue 组件 |
+| `scripts/` | 门禁脚本（死链、LaTeX、排印、渲染公式检查）与 `build-glossary` 词条生成 |
+| `tests/` | 数据与门禁黑盒（`node --test`）+ 组件挂载（`vitest`） |
+| `经济学-术语.md` `经济学-名人.md` | 根级源资料：术语词条与名人骨架（词条回链按 `docs/` 相对路径书写，供生成链消费） |
 
 ## 本地开发
 
@@ -36,17 +38,16 @@ pnpm build   # 构建（含死链检查）
 
 ## 各课入口
 
-- 西方经济学：[课程导论](western/Readme.md) · [理论推进链](western/History.md)
-- 货币银行学：[课程导论](monetary/Readme.md) · [历史进程](monetary/History.md)
-- 财政学：[课程导论](finance/Readme.md) · [历史进程](finance/History.md)
-- 国际经济学：[课程导论](international/Readme.md) · [历史进程](international/History.md)
-- 社会主义经济理论：[课程导论](socialist/Readme.md) · [历史进程](socialist/History.md)
-- 数学基础：[课程导论](math/Readme.md)
+- 西方经济学：[课程导论](docs/western/Readme.md) · [理论推进链](docs/western/History.md)
+- 货币银行学：[课程导论](docs/monetary/Readme.md) · [历史进程](docs/monetary/History.md)
+- 财政学：[课程导论](docs/finance/Readme.md) · [历史进程](docs/finance/History.md)
+- 国际经济学：[课程导论](docs/international/Readme.md) · [历史进程](docs/international/History.md)
+- 社会主义经济理论：[课程导论](docs/socialist/Readme.md) · [历史进程](docs/socialist/History.md)
+- 数学基础：[课程导论](docs/math/Readme.md)
 
 ## 公共资料
 
 - [经济学统一术语](经济学-术语.md)
 - [经济学名人](经济学-名人.md)
-- [西方经济学公式总览](western/西方经济学公式总览.md)
-- [IS-AS 模型通俗讲解](western/IS-AS模型通俗讲解.md)
-- [宏观经济模型演进](western/宏观经济模型演进.md)
+- [西方经济学公式总览](docs/western/西方经济学公式总览.md)
+- [宏观经济模型演进](docs/western/宏观经济模型演进.md)
