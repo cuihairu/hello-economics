@@ -36,8 +36,8 @@ jobs:
         run: pnpm install --frozen-lockfile
       - name: Regenerate glossary data
         run: pnpm glossary
-      - name: Unit tests (theme data)
-        run: node --test "tests/*.test.mjs"
+      - name: Unit tests (theme data + Vue components)
+        run: pnpm test # node --test（数据/门禁黑盒）+ vitest（SFC 组件挂载）
       - name: Check internal links
         run: node scripts/check-links.cjs
       - name: Check LaTeX health

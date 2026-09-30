@@ -28,8 +28,11 @@
 ```bash
 pnpm install
 pnpm dev     # 本地预览
+pnpm test    # node --test（数据/门禁黑盒）+ vitest（theme 组件挂载）
 pnpm build   # 构建（含死链检查）
 ```
+
+组件测试选型：Vitest + @vue/test-utils + happy-dom——复用站点同一条 vite 工具链编译 .vue SFC（`vitest.config.ts`，含 vitepress client 别名），用例在 `tests/vue/`。
 
 ## 各课入口
 
