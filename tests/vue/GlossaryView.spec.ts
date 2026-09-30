@@ -49,6 +49,17 @@ describe('GlossaryView 目录态', () => {
     expect(groups[0].findAll('.term')).toHaveLength(
       GLOSSARY.filter((e) => e.course === target).length,
     )
+
+    // 「全部」chip 回位：分组与每组词条数恢复全量
+    await wrapper.findAll('.chip')[0].trigger('click')
+    await flush()
+    expect(wrapper.findAll('.chip')[0].classes()).toContain('is-active')
+    const restored = wrapper.findAll('.group')
+    expect(restored).toHaveLength(COURSES.length)
+    restored.forEach((g, i) => {
+      expect(g.find('h2').text()).toContain(COURSES[i])
+      expect(g.findAll('.term')).toHaveLength(GLOSSARY.filter((e) => e.course === COURSES[i]).length)
+    })
   })
 })
 

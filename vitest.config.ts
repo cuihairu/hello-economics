@@ -31,6 +31,13 @@ export default defineConfig({
     environment: 'happy-dom',
     include: ['tests/vue/**/*.spec.ts'],
     setupFiles: ['tests/vue/setup.ts'],
+    coverage: {
+      // theme/data 的行为断言归 node --test 套件（tests/*.test.mjs，vitest 跑不到那边的
+      // 执行）：sidebarFor / chapterCount / courseById 等导出在 courses.test.mjs 有直测，
+      // 留在本报表只会显出「组件没挂到这些导出」的失真读数（courses.ts 曾长期显 72%）。
+      // 这份报表只描述 vitest 所属的 SFC / composable 层。
+      exclude: ['**/theme/data/**'],
+    },
     // vitepress client 入口在 node_modules 里，外部化交给 Node ESM 会栽在
     // 无扩展名相对导入上；inline 走 vite 转换管线即可正常解析（@siteData 别名同此生效）
     server: { deps: { inline: [/vitepress/] } },

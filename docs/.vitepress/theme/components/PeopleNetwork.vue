@@ -38,9 +38,6 @@ const ERA_BANDS = [
 
 const birthOf = (p: Person) => parseInt(p.years, 10)
 
-const eraOf = (p: Person) =>
-  ERA_BANDS.find((b) => birthOf(p) >= b.from && birthOf(p) <= b.to)?.name ?? ''
-
 const active = ref<'all' | Person['field']>('all')
 const selectedId = ref<string | null>(null)
 

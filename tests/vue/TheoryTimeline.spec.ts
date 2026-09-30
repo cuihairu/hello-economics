@@ -4,7 +4,7 @@ import { beforeEach, describe, expect, it } from 'vitest'
 import TheoryTimeline from '../../docs/.vitepress/theme/components/TheoryTimeline.vue'
 import { ERAS, FIELD_LABELS, TIMELINE } from '../../docs/.vitepress/theme/data/timeline'
 import { flush, mountTheme, siteHref } from './helpers'
-import { resetMedia } from './setup'
+import { resetMedia, setMedia } from './setup'
 
 const SPAN = 2035 - 1500
 const VIEW_W = 1100
@@ -256,6 +256,43 @@ describe('TheoryTimeline 平移', () => {
 })
 
 describe('TheoryTimeline 键盘导航', () => {
+  it('放大档 End/Home 把选中节点拉回视野：offset 分别向左/右缘推送', async () => {
+    const wrapper = mountTheme(TheoryTimeline)
+    const vp = viewport(wrapper)
+    await zoomHome(wrapper, 1) // 半世纪档 13 px/年，轨道 6955px 远宽于视口
+
+    // 从最左跳末节点：目标在右缘之外 → offset 推向负值
+    await vp.trigger('keydown', { key: 'End' })
+    await new Promise((r) => setTimeout(r, 380)) // 等 260ms 缓动窗口合上再读终值
+    const afterEnd = offsetOf(wrapper)
+    expect(afterEnd!).toBeLessThan(0)
+    expect(wrapper.find('.d-title').text()).toBe(TIMELINE[TIMELINE.length - 1].title)
+
+    // 再从深处跳首节点：目标在左缘之外 → offset 回抬（仍夹在 [−maxOffset, 0]）
+    await vp.trigger('keydown', { key: 'Home' })
+    await new Promise((r) => setTimeout(r, 380))
+    const afterHome = offsetOf(wrapper)
+    expect(afterHome!).toBeGreaterThan(afterEnd!)
+    expect(afterHome!).toBeLessThanOrEqual(0)
+    expect(wrapper.find('.d-title').text()).toBe(TIMELINE[0].title)
+  })
+
+  it('半世纪档点击卡片选中：详情跟随且不动视野（select 不带 reveal）', async () => {
+    const wrapper = mountTheme(TheoryTimeline)
+    await zoomHome(wrapper, 1)
+    const card = wrapper.find('.tl-card')
+    expect(card.exists()).toBe(true)
+
+    const offsetBefore = offsetOf(wrapper)
+    await card.trigger('click')
+    await flush()
+
+    expect(wrapper.find('.d-year').text()).toBe(card.find('.tl-card-year').text())
+    expect(wrapper.find('.d-title').text()).toBe(card.find('.tl-card-title').text())
+    expect(card.element.closest('.tl-event')?.classList.contains('is-selected')).toBe(true)
+    expect(offsetOf(wrapper)).toBe(offsetBefore) // onCardClick 走 select(index, false)
+  })
+
   it('←/→ 在节点间移动，Home/End 跳首尾（按数据顺序）', async () => {
     const wrapper = mountTheme(TheoryTimeline)
     const vp = viewport(wrapper)
@@ -285,6 +322,42 @@ describe('TheoryTimeline 键盘导航', () => {
     const labeled = wrapper.find('.tl-node.is-labeled')
     expect(labeled.exists()).toBe(true)
     expect(labeled.find('.tl-node-year').text()).toBe(String(TIMELINE[0].year))
+  })
+})
+
+describe('TheoryTimeline 缩放淡化与缓动旁路', () => {
+  it('zoomFade 由轨道自身的 animationend 摘除，子元素冒泡上来的不误摘', async () => {
+    const wrapper = mountTheme(TheoryTimeline)
+    const tr = track(wrapper)
+    await wrapper.findAll('.tl-zoom .chip')[1].trigger('click')
+    await flush()
+    expect(tr.classes()).toContain('is-zooming')
+
+    // 卡片（呼吸动画的 animationend 会冒泡）始发元素不是轨道：淡化保留
+    await tr.find('.tl-card').trigger('animationend')
+    await flush()
+    expect(tr.classes()).toContain('is-zooming')
+
+    await tr.trigger('animationend')
+    await flush()
+    expect(tr.classes()).not.toContain('is-zooming')
+  })
+
+  it('prefers-reduced-motion 下程序性平移直达终态：不开 is-gliding 窗口', async () => {
+    setMedia('(prefers-reduced-motion: reduce)', true)
+    const wrapper = mountTheme(TheoryTimeline)
+    const vp = viewport(wrapper)
+    await wrapper.findAll('.tl-zoom .chip')[1].trigger('click')
+    await vp.trigger('wheel', { deltaX: -1e6, deltaY: 0 })
+    await flush()
+    expect(offsetOf(wrapper)).toBe(0)
+
+    // End → reveal 走 glide 的 reduce 分支：fn() 同步执行，不设 300ms 窗口
+    await vp.trigger('keydown', { key: 'End' })
+    await flush()
+    expect(wrapper.find('.d-title').text()).toBe(TIMELINE[TIMELINE.length - 1].title)
+    expect(offsetOf(wrapper)!).toBeLessThan(0)
+    expect(vp.classes()).not.toContain('is-gliding')
   })
 })
 

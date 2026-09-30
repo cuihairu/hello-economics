@@ -41,10 +41,35 @@ describe('BooksShelf 渲染与筛选', () => {
     expect(cards).toHaveLength(BOOKS.filter((b) => b.school === school).length)
     const titles = cards.map((c) => c.find('.b-title').text())
     for (const b of BOOKS.filter((x) => x.school === school)) expect(titles).toContain(b.title)
+
+    // 「全部」chip 回位：卡片与计数恢复全量
+    await wrapper.findAll('.chip')[0].trigger('click')
+    await flush()
+    expect(wrapper.findAll('.chip')[0].classes()).toContain('is-active')
+    expect(cardsOf(wrapper)).toHaveLength(BOOKS.length)
   })
 })
 
 describe('BooksShelf 详情', () => {
+  it('切流派不清详情：选中的书不属于新流派时详情面板保留', async () => {
+    const wrapper = mountTheme(BooksShelf)
+    const card = cardsOf(wrapper)[0]
+    const book = [...BOOKS].sort((a, b) => a.year - b.year)[0]
+    await card.trigger('click')
+    await flush()
+    expect(wrapper.find('.detail h2').text()).toBe(`《${book.title}》`)
+
+    // watch 守卫对全量 BOOKS 查 id（恒真、不清选中）：详情随筛选切换保留，
+    // 与 PeopleNetwork「保留详情但置顶展示」同口径；GlossaryView 则是清空口径
+    const schools = Object.keys(SCHOOL_LABELS)
+    const other = schools.find(
+      (s) => !BOOKS.some((b) => b.school === s && b.id === book.id),
+    )!
+    await wrapper.findAll('.chip')[schools.indexOf(other) + 1].trigger('click')
+    await flush()
+    expect(wrapper.find('.detail h2').text()).toBe(`《${book.title}》`)
+  })
+
   it('点击卡片展开详情：书名、年份、流派与作者；再点同一张卡收起', async () => {
     const wrapper = mountTheme(BooksShelf)
     const card = cardsOf(wrapper)[0]
@@ -134,5 +159,25 @@ describe('BooksShelf 封面', () => {
     await card.find('img.cover').trigger('error')
     await flush()
     expect(card.find('img.cover').attributes('src')).toBe(siteHref(withCover.fallback))
+  })
+
+  it('详情大图（detail-cover）加载失败同样切本地占位 SVG', async () => {
+    const withCover = [...BOOKS].sort((a, b) => a.year - b.year).find((b) => b.cover)!
+    const wrapper = mountTheme(BooksShelf)
+    const card = cardsOf(wrapper).find((c) =>
+      c.find('.b-title').text() === withCover.title,
+    )!
+    await card.trigger('click')
+    await flush()
+
+    const img = wrapper.find('img.detail-cover')
+    expect(img.attributes('src')).toBe(withCover.cover)
+    await img.trigger('error')
+    await flush()
+    expect(wrapper.find('img.detail-cover').attributes('src')).toBe(siteHref(withCover.fallback))
+    // 失败标记按书籍 id 记账：另一本有直链的书不受这本失败外溢
+    const other = [...BOOKS].sort((a, b) => a.year - b.year).find((b) => b.cover && b.id !== withCover.id)!
+    const otherCard = cardsOf(wrapper).find((c) => c.find('.b-title').text() === other.title)!
+    expect(otherCard.find('img.cover').attributes('src')).toBe(other.cover)
   })
 })

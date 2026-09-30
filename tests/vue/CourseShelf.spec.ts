@@ -77,6 +77,25 @@ describe('CourseShelf 切换', () => {
     expect(wrapper.find('.sp-entry').attributes('href')).toBe(siteHref(SHELF[target].entry.link))
   })
 
+  it('未接管的按键不吃默认行为、选中不动；接管的方向键则吃掉默认行为', async () => {
+    const wrapper = mountTheme(CourseShelf)
+    const tablist = wrapper.find('.shelf-tabs')
+    const tabs = wrapper.findAll('.shelf-tab')
+
+    // keydown 监听在 tablist 上，事件从 tab 冒泡上去
+    const stray = new KeyboardEvent('keydown', { key: 'ArrowUp', cancelable: true, bubbles: true })
+    tabs[0].element.dispatchEvent(stray)
+    await flush()
+    expect(stray.defaultPrevented).toBe(false)
+    expect(tabs[0].attributes('aria-selected')).toBe('true')
+
+    const taken = new KeyboardEvent('keydown', { key: 'ArrowRight', cancelable: true, bubbles: true })
+    tabs[0].element.dispatchEvent(taken)
+    await flush()
+    expect(taken.defaultPrevented).toBe(true)
+    expect(tabs[1].attributes('aria-selected')).toBe('true')
+  })
+
   it('方向键导航：→ 前进、← 从头回绕到尾、Home/End 跳两端', async () => {
     const wrapper = mountTheme(CourseShelf)
     const tablist = wrapper.find('.shelf-tabs')

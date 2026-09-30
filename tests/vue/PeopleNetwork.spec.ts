@@ -34,7 +34,7 @@ describe('PeopleNetwork 渲染与筛选', () => {
     }
   })
 
-  it('点击领域 chip 只留该领域人物', async () => {
+  it('点击领域 chip 只留该领域人物，「全部」chip 回位恢复全量', async () => {
     const wrapper = mountTheme(PeopleNetwork)
     const field = Object.keys(FIELD_LABELS)[0]
     await wrapper.findAll('.chip')[1].trigger('click')
@@ -44,6 +44,12 @@ describe('PeopleNetwork 渲染与筛选', () => {
     expect(cards).toHaveLength(PEOPLE.filter((p) => p.field === field).length)
     const names = cards.map((c) => c.find('.p-name').text())
     for (const p of PEOPLE.filter((x) => x.field === field)) expect(names).toContain(p.name)
+
+    await wrapper.findAll('.chip')[0].trigger('click')
+    await flush()
+    expect(wrapper.findAll('.chip')[0].classes()).toContain('is-active')
+    expect(wrapper.findAll('.chip')[1].classes()).not.toContain('is-active')
+    expect(cardsOf(wrapper)).toHaveLength(PEOPLE.length)
   })
 })
 
@@ -105,6 +111,15 @@ describe('PeopleNetwork 详情', () => {
       .trigger('click')
     await flush()
     expect(wrapper.find('.detail h2').text()).toBe(PEOPLE_BY_ID[target].name)
+
+    // 「影响了谁」→ 方向同样可跳
+    const heir = person.influenced[0]
+    await wrapper
+      .findAll('.person-chip')
+      .find((c) => c.text() === `${PEOPLE_BY_ID[heir].name} →`)!
+      .trigger('click')
+    await flush()
+    expect(wrapper.find('.detail h2').text()).toBe(PEOPLE_BY_ID[heir].name)
   })
 
   it('影响清单为空时给出口头说明而非空列表', async () => {
