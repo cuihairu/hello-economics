@@ -100,6 +100,8 @@ export const COURSES: Course[] = [
       {
         text: '微观 · 价格与资源配置',
         items: [
+          // 导言（第二十九批深写）：教材首章，无章号置顶；正文章号从需求与供给的 1 起
+          plain('导言', 'western'),
           ch(1, '需求与供给', 'western'),
           ch(2, '效用论', 'western'),
           ch(3, '生产和成本论', 'western'),

@@ -55,11 +55,10 @@ test('章号跨分组连续 1..N（socialist 允许「导论」在前，math 无
     assert.deepEqual(nums, Array.from({ length: nums.length }, (_, k) => k + 1),
       `${c.id} 章号不连续：${nums.join(',')}`)
     const unlabeled = items.filter((i) => !/^\d+ · /.test(i.text)).map((i) => i.text)
-    if (c.id === 'socialist') {
-      assert.deepEqual(unlabeled, ['导论'], 'socialist 仅允许「导论」不带章号')
-    } else {
-      assert.deepEqual(unlabeled, [], `${c.id} 存在不带章号的条目：${unlabeled.join(',')}`)
-    }
+    // 导言/导论系教材首章，无章号置顶；正文章号仍须从 1 连续
+    const unlabeledOk = { socialist: ['导论'], western: ['导言'] }
+    assert.deepEqual(unlabeled, unlabeledOk[c.id] ?? [],
+      `${c.id} 存在（或超出白名单的）不带章号条目：${unlabeled.join(',')}`)
   }
 })
 
