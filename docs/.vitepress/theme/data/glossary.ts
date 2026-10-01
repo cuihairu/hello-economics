@@ -186,7 +186,7 @@ export const GLOSSARY: GlossaryEntry[] = [
   {
     "term": "局部均衡和一般均衡",
     "course": "西方经济学",
-    "def": "局部均衡是指在假设其他市场不变的情况下，某一特定产品或要素的市场均衡。",
+    "def": "局部均衡是指在假设其他市场不变的情况下，某一特定产品或要素的市场均衡；一般均衡是指在一个经济体系中，所有市场的供给和需求同时达到均衡的状态，一般均衡分析从微观经济主体行为的角度出发，考察每一种产品和每一个要素的供给和需求同时达到均衡状态所需具备的条件和相应的均衡价格以及均衡供销量应有的量值。",
     "source": "/western/一般均衡论和福利经济学"
   },
   {
@@ -222,7 +222,7 @@ export const GLOSSARY: GlossaryEntry[] = [
   {
     "term": "引致需求",
     "course": "西方经济学",
-    "def": "引致需求又称“派生需求”，指由于消费者对产品的需求而引起的企业对生产要素的需求。",
+    "def": "引致需求又称「派生需求」，指由于消费者对产品的需求而引起的企业对生产要素的需求。",
     "source": "/western/生产要素市场"
   },
   {
@@ -234,7 +234,7 @@ export const GLOSSARY: GlossaryEntry[] = [
   {
     "term": "总收益、平均收益和边际收益",
     "course": "西方经济学",
-    "def": "（1）厂商的总收益（ <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">TR</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">T</span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span></span></span></span> ）是指厂商按照一定价格出售一定量产品所获得的全部收入，即： <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mi>R</mi><mo>=</mo><mi>p</mi><mo stretchy=\"false\">(</mo><mi>y</mi><mo stretchy=\"false\">)</mo><mo>⋅</mo><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">TR=p(y)\\cdot y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">T</span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⋅</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span></span></span></span> 。式中的 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">TR</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">T</span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span></span></span></span> 为总收益，<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi><mo stretchy=\"false\">(</mo><mi>y</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">p(y)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span><span class=\"mclose\">)</span></span></span></span> 为既定的市场价格，<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span></span></span></span> 为销售总量。",
+    "def": "（1）厂商的总收益（ <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">TR</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">T</span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span></span></span></span> ）是指厂商按照一定价格出售一定量产品所获得的全部收入，即： <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mi>R</mi><mo>=</mo><mi>p</mi><mo stretchy=\"false\">(</mo><mi>y</mi><mo stretchy=\"false\">)</mo><mo>⋅</mo><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">TR=p(y)\\cdot y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">T</span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⋅</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span></span></span></span> 。式中的 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">TR</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">T</span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span></span></span></span> 为总收益，<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi><mo stretchy=\"false\">(</mo><mi>y</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">p(y)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span><span class=\"mclose\">)</span></span></span></span> 为厂商出售产品时面对的价格，<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span></span></span></span> 为销售总量。（2）平均收益（ <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">AR</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span></span></span></span> ）指厂商在平均每一单位产品销售上所获得的收入，即 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>R</mi><mo>=</mo><mi>T</mi><mi>R</mi><mi mathvariant=\"normal\">/</mi><mi>y</mi><mo>=</mo><mi>p</mi><mo stretchy=\"false\">(</mo><mi>y</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">AR=TR/y=p(y)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">T</span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"mord\">/</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span><span class=\"mclose\">)</span></span></span></span> ，平均收益等于产品价格，厂商所面临的需求曲线即为平均收益曲线。（3）边际收益（ <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">MR</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.109em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span></span></span></span> ）指厂商增加一单位产品销售时所获得的收入增量。",
     "source": "/western/市场理论"
   },
   {
@@ -288,7 +288,7 @@ export const GLOSSARY: GlossaryEntry[] = [
   {
     "term": "新古典宏观经济学",
     "course": "西方经济学",
-    "def": "新古典宏观经济学，又称作“新古典主义”的一个经济学流派，这个学派的经济学遵循古典经济学的传统，相信市场力量的有效性；认为如果让市场机制自发地发挥作用，就可以解决失业、衰退等一系列宏观经济问题。",
+    "def": "新古典宏观经济学，又称作「新古典主义」的一个经济学流派，这个学派的经济学遵循古典经济学的传统，相信市场力量的有效性；认为如果让市场机制自发地发挥作用，就可以解决失业、衰退等一系列宏观经济问题。",
     "source": "/western/宏观经济学的意见分歧"
   },
   {
@@ -612,7 +612,7 @@ export const GLOSSARY: GlossaryEntry[] = [
   {
     "term": "固定汇率与浮动汇率",
     "course": "国际经济学",
-    "def": "固定汇率是指政府用行政手段或法律手段选择一基本参照物，并确定、公布和维持本国货币与该单位参照物的固定比价的汇率制度。",
+    "def": "固定汇率是指政府用行政手段或法律手段选择一基本参照物，并确定、公布和维持本国货币与该单位参照物的固定比价的汇率制度；浮动汇率指一国货币汇率根据市场供求自由涨落、国家没有义务维持的汇率，实践中存在完全自由浮动与有管理的浮动两种。",
     "source": "/international/汇率决定的一般理论"
   },
   {
@@ -654,7 +654,7 @@ export const GLOSSARY: GlossaryEntry[] = [
   {
     "term": "开放经济",
     "course": "国际经济学",
-    "def": "开放经济也称“开放型经济”，与“封闭经济”相对，是指一个国家或地区的经济活动与世界市场或外地市场有着密切联系（如存在国际贸易、国际金融往来）的经济。",
+    "def": "开放经济也称「开放型经济」，与「封闭经济」相对，是指一个国家或地区的经济活动与世界市场或外地市场有着密切联系（如存在国际贸易、国际金融往来）的经济。",
     "source": "/international/绪论"
   },
   {
@@ -678,7 +678,7 @@ export const GLOSSARY: GlossaryEntry[] = [
   {
     "term": "汇率",
     "course": "国际经济学",
-    "def": "汇率又称“汇价”、“外汇牌价”或“外汇行市”，指外汇买卖的价格。",
+    "def": "汇率又称「汇价」、「外汇牌价」或「外汇行市」，指外汇买卖的价格。",
     "source": "/international/汇率决定的一般理论"
   },
   {
@@ -696,7 +696,7 @@ export const GLOSSARY: GlossaryEntry[] = [
   {
     "term": "直接标价法与间接标价法",
     "course": "国际经济学",
-    "def": "直接标价法又称“应付标价法”，是指以一定单位的外国货币作为标准，折算为一定数量的本国货币，即是以本国货币来表示外国货币价格的方法。",
+    "def": "直接标价法又称「应付标价法」，是指以一定单位的外国货币作为标准，折算为一定数量的本国货币，即是以本国货币来表示外国货币价格的方法。",
     "source": "/international/汇率决定的一般理论"
   },
   {
@@ -714,7 +714,7 @@ export const GLOSSARY: GlossaryEntry[] = [
   {
     "term": "贷方与借方项目",
     "course": "国际经济学",
-    "def": "贷方项目是指在国际收支平衡表中表示一国资产减少或负债增加的项目，该项目意味着本国商品、劳务的输出或外国金融资产的流入。",
+    "def": "贷方项目是指在国际收支平衡表中表示一国资产减少或负债增加的项目，该项目意味着本国商品、劳务的输出或外国金融资产的流入；借方项目表示一国资产增加或负债减少，意味着本国商品、劳务的进口或外国金融资产的流出。",
     "source": "/international/国际收支分析"
   },
   {
@@ -726,13 +726,13 @@ export const GLOSSARY: GlossaryEntry[] = [
   {
     "term": "贸易创造与贸易转移",
     "course": "国际经济学",
-    "def": "贸易创造是“贸易转移”的对称，是指两国或两个以上国家之间结成关税同盟之后，签约国之间的特惠贸易协定导致成员国之间的贸易代替了过去各自的国内生产和消费，即创造出了新的贸易的现象。",
+    "def": "贸易创造是「贸易转移」的对称，是指两国或两个以上国家之间结成关税同盟之后，签约国之间的特惠贸易协定导致成员国之间的贸易代替了过去各自的国内生产和消费，即创造出了新的贸易的现象；贸易转移是「贸易创造」的对称，指同盟成员之间的特惠安排使成员国之间的贸易代替了原来它们同非成员国之间的贸易，而非创造出新的贸易。",
     "source": "/international/经济一体化与国际经济秩序分析"
   },
   {
     "term": "贸易条件",
     "course": "国际经济学",
-    "def": "贸易条件又称“交换比价”或“贸易比价”，是指一个国家在一定时期内出口商品价格与进口商品价格之间的比例关系。",
+    "def": "贸易条件又称「交换比价」或「贸易比价」，是指一个国家在一定时期内出口商品价格与进口商品价格之间的比例关系。",
     "source": "/international/国际贸易纯理论"
   },
   {
@@ -760,15 +760,15 @@ export const GLOSSARY: GlossaryEntry[] = [
     "source": "/international/要素的国际流动"
   },
   {
-    "term": "“收支两条线”管理",
+    "term": "「收支两条线」管理",
     "course": "财政学",
-    "def": "“收支两条线”管理是指国家机关、事业单位、社会团体及其他组织，按照国家有关规定依法取得的政府非税收入全额缴入国库或者财政专户，支出通过财政部门编制预算进行统筹安排，资金通过国库或财政专户收缴和拨付的管理制度。",
+    "def": "「收支两条线」管理是指国家机关、事业单位、社会团体及其他组织，按照国家有关规定依法取得的政府非税收入全额缴入国库或者财政专户，支出通过财政部门编制预算进行统筹安排，资金通过国库或财政专户收缴和拨付的管理制度。",
     "source": "/finance/国家预算与预算管理体制"
   },
   {
     "term": "价内税与价外税",
     "course": "财政学",
-    "def": "以税收与价格的关系为标准，税收可分为价内税和价外税。",
+    "def": "以税收与价格的关系为标准，税收可分为价内税和价外税。价内税是指税额包含在商品价格之中，购买者购买商品时即缴纳应缴之税；价外税是指在商品价格之外对购买者所征的税：价格中不含税金，购买者除支付价款外，还要依据所支付的价格另行纳税。",
     "source": "/finance/税收原理"
   },
   {
@@ -894,7 +894,7 @@ export const GLOSSARY: GlossaryEntry[] = [
   {
     "term": "税制结构与税制模式",
     "course": "财政学",
-    "def": "税制结构是指一国税收体系的整体布局和总体结构，是国家根据当时经济条件和发展要求，在特定税收制度下，由税类、税种、税制要素和征收管理层次所组成的，分别主次，相互协调、相互补充的整体系统。",
+    "def": "税制结构是指一国税收体系的整体布局和总体结构，是国家根据当时经济条件和发展要求，在特定税收制度下，由税类、税种、税制要素和征收管理层次所组成的，分别主次，相互协调、相互补充的整体系统；税制模式是指在一国税制结构中以哪类税作为主体税种，主体税种决定税制体系的总体功能。",
     "source": "/finance/税收制度"
   },
   {
@@ -966,7 +966,7 @@ export const GLOSSARY: GlossaryEntry[] = [
   {
     "term": "预算调整",
     "course": "财政学",
-    "def": "预算调整是预算执行的一项重要程序。",
+    "def": "预算调整是预算执行的一项重要程序，指经过批准的各级预算，在执行中因特殊情况需要增加支出或者减少收入，使总支出超过总收入、或使原举借债务数额增加等，部分改变原预算。",
     "source": "/finance/国家预算与预算管理体制"
   },
   {
@@ -1032,13 +1032,13 @@ export const GLOSSARY: GlossaryEntry[] = [
   {
     "term": "利率与收益率",
     "course": "货币银行学",
-    "def": "利率是利息率的简称，是一定时期内利息额与贷出资本额的比率。",
+    "def": "利率是利息率的简称，是一定时期内利息额与贷出资本额的比率；收益率是向证券持有者支付的利息加上以购买价格百分比表示的价格变动率——利率不能准确衡量一定时期内投资人持有证券所能得到的收益状况，收益率则能准确衡量。",
     "source": "/monetary/利率理论"
   },
   {
     "term": "名义利率和实际利率",
     "course": "货币银行学",
-    "def": "名义利率是指以名义货币表示的利率，是借贷契约和有价证券上载明的利息率，也就是金融市场表现出的利率。",
+    "def": "名义利率是指以名义货币表示的利率，是借贷契约和有价证券上载明的利息率，也就是金融市场表现出的利率；实际利率是指名义利率剔除了物价变动（币值变动）因素之后的利率，是债务人使用资金的真实成本。",
     "source": "/monetary/利率理论"
   },
   {
@@ -1050,13 +1050,13 @@ export const GLOSSARY: GlossaryEntry[] = [
   {
     "term": "基准利率",
     "course": "货币银行学",
-    "def": "基准利率是指带动和影响其他利率的利率，也称为“中心利率”。",
+    "def": "基准利率是指带动和影响其他利率的利率，也称为「中心利率」。",
     "source": "/monetary/利率理论"
   },
   {
     "term": "基础货币",
     "course": "货币银行学",
-    "def": "基础货币也称为“高能货币”、“强力货币”，是指中央银行所发行的现金货币和商业银行在中央银行的准备金存款的总和。",
+    "def": "基础货币也称为「高能货币」、「强力货币」，是指中央银行所发行的现金货币和商业银行在中央银行的准备金存款的总和。",
     "source": "/monetary/货币供求理论"
   },
   {
@@ -1140,13 +1140,13 @@ export const GLOSSARY: GlossaryEntry[] = [
   {
     "term": "流动性偏好",
     "course": "货币银行学",
-    "def": "凯恩斯在分析影响货币需求的因素时认为，货币需求主要由个人对收入支配的心理因素决定。",
+    "def": "个人对收入的支配有消费和储蓄两种形式，储蓄部分以现金货币形式持有还是以有价证券形式持有，取决于人们对金融资产流动性的偏好程度，即流动性偏好；凯恩斯认为它是影响货币需求的主要心理因素。",
     "source": "/monetary/货币供求理论"
   },
   {
     "term": "滞胀",
     "course": "货币银行学",
-    "def": "滞胀是指经济过程所呈现的并不是失业和通货膨胀之间的相互“替代”，而是经济停滞和通货膨胀相伴随，高的通货膨胀率与高的失业率相伴随。",
+    "def": "滞胀是指经济过程所呈现的并不是失业和通货膨胀之间的相互「替代」，而是经济停滞和通货膨胀相伴随，高的通货膨胀率与高的失业率相伴随。",
     "source": "/monetary/通货膨胀与通货紧缩"
   },
   {
@@ -1158,7 +1158,7 @@ export const GLOSSARY: GlossaryEntry[] = [
   {
     "term": "短期利率和长期利率",
     "course": "货币银行学",
-    "def": "金融市场上的利率种类根据期限可分为短期利率和长期利率。",
+    "def": "金融市场上的利率种类根据期限可分为短期利率和长期利率。短期利率反映的是货币市场上各种借贷利率，长期利率反映的是资本市场上各种借贷利率，短期利率一般低于长期利率，但其波动幅度往往大于长期利率。",
     "source": "/monetary/利率理论"
   },
   {
@@ -1258,45 +1258,45 @@ export const GLOSSARY: GlossaryEntry[] = [
     "source": "/monetary/金融监管体系"
   },
   {
-    "term": "“三个有利于”标准",
+    "term": "「三个有利于」标准",
     "course": "社会主义经济学",
-    "def": "“三个有利于”标准指是否有利于发展社会主义社会的生产力、是否有利于增强社会主义国家的综合国力、是否有利于提高人民的生活水平，并以此作为判断改革和各方面工作是非得失的标准。",
+    "def": "「三个有利于」标准指是否有利于发展社会主义社会的生产力、是否有利于增强社会主义国家的综合国力、是否有利于提高人民的生活水平，并以此作为判断改革和各方面工作是非得失的标准。",
     "source": "/socialist/社会主义经济制度的本质特征"
   },
   {
-    "term": "“华盛顿共识”与“北京共识”",
+    "term": "「华盛顿共识」与「北京共识」",
     "course": "社会主义经济学",
     "def": "华盛顿共识这一术语最初由经济学家约翰·威廉姆森于 1989 年提出。",
     "source": "/socialist/向社会主义市场经济体制的渐进过渡"
   },
   {
-    "term": "“后起者优势”",
+    "term": "「后起者优势」",
     "course": "社会主义经济学",
-    "def": "“后起者优势”是指后起发展国家面临的外部环境相对较好，尤其是技术高度发达，这样它就可以跳过某些技术发展阶段，直接采用新技术。",
+    "def": "「后起者优势」是指后起发展国家面临的外部环境相对较好，尤其是技术高度发达，这样它就可以跳过某些技术发展阶段，直接采用新技术。",
     "source": "/socialist/社会主义市场经济条件下的经济结构调整"
   },
   {
-    "term": "“市场失灵”",
+    "term": "「市场失灵」",
     "course": "社会主义经济学",
     "def": "市场失灵是指市场竞争所实现的资源配置没有达到帕累托最优，或指市场机制不能实现某些合意的社会经济目标。",
     "source": "/socialist/社会主义市场经济条件下的政府调节"
   },
   {
-    "term": "“看不见的手”",
+    "term": "「看不见的手」",
     "course": "社会主义经济学",
-    "def": "“看不见的手”是亚当·斯密提出的经济自由主义的政策思想，推崇市场机制的作用。",
+    "def": "「看不见的手」是亚当·斯密提出的经济自由主义的政策思想，推崇市场机制的作用。",
     "source": "/socialist/社会主义市场经济条件下的政府调节"
   },
   {
-    "term": "“诺思悖论”",
+    "term": "「诺思悖论」",
     "course": "社会主义经济学",
-    "def": "“诺思悖论”是指一个能促进经济持续快速增长的有效率产权制度依赖于国家对产权进行有效的界定与保护，但受双重目标的驱动，国家在界定与保护产权过程中受交易费用和竞争的双重约束，会对不同的利益集团采取歧视性的政策，从而会容忍低效率的产权结构长期存在。",
+    "def": "「诺思悖论」是指一个能促进经济持续快速增长的有效率产权制度依赖于国家对产权进行有效的界定与保护，但受双重目标的驱动，国家在界定与保护产权过程中受交易费用和竞争的双重约束，会对不同的利益集团采取歧视性的政策，从而会容忍低效率的产权结构长期存在。",
     "source": "/socialist/向社会主义市场经济体制的渐进过渡"
   },
   {
     "term": "中间扩散型制度变迁方式",
     "course": "社会主义经济学",
-    "def": "当利益独立化的地方政府成为沟通权力中心的制度供给意愿与微观主体的制度创新需求的中介环节时，就有可能突破权力中心设置的制度创新进入壁垒，从而使权力中心的垄断租金最大化与保护有效率的产权结构之间达成一致，化解“诺思悖论”，这一有别于供给主导型与需求诱致型的制度变迁形态被称为中间扩散型制度变迁方式。",
+    "def": "当利益独立化的地方政府成为沟通权力中心的制度供给意愿与微观主体的制度创新需求的中介环节时，就有可能突破权力中心设置的制度创新进入壁垒，从而使权力中心的垄断租金最大化与保护有效率的产权结构之间达成一致，化解「诺思悖论」，这一有别于供给主导型与需求诱致型的制度变迁形态被称为中间扩散型制度变迁方式。",
     "source": "/socialist/向社会主义市场经济体制的渐进过渡"
   },
   {
@@ -1410,7 +1410,7 @@ export const GLOSSARY: GlossaryEntry[] = [
   {
     "term": "内部人控制",
     "course": "社会主义经济学",
-    "def": "内部人控制是指国有企业的经营者在经济转型过程中逐渐掌握了大部分控制权，并且这种控制权的获得往往是通过与职工“合谋”完成的。",
+    "def": "内部人控制是指国有企业的经营者在经济转型过程中逐渐掌握了大部分控制权，并且这种控制权的获得往往是通过与职工「合谋」完成的。",
     "source": "/socialist/国有企业治理结构的创新"
   },
   {
@@ -1458,13 +1458,13 @@ export const GLOSSARY: GlossaryEntry[] = [
   {
     "term": "国民生产总值（GNP）",
     "course": "社会主义经济学",
-    "def": "国民生产总值是指一个国家（或地区）在一定时期（通常为一年）内，国民经济各部门所生产的、以货币表现的全部社会最终产品和劳务价值的总和。",
+    "def": "国民生产总值是指一个国家（或地区）的常住居民（国民）在一定时期（通常为一年）内生产的全部最终产品和劳务价值的总和，按国民原则核算，与按领土范围核算的国内生产总值（GDP）相区别。",
     "source": "/socialist/社会主义经济增长与经济发展"
   },
   {
     "term": "基础产业",
     "course": "社会主义经济学",
-    "def": "基础产业是指在一国的国民经济发展中处于基础地位，对其他产业的发展起着制约和决定作用，决定其他产业发展水平的产业群，它的产品通常要成为后续产业部门加工、再加工及生产过程中缺一不可的投入品或消耗品，通常具有不可再生性质。",
+    "def": "基础产业是指在一国的国民经济发展中处于基础地位，对其他产业的发展起着制约和决定作用，决定其他产业发展水平的产业群，包括基础工业与基础设施，其产品通常要成为后续产业部门加工、再加工及生产过程中缺一不可的投入品或消耗品，投资通常具有巨额性与不可分性。",
     "source": "/socialist/社会主义企业制度与国有企业改革"
   },
   {
@@ -1668,7 +1668,7 @@ export const GLOSSARY: GlossaryEntry[] = [
   {
     "term": "绿色 GDP",
     "course": "社会主义经济学",
-    "def": "1993 年联合国有关统计机构提出了生态国内生产总值“EDP”的概念，即绿色 GDP，也就是在 GDP 的基础上减掉创造 GDP 所消耗的资源价值，然后再减掉创造 GDP 所造成污染的治理成本。",
+    "def": "1993 年联合国有关统计机构提出了生态国内生产总值「EDP」的概念，即绿色 GDP，也就是在 GDP 的基础上减掉创造 GDP 所消耗的资源价值，然后再减掉创造 GDP 所造成污染的治理成本。",
     "source": "/socialist/社会主义经济增长与经济发展"
   },
   {

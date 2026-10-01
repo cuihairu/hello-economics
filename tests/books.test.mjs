@@ -53,3 +53,24 @@ test('出版年份在合理区间，summary 非空', () => {
   )
   assert.equal(errs, '', errs)
 })
+
+// ——第四十批（books 全量复核）史实锚点：关键数字与专名防漂移——
+
+test('第四十批：萨缪尔森《经济学》史实锚点（重版十九次、四十多种语言）', () => {
+  const b = BOOKS_BY_ID['economics-samuelson']
+  assert.ok(b, '《经济学》（1948）应在册')
+  assert.ok(b.summary.includes('重版十九次'), '1948 初版至 2010 年第 19 版')
+  assert.ok(b.summary.includes('四十多种语言'), '通行说法：译成四十余种语言')
+})
+
+test('第四十批：助推与 21 世纪资本论史实锚点（行为洞察小组、二十国数据、r>g 区间）', () => {
+  const nudge = BOOKS_BY_ID['nudge']
+  assert.ok(nudge, '《助推》（2008）应在册')
+  assert.ok(nudge.summary.includes('行为洞察小组'), '英国 2010 年设立的行为洞察小组（BIT）是助推落地的标志机构')
+  const capital = BOOKS_BY_ID['capital-21']
+  assert.ok(capital, '《21 世纪资本论》（2013）应在册')
+  assert.ok(capital.summary.includes('二十个国家'), '全书数据覆盖约二十个国家的税务与遗产记录')
+  assert.ok(capital.summary.includes('4%-5%') && capital.summary.includes('1%-2%'),
+    '书中口径：r 长期稳定在 4%-5%、g 徘徊在 1%-2%')
+  assert.ok(capital.summary.includes('r > g'), 'r > g 为全书核心不等式')
+})
