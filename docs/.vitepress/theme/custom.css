@@ -67,13 +67,47 @@
 .VPPage {
   max-width: calc(1152px + 48px);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 4rem 24px 0;
 }
 
 @media (min-width: 768px) {
   .VPPage {
-    padding: 0 32px;
+    padding: 4rem 32px 0;
   }
+}
+
+/* ---------- layout:page 正文排印：与 .vp-doc 同口径 ---------- */
+/* 这些页的 markdown 不被 .vp-doc 包裹，基准重置（标题 16px/字重 400、p margin:0）
+   全数生效——标题无级差、段落紧贴。按 .vp-doc 中文正文排印逐条补齐。
+   作用域：markdown 顶层元素（无 class 的直接子元素）——组件内部与首页自定义块
+   要么带 class、要么挂在更深层，不受影响 */
+
+.VPPage > div > div > :where(h1, h2, h3, h4):not([class]) {
+  font-family: var(--vp-font-display);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+.VPPage > div > div > h1:not([class]) {
+  font-size: 1.9rem;
+  line-height: 1.4;
+}
+.VPPage > div > div > h2:not([class]) {
+  font-size: 1.4rem;
+  line-height: 32px;
+  margin: 3rem 0 1.5rem;
+  padding-top: 24px;
+  border-top: 1px solid var(--vp-c-divider);
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--vp-c-border);
+}
+.VPPage > div > div > h3:not([class]) {
+  font-size: 20px;
+  line-height: 28px;
+  margin: 2rem 0 0.8rem;
+}
+.VPPage > div > div > p:not([class]) {
+  text-indent: 2em;
+  margin: 1.05em 0;
 }
 
 /* ---------- 基础 ---------- */
@@ -132,7 +166,7 @@ body {
 
 /* 标题与正文的呼吸：h2 下留一段、h3 上留半段 */
 .vp-doc h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .vp-doc h3 {
   margin: 2rem 0 0.8rem;
@@ -642,6 +676,9 @@ body {
     font-size: 16px;
   }
   .vp-doc h1 {
+    font-size: 1.6rem;
+  }
+  .VPPage > div > div > h1:not([class]) {
     font-size: 1.6rem;
   }
   .ledger-hero {
