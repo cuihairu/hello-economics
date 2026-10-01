@@ -79,7 +79,7 @@ export const PEOPLE: Person[] = [
     influencedBy: [], influenced: ['marshall'] },
   { id: 'menger', name: '卡尔·门格尔', en: 'Carl Menger', years: '1840-1921', country: '奥地利', school: '奥地利学派', field: 'micro',
     bio: '维也纳大学教授，用因果-演绎方法从人的需要推导价值与货币的起源。他开创的奥地利学派经庞巴维克、米塞斯传到哈耶克，成为 20 世纪计划论战中的市场一方。',
-    theories: ['主观价值论', '边际生产力分配', '货币起源的演化解释'], works: ['《国民经济学原理》（1871）'],
+    theories: ['主观价值论', '要素价值的归属（归算）理论', '货币起源的演化解释'], works: ['《国民经济学原理》（1871）'],
     influencedBy: [], influenced: ['hayek'] },
   { id: 'walras', name: '莱昂·瓦尔拉斯', en: 'Léon Walras', years: '1834-1910', country: '法国', school: '洛桑学派', field: 'math',
     bio: '洛桑大学教授，生前自认最伟大的经济学家而学界冷淡。他把所有市场联立成方程组，一般均衡让「看不见的手」第一次有了严格的数学形态。阿罗-德布鲁后来的存在性证明是对他的回答。',

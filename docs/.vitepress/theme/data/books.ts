@@ -138,7 +138,7 @@ export const BOOKS: Book[] = [
   {
     id: 'nudge',
     title: '助推',
-    en: 'Nudge: Improving Decisions about Health, Wealth and Happiness',
+    en: 'Nudge: Improving Decisions About Health, Wealth, and Happiness',
     year: 2008,
     school: 'contemporary',
     authors: [{ name: '理查德·塞勒', peopleId: 'thaler' }, { name: '卡斯·桑斯坦', wiki: 'https://zh.wikipedia.org/wiki/卡斯·桑斯坦' }],

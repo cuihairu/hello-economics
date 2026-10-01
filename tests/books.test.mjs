@@ -74,3 +74,12 @@ test('第四十批：助推与 21 世纪资本论史实锚点（行为洞察小�
     '书中口径：r 长期稳定在 4%-5%、g 徘徊在 1%-2%')
   assert.ok(capital.summary.includes('r > g'), 'r > g 为全书核心不等式')
 })
+
+// ——第四十一批（存疑项清账）锚点：助推英文副题书名页形态——
+
+test('第四十一批：助推英文副题为书名页形态（About 大写 + Oxford 逗号）', () => {
+  const nudge = BOOKS_BY_ID['nudge']
+  assert.ok(nudge, '《助推》（2008）应在册')
+  assert.equal(nudge.en, 'Nudge: Improving Decisions About Health, Wealth, and Happiness',
+    'Open Library 本书所用 ISBN 9780143115267（Penguin 2009）记录 subtitle 字段')
+})

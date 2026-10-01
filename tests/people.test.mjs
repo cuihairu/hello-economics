@@ -93,3 +93,14 @@ test('斯蒂格利茨师承锚定 MIT（萨缪尔森、索洛），双向边成�
   assert.ok(PEOPLE_BY_ID.solow.influenced.includes('stiglitz'), '索洛 → 斯蒂格利茨 反向边应在')
   assert.ok(!stiglitz.bio.includes('阿罗的学生'), '「阿罗的学生」系师承误记（其 MIT 师长为萨缪尔森、索洛），不得回退')
 })
+
+// ——第四十一批（存疑项清账）锚点：门格尔理论标签归属论防倒退——
+
+test('第四十一批：门格尔理论标签为归属（归算）理论，不得回退「边际生产力分配」', () => {
+  const menger = PEOPLE.find((p) => p.id === 'menger')
+  assert.ok(menger, '门格尔应在册')
+  assert.ok(menger.theories.some((t) => t.includes('归属') && t.includes('归算')),
+    '门格尔第三理论标签应作「要素价值的归属（归算）理论」——维基 Imputation (economics)：归算理论 first expounded by Carl Menger（要素价值由产品价值推导）')
+  assert.ok(!menger.theories.includes('边际生产力分配'),
+    '完成形态的边际生产力分配论通行归属克拉克（站内 math/微分学基础与 western/生产要素市场章口径），不得挂门格尔名下')
+})
