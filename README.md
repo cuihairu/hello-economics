@@ -6,6 +6,8 @@
 2. 它**如何发展**——谁修正了它，留下了什么新问题？
 3. 它**如何被验证**——现实数据与后来的研究站在哪一边？
 
+<p align="center"><img src="docs/public/badges/topic.svg" alt="topic" /> <img src="docs/public/badges/docs.svg" alt="docs" /></p>
+
 ## 站点内容
 
 基于 VitePress 的交互式站点，入口包括：
