@@ -1,15 +1,15 @@
+<p align="center"><img src="docs/public/logo.svg" width="64" height="64" alt="logo" /></p>
+
 # Hello Economics · 经济学知识整理
+
+<p align="center"><img src="docs/public/badges/topic.svg" alt="topic" /> <img src="docs/public/badges/docs.svg" alt="docs" /></p>
+<p align="center"><img src="docs/public/badges/license.svg" alt="CC BY 4.0" /></p>
 
 写给经济学爱好者的知识整理站点。这里不堆背诵要点，而是回答三个问题：
 
 1. 一个理论**为什么**会出现——它当时要解决什么问题？
 2. 它**如何发展**——谁修正了它，留下了什么新问题？
 3. 它**如何被验证**——现实数据与后来的研究站在哪一边？
-
-<p align="center"><img src="docs/public/badges/topic.svg" alt="topic" /> <img src="docs/public/badges/docs.svg" alt="docs" /></p>
-<p align="center"><img src="docs/public/badges/license.svg" alt="CC BY 4.0" /></p>
-
-<p align="center"><img src="docs/public/logo.svg" width="64" alt="logo" /></p>
 
 ## 站点内容
 
