@@ -7,6 +7,9 @@
 3. 它**如何被验证**——现实数据与后来的研究站在哪一边？
 
 <p align="center"><img src="docs/public/badges/topic.svg" alt="topic" /> <img src="docs/public/badges/docs.svg" alt="docs" /></p>
+<p align="center"><img src="docs/public/badges/license.svg" alt="CC BY 4.0" /></p>
+
+<p align="center"><img src="docs/public/logo.svg" width="64" alt="logo" /></p>
 
 ## 站点内容
 
@@ -53,3 +56,7 @@ pnpm build   # 构建（含死链检查）
 - [经济学名人](经济学-名人.md)
 - [西方经济学公式总览](docs/western/西方经济学公式总览.md)
 - [宏观经济模型演进](docs/western/宏观经济模型演进.md)
+
+## License
+
+本作品采用 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) 许可协议发布。
