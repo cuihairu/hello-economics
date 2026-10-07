@@ -36,7 +36,6 @@
 
   /* 组件覆写 */
   --vp-c-sponsor: #0b6b4e;
-  --vp-home-hero-name-color: transparent;
   --vp-sidebar-bg-color: var(--vp-c-bg-alt);
   --vp-nav-bg-color: var(--vp-c-bg);
 }
