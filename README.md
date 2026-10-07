@@ -2,8 +2,7 @@
 
 # Hello Economics · 经济学知识整理
 
-<p align="center"><img src="docs/public/badges/topic.svg" alt="topic" /> <img src="docs/public/badges/docs.svg" alt="docs" /></p>
-<p align="center"><img src="docs/public/badges/license.svg" alt="CC BY 4.0" /></p>
+<p align="center"><img src="docs/public/badges/topic.svg" alt="topic" /> <img src="docs/public/badges/docs.svg" alt="docs" /> <img src="docs/public/badges/license.svg" alt="CC BY 4.0" /></p>
 
 写给经济学爱好者的知识整理站点。这里不堆背诵要点，而是回答三个问题：
 
