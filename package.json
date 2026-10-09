@@ -10,7 +10,8 @@
     "glossary": "node scripts/build-glossary.cjs",
     "test": "node --test \"tests/*.test.mjs\" && vitest run",
     "coverage": "vitest run --coverage --coverage.reporter=json-summary",
-    "check:latex": "node scripts/check-latex.cjs"
+    "check:latex": "node scripts/check-latex.cjs",
+    "check:sidebar": "node scripts/audit-sidebar.cjs"
   },
   "devDependencies": {
     "@mdit/plugin-katex": "^1.1.3",
