@@ -11,6 +11,8 @@ A knowledge-organization site for economics enthusiasts. Rather than piling up p
 2. **How** did it develop — who revised it, and what new questions did that leave open?
 3. **How** has it been tested — where do real-world data and later research stand?
 
+Knowledge notes: [docs/knowledge.md](https://cuihairu.github.io/hello-economics/knowledge) — which standard textbook frames each course, the classics timeline, and the site's dating conventions.
+
 ## Site Content
 
 An interactive site built on VitePress, with entry points including:

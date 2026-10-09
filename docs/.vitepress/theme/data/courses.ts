@@ -265,6 +265,7 @@ export const REFERENCE_COURSE: Course = {
     {
       text: '参考资料',
       items: [
+        { text: '知识点主文档', link: '/knowledge' },
         { text: '参考书目', link: '/reference/参考书目' },
         { text: '微观经济学笔记', link: '/reference/微观经济学-笔记' },
         { text: '西方经济学导论笔记', link: '/reference/notes/西方经济学导论-笔记' },

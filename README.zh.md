@@ -11,6 +11,8 @@
 2. 它**如何发展**——谁修正了它，留下了什么新问题？
 3. 它**如何被验证**——现实数据与后来的研究站在哪一边？
 
+知识点主文档：[docs/knowledge.md](https://cuihairu.github.io/hello-economics/knowledge) —— 哪门课对应哪本通行教材、名著时间线、以及本站的年份口径。
+
 ## 站点内容
 
 基于 VitePress 的交互式站点，入口包括：
