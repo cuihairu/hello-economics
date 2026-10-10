@@ -36,10 +36,13 @@ An interactive site built on VitePress, with entry points including:
 
 ```bash
 pnpm install
-pnpm dev     # local preview
-pnpm test    # node --test (data/gate black-box) + vitest (theme component mounting)
-pnpm build   # build (includes broken-link check)
+pnpm dev       # local preview
+pnpm glossary  # regenerate glossary data after editing 经济学-术语.md
+pnpm test      # node --test (data/gate black-box) + vitest (theme component mounting)
+pnpm build     # build (includes broken-link check)
 ```
+
+Gate scripts: `pnpm check:links` (internal links), `pnpm check:latex` (formula syntax), `pnpm check:typography` (layout rules), `pnpm check:sidebar` (navigation coverage). CI regenerates the glossary, runs the tests and all four gates, then builds and deploys.
 
 Component testing stack: Vitest + @vue/test-utils + happy-dom, reusing the site's single Vite toolchain to compile .vue SFCs (`vitest.config.ts`, including the vitepress client alias); test cases live in `tests/vue/`.
 

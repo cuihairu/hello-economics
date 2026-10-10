@@ -39,9 +39,14 @@ jobs:
       - name: Unit tests (theme data + Vue components)
         run: pnpm test # node --test（数据/门禁黑盒）+ vitest（SFC 组件挂载）
       - name: Check internal links
-        run: node scripts/check-links.cjs
+        run: pnpm check:links
       - name: Check LaTeX health
-        run: node scripts/check-latex.cjs
+        run: pnpm check:latex
+      # 排印与侧栏两道门禁（17/46 批建）此前只在推前手工跑，CI 不设防——本批接线
+      - name: Check typography
+        run: pnpm check:typography
+      - name: Check sidebar coverage
+        run: pnpm check:sidebar
       - name: Build site
         run: pnpm build
       # PR 只校验不部署：产物留给 push main 的部署 job

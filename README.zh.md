@@ -36,10 +36,13 @@
 
 ```bash
 pnpm install
-pnpm dev     # 本地预览
-pnpm test    # node --test（数据/门禁黑盒）+ vitest（theme 组件挂载）
-pnpm build   # 构建（含死链检查）
+pnpm dev       # 本地预览
+pnpm glossary  # 编辑 经济学-术语.md 后重生成词条数据
+pnpm test      # node --test（数据/门禁黑盒）+ vitest（theme 组件挂载）
+pnpm build     # 构建（含死链检查）
 ```
+
+门禁脚本：`pnpm check:links`（站内链接）、`pnpm check:latex`（公式语法）、`pnpm check:typography`（排印规则）、`pnpm check:sidebar`（导航覆盖）。CI 在构建部署前重生成词条、跑测试与这四道门禁。
 
 组件测试选型：Vitest + @vue/test-utils + happy-dom——复用站点同一条 vite 工具链编译 .vue SFC（`vitest.config.ts`，含 vitepress client 别名），用例在 `tests/vue/`。
 
