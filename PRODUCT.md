@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-delegated: VitePress（用户明确指定）。包管理用 pnpm，部署形态沿用 GitHub Pages 仓库但 CI 仅构建不发布（用户约束：禁止 git tag 与发布）。
+delegated: VitePress（用户明确指定）。包管理用 pnpm，部署形态沿用 GitHub Pages 仓库，CI 构建并部署 Pages（2026-09-27 起，PR 只校验不部署；根因与决策见 build.yml 注释）。用户约束：禁止 git tag 与 release。
 
 ## Users
 
@@ -24,7 +24,7 @@ delegated: VitePress（用户明确指定）。包管理用 pnpm，部署形态�
 
 ## Operating Context
 
-内容源为仓库内 Markdown（五门课 + 数学基础），KaTeX 数学公式约 66 个文件，中文为主。站点为静态生成（VitePress），交互部分用 Vue 组件（时间线、名人网络、术语搜索、课程 tab）。
+内容源为仓库内 Markdown（五门课 + 数学基础），KaTeX 数学公式约 50 个文件，中文为主。站点为静态生成（VitePress），交互部分用 Vue 组件（时间线、名人网络、术语搜索、课程 tab）。
 
 ## Capabilities and Constraints
 
@@ -32,7 +32,9 @@ delegated: VitePress（用户明确指定）。包管理用 pnpm，部署形态�
 - 经济理论时间线（历史线，一级入口）
 - 名人篇：人物卡片 + 影响网络（提出什么理论、影响了谁、受谁影响、个人理论时间线）
 - 术语篇：专业名词词典，搜索框 + 目录 + 单词条查看，词条标注出现章节与引用
-- 约束：禁止 git tag、禁止发布部署（CI 只做构建验证）；push 前 build 必须全绿
+- 名著篇：十三本经济学名著书架（按出版年份排、按流派筛选，点击展开短评与作者链接）
+- 知识点主文档（`docs/knowledge.md`）：课程框架与教材坐标、名著篇坐标、官方数据源、应用场景与学习路径（nav 一等入口）
+- 约束：禁止 git tag 与 release；CI 构建并部署 GitHub Pages（PR 只做构建验证）；push 前 build 必须全绿
 - 数学公式渲染必须完整支持 $$ 与行内 $
 
 ## Brand Commitments
@@ -44,9 +46,9 @@ delegated: VitePress（用户明确指定）。包管理用 pnpm，部署形态�
 ## Evidence on Hand
 
 - 五门课章节正文 + History.md（问题树与理论推进链，时间线数据源）
-- 经济学-术语.md：百余词条，格式 `- **术语**：定义 [原文](章节)`（术语篇数据源）
-- 经济学-名人.md：16 人名骨架，仅古诺有正文（名人篇需重新结构化）
-- math/ 12 个文件：微积分、线代、概率统计
+- 经济学-术语.md：291 词条，格式 `- **术语**：定义 [原文](章节)`（术语篇数据源）
+- 经济学-名人.md：16 人名骨架（名人篇已重构为 people.ts 结构化数据集：46 人词条与影响网络）
+- docs/math/ 12 个文件：微积分、线代、概率统计与最优化方法
 - 无真实图片素材；不虚构人物照片、数据图表引用
 
 ## Product Principles

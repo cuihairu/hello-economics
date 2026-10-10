@@ -26,7 +26,7 @@ Hello Economics 是一个西方经济学学习与参考站。它把主干课程�
 
 ## 使用许可
 
-除特别注明外，本站内容以 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 授权：可自由转载、引用与改编，须注明出处（建议附页面链接），以相同方式共享；不得用于商业目的。教学与个人学习无须额外申请。
+除特别注明外，本站内容以 [知识共享署名 4.0 国际许可协议（CC BY 4.0）](https://creativecommons.org/licenses/by/4.0/) 授权：可自由转载、引用、改编与商业使用，须注明出处（建议附页面链接）；完整许可文本见仓库 [LICENSE](https://github.com/cuihairu/hello-economics/blob/main/LICENSE)，与两份 README 的许可声明一致。
 
 ## 免责声明
 
