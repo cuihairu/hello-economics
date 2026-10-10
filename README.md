@@ -28,7 +28,7 @@ An interactive site built on VitePress, with entry points including:
 | Path | Contents |
 | :--- | :--- |
 | `docs/` | The VitePress site: course texts and introduction pages for the six courses (`docs/western/` `docs/math/` etc.), the timeline / notable economists / glossary / classics pages, theme data, and Vue components |
-| `scripts/` | Gate scripts (broken-link, LaTeX, typography, and rendered-formula checks) and `build-glossary` term generation |
+| `scripts/` | Gate scripts (broken-link, LaTeX, typography, navigation coverage, and rendered-formula checks), `build-glossary` term generation, and one-time migration/rewrite tools |
 | `tests/` | Black-box tests for data and gates (`node --test`) plus component mounting (`vitest`) |
 | `经济学-术语.md` `经济学-名人.md` | Root-level source material: glossary entries and the economists skeleton (entry backlinks are written as `docs/`-relative paths, for the generation chain to consume) |
 

@@ -28,7 +28,7 @@
 | 路径 | 内容 |
 | :--- | :--- |
 | `docs/` | VitePress 站点：六门课正文与导论页（`docs/western/` `docs/math/` 等）、时间线/名人/术语/名著页面、主题数据与 Vue 组件 |
-| `scripts/` | 门禁脚本（死链、LaTeX、排印、渲染公式检查）与 `build-glossary` 词条生成 |
+| `scripts/` | 门禁脚本（死链、LaTeX、排印、侧栏覆盖、渲染公式检查）、`build-glossary` 词条生成，以及一次性迁移与改写工具 |
 | `tests/` | 数据与门禁黑盒（`node --test`）+ 组件挂载（`vitest`） |
 | `经济学-术语.md` `经济学-名人.md` | 根级源资料：术语词条与名人骨架（词条回链按 `docs/` 相对路径书写，供生成链消费） |
 

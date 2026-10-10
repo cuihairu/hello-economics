@@ -5,7 +5,6 @@ primary_target: "docs/timeline.md"
 related_targets:
   - "docs/.vitepress/theme/components/TheoryTimeline.vue"
   - "docs/.vitepress/theme/data/timeline.ts"
-  - "docs/data/Readme.md"
 ---
 
 # Surface brief: 理论时间线（可拖动编年线）
@@ -15,8 +14,8 @@ related_targets:
 
 ## Audience / job / proof / constraints
 - 受众：需要「按时间找理论、按理论找章节」的中文读者；任务 = 看疏密 → 放大 → 点开一条 why
-- 证明 = 全部节点真实回链站内章节（`/western/...`、`/monetary/...`、`/data/...`），死链即视为未完成
-- 约束：无外部图表库（纯 Vue + CSS）；SSR 安全（window 只在 onMounted 后访问）；明暗双模式；`prefers-reduced-motion`；键盘可达（轴可聚焦、←/→ 换节点、+/− 缩放）；禁止发布部署动作
+- 证明 = 全部节点真实回链站内章节（`/western/...`、`/monetary/...`、`/finance/...` 等），死链即视为未完成
+- 约束：无外部图表库（纯 Vue + CSS）；SSR 安全（window 只在 onMounted 后访问）；明暗双模式；`prefers-reduced-motion`；键盘可达（轴可聚焦、←/→ 换节点、+/− 缩放）；禁止 git tag 与 release
 
 ## Chosen direction: 账本上的横轴
 把首页那条竖向脉络线在这里旋转成横轴：一条 2px 主线 + 节点圆 + 上下车道卡片，卡片用发丝引线连回它挂靠的年份。年份一律等宽表格数字，因此「1500」与「2020」在同一列上对齐——这是账本的读法，不是信息图的读法。
