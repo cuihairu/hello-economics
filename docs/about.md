@@ -36,3 +36,21 @@ Hello Economics 是一个西方经济学学习与参考站。它把主干课程�
 ## 更新与联系
 
 内容以批次方式持续修订，全部改动见仓库提交历史。仓库地址 [cuihairu/hello-economics](https://github.com/cuihairu/hello-economics)，发现问题可在 GitHub 提 issue。
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [books](books.md)
+- [Readme](/finance/Readme.md)
+- [glossary](glossary.md)
+- [Readme](/international/Readme.md)
+- [Readme](/math/Readme.md)
+- [Readme](/monetary/Readme.md)
+- [people](people.md)
+- [参考书目](/reference/参考书目.md)
+- [Readme](/socialist/Readme.md)
+- [timeline](timeline.md)
+- [Readme](/western/Readme.md)
+- [宏观经济活动与宏观经济学](/western/宏观经济活动与宏观经济学.md)
+- [需求与供给](/western/需求与供给.md)
+- [审计-文档一致性](审计-文档一致性.md)

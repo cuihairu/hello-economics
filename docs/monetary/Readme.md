@@ -41,3 +41,15 @@
 - 曹龙骐《金融学》（第六版）
 - 米什金《货币金融学》
 - 这门课的教材框架、名著坐标与官方数据源收拢在 [知识点主文档](/knowledge)。
+
+## 参考资料
+
+- 曹龙骐《金融学》（第六版）——货币供求、利率、金融体系与政策各章的通行框架。
+- 全书目见[参考书目](/reference/参考书目)。
+- [Wikipedia · Monetary policy](https://en.wikipedia.org/wiki/Monetary_policy)
+- [Wikipedia · Financial market](https://en.wikipedia.org/wiki/Financial_market)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [about](/about.md)

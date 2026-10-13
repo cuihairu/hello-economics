@@ -319,3 +319,15 @@
 
 - 货币银行学的理论推进顺序是：
   先解释货币是什么，再解释信用怎样被创造，再解释货币如何影响通胀和宏观稳定，最后推进到开放经济和国际货币秩序。
+
+## 参考资料
+
+- 亨利·威廉·斯皮格尔《经济思想的成长》——理论脉络的史实参照。
+- 米什金《货币金融学》——货币需求与货币传导机制的实证视角。
+- 全书目见[参考书目](/reference/参考书目)。
+- [Wikipedia · Monetary policy](https://en.wikipedia.org/wiki/Monetary_policy)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [Readme](Readme.md)

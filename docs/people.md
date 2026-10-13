@@ -8,3 +8,11 @@ layout: page
 经济学家不是孤立地想问题：斯密读过魁奈的《经济表》，凯恩斯是马歇尔的学生，卢卡斯接着弗里德曼往下说。这里整理了与站点内容相关的经济学家，点击卡片查看每个人的生平、提出与发展，以及师承线索——受谁影响、影响了谁，可以沿着链接一路走下去。
 
 <PeopleNetwork />
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [about](about.md)
+- [knowledge](knowledge.md)
+- [Readme](/socialist/Readme.md)
+- [timeline](timeline.md)

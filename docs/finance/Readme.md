@@ -40,3 +40,14 @@
 
 - 陈共《财政学》（第十版）
 - 这门课的教材框架、名著坐标与官方数据源收拢在 [知识点主文档](/knowledge)。
+
+## 参考资料
+
+- 陈共《财政学》（第十版）——财政职能、支出、税收、国债、预算与赤字的结构来源。
+- 全书目见[参考书目](/reference/参考书目)。
+- [Wikipedia · Public finance](https://en.wikipedia.org/wiki/Public_finance)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [about](/about.md)

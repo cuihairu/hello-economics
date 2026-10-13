@@ -301,3 +301,15 @@
 
 - 社会主义经济学的理论推进顺序是：
   先从资本主义批判走向科学社会主义，再从理论走向计划体制，再从计划体制走向社会主义市场经济，最后推进到现代化发展、开放和治理问题。
+
+## 参考资料
+
+- 吴敬琏《当代中国经济改革》——制度变迁与改革史的经验叙述。
+- 全书目见[参考书目](/reference/参考书目)。
+- [Wikipedia · Economic reform in China](https://en.wikipedia.org/wiki/Economic_reform_in_China)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [Readme](Readme.md)
+- [中国共产党重要会议与社会主义经济体制演进](中国共产党重要会议与社会主义经济体制演进.md)

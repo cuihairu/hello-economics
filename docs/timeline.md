@@ -28,3 +28,14 @@ import { TIMELINE } from './.vitepress/theme/data/timeline'
 时间线的条目来自各章「理论的诞生与验证」一节，年份取的是**著作或机制出现的年份**，不是它被广泛接受的年份：科斯 1960 年的《社会成本问题》当年几无人引用，到 1970 年代经由斯蒂格勒的命名与推广才成为法律经济学的地基；理性预期 1961 年由穆思提出，直到 1976 年卢卡斯批判之后才真正改写宏观模型。所以这条线标出的是「问题被第一次认真回答」的时刻，而不是「共识形成」的时刻——后者要另画一条线，且通常滞后十五到二十年。
 
 <TheoryTimeline />
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [about](about.md)
+- [Readme](/international/Readme.md)
+- [knowledge](knowledge.md)
+- [Readme](/monetary/Readme.md)
+- [参考书目](/reference/参考书目.md)
+- [Readme](/western/Readme.md)
+- [导言](/western/导言.md)

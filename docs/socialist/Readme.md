@@ -121,3 +121,14 @@
 ## 七、最后把整门课压成一句话
 
 社会主义经济学讨论的核心，不是要不要市场，而是**社会主义制度怎样利用市场、约束市场、引导市场，并把增长、公平、开放和治理统一起来。**
+
+## 参考资料
+
+- 卫兴华、张宇《社会主义经济理论》（高等教育出版社）——导论到政府调节各章的通行框架。
+- 全书目见[参考书目](/reference/参考书目)。
+- [Wikipedia · Socialist market economy](https://en.wikipedia.org/wiki/Socialist_market_economy)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [about](/about.md)

@@ -41,3 +41,14 @@
 - 高鸿业《西方经济学》（第八版，宏观部分）
 - 克鲁格曼《国际经济学》
 - 这门课的教材框架、名著坐标与官方数据源收拢在 [知识点主文档](/knowledge)。
+
+## 参考资料
+
+- 克鲁格曼、奥伯斯法尔德《国际经济学》——贸易理论与开放宏观的主流框架。
+- 全书目见[参考书目](/reference/参考书目)。
+- [Wikipedia · International trade](https://en.wikipedia.org/wiki/International_trade)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [about](/about.md)

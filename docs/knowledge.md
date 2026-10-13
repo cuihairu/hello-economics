@@ -70,3 +70,13 @@
 - 十三本代表作与提问方式的转向:[名著篇](books.md)
 - 年份口径与理论的诞生验证:[理论时间线](timeline.md)、[术语篇](glossary.md)、[人物篇](people.md)
 - 官方文档与数据源(2026-10-10 实取):[FRED](https://fred.stlouisfed.org/)、[NBER](https://www.nber.org/)、[BEA](https://www.bea.gov/)、[World Bank Open Data](https://data.worldbank.org/)、[国家统计局](https://www.stats.gov.cn/)、[人民银行](https://www.pbc.gov.cn/)、[欧洲央行](https://www.ecb.europa.eu/)、[诺贝尔奖官网](https://www.nobelprize.org/prizes/economic-sciences/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [Readme](/finance/Readme.md)
+- [Readme](/international/Readme.md)
+- [Readme](/math/Readme.md)
+- [Readme](/monetary/Readme.md)
+- [Readme](/socialist/Readme.md)
+- [Readme](/western/Readme.md)
