@@ -11,17 +11,58 @@
    "url": "https://zh.wikipedia.org/wiki/LM%E6%9B%B2%E7%BA%BF"
   }
  ],
- "个人可支配收入": [],
- "交换与生产同时符合帕累托最优的条件": [],
- "交换符合帕累托最优的条件": [],
- "产品转换率": [],
+ "个人可支配收入": [
+  {
+   "label": "维基百科 · 可支配收入",
+   "url": "https://zh.wikipedia.org/wiki/%E5%8F%AF%E6%94%AF%E9%85%8D%E6%94%B6%E5%85%A5"
+  },
+  {
+   "label": "Wikipedia · Disposable and discretionary income",
+   "url": "https://en.wikipedia.org/wiki/Disposable_and_discretionary_income"
+  }
+ ],
+ "交换与生产同时符合帕累托最优的条件": [
+  {
+   "label": "维基百科 · 帕累托最优",
+   "url": "https://zh.wikipedia.org/wiki/%E5%B8%95%E7%B4%AF%E6%89%98%E6%9C%80%E4%BC%98"
+  },
+  {
+   "label": "Wikipedia · Pareto efficiency",
+   "url": "https://en.wikipedia.org/wiki/Pareto_efficiency"
+  }
+ ],
+ "交换符合帕累托最优的条件": [
+  {
+   "label": "维基百科 · 帕累托最优",
+   "url": "https://zh.wikipedia.org/wiki/%E5%B8%95%E7%B4%AF%E6%89%98%E6%9C%80%E4%BC%98"
+  },
+  {
+   "label": "Wikipedia · Pareto efficiency",
+   "url": "https://en.wikipedia.org/wiki/Pareto_efficiency"
+  }
+ ],
+ "产品转换率": [
+  {
+   "label": "Wikipedia · Marginal rate of transformation",
+   "url": "https://en.wikipedia.org/wiki/Marginal_rate_of_transformation"
+  }
+ ],
  "价格歧视": [
   {
    "label": "维基百科 · 价格歧视",
    "url": "https://zh.wikipedia.org/wiki/%E4%BB%B7%E6%A0%BC%E6%AD%A7%E8%A7%86"
   }
  ],
- "价格调整方程": [],
+ "价格调整方程": [
+  {
+   "label": "Wikipedia · Phillips curve",
+   "url": "https://en.wikipedia.org/wiki/Phillips_curve"
+  },
+  {
+   "label": "维基百科 · 菲利普斯曲线",
+   "url": "https://zh.wikipedia.org/wiki/%E8%8F%B2%E5%88%A9%E6%99%AE%E6%96%AF%E6%9B%B2%E7%BA%BF"
+  }
+ ],
  "供给": [
   {
    "label": "维基百科 · 供给",
@@ -34,8 +75,22 @@
    "url": "https://zh.wikipedia.org/wiki/%E4%BE%9B%E7%BB%99%E7%9A%84%E4%BB%B7%E6%A0%BC%E5%BC%B9%E6%80%A7"
   }
  ],
- "供给规律": [],
- "免费乘车者问题": [],
+ "供给规律": [
+  {
+   "label": "Wikipedia · Law of supply",
+   "url": "https://en.wikipedia.org/wiki/Law_of_supply"
+  }
+ ],
+ "免费乘车者问题": [
+  {
+   "label": "维基百科 · 搭便车问题",
+   "url": "https://zh.wikipedia.org/wiki/%E6%90%AD%E4%BE%BF%E8%BD%A6%E9%97%AE%E9%A2%98"
+  },
+  {
+   "label": "Wikipedia · Free-rider problem",
+   "url": "https://en.wikipedia.org/wiki/Free-rider_problem"
+  }
+ ],
  "公共物品": [
   {
    "label": "维基百科 · 公共物品",
@@ -46,16 +101,44 @@
    "url": "https://zh.wikipedia.org/wiki/%E5%85%AC%E5%85%B1%E7%89%A9%E5%93%81"
   }
  ],
- "单一货币规则": [],
- "厂商利润最大化原则": [],
+ "单一货币规则": [
+  {
+   "label": "Wikipedia · Monetarism",
+   "url": "https://en.wikipedia.org/wiki/Monetarism"
+  },
+  {
+   "label": "维基百科 · 货币主义",
+   "url": "https://zh.wikipedia.org/wiki/%E8%B4%A7%E5%B8%81%E4%B8%BB%E4%B9%89"
+  }
+ ],
+ "厂商利润最大化原则": [
+  {
+   "label": "Wikipedia · Profit maximization",
+   "url": "https://en.wikipedia.org/wiki/Profit_maximization"
+  },
+  {
+   "label": "维基百科 · 利潤最大化",
+   "url": "https://zh.wikipedia.org/wiki/%E5%88%A9%E6%BD%A4%E6%9C%80%E5%A4%A7%E5%8C%96"
+  }
+ ],
  "古诺模型": [
   {
    "label": "维基百科 · 古诺模型",
    "url": "https://zh.wikipedia.org/wiki/%E5%8F%A4%E8%AF%BA%E6%A8%A1%E5%9E%8B"
   }
  ],
- "名义的和实际的国民收入": [],
- "向后弯曲的劳动供给曲线": [],
+ "名义的和实际的国民收入": [
+  {
+   "label": "Wikipedia · Real and nominal value",
+   "url": "https://en.wikipedia.org/wiki/Real_and_nominal_value"
+  }
+ ],
+ "向后弯曲的劳动供给曲线": [
+  {
+   "label": "Wikipedia · Backward bending labour supply curve",
+   "url": "https://en.wikipedia.org/wiki/Backward_bending_labour_supply_curve"
+  }
+ ],
  "哈罗德-多马模型": [
   {
    "label": "维基百科 · 哈罗德-多马模型",
@@ -66,7 +149,16 @@
    "url": "https://zh.wikipedia.org/wiki/%E5%93%88%E7%BD%97%E5%BE%B7-%E5%A4%9A%E9%A9%AC%E6%A8%A1%E5%9E%8B"
   }
  ],
- "商品的边际替代率": [],
+ "商品的边际替代率": [
+  {
+   "label": "维基百科 · 边际替代率",
+   "url": "https://zh.wikipedia.org/wiki/%E8%BE%B9%E9%99%85%E6%9B%BF%E4%BB%A3%E7%8E%87"
+  },
+  {
+   "label": "Wikipedia · Marginal rate of substitution",
+   "url": "https://en.wikipedia.org/wiki/Marginal_rate_of_substitution"
+  }
+ ],
  "国内生产总值": [
   {
    "label": "维基百科 · 国内生产总值",
@@ -79,10 +171,42 @@
    "url": "https://zh.wikipedia.org/wiki/%E5%9B%BD%E6%B0%91%E7%94%9F%E4%BA%A7%E6%80%BB%E5%80%BC"
   }
  ],
- "均衡价格": [],
- "垄断竞争市场": [],
- "外在性": [],
- "外在经济和外在不经济": [],
+ "均衡价格": [
+  {
+   "label": "维基百科 · 经济均衡",
+   "url": "https://zh.wikipedia.org/wiki/%E7%BB%8F%E6%B5%8E%E5%9D%87%E8%A1%A1"
+  },
+  {
+   "label": "Wikipedia · Economic equilibrium",
+   "url": "https://en.wikipedia.org/wiki/Economic_equilibrium"
+  }
+ ],
+ "垄断竞争市场": [
+  {
+   "label": "Wikipedia · Monopolistic competition",
+   "url": "https://en.wikipedia.org/wiki/Monopolistic_competition"
+  }
+ ],
+ "外在性": [
+  {
+   "label": "维基百科 · 外部性",
+   "url": "https://zh.wikipedia.org/wiki/%E5%A4%96%E9%83%A8%E6%80%A7"
+  },
+  {
+   "label": "Wikipedia · Externality",
+   "url": "https://en.wikipedia.org/wiki/Externality"
+  }
+ ],
+ "外在经济和外在不经济": [
+  {
+   "label": "维基百科 · 外部性",
+   "url": "https://zh.wikipedia.org/wiki/%E5%A4%96%E9%83%A8%E6%80%A7"
+  },
+  {
+   "label": "Wikipedia · Externality",
+   "url": "https://en.wikipedia.org/wiki/Externality"
+  }
+ ],
  "失业率": [
   {
    "label": "维基百科 · 失业率",
@@ -103,7 +227,12 @@
    "url": "https://zh.wikipedia.org/wiki/%E5%AE%8C%E5%85%A8%E7%AB%9E%E4%BA%89"
   }
  ],
- "寡头垄断市场": [],
+ "寡头垄断市场": [
+  {
+   "label": "维基百科 · 寡头垄断",
+   "url": "https://zh.wikipedia.org/wiki/%E5%AF%A1%E5%A4%B4%E5%9E%84%E6%96%AD"
+  }
+ ],
  "局部均衡和一般均衡": [],
  "市场出清": [
   {
@@ -121,22 +250,96 @@
    "url": "https://zh.wikipedia.org/wiki/%E5%B8%82%E5%9C%BA%E5%A4%B1%E7%81%B5"
   }
  ],
- "帕累托最优状态": [],
+ "帕累托最优状态": [
+  {
+   "label": "维基百科 · 帕累托最优",
+   "url": "https://zh.wikipedia.org/wiki/%E5%B8%95%E7%B4%AF%E6%89%98%E6%9C%80%E4%BC%98"
+  },
+  {
+   "label": "Wikipedia · Pareto efficiency",
+   "url": "https://en.wikipedia.org/wiki/Pareto_efficiency"
+  }
+ ],
  "平均成本": [
   {
    "label": "维基百科 · 平均成本法",
    "url": "https://zh.wikipedia.org/wiki/%E5%B9%B3%E5%9D%87%E6%88%90%E6%9C%AC%E6%B3%95"
   }
  ],
- "平均要素成本": [],
- "引致需求": [],
- "总供给曲线": [],
- "总收益、平均收益和边际收益": [],
- "总需求曲线": [],
- "成本推动的通货膨胀": [],
- "投资函数": [],
- "支持价格": [],
- "收入指数化": [],
+ "平均要素成本": [
+  {
+   "label": "Wikipedia · Factor market",
+   "url": "https://en.wikipedia.org/wiki/Factor_market"
+  },
+  {
+   "label": "维基百科 · 生产要素",
+   "url": "https://zh.wikipedia.org/wiki/%E7%94%9F%E4%BA%A7%E8%A6%81%E7%B4%A0"
+  }
+ ],
+ "引致需求": [
+  {
+   "label": "Wikipedia · Derived demand",
+   "url": "https://en.wikipedia.org/wiki/Derived_demand"
+  }
+ ],
+ "总供给曲线": [
+  {
+   "label": "维基百科 · 总供给",
+   "url": "https://zh.wikipedia.org/wiki/%E6%80%BB%E4%BE%9B%E7%BB%99"
+  },
+  {
+   "label": "Wikipedia · Aggregate supply",
+   "url": "https://en.wikipedia.org/wiki/Aggregate_supply"
+  }
+ ],
+ "总收益、平均收益和边际收益": [
+  {
+   "label": "Wikipedia · Marginal revenue",
+   "url": "https://en.wikipedia.org/wiki/Marginal_revenue"
+  }
+ ],
+ "总需求曲线": [
+  {
+   "label": "维基百科 · 总需求",
+   "url": "https://zh.wikipedia.org/wiki/%E6%80%BB%E9%9C%80%E6%B1%82"
+  },
+  {
+   "label": "Wikipedia · Aggregate demand",
+   "url": "https://en.wikipedia.org/wiki/Aggregate_demand"
+  }
+ ],
+ "成本推动的通货膨胀": [
+  {
+   "label": "Wikipedia · Cost-push inflation",
+   "url": "https://en.wikipedia.org/wiki/Cost-push_inflation"
+  }
+ ],
+ "投资函数": [
+  {
+   "label": "Wikipedia · Investment (macroeconomics)",
+   "url": "https://en.wikipedia.org/wiki/Investment_%28macroeconomics%29"
+  },
+  {
+   "label": "维基百科 · 投资",
+   "url": "https://zh.wikipedia.org/wiki/%E6%8A%95%E8%B5%84"
+  }
+ ],
+ "支持价格": [
+  {
+   "label": "Wikipedia · Price floor",
+   "url": "https://en.wikipedia.org/wiki/Price_floor"
+  }
+ ],
+ "收入指数化": [
+  {
+   "label": "Wikipedia · Indexation",
+   "url": "https://en.wikipedia.org/wiki/Indexation"
+  },
+  {
+   "label": "维基百科 · 指数化",
+   "url": "https://zh.wikipedia.org/wiki/%E6%8C%87%E6%95%B0%E5%8C%96"
+  }
+ ],
  "收入效应": [
   {
    "label": "维基百科 · 收入效应",
@@ -159,7 +362,12 @@
    "url": "https://zh.wikipedia.org/wiki/%E6%96%B0%E5%8F%A4%E5%85%B8%E5%A2%9E%E9%95%BF%E6%A8%A1%E5%9E%8B"
   }
  ],
- "新古典宏观经济学": [],
+ "新古典宏观经济学": [
+  {
+   "label": "Wikipedia · New classical macroeconomics",
+   "url": "https://en.wikipedia.org/wiki/New_classical_macroeconomics"
+  }
+ ],
  "无差异曲线": [
   {
    "label": "维基百科 · 无差异曲线",
@@ -176,30 +384,76 @@
    "url": "https://zh.wikipedia.org/wiki/%E6%9B%BF%E4%BB%A3%E6%95%88%E5%BA%94"
   }
  ],
- "有保证的增长率": [],
- "比较静态分析": [],
+ "有保证的增长率": [
+  {
+   "label": "Wikipedia · Harrod–Domar model",
+   "url": "https://en.wikipedia.org/wiki/Harrod%E2%80%93Domar_model"
+  },
+  {
+   "label": "维基百科 · 哈罗德-多马模型",
+   "url": "https://zh.wikipedia.org/wiki/%E5%93%88%E7%BD%97%E5%BE%B7-%E5%A4%9A%E9%A9%AC%E6%A8%A1%E5%9E%8B"
+  }
+ ],
+ "比较静态分析": [
+  {
+   "label": "Wikipedia · Comparative statics",
+   "url": "https://en.wikipedia.org/wiki/Comparative_statics"
+  }
+ ],
  "流动偏好": [
   {
    "label": "维基百科 · 流动偏好",
    "url": "https://zh.wikipedia.org/wiki/%E6%B5%81%E5%8A%A8%E5%81%8F%E5%A5%BD"
   }
  ],
- "流动偏好陷阱": [],
+ "流动偏好陷阱": [
+  {
+   "label": "Wikipedia · Liquidity trap",
+   "url": "https://en.wikipedia.org/wiki/Liquidity_trap"
+  },
+  {
+   "label": "维基百科 · 流动性陷阱",
+   "url": "https://zh.wikipedia.org/wiki/%E6%B5%81%E5%8A%A8%E6%80%A7%E9%99%B7%E9%98%B1"
+  }
+ ],
  "消费物价指数": [
   {
    "label": "维基百科 · 消费物价指数",
    "url": "https://zh.wikipedia.org/wiki/%E6%B6%88%E8%B4%B9%E7%89%A9%E4%BB%B7%E6%8C%87%E6%95%B0"
   }
  ],
- "消费者均衡": [],
- "理性预期假设": [],
+ "消费者均衡": [
+  {
+   "label": "Wikipedia · Consumer choice",
+   "url": "https://en.wikipedia.org/wiki/Consumer_choice"
+  }
+ ],
+ "理性预期假设": [
+  {
+   "label": "Wikipedia · Rational expectations",
+   "url": "https://en.wikipedia.org/wiki/Rational_expectations"
+  },
+  {
+   "label": "维基百科 · 理性预期",
+   "url": "https://zh.wikipedia.org/wiki/%E7%90%86%E6%80%A7%E9%A2%84%E6%9C%9F"
+  }
+ ],
  "瓦尔拉斯定律": [
   {
    "label": "维基百科 · 瓦尔拉斯定律",
    "url": "https://zh.wikipedia.org/wiki/%E7%93%A6%E5%B0%94%E6%8B%89%E6%96%AF%E5%AE%9A%E5%BE%8B"
   }
  ],
- "生产符合帕累托最优的条件": [],
+ "生产符合帕累托最优的条件": [
+  {
+   "label": "维基百科 · 帕累托最优",
+   "url": "https://zh.wikipedia.org/wiki/%E5%B8%95%E7%B4%AF%E6%89%98%E6%9C%80%E4%BC%98"
+  },
+  {
+   "label": "Wikipedia · Pareto efficiency",
+   "url": "https://en.wikipedia.org/wiki/Pareto_efficiency"
+  }
+ ],
  "生产要素最优组合": [
   {
    "label": "维基百科 · 生产要素最优组合",
@@ -241,25 +495,67 @@
    "url": "https://zh.wikipedia.org/wiki/%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1"
   }
  ],
- "自然率假说": [],
+ "自然率假说": [
+  {
+   "label": "Wikipedia · Natural rate of unemployment",
+   "url": "https://en.wikipedia.org/wiki/Natural_rate_of_unemployment"
+  },
+  {
+   "label": "维基百科 · 自然失業率",
+   "url": "https://zh.wikipedia.org/wiki/%E8%87%AA%E7%84%B6%E5%A4%B1%E6%A5%AD%E7%8E%87"
+  }
+ ],
  "菲利普斯曲线": [
   {
    "label": "维基百科 · 菲利普斯曲线",
    "url": "https://zh.wikipedia.org/wiki/%E8%8F%B2%E5%88%A9%E6%99%AE%E6%96%AF%E6%9B%B2%E7%BA%BF"
   }
  ],
- "规模收益递增、不变和递减": [],
- "规模经济与规模不经济": [],
+ "规模收益递增、不变和递减": [
+  {
+   "label": "Wikipedia · Returns to scale",
+   "url": "https://en.wikipedia.org/wiki/Returns_to_scale"
+  },
+  {
+   "label": "维基百科 · 规模报酬",
+   "url": "https://zh.wikipedia.org/wiki/%E8%A7%84%E6%A8%A1%E6%8A%A5%E9%85%AC"
+  }
+ ],
+ "规模经济与规模不经济": [
+  {
+   "label": "Wikipedia · Economies of scale",
+   "url": "https://en.wikipedia.org/wiki/Economies_of_scale"
+  },
+  {
+   "label": "维基百科 · 规模经济",
+   "url": "https://zh.wikipedia.org/wiki/%E8%A7%84%E6%A8%A1%E7%BB%8F%E6%B5%8E"
+  }
+ ],
  "货币主义": [
   {
    "label": "维基百科 · 货币主义",
    "url": "https://zh.wikipedia.org/wiki/%E8%B4%A7%E5%B8%81%E4%B8%BB%E4%B9%89"
   }
  ],
- "货币工资刚性": [],
- "资本的边际效率": [],
+ "货币工资刚性": [
+  {
+   "label": "Wikipedia · Sticky wages",
+   "url": "https://en.wikipedia.org/wiki/Sticky_wages"
+  }
+ ],
+ "资本的边际效率": [
+  {
+   "label": "Wikipedia · Marginal efficiency of capital",
+   "url": "https://en.wikipedia.org/wiki/Marginal_efficiency_of_capital"
+  }
+ ],
  "边际产品价值": [],
- "边际产量": [],
+ "边际产量": [
+  {
+   "label": "Wikipedia · Marginal product",
+   "url": "https://en.wikipedia.org/wiki/Marginal_product"
+  }
+ ],
  "边际成本": [
   {
    "label": "维基百科 · 边际成本",
@@ -270,11 +566,44 @@
    "url": "https://zh.wikipedia.org/wiki/%E8%BE%B9%E9%99%85%E6%88%90%E6%9C%AC"
   }
  ],
- "边际技术替代率": [],
- "边际技术替代率递减规律": [],
- "边际收益产品": [],
- "边际收益递减规律": [],
- "边际效用递减规律": [],
+ "边际技术替代率": [
+  {
+   "label": "Wikipedia · Marginal rate of technical substitution",
+   "url": "https://en.wikipedia.org/wiki/Marginal_rate_of_technical_substitution"
+  }
+ ],
+ "边际技术替代率递减规律": [
+  {
+   "label": "Wikipedia · Marginal rate of technical substitution",
+   "url": "https://en.wikipedia.org/wiki/Marginal_rate_of_technical_substitution"
+  }
+ ],
+ "边际收益产品": [
+  {
+   "label": "Wikipedia · Marginal revenue product",
+   "url": "https://en.wikipedia.org/wiki/Marginal_revenue_product"
+  }
+ ],
+ "边际收益递减规律": [
+  {
+   "label": "Wikipedia · Diminishing returns",
+   "url": "https://en.wikipedia.org/wiki/Diminishing_returns"
+  },
+  {
+   "label": "维基百科 · 边际收益递减",
+   "url": "https://zh.wikipedia.org/wiki/%E8%BE%B9%E9%99%85%E6%94%B6%E7%9B%8A%E9%80%92%E5%87%8F"
+  }
+ ],
+ "边际效用递减规律": [
+  {
+   "label": "Wikipedia · Marginal utility",
+   "url": "https://en.wikipedia.org/wiki/Marginal_utility"
+  },
+  {
+   "label": "维基百科 · 边际效用",
+   "url": "https://zh.wikipedia.org/wiki/%E8%BE%B9%E9%99%85%E6%95%88%E7%94%A8"
+  }
+ ],
  "边际要素成本": [],
  "逆向选择": [
   {
@@ -294,7 +623,16 @@
    "url": "https://zh.wikipedia.org/wiki/%E6%88%90%E6%9C%AC%E6%9B%B2%E7%BA%BF"
   }
  ],
- "限制价格": [],
+ "限制价格": [
+  {
+   "label": "Wikipedia · Price ceiling",
+   "url": "https://en.wikipedia.org/wiki/Price_ceiling"
+  },
+  {
+   "label": "维基百科 · 价格上限",
+   "url": "https://zh.wikipedia.org/wiki/%E4%BB%B7%E6%A0%BC%E4%B8%8A%E9%99%90"
+  }
+ ],
  "需求": [
   {
    "label": "维基百科 · 需求",
@@ -305,7 +643,12 @@
    "url": "https://zh.wikipedia.org/wiki/%E9%9C%80%E6%B1%82"
   }
  ],
- "需求拉动的通货膨胀": [],
+ "需求拉动的通货膨胀": [
+  {
+   "label": "Wikipedia · Demand-pull inflation",
+   "url": "https://en.wikipedia.org/wiki/Demand-pull_inflation"
+  }
+ ],
  "需求的交叉弹性": [
   {
    "label": "维基百科 · 需求的交叉弹性",
@@ -330,10 +673,38 @@
    "url": "https://zh.wikipedia.org/wiki/%E9%9C%80%E6%B1%82%E8%A7%84%E5%BE%8B"
   }
  ],
- "预算约束线": [],
- "收入-消费曲线": [],
- "基数效用论": [],
- "政府购买乘数": [],
+ "预算约束线": [
+  {
+   "label": "Wikipedia · Budget constraint",
+   "url": "https://en.wikipedia.org/wiki/Budget_constraint"
+  },
+  {
+   "label": "维基百科 · 预算约束",
+   "url": "https://zh.wikipedia.org/wiki/%E9%A2%84%E7%AE%97%E7%BA%A6%E6%9D%9F"
+  }
+ ],
+ "收入-消费曲线": [
+  {
+   "label": "Wikipedia · Income–consumption curve",
+   "url": "https://en.wikipedia.org/wiki/Income%E2%80%93consumption_curve"
+  }
+ ],
+ "基数效用论": [
+  {
+   "label": "Wikipedia · Cardinal utility",
+   "url": "https://en.wikipedia.org/wiki/Cardinal_utility"
+  },
+  {
+   "label": "维基百科 · 基数效用",
+   "url": "https://zh.wikipedia.org/wiki/%E5%9F%BA%E6%95%B0%E6%95%88%E7%94%A8"
+  }
+ ],
+ "政府购买乘数": [
+  {
+   "label": "Wikipedia · Spending multiplier",
+   "url": "https://en.wikipedia.org/wiki/Spending_multiplier"
+  }
+ ],
  "一价定律": [
   {
    "label": "维基百科 · 一价定律",
@@ -346,7 +717,12 @@
    "url": "https://zh.wikipedia.org/wiki/%E5%80%BE%E9%94%80"
   }
  ],
- "偿债率": [],
+ "偿债率": [
+  {
+   "label": "Wikipedia · Debt service ratio",
+   "url": "https://en.wikipedia.org/wiki/Debt_service_ratio"
+  }
+ ],
  "关税同盟": [
   {
    "label": "维基百科 · 关税同盟",
@@ -357,8 +733,26 @@
    "url": "https://zh.wikipedia.org/wiki/%E5%8D%97%E9%83%A8%E9%9D%9E%E6%B4%B2%E5%85%B3%E7%A8%8E%E5%90%8C%E7%9B%9F"
   }
  ],
- "关税壁垒与非关税壁垒": [],
- "升水与贴水": [],
+ "关税壁垒与非关税壁垒": [
+  {
+   "label": "Wikipedia · Non-tariff barriers to trade",
+   "url": "https://en.wikipedia.org/wiki/Non-tariff_barriers_to_trade"
+  },
+  {
+   "label": "维基百科 · 非关税壁垒",
+   "url": "https://zh.wikipedia.org/wiki/%E9%9D%9E%E5%85%B3%E7%A8%8E%E5%A3%81%E5%9E%92"
+  }
+ ],
+ "升水与贴水": [
+  {
+   "label": "Wikipedia · Forward exchange rate",
+   "url": "https://en.wikipedia.org/wiki/Forward_exchange_rate"
+  },
+  {
+   "label": "维基百科 · 远期汇率",
+   "url": "https://zh.wikipedia.org/wiki/%E8%BF%9C%E6%9C%9F%E6%B1%87%E7%8E%87"
+  }
+ ],
  "固定借贷": [],
  "固定汇率与浮动汇率": [],
  "国际分工": [],

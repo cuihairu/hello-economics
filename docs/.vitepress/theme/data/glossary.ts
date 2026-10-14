@@ -39,28 +39,60 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "个人可支配收入（DPI）是指个人收入扣除个人所得税后，实际可用于消费和储蓄的那部分收入。公式：DPI = 个人收入 − 个人所得税。",
     "source": "/western/宏观经济活动与宏观经济学",
-    "cite": []
+    "cite": [
+      {
+        "label": "维基百科 · 可支配收入",
+        "url": "https://zh.wikipedia.org/wiki/%E5%8F%AF%E6%94%AF%E9%85%8D%E6%94%B6%E5%85%A5"
+      },
+      {
+        "label": "Wikipedia · Disposable and discretionary income",
+        "url": "https://en.wikipedia.org/wiki/Disposable_and_discretionary_income"
+      }
+    ]
   },
   {
     "term": "交换与生产同时符合帕累托最优的条件",
     "course": "西方经济学",
     "def": "交换与生产同时符合帕累托最优的条件是指所有产品中任意两种产品的边际替代率等于这两种产品在生产中的边际转换率，即 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mi>C</mi><msub><mi>S</mi><mrow><mi>X</mi><mi>Y</mi></mrow></msub><mo>=</mo><mi>R</mi><mi>P</mi><msub><mi>T</mi><mrow><mi>X</mi><mi>Y</mi></mrow></msub></mrow><annotation encoding=\"application/x-tex\">RCS_{XY}=RPT_{XY}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"mord mathnormal\" style=\"margin-right:0.0715em;\">C</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0576em;\">S</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3283em;\"><span style=\"top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0785em;\">X</span><span class=\"mord mathnormal mtight\" style=\"margin-right:0.2222em;\">Y</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">P</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3283em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0785em;\">X</span><span class=\"mord mathnormal mtight\" style=\"margin-right:0.2222em;\">Y</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> 。",
     "source": "/western/一般均衡论和福利经济学",
-    "cite": []
+    "cite": [
+      {
+        "label": "维基百科 · 帕累托最优",
+        "url": "https://zh.wikipedia.org/wiki/%E5%B8%95%E7%B4%AF%E6%89%98%E6%9C%80%E4%BC%98"
+      },
+      {
+        "label": "Wikipedia · Pareto efficiency",
+        "url": "https://en.wikipedia.org/wiki/Pareto_efficiency"
+      }
+    ]
   },
   {
     "term": "交换符合帕累托最优的条件",
     "course": "西方经济学",
     "def": "交换符合帕累托最优条件是指在交换方面，任何一对商品之间的边际替代率对任何使用这两种商品的个人来说都相等，即 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mi>C</mi><msubsup><mi>S</mi><mn>12</mn><mi>A</mi></msubsup><mo>=</mo><mi>R</mi><mi>C</mi><msubsup><mi>S</mi><mn>12</mn><mi>B</mi></msubsup></mrow><annotation encoding=\"application/x-tex\">RCS_{12}^{A} = RCS_{12}^B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1.0894em;vertical-align:-0.2481em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"mord mathnormal\" style=\"margin-right:0.0715em;\">C</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0576em;\">S</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413em;\"><span style=\"top:-2.4519em;margin-left:-0.0576em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">12</span></span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">A</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2481em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1.0894em;vertical-align:-0.2481em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"mord mathnormal\" style=\"margin-right:0.0715em;\">C</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0576em;\">S</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413em;\"><span style=\"top:-2.4519em;margin-left:-0.0576em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">12</span></span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0502em;\">B</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2481em;\"><span></span></span></span></span></span></span></span></span></span> ，此时该社会达到了产品分配的帕累托最优状态，从而实现了交换的效率。",
     "source": "/western/一般均衡论和福利经济学",
-    "cite": []
+    "cite": [
+      {
+        "label": "维基百科 · 帕累托最优",
+        "url": "https://zh.wikipedia.org/wiki/%E5%B8%95%E7%B4%AF%E6%89%98%E6%9C%80%E4%BC%98"
+      },
+      {
+        "label": "Wikipedia · Pareto efficiency",
+        "url": "https://en.wikipedia.org/wiki/Pareto_efficiency"
+      }
+    ]
   },
   {
     "term": "产品转换率",
     "course": "西方经济学",
     "def": "边际转换率是指增加另一种商品产出的数量必须减少某种商品产出数量的比例。",
     "source": "/western/一般均衡论和福利经济学",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Marginal rate of transformation",
+        "url": "https://en.wikipedia.org/wiki/Marginal_rate_of_transformation"
+      }
+    ]
   },
   {
     "term": "价格歧视",
@@ -79,7 +111,16 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "价格调整方程指用来表示通胀率与产生通胀压力之间关系的方程。",
     "source": "/western/通货膨胀理论",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Phillips curve",
+        "url": "https://en.wikipedia.org/wiki/Phillips_curve"
+      },
+      {
+        "label": "维基百科 · 菲利普斯曲线",
+        "url": "https://zh.wikipedia.org/wiki/%E8%8F%B2%E5%88%A9%E6%99%AE%E6%96%AF%E6%9B%B2%E7%BA%BF"
+      }
+    ]
   },
   {
     "term": "供给",
@@ -110,14 +151,28 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "供给规律也称为供给定理、供给法则或供给原则，是指生产者的供给量与商品价格之间呈同方向变化的规律。",
     "source": "/western/需求与供给",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Law of supply",
+        "url": "https://en.wikipedia.org/wiki/Law_of_supply"
+      }
+    ]
   },
   {
     "term": "免费乘车者问题",
     "course": "西方经济学",
     "def": "免费乘车者问题是指经济中由于存在不支付即可获得消费满足而产生的市场失灵问题。",
     "source": "/western/市场失灵和微观经济政策",
-    "cite": []
+    "cite": [
+      {
+        "label": "维基百科 · 搭便车问题",
+        "url": "https://zh.wikipedia.org/wiki/%E6%90%AD%E4%BE%BF%E8%BD%A6%E9%97%AE%E9%A2%98"
+      },
+      {
+        "label": "Wikipedia · Free-rider problem",
+        "url": "https://en.wikipedia.org/wiki/Free-rider_problem"
+      }
+    ]
   },
   {
     "term": "公共物品",
@@ -140,14 +195,32 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "单一货币规则是货币主义的政策主张，是货币主义经济学最重要的理论规则。",
     "source": "/western/宏观经济学的意见分歧",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Monetarism",
+        "url": "https://en.wikipedia.org/wiki/Monetarism"
+      },
+      {
+        "label": "维基百科 · 货币主义",
+        "url": "https://zh.wikipedia.org/wiki/%E8%B4%A7%E5%B8%81%E4%B8%BB%E4%B9%89"
+      }
+    ]
   },
   {
     "term": "厂商利润最大化原则",
     "course": "西方经济学",
     "def": "厂商利润最大化原则是厂商做生产决策时所遵循的一般原则，它要求每增加一单位产品（或要素）所增加的收益等于由此带来的成本增加量，即边际收益等于边际成本： <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mi>R</mi><mo>=</mo><mi>M</mi><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">MR =MC</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.109em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.109em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.0715em;\">C</span></span></span></span> 。",
     "source": "/western/市场理论",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Profit maximization",
+        "url": "https://en.wikipedia.org/wiki/Profit_maximization"
+      },
+      {
+        "label": "维基百科 · 利潤最大化",
+        "url": "https://zh.wikipedia.org/wiki/%E5%88%A9%E6%BD%A4%E6%9C%80%E5%A4%A7%E5%8C%96"
+      }
+    ]
   },
   {
     "term": "古诺模型",
@@ -166,14 +239,24 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "（1）名义的国民收入是按物品和劳务当年的价格计算所得的国民收入，它没有考虑通货膨胀因素。（2）实际的国民收入是以从前某一年为基年，按基年价格计算所得的国民收入，或者说是用价格指数折算之后的国民收入。",
     "source": "/western/宏观经济活动与宏观经济学",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Real and nominal value",
+        "url": "https://en.wikipedia.org/wiki/Real_and_nominal_value"
+      }
+    ]
   },
   {
     "term": "向后弯曲的劳动供给曲线",
     "course": "西方经济学",
     "def": "根据劳动者的最优化行为，对应于一个特定的工资率，劳动者在效用最大化点上确定最优劳动供给量，从而得到劳动的供给曲线。",
     "source": "/western/生产要素市场",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Backward bending labour supply curve",
+        "url": "https://en.wikipedia.org/wiki/Backward_bending_labour_supply_curve"
+      }
+    ]
   },
   {
     "term": "哈罗德-多马模型",
@@ -196,7 +279,16 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "商品的边际替代率指在效用水平保持不变的前提条件下，消费者增加一单位第一种商品的消费所需要放弃的另外一种商品的消费数量。",
     "source": "/western/效用论",
-    "cite": []
+    "cite": [
+      {
+        "label": "维基百科 · 边际替代率",
+        "url": "https://zh.wikipedia.org/wiki/%E8%BE%B9%E9%99%85%E6%9B%BF%E4%BB%A3%E7%8E%87"
+      },
+      {
+        "label": "Wikipedia · Marginal rate of substitution",
+        "url": "https://en.wikipedia.org/wiki/Marginal_rate_of_substitution"
+      }
+    ]
   },
   {
     "term": "国内生产总值",
@@ -227,28 +319,60 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "均衡价格是指商品的市场需求量与市场供给量相等时的价格。",
     "source": "/western/需求与供给",
-    "cite": []
+    "cite": [
+      {
+        "label": "维基百科 · 经济均衡",
+        "url": "https://zh.wikipedia.org/wiki/%E7%BB%8F%E6%B5%8E%E5%9D%87%E8%A1%A1"
+      },
+      {
+        "label": "Wikipedia · Economic equilibrium",
+        "url": "https://en.wikipedia.org/wiki/Economic_equilibrium"
+      }
+    ]
   },
   {
     "term": "垄断竞争市场",
     "course": "西方经济学",
     "def": "垄断竞争市场是指一种由许多厂商生产和销售有差别的同种产品的市场，市场中既有垄断又有竞争，既不是完全竞争又不是完全垄断。",
     "source": "/western/市场理论",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Monopolistic competition",
+        "url": "https://en.wikipedia.org/wiki/Monopolistic_competition"
+      }
+    ]
   },
   {
     "term": "外在性",
     "course": "西方经济学",
     "def": "外在性又称外部经济影响，是指一个经济行为主体的经济活动对另一个经济主体的福利所产生的效应，但这种效应并没有通过市场交易反映出来。",
     "source": "/western/市场失灵和微观经济政策",
-    "cite": []
+    "cite": [
+      {
+        "label": "维基百科 · 外部性",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A4%96%E9%83%A8%E6%80%A7"
+      },
+      {
+        "label": "Wikipedia · Externality",
+        "url": "https://en.wikipedia.org/wiki/Externality"
+      }
+    ]
   },
   {
     "term": "外在经济和外在不经济",
     "course": "西方经济学",
     "def": "外在经济是指某一经济个体的一项经济活动给社会其他成员带来好处，但该个体并未获得相应的补偿，即其经济活动带来了正的外在影响；外在不经济是指某一经济个体的一项经济活动给社会其他成员带来成本，但该个体并不需要承担相应的全部成本，即其经济活动带来了负的外在影响。",
     "source": "/western/市场理论",
-    "cite": []
+    "cite": [
+      {
+        "label": "维基百科 · 外部性",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A4%96%E9%83%A8%E6%80%A7"
+      },
+      {
+        "label": "Wikipedia · Externality",
+        "url": "https://en.wikipedia.org/wiki/Externality"
+      }
+    ]
   },
   {
     "term": "失业率",
@@ -287,7 +411,12 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "寡头垄断市场指那种在某一产业只存在少数几个卖者的市场组织形式。",
     "source": "/western/市场理论",
-    "cite": []
+    "cite": [
+      {
+        "label": "维基百科 · 寡头垄断",
+        "url": "https://zh.wikipedia.org/wiki/%E5%AF%A1%E5%A4%B4%E5%9E%84%E6%96%AD"
+      }
+    ]
   },
   {
     "term": "局部均衡和一般均衡",
@@ -329,7 +458,16 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "帕累托最优状态又称作经济效率，是指没有人可以在不使得他人境况变坏的条件下使得自身境况得到改善，此时的状态被称为帕累托最优状态。",
     "source": "/western/一般均衡论和福利经济学",
-    "cite": []
+    "cite": [
+      {
+        "label": "维基百科 · 帕累托最优",
+        "url": "https://zh.wikipedia.org/wiki/%E5%B8%95%E7%B4%AF%E6%89%98%E6%9C%80%E4%BC%98"
+      },
+      {
+        "label": "Wikipedia · Pareto efficiency",
+        "url": "https://en.wikipedia.org/wiki/Pareto_efficiency"
+      }
+    ]
   },
   {
     "term": "平均成本",
@@ -348,63 +486,128 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "平均要素成本是厂商购买每单位生产要素平均支付的成本。",
     "source": "/western/生产要素市场",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Factor market",
+        "url": "https://en.wikipedia.org/wiki/Factor_market"
+      },
+      {
+        "label": "维基百科 · 生产要素",
+        "url": "https://zh.wikipedia.org/wiki/%E7%94%9F%E4%BA%A7%E8%A6%81%E7%B4%A0"
+      }
+    ]
   },
   {
     "term": "引致需求",
     "course": "西方经济学",
     "def": "引致需求又称「派生需求」，指由于消费者对产品的需求而引起的企业对生产要素的需求。",
     "source": "/western/生产要素市场",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Derived demand",
+        "url": "https://en.wikipedia.org/wiki/Derived_demand"
+      }
+    ]
   },
   {
     "term": "总供给曲线",
     "course": "西方经济学",
     "def": "总供给曲线是表示经济中的总供给量与价格总水平之间关系的曲线，总供给量通常与价格总水平呈同向变动关系，曲线向右上方倾斜。",
     "source": "/western/总需求和总供给分析",
-    "cite": []
+    "cite": [
+      {
+        "label": "维基百科 · 总供给",
+        "url": "https://zh.wikipedia.org/wiki/%E6%80%BB%E4%BE%9B%E7%BB%99"
+      },
+      {
+        "label": "Wikipedia · Aggregate supply",
+        "url": "https://en.wikipedia.org/wiki/Aggregate_supply"
+      }
+    ]
   },
   {
     "term": "总收益、平均收益和边际收益",
     "course": "西方经济学",
     "def": "（1）厂商的总收益（ <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">TR</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">T</span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span></span></span></span> ）是指厂商按照一定价格出售一定量产品所获得的全部收入，即： <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mi>R</mi><mo>=</mo><mi>p</mi><mo stretchy=\"false\">(</mo><mi>y</mi><mo stretchy=\"false\">)</mo><mo>⋅</mo><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">TR=p(y)\\cdot y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">T</span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⋅</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span></span></span></span> 。式中的 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">TR</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">T</span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span></span></span></span> 为总收益，<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi><mo stretchy=\"false\">(</mo><mi>y</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">p(y)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span><span class=\"mclose\">)</span></span></span></span> 为厂商出售产品时面对的价格，<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span></span></span></span> 为销售总量。（2）平均收益（ <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">AR</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span></span></span></span> ）指厂商在平均每一单位产品销售上所获得的收入，即 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>R</mi><mo>=</mo><mi>T</mi><mi>R</mi><mi mathvariant=\"normal\">/</mi><mi>y</mi><mo>=</mo><mi>p</mi><mo stretchy=\"false\">(</mo><mi>y</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">AR=TR/y=p(y)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">T</span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"mord\">/</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">y</span><span class=\"mclose\">)</span></span></span></span> ，平均收益等于产品价格，厂商所面临的需求曲线即为平均收益曲线。（3）边际收益（ <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">MR</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.109em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span></span></span></span> ）指厂商增加一单位产品销售时所获得的收入增量。",
     "source": "/western/市场理论",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Marginal revenue",
+        "url": "https://en.wikipedia.org/wiki/Marginal_revenue"
+      }
+    ]
   },
   {
     "term": "总需求曲线",
     "course": "西方经济学",
     "def": "总需求曲线是表示经济当中的总需求量与价格总水平之间对应关系的曲线，总需求量通常与价格总水平呈反向变动关系，曲线向右下方倾斜。",
     "source": "/western/总需求和总供给分析",
-    "cite": []
+    "cite": [
+      {
+        "label": "维基百科 · 总需求",
+        "url": "https://zh.wikipedia.org/wiki/%E6%80%BB%E9%9C%80%E6%B1%82"
+      },
+      {
+        "label": "Wikipedia · Aggregate demand",
+        "url": "https://en.wikipedia.org/wiki/Aggregate_demand"
+      }
+    ]
   },
   {
     "term": "成本推动的通货膨胀",
     "course": "西方经济学",
     "def": "成本推动通货膨胀又称成本通货膨胀或供给通货膨胀，指由于供给成本的提高而引起的一般价格水平持续和显著的上涨。",
     "source": "/western/通货膨胀理论",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Cost-push inflation",
+        "url": "https://en.wikipedia.org/wiki/Cost-push_inflation"
+      }
+    ]
   },
   {
     "term": "投资函数",
     "course": "西方经济学",
     "def": "以资本的边际效率不变为条件，投资取决于利息率，并且是利率的减函数，投资与利息率呈反方向变动关系，用公式表示为： <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>I</mi><mo>=</mo><mi>I</mi><mo stretchy=\"false\">(</mo><mi>r</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">I=I(r)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0785em;\">I</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0785em;\">I</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.0278em;\">r</span><span class=\"mclose\">)</span></span></span></span> 。",
     "source": "/western/产品市场和货币市场的一般均衡",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Investment (macroeconomics)",
+        "url": "https://en.wikipedia.org/wiki/Investment_%28macroeconomics%29"
+      },
+      {
+        "label": "维基百科 · 投资",
+        "url": "https://zh.wikipedia.org/wiki/%E6%8A%95%E8%B5%84"
+      }
+    ]
   },
   {
     "term": "支持价格",
     "course": "西方经济学",
     "def": "支持价格又称为最低限价，是指政府为了扶植某一行业的生产而规定的该行业产品的最低价格。",
     "source": "/western/需求与供给",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Price floor",
+        "url": "https://en.wikipedia.org/wiki/Price_floor"
+      }
+    ]
   },
   {
     "term": "收入指数化",
     "course": "西方经济学",
     "def": "收入指数化是指政府对付成本推动的通货膨胀时采取的一项措施。",
     "source": "/western/通货膨胀理论",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Indexation",
+        "url": "https://en.wikipedia.org/wiki/Indexation"
+      },
+      {
+        "label": "维基百科 · 指数化",
+        "url": "https://zh.wikipedia.org/wiki/%E6%8C%87%E6%95%B0%E5%8C%96"
+      }
+    ]
   },
   {
     "term": "收入效应",
@@ -451,7 +654,12 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "新古典宏观经济学，又称作「新古典主义」的一个经济学流派，这个学派的经济学遵循古典经济学的传统，相信市场力量的有效性；认为如果让市场机制自发地发挥作用，就可以解决失业、衰退等一系列宏观经济问题。",
     "source": "/western/宏观经济学的意见分歧",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · New classical macroeconomics",
+        "url": "https://en.wikipedia.org/wiki/New_classical_macroeconomics"
+      }
+    ]
   },
   {
     "term": "无差异曲线",
@@ -486,14 +694,28 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "有保证的增长率 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>G</mi><mi>w</mi></msub></mrow><annotation encoding=\"application/x-tex\">G_w</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">G</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0269em;\">w</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> ，其公式为 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>G</mi><mi>w</mi></msub><mo>=</mo><mfrac><msub><mi>S</mi><mi>d</mi></msub><msub><mi>v</mi><mi>r</mi></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">G_w=\\frac{S_d}{v_r}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">G</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0269em;\">w</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1.3393em;vertical-align:-0.4451em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8942em;\"><span style=\"top:-2.655em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0359em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1645em;\"><span style=\"top:-2.357em;margin-left:-0.0359em;margin-right:0.0714em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"katex-sizing reset-size3 size1 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0278em;\">r</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.143em;\"><span></span></span></span></span></span></span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.4159em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0576em;\">S</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3448em;\"><span style=\"top:-2.3488em;margin-left:-0.0576em;margin-right:0.0714em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"katex-sizing reset-size3 size1 mtight\"><span class=\"mord mathnormal mtight\">d</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1512em;\"><span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.4451em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span></span></span></span>，式中，<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mi>d</mi></msub></mrow><annotation encoding=\"application/x-tex\">S_d</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0576em;\">S</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3361em;\"><span style=\"top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">d</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> 是合意的储蓄率（假设既定），<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>v</mi><mi>r</mi></msub></mrow><annotation encoding=\"application/x-tex\">v_r</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.5806em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0359em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0278em;\">r</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> 是企业家意愿中所需的资本—产量比率。",
     "source": "/western/经济增长",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Harrod–Domar model",
+        "url": "https://en.wikipedia.org/wiki/Harrod%E2%80%93Domar_model"
+      },
+      {
+        "label": "维基百科 · 哈罗德-多马模型",
+        "url": "https://zh.wikipedia.org/wiki/%E5%93%88%E7%BD%97%E5%BE%B7-%E5%A4%9A%E9%A9%AC%E6%A8%A1%E5%9E%8B"
+      }
+    ]
   },
   {
     "term": "比较静态分析",
     "course": "西方经济学",
     "def": "比较静态分析是比较分析不同静态均衡状态的方法。",
     "source": "/western/需求与供给",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Comparative statics",
+        "url": "https://en.wikipedia.org/wiki/Comparative_statics"
+      }
+    ]
   },
   {
     "term": "流动偏好",
@@ -512,7 +734,16 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "流动性陷阱又称凯恩斯陷阱，是指当利率水平极低时，人们对货币的投机性需求趋于无限大，货币当局即使增加货币供给，也难以继续压低利率并刺激投资的一种经济状态。",
     "source": "/western/产品市场和货币市场的一般均衡",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Liquidity trap",
+        "url": "https://en.wikipedia.org/wiki/Liquidity_trap"
+      },
+      {
+        "label": "维基百科 · 流动性陷阱",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B5%81%E5%8A%A8%E6%80%A7%E9%99%B7%E9%98%B1"
+      }
+    ]
   },
   {
     "term": "消费物价指数",
@@ -531,14 +762,28 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "消费者均衡是指在其他条件不变的情况下，消费者实现效用最大化并将保持不变的一种状态。",
     "source": "/western/效用论",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Consumer choice",
+        "url": "https://en.wikipedia.org/wiki/Consumer_choice"
+      }
+    ]
   },
   {
     "term": "理性预期假设",
     "course": "西方经济学",
     "def": "理性预期假说是指经济当事人对价格、利率、利润或收入等经济变量未来的变动可以作出符合理性的估计。",
     "source": "/western/宏观经济学的意见分歧",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Rational expectations",
+        "url": "https://en.wikipedia.org/wiki/Rational_expectations"
+      },
+      {
+        "label": "维基百科 · 理性预期",
+        "url": "https://zh.wikipedia.org/wiki/%E7%90%86%E6%80%A7%E9%A2%84%E6%9C%9F"
+      }
+    ]
   },
   {
     "term": "瓦尔拉斯定律",
@@ -557,7 +802,16 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "生产符合帕累托最优的条件指对于有多个个人、多种商品、多种生产要素的经济，达到均衡时要求在生产方面，任何一对生产要素之间的边际技术替代率在用这两种投入要素生产的所有商品的生产中都相等，即 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mi>T</mi><msubsup><mi>S</mi><mrow><mi>L</mi><mi>K</mi></mrow><mn>1</mn></msubsup><mo>=</mo><mi>R</mi><mi>T</mi><msubsup><mi>S</mi><mrow><mi>L</mi><mi>K</mi></mrow><mn>2</mn></msubsup></mrow><annotation encoding=\"application/x-tex\">RTS_{LK}^{1} = RTS_{LK}^2</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1.0894em;vertical-align:-0.2753em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">T</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0576em;\">S</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-2.4247em;margin-left:-0.0576em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">L</span><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0715em;\">K</span></span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">1</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2753em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:1.0894em;vertical-align:-0.2753em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">T</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0576em;\">S</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-2.4247em;margin-left:-0.0576em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">L</span><span class=\"mord mathnormal mtight\" style=\"margin-right:0.0715em;\">K</span></span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"katex-sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2753em;\"><span></span></span></span></span></span></span></span></span></span> ，此时该社会达到了帕累托最优状态。",
     "source": "/western/一般均衡论和福利经济学",
-    "cite": []
+    "cite": [
+      {
+        "label": "维基百科 · 帕累托最优",
+        "url": "https://zh.wikipedia.org/wiki/%E5%B8%95%E7%B4%AF%E6%89%98%E6%9C%80%E4%BC%98"
+      },
+      {
+        "label": "Wikipedia · Pareto efficiency",
+        "url": "https://en.wikipedia.org/wiki/Pareto_efficiency"
+      }
+    ]
   },
   {
     "term": "生产要素最优组合",
@@ -635,7 +889,16 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "自然率假说是指在没有货币因素干扰的情况下，劳动市场在竞争条件下达到均衡时所决定的就业率。",
     "source": "/western/宏观经济学的意见分歧",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Natural rate of unemployment",
+        "url": "https://en.wikipedia.org/wiki/Natural_rate_of_unemployment"
+      },
+      {
+        "label": "维基百科 · 自然失業率",
+        "url": "https://zh.wikipedia.org/wiki/%E8%87%AA%E7%84%B6%E5%A4%B1%E6%A5%AD%E7%8E%87"
+      }
+    ]
   },
   {
     "term": "菲利普斯曲线",
@@ -654,14 +917,32 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "作为规模经济与规模不经济的一种特殊的情况，如果产量的增加是借助于生产要素的同比例扩大实现的，那么相应的可定义规模收益的概念：①如果产量增加的比例大于生产要素增加的比例，则称生产是规模收益递增的；②若产量增加的比例等于生产要素增加的比例，则称生产是规模收益不变的；③若产量增加的比例小于生产要素增加的比例，则称生产是规模收益递减的。",
     "source": "/western/生产和成本论",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Returns to scale",
+        "url": "https://en.wikipedia.org/wiki/Returns_to_scale"
+      },
+      {
+        "label": "维基百科 · 规模报酬",
+        "url": "https://zh.wikipedia.org/wiki/%E8%A7%84%E6%A8%A1%E6%8A%A5%E9%85%AC"
+      }
+    ]
   },
   {
     "term": "规模经济与规模不经济",
     "course": "西方经济学",
     "def": "规模经济和规模不经济用来说明厂商产量变动从而规模变动与成本之间的关系。",
     "source": "/western/生产和成本论",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Economies of scale",
+        "url": "https://en.wikipedia.org/wiki/Economies_of_scale"
+      },
+      {
+        "label": "维基百科 · 规模经济",
+        "url": "https://zh.wikipedia.org/wiki/%E8%A7%84%E6%A8%A1%E7%BB%8F%E6%B5%8E"
+      }
+    ]
   },
   {
     "term": "货币主义",
@@ -680,14 +961,24 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "货币工资刚性是指货币工资不随劳动需求和供给的变化而迅速做出相应的调整的现象。",
     "source": "/western/总需求和总供给分析",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Sticky wages",
+        "url": "https://en.wikipedia.org/wiki/Sticky_wages"
+      }
+    ]
   },
   {
     "term": "资本的边际效率",
     "course": "西方经济学",
     "def": "资本的边际效率是一种贴现率，这一贴现率恰好使一项资本品在使用期内各预期收益的贴现值之和等于该项资本品的供给价格或重置成本。",
     "source": "/western/产品市场和货币市场的一般均衡",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Marginal efficiency of capital",
+        "url": "https://en.wikipedia.org/wiki/Marginal_efficiency_of_capital"
+      }
+    ]
   },
   {
     "term": "边际产品价值",
@@ -701,7 +992,12 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "边际产量是指在生产技术水平和其他投入要素不变的情况下，每增加一单位可变投入要素所得到的总产量的增加量。",
     "source": "/western/生产和成本论",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Marginal product",
+        "url": "https://en.wikipedia.org/wiki/Marginal_product"
+      }
+    ]
   },
   {
     "term": "边际成本",
@@ -724,35 +1020,68 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "在维持产量水平不变的条件下，增加一单位某种生产要素投入量时所减少的另一种要素的投入数量，被称为边际技术替代率，其英文缩写为 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mi>R</mi><mi>T</mi><mi>S</mi></mrow><annotation encoding=\"application/x-tex\">MRTS</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"katex-base\"><span class=\"katex-strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.109em;\">M</span><span class=\"mord mathnormal\" style=\"margin-right:0.0077em;\">R</span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">T</span><span class=\"mord mathnormal\" style=\"margin-right:0.0576em;\">S</span></span></span></span> 。",
     "source": "/western/生产和成本论",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Marginal rate of technical substitution",
+        "url": "https://en.wikipedia.org/wiki/Marginal_rate_of_technical_substitution"
+      }
+    ]
   },
   {
     "term": "边际技术替代率递减规律",
     "course": "西方经济学",
     "def": "边际技术替代率递减规律是指，在维持产量不变的前提下，当一种生产要素的投入量不断增加时，每一单位的这种生产要素所能替代的另一种生产要素的数量是递减的。",
     "source": "/western/生产和成本论",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Marginal rate of technical substitution",
+        "url": "https://en.wikipedia.org/wiki/Marginal_rate_of_technical_substitution"
+      }
+    ]
   },
   {
     "term": "边际收益产品",
     "course": "西方经济学",
     "def": "边际收益产品是指在其他生产要素的投入量固定不变时追加一单位的某种生产要素投入所带来的收益。",
     "source": "/western/生产要素市场",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Marginal revenue product",
+        "url": "https://en.wikipedia.org/wiki/Marginal_revenue_product"
+      }
+    ]
   },
   {
     "term": "边际收益递减规律",
     "course": "西方经济学",
     "def": "在技术水平不变的条件下，在连续等量地把某一种可变生产要素增加到其他一种或几种数量不变的生产要素上去的过程中，当这种可变生产要素的投入量小于某一特定值时，增加该要素投入所带来的边际产量是递增的；当这种可变要素的投入量连续增加并超过这个特定值时，增加该要素投入所带来的边际产量是递减的。",
     "source": "/western/生产和成本论",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Diminishing returns",
+        "url": "https://en.wikipedia.org/wiki/Diminishing_returns"
+      },
+      {
+        "label": "维基百科 · 边际收益递减",
+        "url": "https://zh.wikipedia.org/wiki/%E8%BE%B9%E9%99%85%E6%94%B6%E7%9B%8A%E9%80%92%E5%87%8F"
+      }
+    ]
   },
   {
     "term": "边际效用递减规律",
     "course": "西方经济学",
     "def": "边际效用递减规律是指特定时期内，在其他商品的消费保持不变的条件下，消费者不断地增加某种商品的消费量，随着该商品消费数量的增加，消费者每增加一单位该商品的消费所获得的效用增加量逐渐减少。",
     "source": "/western/效用论",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Marginal utility",
+        "url": "https://en.wikipedia.org/wiki/Marginal_utility"
+      },
+      {
+        "label": "维基百科 · 边际效用",
+        "url": "https://zh.wikipedia.org/wiki/%E8%BE%B9%E9%99%85%E6%95%88%E7%94%A8"
+      }
+    ]
   },
   {
     "term": "边际要素成本",
@@ -802,7 +1131,16 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "限制价格是指政府为了防止某些生活必需品的价格上涨而规定的这些产品的最高价格。",
     "source": "/western/需求与供给",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Price ceiling",
+        "url": "https://en.wikipedia.org/wiki/Price_ceiling"
+      },
+      {
+        "label": "维基百科 · 价格上限",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BB%B7%E6%A0%BC%E4%B8%8A%E9%99%90"
+      }
+    ]
   },
   {
     "term": "需求",
@@ -825,7 +1163,12 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "需求拉动通货膨胀是指由总需求增加所引起的一般价格水平的持续和显著的上涨。",
     "source": "/western/通货膨胀理论",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Demand-pull inflation",
+        "url": "https://en.wikipedia.org/wiki/Demand-pull_inflation"
+      }
+    ]
   },
   {
     "term": "需求的交叉弹性",
@@ -880,28 +1223,56 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "西方经济学",
     "def": "预算约束线又称为预算线、消费可能线和价格线，表示在消费者的收入和商品的价格给定的条件下，消费者的全部收入所能购买到的两种商品的各种组合。",
     "source": "/western/效用论",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Budget constraint",
+        "url": "https://en.wikipedia.org/wiki/Budget_constraint"
+      },
+      {
+        "label": "维基百科 · 预算约束",
+        "url": "https://zh.wikipedia.org/wiki/%E9%A2%84%E7%AE%97%E7%BA%A6%E6%9D%9F"
+      }
+    ]
   },
   {
     "term": "收入-消费曲线",
     "course": "西方经济学",
     "def": "在消费者的偏好和商品的价格不变的条件下，消费者的收入变动引起的消费者效用最大化的均衡点的轨迹。它反映收入变化引起的消费量变动的情况。",
     "source": "/western/效用论",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Income–consumption curve",
+        "url": "https://en.wikipedia.org/wiki/Income%E2%80%93consumption_curve"
+      }
+    ]
   },
   {
     "term": "基数效用论",
     "course": "西方经济学",
     "def": "基数效用论认为效用可以用基数（1, 2, 3…）来衡量和加总，消费者通过比较不同商品组合的效用来做出选择。",
     "source": "/western/效用论",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Cardinal utility",
+        "url": "https://en.wikipedia.org/wiki/Cardinal_utility"
+      },
+      {
+        "label": "维基百科 · 基数效用",
+        "url": "https://zh.wikipedia.org/wiki/%E5%9F%BA%E6%95%B0%E6%95%88%E7%94%A8"
+      }
+    ]
   },
   {
     "term": "政府购买乘数",
     "course": "西方经济学",
     "def": "政府购买乘数是指政府购买支出变动所引起的国民收入变动量与政府购买支出变动量的比率。",
     "source": "/western/简单国民收入决定理论",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Spending multiplier",
+        "url": "https://en.wikipedia.org/wiki/Spending_multiplier"
+      }
+    ]
   },
   {
     "term": "一价定律",
@@ -932,7 +1303,12 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "国际经济学",
     "def": "偿债率是指一国在某一时期，所举借外债的还本付息额与其各种出口收入总和之比。",
     "source": "/international/要素的国际流动",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Debt service ratio",
+        "url": "https://en.wikipedia.org/wiki/Debt_service_ratio"
+      }
+    ]
   },
   {
     "term": "关税同盟",
@@ -955,14 +1331,32 @@ export const GLOSSARY: GlossaryEntry[] = [
     "course": "国际经济学",
     "def": "关税壁垒是指为了保护本国市场、扶持本国某些产业发展，对进口商品征收关税，特别是高额关税，以限制外国商品进口的贸易措施。",
     "source": "/international/国际贸易政策分析",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Non-tariff barriers to trade",
+        "url": "https://en.wikipedia.org/wiki/Non-tariff_barriers_to_trade"
+      },
+      {
+        "label": "维基百科 · 非关税壁垒",
+        "url": "https://zh.wikipedia.org/wiki/%E9%9D%9E%E5%85%B3%E7%A8%8E%E5%A3%81%E5%9E%92"
+      }
+    ]
   },
   {
     "term": "升水与贴水",
     "course": "国际经济学",
     "def": "升水是贴水的对称，两者描述远期汇率与即期汇率的偏离方向：升水是指一种货币的远期汇率高于其即期汇率，贴水是指远期汇率低于即期汇率；在直接标价法下，外币远期升水表示外币币值上涨（远期汇率上升），贴水表示外币币值下跌（远期汇率下降）。",
     "source": "/international/汇率决定的一般理论",
-    "cite": []
+    "cite": [
+      {
+        "label": "Wikipedia · Forward exchange rate",
+        "url": "https://en.wikipedia.org/wiki/Forward_exchange_rate"
+      },
+      {
+        "label": "维基百科 · 远期汇率",
+        "url": "https://zh.wikipedia.org/wiki/%E8%BF%9C%E6%9C%9F%E6%B1%87%E7%8E%87"
+      }
+    ]
   },
   {
     "term": "固定借贷",
