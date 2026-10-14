@@ -94,6 +94,10 @@ const countAll = (c: string) => GLOSSARY.filter((e) => e.course === c).length
         <p class="where">
           出现于「{{ selected.course }}」<template v-if="selected.source">
             · <a class="source" :href="withBase(selected.source)">回到原文</a></template>
+          <template v-if="selected.cite && selected.cite.length">
+            · <span class="cites">出处：<a v-for="(c, i) in selected.cite" :key="i"
+                class="source" :href="c.url" target="_blank" rel="noopener">{{ c.label }}</a></span>
+          </template>
         </p>
         <!-- 定义由构建脚本预渲染为 HTML（含公式 SVG） -->
         <!-- eslint-disable-next-line vue/no-v-html -->

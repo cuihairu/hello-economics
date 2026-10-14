@@ -1,6 +1,6 @@
 // 从仓库根部的《经济学-术语.md》生成 docs/.vitepress/theme/data/glossary.ts
 // 用法：pnpm glossary（在仓库根目录执行）
-const { readFileSync, writeFileSync } = require('fs')
+const { readFileSync, writeFileSync, existsSync } = require('fs')
 const { resolve } = require('path')
 const root = resolve(__dirname, '..')
 
@@ -16,6 +16,10 @@ try {
 const COURSE_ORDER = ['西方经济学', '货币银行学', '财政学', '国际经济学', '社会主义经济学']
 
 const text = readFileSync(resolve(root, '经济学-术语.md'), 'utf8')
+
+// 术语级权威出处（由 scripts/glossary-cites.json 提供，须先经 curl 200 实测）
+const citeFile = resolve(root, 'scripts', 'glossary-cites.json')
+const cites = existsSync(citeFile) ? JSON.parse(readFileSync(citeFile, 'utf8')) : {}
 
 const glossaries = []
 let course = null
@@ -43,18 +47,20 @@ for (const rawLine of text.split('\n')) {
     course,
     def: mdit.renderInline(defSource),
     source: href,
+    cite: cites[name.trim()] || [],
   })
   count++
 }
 
 const out = `// 本文件由 scripts/build-glossary.cjs 从《经济学-术语.md》生成，请勿手改。
-// 用法：pnpm glossary
+// 用法：pnpm glossary（术语级出处读自 scripts/glossary-cites.json）
 
 export interface GlossaryEntry {
   term: string
   course: string
   def: string
   source: string | null
+  cite: { label: string; url: string }[]
 }
 
 export const GLOSSARY: GlossaryEntry[] = ${JSON.stringify(glossaries, null, 2)}
