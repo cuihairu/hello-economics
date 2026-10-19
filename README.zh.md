@@ -48,7 +48,7 @@ pnpm build     # 构建（含死链检查）
 
 ## 专题入口
 
-站点当前专题与章节导航由 [`courses.ts`](docs/.vitepress/theme/data/courses.ts) 生成，并显示在侧边栏。该文件是导航唯一真源；不要在 README 维护第二份章节清单。专题导读和补充页可从侧栏对应入口打开。
+站点当前专题与章节导航由 [`courses.ts`](docs/.vitepress/theme/data/courses.ts) 生成，并显示在侧边栏。该文件是导航唯一真源；不要在 README 维护第二份章节清单。专题导读和补充页可从侧栏对应入口打开；各专题导读也可直接访问：[数学基础](docs/math/Readme.md)、[西方经济学](docs/western/Readme.md)（[理论推进链](docs/western/History.md)）、[货币银行学](docs/monetary/Readme.md)（[历史进程](docs/monetary/History.md)）、[财政学](docs/finance/Readme.md)（[历史进程](docs/finance/History.md)）、[国际经济学](docs/international/Readme.md)（[历史进程](docs/international/History.md)）、[社会主义经济理论](docs/socialist/Readme.md)（[历史进程](docs/socialist/History.md)）。
 
 ## 公共资料
 

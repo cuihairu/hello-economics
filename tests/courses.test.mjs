@@ -98,6 +98,6 @@ test('western aux 项目完整性', () => {
   assert.ok(western, 'western 课程应存在')
   const auxLabels = western.aux.map((a) => a.text)
   assert.deepEqual(auxLabels, [
-    '课程导论', '理论推进链', '公式总览', '宏观经济模型演进',
-  ], 'western aux 项目应为：课程导论、理论推进链、公式总览、宏观经济模型演进')
+    '专题导读', '理论推进链', '公式总览', '宏观经济模型演进',
+  ], 'western aux 项目应为：专题导读、理论推进链、公式总览、宏观经济模型演进')
 })

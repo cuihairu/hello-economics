@@ -48,7 +48,7 @@ Component testing stack: Vitest + @vue/test-utils + happy-dom, reusing the site'
 
 ## Topic Entry Points
 
-The topic and chapter navigation is generated from [`courses.ts`](docs/.vitepress/theme/data/courses.ts) and rendered in the site's sidebar. Keep that file as the navigation source of truth; do not maintain a second chapter list here. Topic overviews and supplementary notes are linked from the corresponding sidebar groups.
+The topic and chapter navigation is generated from [`courses.ts`](docs/.vitepress/theme/data/courses.ts) and rendered in the site's sidebar. Keep that file as the navigation source of truth; do not maintain a second chapter list here. Topic overviews and supplementary notes are linked from the corresponding sidebar groups. Topic overviews are also available directly: [Mathematical Foundations](docs/math/Readme.md), [Western Economics](docs/western/Readme.md) ([theory timeline](docs/western/History.md)), [Money and Banking](docs/monetary/Readme.md) ([history](docs/monetary/History.md)), [Public Finance](docs/finance/Readme.md) ([history](docs/finance/History.md)), [International Economics](docs/international/Readme.md) ([history](docs/international/History.md)), and [Socialist Economic Theory](docs/socialist/Readme.md) ([history](docs/socialist/History.md)).
 
 ## Public Materials
 

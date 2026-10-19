@@ -30,7 +30,7 @@ describe('CourseTabs 渲染', () => {
   it('一门课一个 tab：标签、导论链接都与 COURSES 对齐并补 base 前缀', () => {
     const wrapper = mountTheme(CourseTabs)
     const nav = wrapper.find('nav.course-tabs')
-    expect(nav.attributes('aria-label')).toBe('课程切换')
+    expect(nav.attributes('aria-label')).toBe('专题切换')
     const tabs = wrapper.findAll('.course-tab')
     expect(tabs).toHaveLength(COURSES.length)
     COURSES.forEach((c, i) => {
