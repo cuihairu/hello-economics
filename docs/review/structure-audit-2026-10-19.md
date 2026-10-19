@@ -84,6 +84,11 @@
 
 ## 本次 A→B→C 收口记录（2026-10-19）
 
+### A：导航真源
+
+- 仓库没有 `SUMMARY.md`。双语 README 原有手写“各课入口”清单已改为指向 `docs/.vitepress/theme/data/courses.ts`，说明 sidebar 是站点导航真源并明确维护规则；入口见 `README.md:49-51`、`README.zh.md:49-51`，数据源说明见 `courses.ts:1-4`。
+- sidebar 81 个配置路由去重后仍为 81；同一侧栏重复链接 0 个。不同课程侧栏复用路由不计入重复。
+
 ### B：跨轴内容判定与证据
 
 本次核对 2 组主题相近页面：**真重复 0 组；不同角度保留 2 组**。均补充角度说明与双向互链，没有删除页面或丢弃内容。
@@ -97,6 +102,8 @@
 
 - 双语 README 的课程导航现指向 `courses.ts` 单一数据源，不再维护重复清单；两个 README 的目录条目所列 `docs/`、`scripts/`、`tests/` 均存在。
 - 当前侧栏数据有 81 个路由，去重后仍为 81；未发现同一侧栏内重复路由或配置了但文件不存在的条目。
-- `check:links` 检查 740 条 Markdown 相对链接，死链 0。
+- `check:links` 检查 744 条 Markdown 相对链接，死链 0。
 - `check:sidebar` 扫描 95 页，孤立页 1：本审计报告 `review/structure-audit-2026-10-19.md`。它是内部审计材料，不是站点总览，不纳入读者侧栏。
-- 本仓没有 `docs:build` 脚本，`pnpm docs:build` 不可用；等价项目构建入口为 `pnpm build`，其本次结果记录在本报告验收回报中。
+- README 未列出不存在的目录；侧栏未发现不存在的目标文件，也没有过期的“第 N 讲”计数，无需改目录条目或侧栏数字。
+- 本仓没有 `docs:build` 脚本，`pnpm docs:build` 不可用；安装锁文件依赖后运行等价项目入口 `pnpm build` 通过：96 个 HTML、3,146 处公式渲染成功，`katex-error 0`、`mjx 残留 0`。
+- 本次提交范围 `git diff origin/main...HEAD --diff-filter=D --name-only` 的删除文件计数为 0；`.md` 删除数也为 0。
