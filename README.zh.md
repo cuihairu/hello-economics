@@ -48,12 +48,7 @@ pnpm build     # 构建（含死链检查）
 
 ## 各课入口
 
-- 西方经济学：[课程导论](docs/western/Readme.md) · [理论推进链](docs/western/History.md)
-- 货币银行学：[课程导论](docs/monetary/Readme.md) · [历史进程](docs/monetary/History.md)
-- 财政学：[课程导论](docs/finance/Readme.md) · [历史进程](docs/finance/History.md)
-- 国际经济学：[课程导论](docs/international/Readme.md) · [历史进程](docs/international/History.md)
-- 社会主义经济理论：[课程导论](docs/socialist/Readme.md) · [历史进程](docs/socialist/History.md)
-- 数学基础：[课程导论](docs/math/Readme.md)
+站点当前课程与章节导航由 [`courses.ts`](docs/.vitepress/theme/data/courses.ts) 生成，并显示在侧边栏。该文件是导航唯一真源；不要在 README 维护第二份章节清单。课程导读和专题页通过侧栏中的课程入口访问。
 
 ## 公共资料
 

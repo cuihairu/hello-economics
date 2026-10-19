@@ -48,12 +48,7 @@ Component testing stack: Vitest + @vue/test-utils + happy-dom, reusing the site'
 
 ## Course Entry Points
 
-- Western Economics: [Course introduction](docs/western/Readme.md) · [Theory progression chain](docs/western/History.md)
-- Money and Banking: [Course introduction](docs/monetary/Readme.md) · [Historical process](docs/monetary/History.md)
-- Public Finance: [Course introduction](docs/finance/Readme.md) · [Historical process](docs/finance/History.md)
-- International Economics: [Course introduction](docs/international/Readme.md) · [Historical process](docs/international/History.md)
-- Socialist Economic Theory: [Course introduction](docs/socialist/Readme.md) · [Historical process](docs/socialist/History.md)
-- Mathematical Foundations: [Course introduction](docs/math/Readme.md)
+The live course and chapter navigation is generated from [`courses.ts`](docs/.vitepress/theme/data/courses.ts) and rendered in the site's sidebar. Keep that file as the navigation source of truth; do not maintain a second chapter list here. Course introductions and supplementary notes are linked from the sidebar's course groups.
 
 ## Public Materials
 
