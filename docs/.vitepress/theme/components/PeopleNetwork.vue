@@ -143,7 +143,7 @@ const span = (p: Person) => {
             >← {{ PEOPLE_BY_ID[id].name }}</button>
           </div>
           <h3>影响了谁</h3>
-          <p v-if="selected.influenced.length === 0" class="none">这条线索在后辈处拐了弯——见他所属课程的相关章节。</p>
+          <p v-if="selected.influenced.length === 0" class="none">这条线索在后辈处拐了弯——见对应专题的相关章节。</p>
           <div class="links">
             <button
               v-for="id in selected.influenced"

@@ -5,19 +5,19 @@
 
 # Hello Economics · 经济学知识整理
 
-写给经济学爱好者的知识整理站点。这里不堆背诵要点，而是回答三个问题：
+这是我整理经济学资料的记录，重点放在三个问题上：
 
 1. 一个理论**为什么**会出现——它当时要解决什么问题？
 2. 它**如何发展**——谁修正了它，留下了什么新问题？
 3. 它**如何被验证**——现实数据与后来的研究站在哪一边？
 
-知识点主文档：[docs/knowledge.md](https://cuihairu.github.io/hello-economics/knowledge) —— 哪门课对应哪本通行教材、名著时间线、以及本站的年份口径。
+知识点主文档：[docs/knowledge.md](https://cuihairu.github.io/hello-economics/knowledge) —— 各专题对应的通行教材、名著时间线、以及本站的年份口径。
 
-## 站点内容
+## 内容索引
 
-基于 VitePress 的交互式站点，入口包括：
+站点基于 VitePress，当前包括这些内容：
 
-- **六门课**：西方经济学、货币银行学、财政学、国际经济学、社会主义经济理论、数学基础（tab 切换）
+- **六组专题**：西方经济学、货币银行学、财政学、国际经济学、社会主义经济理论、数学基础（tab 切换）
 - **理论时间线**：16 世纪至今，经济理论的出现与发展历史线
 - **名人篇**：经济学家的影响网络——提出了什么、影响了谁、受谁影响
 - **术语篇**：专业名词词典，支持搜索与目录浏览
@@ -27,7 +27,7 @@
 
 | 路径 | 内容 |
 | :--- | :--- |
-| `docs/` | VitePress 站点：六门课正文与导论页（`docs/western/` `docs/math/` 等）、时间线/名人/术语/名著页面、主题数据与 Vue 组件 |
+| `docs/` | VitePress 站点：六组专题正文与导读页（`docs/western/` `docs/math/` 等）、时间线/名人/术语/名著页面、主题数据与 Vue 组件 |
 | `scripts/` | 门禁脚本（死链、LaTeX、排印、侧栏覆盖、渲染公式检查）、`build-glossary` 词条生成，以及一次性迁移与改写工具 |
 | `tests/` | 数据与门禁黑盒（`node --test`）+ 组件挂载（`vitest`） |
 | `经济学-术语.md` `经济学-名人.md` | 根级源资料：术语词条与名人骨架（词条回链按 `docs/` 相对路径书写，供生成链消费） |
@@ -46,9 +46,9 @@ pnpm build     # 构建（含死链检查）
 
 组件测试选型：Vitest + @vue/test-utils + happy-dom——复用站点同一条 vite 工具链编译 .vue SFC（`vitest.config.ts`，含 vitepress client 别名），用例在 `tests/vue/`。
 
-## 各课入口
+## 专题入口
 
-站点当前课程与章节导航由 [`courses.ts`](docs/.vitepress/theme/data/courses.ts) 生成，并显示在侧边栏。该文件是导航唯一真源；不要在 README 维护第二份章节清单。课程导读和专题页通过侧栏中的课程入口访问。
+站点当前专题与章节导航由 [`courses.ts`](docs/.vitepress/theme/data/courses.ts) 生成，并显示在侧边栏。该文件是导航唯一真源；不要在 README 维护第二份章节清单。专题导读和补充页可从侧栏对应入口打开。
 
 ## 公共资料
 

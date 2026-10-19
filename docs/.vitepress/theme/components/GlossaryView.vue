@@ -38,7 +38,7 @@ const filtered = computed(() => {
   )
 })
 
-// 目录态按课程分组；搜索态展示命中清单
+// 目录态按专题分组；搜索态展示命中清单
 const groups = computed(() =>
   COURSES.map((c) => ({
     course: c,
@@ -70,7 +70,7 @@ const countAll = (c: string) => GLOSSARY.filter((e) => e.course === c).length
           aria-label="检索术语"
         >
       </div>
-      <div class="filters" role="tablist" aria-label="按课程筛选">
+      <div class="filters" role="tablist" aria-label="按专题筛选">
         <button
           :class="['chip', { 'is-active': course === 'all' }]"
           @click="course = 'all'"
@@ -122,7 +122,7 @@ const countAll = (c: string) => GLOSSARY.filter((e) => e.course === c).length
       </li>
     </ul>
 
-    <!-- 目录态：按课程分组（visible-once：滚动到才入场，SSR 首屏不受影响） -->
+    <!-- 目录态：按专题分组（visible-once：滚动到才入场，SSR 首屏不受影响） -->
     <section
       v-if="!searching"
       v-for="(g, i) in groups"

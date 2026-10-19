@@ -19,7 +19,7 @@ import { TIMELINE } from './.vitepress/theme/data/timeline'
     让公式回到它诞生的处境里。
   </p>
   <p class="hero-meta">
-    <span>{{ COURSES.length }} 门课程</span>
+    <span>{{ COURSES.length }} 个专题</span>
     <span>{{ COURSES.reduce((n, c) => n + chapterCount(c.id), 0) }} 章正文</span>
     <span>{{ TIMELINE.length }} 个理论节点</span>
     <span>{{ PEOPLE.length }} 位经济学家</span>
@@ -27,12 +27,12 @@ import { TIMELINE } from './.vitepress/theme/data/timeline'
   </p>
 </div>
 
-<h2 class="home-h2">课程目录</h2>
+<h2 class="home-h2">专题目录</h2>
 
 <CourseShelf />
 
 <p class="shelf-note">
-  目录按课程分栏，切换上面任意一个标签即可看该课的章节；想按问题读，先从每课的「课程导论」进。
+  目录按专题分栏，切换上方标签可查看对应章节；我通常从专题导读或具体问题页开始查。
 </p>
 
 <h2 class="home-h2">三条阅读线索</h2>
@@ -53,6 +53,6 @@ import { TIMELINE } from './.vitepress/theme/data/timeline'
 </ol>
 
 <p class="colophon">
-  内容整理自公开的经济学教材与讲义笔记，正在逐章补入「理论的诞生与验证」背景。
+  这些页面整理自公开经济学教材与讲义笔记；我正在逐步补充理论出现与验证的背景。
   引用一律回链原文；发现错漏欢迎开 issue 指正。
 </p>

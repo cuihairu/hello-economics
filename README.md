@@ -5,19 +5,19 @@
 
 # Hello Economics · An Economics Knowledge Base
 
-A knowledge-organization site for economics enthusiasts. Rather than piling up points for rote memorization, it answers three questions:
+These are my working notes on economics, organized around three recurring questions:
 
 1. **Why** did a theory emerge — what problem was it meant to solve at the time?
 2. **How** did it develop — who revised it, and what new questions did that leave open?
 3. **How** has it been tested — where do real-world data and later research stand?
 
-Knowledge notes: [docs/knowledge.md](https://cuihairu.github.io/hello-economics/knowledge) — which standard textbook frames each course, the classics timeline, and the site's dating conventions.
+Knowledge notes: [docs/knowledge.md](https://cuihairu.github.io/hello-economics/knowledge) — the textbook references used for each topic collection, the classics timeline, and the site's dating conventions.
 
-## Site Content
+## Contents
 
-An interactive site built on VitePress, with entry points including:
+The VitePress site currently includes:
 
-- **Six courses**: Western Economics, Money and Banking, Public Finance, International Economics, Socialist Economic Theory, and Mathematical Foundations (tab switching)
+- **Six topic collections**: Western Economics, Money and Banking, Public Finance, International Economics, Socialist Economic Theory, and Mathematical Foundations (tab switching)
 - **Theory timeline**: the emergence and development of economic theories from the 16th century to the present
 - **Notable economists**: influence networks of economists — who proposed what, whom they influenced, and by whom they were influenced
 - **Glossary**: a dictionary of technical terms, with search and catalog browsing
@@ -27,7 +27,7 @@ An interactive site built on VitePress, with entry points including:
 
 | Path | Contents |
 | :--- | :--- |
-| `docs/` | The VitePress site: course texts and introduction pages for the six courses (`docs/western/` `docs/math/` etc.), the timeline / notable economists / glossary / classics pages, theme data, and Vue components |
+| `docs/` | The VitePress site: topic articles and overview pages across six collections (`docs/western/` `docs/math/` etc.), the timeline / notable economists / glossary / classics pages, theme data, and Vue components |
 | `scripts/` | Gate scripts (broken-link, LaTeX, typography, navigation coverage, and rendered-formula checks), `build-glossary` term generation, and one-time migration/rewrite tools |
 | `tests/` | Black-box tests for data and gates (`node --test`) plus component mounting (`vitest`) |
 | `经济学-术语.md` `经济学-名人.md` | Root-level source material: glossary entries and the economists skeleton (entry backlinks are written as `docs/`-relative paths, for the generation chain to consume) |
@@ -46,9 +46,9 @@ Gate scripts: `pnpm check:links` (internal links), `pnpm check:latex` (formula s
 
 Component testing stack: Vitest + @vue/test-utils + happy-dom, reusing the site's single Vite toolchain to compile .vue SFCs (`vitest.config.ts`, including the vitepress client alias); test cases live in `tests/vue/`.
 
-## Course Entry Points
+## Topic Entry Points
 
-The live course and chapter navigation is generated from [`courses.ts`](docs/.vitepress/theme/data/courses.ts) and rendered in the site's sidebar. Keep that file as the navigation source of truth; do not maintain a second chapter list here. Course introductions and supplementary notes are linked from the sidebar's course groups.
+The topic and chapter navigation is generated from [`courses.ts`](docs/.vitepress/theme/data/courses.ts) and rendered in the site's sidebar. Keep that file as the navigation source of truth; do not maintain a second chapter list here. Topic overviews and supplementary notes are linked from the corresponding sidebar groups.
 
 ## Public Materials
 

@@ -1,6 +1,6 @@
-// 课程目录的唯一数据源：
+// 专题目录的唯一数据源：
 // - docs/.vitepress/config.ts 用它生成侧边栏
-// - CourseTabs.vue（文档页顶部课程切换条）与 CourseShelf.vue（首页分栏）都读它
+// - CourseTabs.vue（文档页顶部专题切换条）与 CourseShelf.vue（首页分栏）都读它
 // 新增/改章节只改这里，避免三处各自漂移。
 // link 一律写站点根路径（不含 base），由主题组件的 withBase 补前缀。
 
@@ -30,7 +30,7 @@ export interface Course {
   /** 一句话：这门课要回答什么问题 */
   blurb: string
   icon: IconSpec
-  /** 导论、历史进程、公式总览等课程级入口 */
+  /** 导论、历史进程、公式总览等专题入口 */
   aux: CatalogItem[]
   chapters: ChapterGroup[]
 }
@@ -59,7 +59,7 @@ export const COURSES: Course[] = [
     blurb: '经济学把数学当脚手架：微积分找最优点，矩阵解均衡，统计做检验。',
     icon: { paths: ['M17 5H8l5 7-5 7h9'] },
     aux: [
-      aux('math', 'Readme', '课程导论'),
+      aux('math', 'Readme', '专题导读'),
       aux('math', '西方经济学-数学基础', '西方经济学-数学基础'),
     ],
     chapters: [
@@ -91,7 +91,7 @@ export const COURSES: Course[] = [
     blurb: '微观解释价格如何形成，宏观解释总量为什么会崩：两套工具，同一个「稀缺与协调」问题。',
     icon: { paths: ['M4 20h16M4 20V4', 'M6 6c4 5 8 8 12 11', 'M6 18c4-5 8-8 12-11'] },
     aux: [
-      aux('western', 'Readme', '课程导论'),
+      aux('western', 'Readme', '专题导读'),
       aux('western', 'History', '理论推进链'),
       aux('western', '西方经济学公式总览', '公式总览'),
       aux('western', '宏观经济模型演进', '宏观经济模型演进'),
@@ -135,7 +135,7 @@ export const COURSES: Course[] = [
     icon: {
       paths: ['M3 9l9-5 9 5', 'M6 9v8M12 9v8M18 9v8', 'M4 17h16M3 20h18'],
     },
-    aux: [aux('monetary', 'Readme', '课程导论'), aux('monetary', 'History', '历史进程')],
+    aux: [aux('monetary', 'Readme', '专题导读'), aux('monetary', 'History', '历史进程')],
     chapters: [
       {
         text: '章节',
@@ -168,7 +168,7 @@ export const COURSES: Course[] = [
         'M20 7l-2 5M20 7l2 5M18 12a2 2 0 0 0 4 0',
       ],
     },
-    aux: [aux('finance', 'Readme', '课程导论'), aux('finance', 'History', '历史进程')],
+    aux: [aux('finance', 'Readme', '专题导读'), aux('finance', 'History', '历史进程')],
     chapters: [
       {
         text: '章节',
@@ -196,7 +196,7 @@ export const COURSES: Course[] = [
       circle: true,
     },
     aux: [
-      aux('international', 'Readme', '课程导论'),
+      aux('international', 'Readme', '专题导读'),
       aux('international', 'History', '历史进程'),
     ],
     chapters: [
@@ -227,7 +227,7 @@ export const COURSES: Course[] = [
       paths: ['M6 21V4', 'M6 5c2-1.2 4-1.2 6 0s4 1.2 6 0v7c-2 1.2-4 1.2-6 0s-4-1.2-6 0'],
     },
     aux: [
-      aux('socialist', 'Readme', '课程导论'),
+      aux('socialist', 'Readme', '专题导读'),
       aux('socialist', 'History', '历史进程'),
       aux('socialist', '中国共产党重要会议与社会主义经济体制演进', '重要会议与体制演进'),
     ],
@@ -252,7 +252,7 @@ export const COURSES: Course[] = [
   },
 ]
 
-/** 参考资料：不进课程切换条，只在首页书架与侧边栏出现 */
+/** 参考资料：不进专题切换条，只在首页书架与侧边栏出现 */
 export const REFERENCE_COURSE: Course = {
   id: 'reference',
   label: '参考资料',
@@ -280,7 +280,7 @@ export const ALL_COURSES: Course[] = [...COURSES, REFERENCE_COURSE]
 export const courseById = (id: string): Course | undefined =>
   ALL_COURSES.find((c) => c.id === id)
 
-/** 站点的三条阅读线索（术语篇 / 名人篇 / 时间线），不是课程但同级入口 */
+/** 站点的三条阅读线索（术语篇 / 名人篇 / 时间线），与专题同级的索引入口 */
 export const SITE_INDEX: CatalogItem[] = [
   { text: '理论时间线', link: '/timeline' },
   { text: '名人篇（师承网络）', link: '/people' },
@@ -330,7 +330,7 @@ const SITE_INDEX_ICON: IconSpec = {
 
 /**
  * 西方经济学按微观/宏观拆成两个 tab（内容本身就是两套工具）；
- * 其余课程一个 tab，面板内按 aux + 章节分组排布。
+ * 其余专题一个 tab，面板内按 aux + 章节分组排布。
  */
 export const SHELF: ShelfTab[] = (() => {
   const tabs: ShelfTab[] = []
@@ -351,12 +351,12 @@ export const SHELF: ShelfTab[] = (() => {
           courseId: c.id,
           icon: c.icon,
           groups: [g],
-          entry: { text: '课程导论', link: c.readme },
+          entry: { text: '专题导读', link: c.readme },
         })
       }
       continue
     }
-    const groups = c.aux.length ? [{ text: '课程入口', items: c.aux }, ...c.chapters] : c.chapters
+    const groups = c.aux.length ? [{ text: '专题入口', items: c.aux }, ...c.chapters] : c.chapters
     tabs.push({
       id: c.id,
       label: c.label,
@@ -366,7 +366,7 @@ export const SHELF: ShelfTab[] = (() => {
       courseId: c.id,
       icon: c.icon,
       groups,
-      entry: { text: '课程导论', link: c.readme },
+      entry: { text: '专题导读', link: c.readme },
     })
   }
   const indexGroups = [

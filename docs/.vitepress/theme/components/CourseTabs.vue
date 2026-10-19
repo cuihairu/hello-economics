@@ -2,13 +2,13 @@
 import { useRoute, withBase } from 'vitepress'
 import { COURSES } from '../data/courses'
 
-// 课程切换条：目录、图标几何全部来自 theme/data/courses.ts
-// 样式在 custom.css 的「课程 Tab」一段（doc-before 槽位属于全局骨架）
+// 专题切换条：目录、图标几何全部来自 theme/data/courses.ts
+// 样式在 custom.css 的「专题 Tab」一段（doc-before 槽位属于全局骨架）
 const route = useRoute()
 </script>
 
 <template>
-  <nav class="course-tabs" aria-label="课程切换">
+  <nav class="course-tabs" aria-label="专题切换">
     <a
       v-for="c in COURSES"
       :key="c.base"

@@ -17,7 +17,7 @@ export default defineConfig({
   base: siteBase,
   lang: 'zh-CN',
   title: 'Hello Economics',
-  description: '经济学知识整理：理论为什么出现，如何发展，如何被验证',
+  description: '经济学开发者的整理记录：理论为什么出现，如何发展，如何被验证',
   head: [['link', { rel: 'icon', type: 'image/svg+xml', href: `${siteBase}logo.svg` }]],
   cleanUrls: true,
   lastUpdated: false,
@@ -37,12 +37,12 @@ export default defineConfig({
     outline: [2, 3],
     outlineLabel: '本页脉络',
     darkModeSwitchLabel: '明暗',
-    sidebarMenuLabel: '课程',
+    sidebarMenuLabel: '专题',
     returnToTopLabel: '回到顶部',
     docFooter: { prev: '上一篇', next: '下一篇' },
     socialLinks: [],
     footer: {
-      message: '以笔记整理知识，欢迎指正',
+      message: '整理过程中的记录，欢迎指正',
       copyright: 'Hello Economics',
     },
     search: {
