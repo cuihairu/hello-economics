@@ -42,8 +42,8 @@
 
 - 配置来源：`docs/.vitepress/config.ts:56-59` 将课程数据生成侧栏；详细条目位于 `docs/.vitepress/theme/data/courses.ts:48-252`。
 - 配置了但文件不存在：**0**（逐项核对数据源里的页面路由与 Markdown 文件）。前 10 条：无。
-- 文件存在但未进侧边栏：**0**（`npm run check:sidebar` 显示 94 页、孤立页面 0；检查器还计入 nav、参考资料入口、课程 Readme、首页目录及文内相对链接）。前 10 条：无。
-- 死链：`npm run check:links` 检查 740 条 Markdown 链接，报告无死链。该脚本只验证 Markdown 文件目标，不覆盖外链可用性、所有 HTML/组件生成链接与锚点有效性。
+- 文件存在但未进侧边栏：**0**（审计报告加入前的基线为 94 页、孤立页面 0；加入本报告后，当前为 95 页、孤立页面 1，唯一孤立页即本内部审计报告。检查器还计入 nav、参考资料入口、课程 Readme、首页目录及文内相对链接）。
+- 死链：审计报告加入前的基线为 740 条 Markdown 链接；当前 `npm run check:links` 检查 744 条，报告无死链。该脚本只验证 Markdown 文件目标，不覆盖外链可用性、所有 HTML/组件生成链接与锚点有效性。
 - 构建：`npm run build` 未能完成，当前环境缺少已安装的 VitePress 可执行文件（`vitepress: not found`）；构建期校验未核实。
 
 ## 问题清单与严重度
