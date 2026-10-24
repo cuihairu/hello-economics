@@ -39,15 +39,15 @@ import { TIMELINE } from './.vitepress/theme/data/timeline'
 
 <ol class="threads">
   <li>
-    <h3><a :href="withBase('/timeline')">理论时间线</a></h3>
+    <h3><a :href="withBase('/zh/timeline')">理论时间线</a></h3>
     <p>1516 年《乌托邦》到 2020 年的疫情与财政货币化争论，{{ TIMELINE.length }} 个节点串起理论出现的顺序：按住拖动看疏密，放大后点开任一节点，回答「为什么是这个时候」。</p>
   </li>
   <li>
-    <h3><a :href="withBase('/people')">名人篇</a></h3>
+    <h3><a :href="withBase('/zh/people')">名人篇</a></h3>
     <p>{{ PEOPLE.length }} 位经济学家的师承网络：谁受谁影响、提出了什么、又传给了谁。点击任何一个人，沿着线索走。</p>
   </li>
   <li>
-    <h3><a :href="withBase('/glossary')">术语篇</a></h3>
+    <h3><a :href="withBase('/zh/glossary')">术语篇</a></h3>
     <p>贴水、帕累托最优、自然率假说……{{ GLOSSARY.length }} 个术语统一释义，标注出处章节，可检索、可单查。</p>
   </li>
 </ol>

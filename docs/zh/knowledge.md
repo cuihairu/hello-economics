@@ -74,9 +74,9 @@
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [Readme](/finance/Readme.md)
-- [Readme](/international/Readme.md)
-- [Readme](/math/Readme.md)
-- [Readme](/monetary/Readme.md)
-- [Readme](/socialist/Readme.md)
-- [Readme](/western/Readme.md)
+- [Readme](/zh/finance/Readme.md)
+- [Readme](/zh/international/Readme.md)
+- [Readme](/zh/math/Readme.md)
+- [Readme](/zh/monetary/Readme.md)
+- [Readme](/zh/socialist/Readme.md)
+- [Readme](/zh/western/Readme.md)

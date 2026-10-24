@@ -21,7 +21,7 @@ import { TIMELINE } from './.vitepress/theme/data/timeline'
 
 **先筛后看。** 顶部的领域标签是宏观、微观、货币、财政、国际、社会主义、数学与方法七组，计数标在标签上。筛到只剩一组时，同一时期的分歧会更容易看清：只看「货币」，这条线就从 1694 年英格兰银行成立（它发明的是「公共信用」而不是一家银行）一路走到 2014 年同一座房子承认「贷款创造存款」——这三百二十年里，「什么是货币」的答案换了两轮。
 
-**需要通读时**，页面底部「按时期通读全部节点」那一段是同一份数据的文本形态，不依赖缩放，也便于逐条对照[术语篇](/glossary)与[名人篇](/people)。
+**需要通读时**，页面底部「按时期通读全部节点」那一段是同一份数据的文本形态，不依赖缩放，也便于逐条对照[术语篇](/zh/glossary)与[名人篇](/zh/people)。
 
 ## 关于这份数据本身
 
@@ -33,9 +33,9 @@ import { TIMELINE } from './.vitepress/theme/data/timeline'
 ## 相关页面
 
 - [about](about.md)
-- [Readme](/international/Readme.md)
+- [Readme](/zh/international/Readme.md)
 - [knowledge](knowledge.md)
-- [Readme](/monetary/Readme.md)
-- [参考书目](/reference/参考书目.md)
-- [Readme](/western/Readme.md)
-- [导言](/western/导言.md)
+- [Readme](/zh/monetary/Readme.md)
+- [参考书目](/zh/reference/参考书目.md)
+- [Readme](/zh/western/Readme.md)
+- [导言](/zh/western/导言.md)

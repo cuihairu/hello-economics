@@ -9,10 +9,10 @@ Hello Economics 是我整理经济学资料时留下的工作记录。主线围�
 
 ## 内容范围
 
-- [数学基础](/math/Readme)汇总经济学里常用的数学工具：微积分找最优点，线性代数解均衡，概率统计做检验，最优化方法把它们接到经济学问题上。我整理时把它放在导航前面，查公式时比较顺手。
-- [西方经济学](/western/Readme)是主线：[微观部分](/western/需求与供给)从供求讲到市场失灵，[宏观部分](/western/宏观经济活动与宏观经济学)从国民收入核算讲到学派分歧。
-- [货币银行学](/monetary/Readme)、[财政学](/finance/Readme)、[国际经济学](/international/Readme)、[社会主义经济理论](/socialist/Readme)四门专业课，各成一条线索，可单独读。
-- [名著篇](/books)是十三本经典的书架，每本有一段短评；[术语篇](/glossary)集中释义并可检索；[名人篇](/people)画师承网络；[理论时间线](/timeline)可拖动、缩放，按出现顺序串起理论。
+- [数学基础](/zh/math/Readme)汇总经济学里常用的数学工具：微积分找最优点，线性代数解均衡，概率统计做检验，最优化方法把它们接到经济学问题上。我整理时把它放在导航前面，查公式时比较顺手。
+- [西方经济学](/zh/western/Readme)是主线：[微观部分](/zh/western/需求与供给)从供求讲到市场失灵，[宏观部分](/zh/western/宏观经济活动与宏观经济学)从国民收入核算讲到学派分歧。
+- [货币银行学](/zh/monetary/Readme)、[财政学](/zh/finance/Readme)、[国际经济学](/zh/international/Readme)、[社会主义经济理论](/zh/socialist/Readme)四门专业课，各成一条线索，可单独读。
+- [名著篇](/zh/books)是十三本经典的书架，每本有一段短评；[术语篇](/zh/glossary)集中释义并可检索；[名人篇](/zh/people)画师承网络；[理论时间线](/zh/timeline)可拖动、缩放，按出现顺序串起理论。
 
 章节序列沿用国内通行教科书大纲；正文在教材骨架上重写为知识叙述，题库、背诵口诀一类应试材料已删去。
 
@@ -23,7 +23,7 @@ Hello Economics 是我整理经济学资料时留下的工作记录。主线围�
 - 公式以 LaTeX 排版，构建时做合法命令与定界符校验；文中示意图为自绘线条 SVG，标注出处的图形来自所引教材。
 - 统计读数凡无唯一口径可考的，一律标注「约」或「以最新公布为准」。
 - 文档里的技术主张与源码的对账按批次进行，查出的三类差异与修复记在[文档一致性审计](./审计-文档一致性.md)。
-- 各专题引用的教材与书目清单见[参考书目](/reference/参考书目)，正文引文回链[参考资料](/reference/参考书目)原文以便核对。
+- 各专题引用的教材与书目清单见[参考书目](/zh/reference/参考书目)，正文引文回链[参考资料](/zh/reference/参考书目)原文以便核对。
 
 ## 使用许可
 
@@ -41,16 +41,16 @@ Hello Economics 是我整理经济学资料时留下的工作记录。主线围�
 ## 相关页面
 
 - [books](books.md)
-- [Readme](/finance/Readme.md)
+- [Readme](/zh/finance/Readme.md)
 - [glossary](glossary.md)
-- [Readme](/international/Readme.md)
-- [Readme](/math/Readme.md)
-- [Readme](/monetary/Readme.md)
+- [Readme](/zh/international/Readme.md)
+- [Readme](/zh/math/Readme.md)
+- [Readme](/zh/monetary/Readme.md)
 - [people](people.md)
-- [参考书目](/reference/参考书目.md)
-- [Readme](/socialist/Readme.md)
+- [参考书目](/zh/reference/参考书目.md)
+- [Readme](/zh/socialist/Readme.md)
 - [timeline](timeline.md)
-- [Readme](/western/Readme.md)
-- [宏观经济活动与宏观经济学](/western/宏观经济活动与宏观经济学.md)
-- [需求与供给](/western/需求与供给.md)
+- [Readme](/zh/western/Readme.md)
+- [宏观经济活动与宏观经济学](/zh/western/宏观经济活动与宏观经济学.md)
+- [需求与供给](/zh/western/需求与供给.md)
 - [审计-文档一致性](审计-文档一致性.md)

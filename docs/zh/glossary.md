@@ -15,9 +15,9 @@ layout: page
 ## 相关页面
 
 - [about](about.md)
-- [Readme](/finance/Readme.md)
+- [Readme](/zh/finance/Readme.md)
 - [knowledge](knowledge.md)
-- [Readme](/monetary/Readme.md)
-- [货币供求理论](/monetary/货币供求理论.md)
+- [Readme](/zh/monetary/Readme.md)
+- [货币供求理论](/zh/monetary/货币供求理论.md)
 - [timeline](timeline.md)
-- [西方经济学公式总览](/western/西方经济学公式总览.md)
+- [西方经济学公式总览](/zh/western/西方经济学公式总览.md)

@@ -14,5 +14,5 @@ layout: page
 
 - [about](about.md)
 - [knowledge](knowledge.md)
-- [Readme](/socialist/Readme.md)
+- [Readme](/zh/socialist/Readme.md)
 - [timeline](timeline.md)
