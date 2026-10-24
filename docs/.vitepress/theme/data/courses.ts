@@ -54,8 +54,8 @@ export const COURSES: Course[] = [
   {
     id: 'math',
     label: '数学基础',
-    base: '/math',
-    readme: '/math/Readme',
+    base: '/zh/math',
+    readme: '/zh/math/Readme',
     blurb: '经济学把数学当脚手架：微积分找最优点，矩阵解均衡，统计做检验。',
     icon: { paths: ['M17 5H8l5 7-5 7h9'] },
     aux: [
@@ -78,7 +78,7 @@ export const COURSES: Course[] = [
           ch(10, '概率论基础', 'math'),
           ch(11, '统计学基础', 'math'),
           // 磁盘文件名为「最优化方法」（H1 为「最优化方法与经济学应用」），link 须对齐文件名
-          { text: '12 · 最优化方法与经济学应用', link: '/math/最优化方法' },
+          { text: '12 · 最优化方法与经济学应用', link: '/zh/math/最优化方法' },
         ],
       },
     ],
@@ -86,8 +86,8 @@ export const COURSES: Course[] = [
   {
     id: 'western',
     label: '西方经济学',
-    base: '/western',
-    readme: '/western/Readme',
+    base: '/zh/western',
+    readme: '/zh/western/Readme',
     blurb: '微观解释价格如何形成，宏观解释总量为什么会崩：两套工具，同一个「稀缺与协调」问题。',
     icon: { paths: ['M4 20h16M4 20V4', 'M6 6c4 5 8 8 12 11', 'M6 18c4-5 8-8 12-11'] },
     aux: [
@@ -129,8 +129,8 @@ export const COURSES: Course[] = [
   {
     id: 'monetary',
     label: '货币银行学',
-    base: '/monetary',
-    readme: '/monetary/Readme',
+    base: '/zh/monetary',
+    readme: '/zh/monetary/Readme',
     blurb: '钱从哪里来、利率如何决定、中央银行的手怎样伸进实体经济。',
     icon: {
       paths: ['M3 9l9-5 9 5', 'M6 9v8M12 9v8M18 9v8', 'M4 17h16M3 20h18'],
@@ -157,8 +157,8 @@ export const COURSES: Course[] = [
   {
     id: 'finance',
     label: '财政学',
-    base: '/finance',
-    readme: '/finance/Readme',
+    base: '/zh/finance',
+    readme: '/zh/finance/Readme',
     blurb: '政府为什么收税、怎么花钱，以及什么时候财政本身成为问题。',
     icon: {
       paths: [
@@ -188,8 +188,8 @@ export const COURSES: Course[] = [
   {
     id: 'international',
     label: '国际经济学',
-    base: '/international',
-    readme: '/international/Readme',
+    base: '/zh/international',
+    readme: '/zh/international/Readme',
     blurb: '贸易为什么不是零和游戏，汇率与收支怎样把各国绑在同一张表上。',
     icon: {
       paths: ['M12 4a12.5 12.5 0 0 0 0 16M12 4a12.5 12.5 0 0 1 0 16', 'M4 12h16'],
@@ -220,8 +220,8 @@ export const COURSES: Course[] = [
   {
     id: 'socialist',
     label: '社会主义经济理论',
-    base: '/socialist',
-    readme: '/socialist/Readme',
+    base: '/zh/socialist',
+    readme: '/zh/socialist/Readme',
     blurb: '计划与市场的百年辩论，以及中国怎样走出自己的答案。',
     icon: {
       paths: ['M6 21V4', 'M6 5c2-1.2 4-1.2 6 0s4 1.2 6 0v7c-2 1.2-4 1.2-6 0s-4-1.2-6 0'],
@@ -256,8 +256,8 @@ export const COURSES: Course[] = [
 export const REFERENCE_COURSE: Course = {
   id: 'reference',
   label: '参考资料',
-  base: '/reference',
-  readme: '/reference/参考书目',
+  base: '/zh/reference',
+  readme: '/zh/reference/参考书目',
   blurb: '书目与旧笔记原文：新写的正文都回链到这里，方便核对出处。',
   icon: { paths: ['M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z', 'M5 4v13'] },
   aux: [],
@@ -265,11 +265,11 @@ export const REFERENCE_COURSE: Course = {
     {
       text: '参考资料',
       items: [
-        { text: '知识点主文档', link: '/knowledge' },
-        { text: '参考书目', link: '/reference/参考书目' },
-        { text: '微观经济学笔记', link: '/reference/微观经济学-笔记' },
-        { text: '西方经济学导论笔记', link: '/reference/notes/西方经济学导论-笔记' },
-        { text: '金融学笔记', link: '/reference/notes/金融学-笔记' },
+        { text: '知识点主文档', link: '/zh/knowledge' },
+        { text: '参考书目', link: '/zh/reference/参考书目' },
+        { text: '微观经济学笔记', link: '/zh/reference/微观经济学-笔记' },
+        { text: '西方经济学导论笔记', link: '/zh/reference/notes/西方经济学导论-笔记' },
+        { text: '金融学笔记', link: '/zh/reference/notes/金融学-笔记' },
       ],
     },
   ],
@@ -282,9 +282,9 @@ export const courseById = (id: string): Course | undefined =>
 
 /** 站点的三条阅读线索（术语篇 / 名人篇 / 时间线），与专题同级的索引入口 */
 export const SITE_INDEX: CatalogItem[] = [
-  { text: '理论时间线', link: '/timeline' },
-  { text: '名人篇（师承网络）', link: '/people' },
-  { text: '术语篇（可检索）', link: '/glossary' },
+  { text: '理论时间线', link: '/zh/timeline' },
+  { text: '名人篇（师承网络）', link: '/zh/people' },
+  { text: '术语篇（可检索）', link: '/zh/glossary' },
 ]
 
 /* ---------- 侧边栏生成 ---------- */
