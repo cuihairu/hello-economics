@@ -324,7 +324,7 @@
 
 - 亨利·威廉·斯皮格尔《经济思想的成长》——理论脉络的史实参照。
 - 米什金《货币金融学》——货币需求与货币传导机制的实证视角。
-- 全书目见[参考书目](/reference/参考书目)。
+- 全书目见[参考书目](/zh/reference/参考书目)。
 - [Wikipedia · Monetary policy](https://en.wikipedia.org/wiki/Monetary_policy)
 
 <!-- BACKLINKS-AUTO -->
