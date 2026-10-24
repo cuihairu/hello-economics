@@ -275,7 +275,7 @@
 
 - 亨利·威廉·斯皮格尔《经济思想的成长》——理论脉络的史实参照。
 - 陈共《财政学》（第十版）——财政职能、支出、税收、国债、预算与赤字的结构来源。
-- 全书目见[参考书目](/reference/参考书目)。
+- 全书目见[参考书目](/zh/reference/参考书目)。
 - [Wikipedia · Public finance](https://en.wikipedia.org/wiki/Public_finance)
 
 <!-- BACKLINKS-AUTO -->
