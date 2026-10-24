@@ -307,7 +307,7 @@
 ## 参考资料
 
 - 吴敬琏《当代中国经济改革》——制度变迁与改革史的经验叙述。
-- 全书目见[参考书目](/reference/参考书目)。
+- 全书目见[参考书目](/zh/reference/参考书目)。
 - [Wikipedia · Economic reform in China](https://en.wikipedia.org/wiki/Economic_reform_in_China)
 
 <!-- BACKLINKS-AUTO -->
