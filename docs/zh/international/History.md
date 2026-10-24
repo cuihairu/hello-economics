@@ -387,7 +387,7 @@
 
 - 亨利·威廉·斯皮格尔《经济思想的成长》——理论脉络的史实参照。
 - 克鲁格曼、奥伯斯法尔德《国际经济学》——贸易理论与开放宏观的主流框架。
-- 全书目见[参考书目](/reference/参考书目)。
+- 全书目见[参考书目](/zh/reference/参考书目)。
 - [Wikipedia · International trade](https://en.wikipedia.org/wiki/International_trade)
 
 <!-- BACKLINKS-AUTO -->
