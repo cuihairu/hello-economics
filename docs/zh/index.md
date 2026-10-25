@@ -3,11 +3,11 @@ layout: page
 ---
 
 <script setup>
-import { PEOPLE } from './.vitepress/theme/data/people'
-import { GLOSSARY } from './.vitepress/theme/data/glossary'
-import { COURSES, chapterCount } from './.vitepress/theme/data/courses'
+import { PEOPLE } from '../.vitepress/theme/data/people'
+import { GLOSSARY } from '../.vitepress/theme/data/glossary'
+import { COURSES, chapterCount } from '../.vitepress/theme/data/courses'
 import { withBase } from 'vitepress'
-import { TIMELINE } from './.vitepress/theme/data/timeline'
+import { TIMELINE } from '../.vitepress/theme/data/timeline'
 </script>
 
 <div class="ledger-hero">

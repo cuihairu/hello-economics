@@ -4,7 +4,7 @@ layout: page
 ---
 
 <script setup>
-import { TIMELINE } from './.vitepress/theme/data/timeline'
+import { TIMELINE } from '../.vitepress/theme/data/timeline'
 </script>
 
 # 理论时间线
