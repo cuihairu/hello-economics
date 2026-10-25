@@ -1,29 +1,37 @@
 <script setup lang="ts">
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
-import { withBase } from 'vitepress'
-import { SHELF, type ChapterGroup, type CatalogItem } from '../data/courses'
+import { useData, withBase } from 'vitepress'
+import { shelfFor, type ChapterGroup, type CatalogItem } from '../data/courses'
 import { useReducedMotion } from '../composables/useReducedMotion'
 
 // 首页书架：一个专题一个 tab（西方经济学按内容拆成微观 / 宏观两个 tab）。
 // 目录来自 theme/data/courses.ts —— 与侧边栏、专题切换条同一份数据，不会各自漂移。
+// 语言环境：按 useData().localeIndex 取对应语言的书架（英文侧按 EN_READY 过滤）。
 // WAI-ARIA tabs：tablist + roving tabindex，左右方向键切换，Home/End 跳两端。
+
+const { localeIndex } = useData()
+
+const shelf = computed(() => shelfFor(localeIndex.value))
+
+const TABLIST_LABEL = { root: 'Course catalogue', zh: '专题目录' } as const
+const TAB_LABEL = { root: 'Grouped by course', zh: '按专题分组' } as const
 
 const active = ref(0)
 const tablist = ref<HTMLElement | null>(null)
 
-const tabId = (i: number) => `shelf-tab-${SHELF[i].id}`
+const tabId = (i: number) => `shelf-tab-${shelf.value[i].id}`
 const panelId = `shelf-panel-live`
 
-const current = computed(() => SHELF[active.value])
+const current = computed(() => shelf.value[active.value])
 
 const select = (i: number, focus = true) => {
-  const n = SHELF.length
+  const n = shelf.value.length
   active.value = ((i % n) + n) % n
   if (focus) void nextTick(() => document.getElementById(tabId(active.value))?.focus())
 }
 
 const onTabKeydown = (e: KeyboardEvent) => {
-  const last = SHELF.length - 1
+  const last = shelf.value.length - 1
   switch (e.key) {
     case 'ArrowRight':
       select(active.value === last ? 0 : active.value + 1)
@@ -47,7 +55,7 @@ const onTabKeydown = (e: KeyboardEvent) => {
 const applyHash = () => {
   const id = decodeURIComponent(location.hash.replace(/^#/, ''))
   if (!id) return
-  const i = SHELF.findIndex((t) => t.id === id || t.courseId === id)
+  const i = shelf.value.findIndex((t) => t.id === id || t.courseId === id)
   if (i >= 0) active.value = i
 }
 onMounted(() => {
@@ -93,16 +101,16 @@ const groupVisible = (i: number) =>
 </script>
 
 <template>
-  <section class="shelf" aria-label="专题目录">
+  <section class="shelf" :aria-label="TABLIST_LABEL[localeIndex]">
     <div
       ref="tablist"
       class="shelf-tabs"
       role="tablist"
-      aria-label="按专题分组"
+      :aria-label="TAB_LABEL[localeIndex]"
       @keydown="onTabKeydown"
     >
       <button
-        v-for="(t, i) in SHELF"
+        v-for="(t, i) in shelf"
         :id="tabId(i)"
         :key="t.id"
         class="shelf-tab"
