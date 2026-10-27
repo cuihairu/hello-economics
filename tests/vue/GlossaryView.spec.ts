@@ -130,7 +130,7 @@ describe('GlossaryView 词条详情', () => {
     expect(detail.exists()).toBe(true)
     expect(detail.find('h2').text()).toBe(entry.term)
     expect(detail.find('.where').text()).toContain(entry.course)
-    expect(detail.find('.source').attributes('href')).toBe(siteHref(entry.source!))
+    expect(detail.find('.source').attributes('href')).toBe(siteHref('/zh' + entry.source))
     expect(detail.find('.def').html()).toContain(entry.def.replace(/<[^>]+>/g, '').slice(0, 12))
   })
 

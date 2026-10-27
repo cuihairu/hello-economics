@@ -8,6 +8,9 @@ import { flush, mountTheme, siteHref } from './helpers'
 
 const cardsOf = (wrapper: ReturnType<typeof mountTheme>) => wrapper.findAll('.card')
 
+// zh 侧书名带书名号（组件 quote()）：卡片渲染与按书名找卡片一律按书名号口径
+const titleText = (b: (typeof BOOKS)[number]) => '《' + b.title + '》'
+
 describe('BooksShelf 渲染与筛选', () => {
   it('全部书籍按出版年升序陈列，chip 计数与真库一致', () => {
     const wrapper = mountTheme(BooksShelf)
@@ -15,7 +18,7 @@ describe('BooksShelf 渲染与筛选', () => {
     const cards = cardsOf(wrapper)
     expect(cards).toHaveLength(BOOKS.length)
     expected.forEach((b, i) => {
-      expect(cards[i].find('.b-title').text()).toBe(b.title)
+      expect(cards[i].find('.b-title').text()).toBe(titleText(b))
       expect(cards[i].find('.b-year').text()).toBe(String(b.year))
       expect(cards[i].find('.b-author').text()).toBe(b.authors.map((a) => a.name).join('、'))
     })
@@ -40,7 +43,7 @@ describe('BooksShelf 渲染与筛选', () => {
     const cards = cardsOf(wrapper)
     expect(cards).toHaveLength(BOOKS.filter((b) => b.school === school).length)
     const titles = cards.map((c) => c.find('.b-title').text())
-    for (const b of BOOKS.filter((x) => x.school === school)) expect(titles).toContain(b.title)
+    for (const b of BOOKS.filter((x) => x.school === school)) expect(titles).toContain(titleText(b))
 
     // 「全部」chip 回位：卡片与计数恢复全量
     await wrapper.findAll('.chip')[0].trigger('click')
@@ -105,7 +108,7 @@ describe('BooksShelf 详情', () => {
 
     const open = async (id: string) => {
       const card = cardsOf(wrapper).find((c) =>
-        c.findAll('.b-title').length && c.find('.b-title').text() === BOOKS.find((b) => b.id === id)!.title,
+        c.findAll('.b-title').length && c.find('.b-title').text() === titleText(BOOKS.find((b) => b.id === id)!),
       )!
       // 详情是全局单份，先收起再开下一本，避免读到上一本的作者区
       if (wrapper.find('.detail').exists()) await wrapper.find('.close').trigger('click')
@@ -152,7 +155,7 @@ describe('BooksShelf 封面', () => {
     const withCover = [...BOOKS].sort((a, b) => a.year - b.year).find((b) => b.cover)!
     const wrapper = mountTheme(BooksShelf)
     const card = cardsOf(wrapper).find((c) =>
-      c.find('.b-title').text() === withCover.title,
+      c.find('.b-title').text() === titleText(withCover),
     )!
     expect(card.find('img.cover').attributes('src')).toBe(withCover.cover)
 
@@ -165,7 +168,7 @@ describe('BooksShelf 封面', () => {
     const withCover = [...BOOKS].sort((a, b) => a.year - b.year).find((b) => b.cover)!
     const wrapper = mountTheme(BooksShelf)
     const card = cardsOf(wrapper).find((c) =>
-      c.find('.b-title').text() === withCover.title,
+      c.find('.b-title').text() === titleText(withCover),
     )!
     await card.trigger('click')
     await flush()
@@ -177,7 +180,7 @@ describe('BooksShelf 封面', () => {
     expect(wrapper.find('img.detail-cover').attributes('src')).toBe(siteHref(withCover.fallback))
     // 失败标记按书籍 id 记账：另一本有直链的书不受这本失败外溢
     const other = [...BOOKS].sort((a, b) => a.year - b.year).find((b) => b.cover && b.id !== withCover.id)!
-    const otherCard = cardsOf(wrapper).find((c) => c.find('.b-title').text() === other.title)!
+    const otherCard = cardsOf(wrapper).find((c) => c.find('.b-title').text() === titleText(other))!
     expect(otherCard.find('img.cover').attributes('src')).toBe(other.cover)
   })
 })

@@ -14,8 +14,11 @@ vi.mock('vitepress', async (importOriginal) => {
 })
 
 import CourseTabs from '../../docs/.vitepress/theme/components/CourseTabs.vue'
-import { COURSES } from '../../docs/.vitepress/theme/data/courses'
+import { courseListFor } from '../../docs/.vitepress/theme/data/courses'
 import { flush, mountTheme, siteHref } from './helpers'
+
+// 组件按 courseListFor(localeIndex) 渲染（zh 侧全量含参考资料课）：期望同源取数
+const COURSES = courseListFor('zh')
 
 const setPath = async (path: string) => {
   holder.route!.path = path

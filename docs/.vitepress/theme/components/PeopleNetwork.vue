@@ -85,7 +85,7 @@ const countryOf = (p: Person) => infoOf(p.id)?.country ?? p.country
 const schoolOf = (p: Person) => infoOf(p.id)?.school ?? p.school
 const bioOf = (p: Person) => infoOf(p.id)?.bio ?? p.bio
 const theoriesOf = (p: Person) => infoOf(p.id)?.theories ?? p.theories
-const worksOf = (p: Person) => infoOf(p.id)?.works
+const worksOf = (p: Person) => infoOf(p.id)?.works ?? p.works
 
 const STR = {
   root: {

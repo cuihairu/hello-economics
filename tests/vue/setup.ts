@@ -1,10 +1,57 @@
 // 组件测试的全局环境补丁（happy-dom 缺失或不可编程的浏览器 API）。
 // 原则：补到「行为确定」为止，不模拟真实渲染引擎——断言不依赖布局与动画。
 import { afterEach } from 'vitest'
-import { enableAutoUnmount } from '@vue/test-utils'
+import { config, enableAutoUnmount } from '@vue/test-utils'
+import { computed, ref } from 'vue'
+import { dataSymbol } from 'vitepress'
+import siteDataStub from './stubs/site-data'
 
 // attachTo: document.body 的挂载（focus/activeElement 断言需要）统一在用例后回收
 enableAutoUnmount(afterEach)
+
+// —— vitepress per-app data 注入（useData 防线）——
+// 主题组件（BooksShelf / CourseShelf / CourseTabs / GlossaryView / PeopleNetwork /
+// TheoryTimeline）在 setup 里调 useData()：站点构建时由 Layout provide dataSymbol，
+// 裸挂载没有这层 provider 就会抛「vitepress data not properly injected in app」。
+// 按 client 端 app/data.js 的 initData() 形状造一份最小注入并挂到全局挂载配置：
+// 组件实际只消费 localeIndex（默认 'zh'，与 theme/data 导出的中文投影同口径），
+// 其余键照形状给齐 ref/computed；withBase 走 data.js 单例 siteDataRef，仍由
+// @siteData 替身（stubs/site-data.ts）供 base。
+const pageStub = {
+  relativePath: 'index.md',
+  frontmatter: {} as Record<string, unknown>,
+  params: {} as Record<string, unknown>,
+  title: '',
+  description: '',
+}
+const siteStub = {
+  ...siteDataStub,
+  dir: 'ltr' as const,
+  title: 'hello-economics',
+  description: '',
+  head: [] as unknown[],
+  locales: {} as Record<string, unknown>,
+  themeConfig: {} as Record<string, unknown>,
+  appearance: false,
+  localeIndex: 'zh',
+}
+config.global.provide = {
+  ...(config.global.provide as Record<symbol, unknown> | undefined),
+  [dataSymbol]: {
+    site: computed(() => siteStub),
+    theme: computed(() => siteStub.themeConfig),
+    page: computed(() => pageStub),
+    frontmatter: computed(() => pageStub.frontmatter),
+    params: computed(() => pageStub.params),
+    lang: computed(() => siteStub.lang),
+    dir: computed(() => siteStub.dir),
+    localeIndex: computed(() => siteStub.localeIndex),
+    title: computed(() => ''),
+    description: computed(() => siteStub.description),
+    isDark: ref(false),
+    hash: computed(() => ''),
+  },
+}
 
 type MqListener = (e: { matches: boolean; media: string }) => void
 
