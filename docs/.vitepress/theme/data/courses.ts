@@ -393,7 +393,7 @@ export const SITE_INDEX_EN: CatalogItem[] = buildSiteIndex('root')
  * 'index' 是首页「三条阅读线索」段落的开关（时间线 / 名人篇 / 术语篇）。
  * 全部译完后删掉本集合与相关 filter。
  */
-export const EN_READY: Set<string> = new Set(['knowledge', 'index', 'reference', 'math', 'finance', 'international'])
+export const EN_READY: Set<string> = new Set(['knowledge', 'index', 'reference', 'math', 'finance', 'international', 'western'])
 
 export const courseById = (id: string, locale: Locale = 'zh'): Course | undefined =>
   (locale === 'root' ? ALL_COURSES_EN : ALL_COURSES).find((c) => c.id === id)
