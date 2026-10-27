@@ -1,8 +1,25 @@
 <script setup lang="ts">
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
-import { withBase } from 'vitepress'
+import { useData, withBase } from 'vitepress'
 import { TIMELINE, FIELD_LABELS, ERAS, type TimelineEvent } from '../data/timeline'
+import { TIMELINE_EN, FIELD_LABELS_EN, ERAS_EN } from '../data/timeline-en'
 import { useReducedMotion } from '../composables/useReducedMotion'
+
+/** 中英两侧同构：渲染层只依赖这几个字段，按 localeIndex 二选一 */
+interface Node {
+  year: number
+  title: string
+  who: string
+  field: TimelineEvent['field']
+  why: string
+  link?: string
+}
+interface EraBand {
+  name: string
+  from: number
+  to: number
+  intro: string
+}
 
 // 理论时间线：一条拖着走的编年线。
 //   · 按住轨道横向拖动 = 沿时间走；Shift + 滚轮 = 平移；Ctrl/⌘ + 滚轮 = 缩放
@@ -24,18 +41,26 @@ const CARD_MIN_PX = 11
 type Field = TimelineEvent['field']
 type Filter = 'all' | Field
 
-const fields = Object.keys(FIELD_LABELS) as Field[]
+const { localeIndex } = useData()
+const en = computed(() => localeIndex.value === 'root')
+
+/** 事件表与领域标签按语言环境二选一（两侧同序、同年份，索引可共用） */
+const nodes = computed<Node[]>(() => (en.value ? TIMELINE_EN : TIMELINE))
+const labels = computed(() => (en.value ? FIELD_LABELS_EN : FIELD_LABELS))
+const eraBasis = computed<EraBand[]>(() => (en.value ? ERAS_EN : ERAS))
+
+const fields = computed(() => Object.keys(FIELD_LABELS) as Field[])
 
 // 空态文案里的首尾节点：跟着数据走，避免新增条目后文案写死过期
-const byYear = [...TIMELINE].sort((a, b) => a.year - b.year)
-const firstEvent = byYear[0]
-const lastEvent = byYear[byYear.length - 1]
+const byYear = computed(() => [...nodes.value].sort((a, b) => a.year - b.year))
+const firstEvent = computed(() => byYear.value[0])
+const lastEvent = computed(() => byYear.value[byYear.value.length - 1])
 
 const ZOOMS = [
-  { label: '全览', fit: true as const, pxPerYear: 0 },
-  { label: '半世纪', fit: false as const, pxPerYear: 13 },
-  { label: '十五年', fit: false as const, pxPerYear: 34 },
-  { label: '五年', fit: false as const, pxPerYear: 90 },
+  { zh: '全览', en: 'Whole span', fit: true as const, pxPerYear: 0 },
+  { zh: '半世纪', en: 'Half century', fit: false as const, pxPerYear: 13 },
+  { zh: '十五年', en: 'Fifteen years', fit: false as const, pxPerYear: 34 },
+  { zh: '五年', en: 'Five years', fit: false as const, pxPerYear: 90 },
 ]
 
 const filter = ref<Filter>('all')
@@ -97,7 +122,7 @@ const xOf = (year: number) => (year - AXIS_FROM) * pxPerYear.value
 const yearAt = (xInTrack: number) => AXIS_FROM + xInTrack / pxPerYear.value
 
 const filtered = computed(() => {
-  const list = TIMELINE.map((e, i) => ({ e, i }))
+  const list = nodes.value.map((e, i) => ({ e, i }))
   return filter.value === 'all' ? list : list.filter(({ e }) => e.field === filter.value)
 })
 
@@ -159,7 +184,7 @@ const placed = computed<Placed[]>(() => {
 const showYear = (p: Placed) => !showCards.value && (p.label || selected.value === p.index)
 
 const eraBands = computed(() =>
-  ERAS.map((era) => {
+  eraBasis.value.map((era) => {
     const width = xOf(Math.min(era.to, AXIS_TO)) - xOf(era.from)
     return {
       ...era,
@@ -167,7 +192,7 @@ const eraBands = computed(() =>
       width,
       narrow: width < 118,
       tiny: width < 52, // 连三个字都放不下，留分段线就够，别写半个年代名出来
-      count: TIMELINE.filter((e) => e.year >= era.from && e.year <= era.to).length,
+      count: nodes.value.filter((e) => e.year >= era.from && e.year <= era.to).length,
     }
   }),
 )
@@ -340,10 +365,10 @@ const onKeydown = (e: KeyboardEvent) => {
   }
 }
 
-const current = computed(() => (selected.value === null ? null : TIMELINE[selected.value]))
+const current = computed(() => (selected.value === null ? null : nodes.value[selected.value]))
 const currentEra = computed(() =>
   current.value
-    ? ERAS.find((s) => current.value!.year >= s.from && current.value!.year <= s.to)
+    ? eraBasis.value.find((s) => current.value!.year >= s.from && current.value!.year <= s.to)
     : null,
 )
 
@@ -389,14 +414,14 @@ watch(filter, () => {
   })
 })
 
-const filterOptions: Filter[] = ['all', ...fields]
-const labelOf = (f: Filter) => (f === 'all' ? '全部' : FIELD_LABELS[f as Field])
+const filterOptions: Filter[] = ['all', ...fields.value]
+const labelOf = (f: Filter) => (f === 'all' ? (en.value ? 'All' : '全部') : labels.value[f as Field])
 
 const countOf = (f: Filter) =>
-  f === 'all' ? TIMELINE.length : TIMELINE.filter((e) => e.field === f).length
+  f === 'all' ? nodes.value.length : nodes.value.filter((e) => e.field === f).length
 
 const eraGroups = computed(() =>
-  ERAS.map((era) => ({
+  eraBasis.value.map((era) => ({
     ...era,
     events: filtered.value
       .map(({ e }) => e)
@@ -405,13 +430,64 @@ const eraGroups = computed(() =>
 )
 
 const eraLabel = (era: { from: number; to: number }) =>
-  `${era.from === 1500 ? '16 世纪' : era.from} — ${era.to > 2026 ? '今天' : era.to}`
+  `${era.from === 1500 ? (en.value ? '16th century' : '16 世纪') : era.from} — ${
+    era.to > 2026 ? (en.value ? 'today' : '今天') : era.to
+  }`
+
+const STR = {
+  root: {
+    filterAria: 'Filter by field',
+    zoomAria: 'Zoom',
+    trackAria: 'Timeline of economic theory, draggable to browse',
+    help: [
+      'Drag the track to walk the timeline; ',
+      ' + wheel pans, ',
+      ' + wheel or ',
+      ' ',
+      ' zooms; ',
+      ' ',
+      ' step through nodes, ',
+      ' ',
+      ' jump to the ends.',
+    ],
+    perEra: (n: number) => `${n} nodes`,
+    more: 'Open the related chapter',
+    summary: (total: number, fYear: number, fTitle: string, lYear: number, lTitle: string) =>
+      `This line carries ${total} nodes in all, from ${fYear} with ${fTitle} to ${lYear} with ${lTitle}. Drag to the years you want, pick a node, and read the question it was written to answer.`,
+    readAll: (n: number) => `Read all ${n} nodes by period`,
+    empty: 'This field has no nodes on the line yet.',
+  },
+  zh: {
+    filterAria: '按领域筛选',
+    zoomAria: '缩放',
+    trackAria: '经济学理论时间线，可拖动浏览',
+    help: [
+      '按住轨道拖动即可沿时间走；',
+      ' + 滚轮平移，',
+      ' + 滚轮或 ',
+      ' ',
+      ' 缩放；',
+      ' ',
+      ' 换节点，',
+      ' ',
+      ' 跳首尾。',
+    ],
+    perEra: (n: number) => `${n} 个节点`,
+    more: '进入相关章节',
+    summary: (total: number, fYear: number, fTitle: string, lYear: number, lTitle: string) =>
+      `这条线上一共 ${total} 个节点，从 ${fYear} 年的${fTitle}，到 ${lYear} 年的${lTitle}。拖到想看的年代，点一个节点，读它当初要回答的问题。`,
+    readAll: (n: number) => `按时期通读全部 ${n} 个节点`,
+    empty: '这个领域在这条线上还没有节点。',
+  },
+} as const
+
+const s = computed(() => STR[localeIndex.value])
 </script>
 
 <template>
   <div class="tl">
     <div class="tl-controls">
-      <div class="tl-filters" role="group" aria-label="按领域筛选">
+      <div class="tl-filters" role="group" :aria-label="s.filterAria">
         <button
           v-for="f in filterOptions"
           :key="f"
@@ -424,25 +500,25 @@ const eraLabel = (era: { from: number; to: number }) =>
           <span class="count">{{ countOf(f) }}</span>
         </button>
       </div>
-      <div class="tl-zoom" role="group" aria-label="缩放">
+      <div class="tl-zoom" role="group" :aria-label="s.zoomAria">
         <button
           v-for="(z, i) in ZOOMS"
-          :key="z.label"
+          :key="i"
           type="button"
           :class="['chip chip-sm', { 'is-active': zoomIndex === i }]"
           :aria-pressed="zoomIndex === i"
           @click="setZoom(i)"
         >
-          {{ z.label }}
+          {{ en ? z.en : z.zh }}
         </button>
       </div>
     </div>
 
     <p class="tl-hint">
       <span class="tl-window">{{ windowYears }}</span>
-      按住轨道拖动即可沿时间走；<kbd>Shift</kbd> + 滚轮平移，<kbd>Ctrl</kbd> + 滚轮或
-      <kbd>+</kbd> <kbd>-</kbd> 缩放；<kbd>←</kbd> <kbd>→</kbd> 换节点，<kbd>Home</kbd>
-      <kbd>End</kbd> 跳首尾。
+      {{ s.help[0] }}<kbd>Shift</kbd>{{ s.help[1] }}<kbd>Ctrl</kbd>{{ s.help[2] }}
+      <kbd>+</kbd><kbd>-</kbd>{{ s.help[3] }}<kbd>←</kbd><kbd>→</kbd>{{ s.help[4] }}
+      <kbd>Home</kbd><kbd>End</kbd>{{ s.help[5] }}
     </p>
 
     <div class="tl-rail-wrap">
@@ -457,7 +533,7 @@ const eraLabel = (era: { from: number; to: number }) =>
         }"
         tabindex="0"
         role="group"
-        aria-label="经济学理论时间线，可拖动浏览"
+        :aria-label="s.trackAria"
         @pointerdown="onPointerDown"
         @pointermove="onPointerMove"
         @pointerup="endDrag"
@@ -480,7 +556,7 @@ const eraLabel = (era: { from: number; to: number }) =>
             >
               <template v-if="!showCards">
                 <span v-if="!era.tiny" class="tl-era-name">{{ era.name }}</span>
-                <span v-if="!era.narrow" class="tl-era-range">{{ eraLabel(era) }} · {{ era.count }} 个节点</span>
+                <span v-if="!era.narrow" class="tl-era-range">{{ eraLabel(era) }} · {{ s.perEra(era.count) }}</span>
               </template>
             </div>
           </div>
@@ -566,21 +642,20 @@ const eraLabel = (era: { from: number; to: number }) =>
           <h3 class="d-title">{{ current.title }}</h3>
           <p class="d-meta">
             <span v-if="current.who">{{ current.who }}</span>
-            <span class="d-field">{{ FIELD_LABELS[current.field] }}</span>
+            <span class="d-field">{{ labels[current.field] }}</span>
             <span v-if="currentEra" class="d-era">{{ currentEra.name }}</span>
           </p>
           <p class="d-why">{{ current.why }}</p>
-          <a v-if="current.link" class="d-more" :href="withBase(current.link)">进入相关章节</a>
+          <a v-if="current.link" class="d-more" :href="withBase(current.link)">{{ s.more }}</a>
         </template>
         <p v-else class="d-empty">
-          这条线上一共 {{ TIMELINE.length }} 个节点，从 {{ firstEvent.year }} 年的{{ firstEvent.title }}，到
-          {{ lastEvent.year }} 年的{{ lastEvent.title }}。拖到想看的年代，点一个节点，读它当初要回答的问题。
+          {{ s.summary(nodes.length, firstEvent.year, firstEvent.title, lastEvent.year, lastEvent.title) }}
         </p>
       </div>
     </div>
 
     <details class="tl-list">
-      <summary>按时期通读全部 {{ filtered.length }} 个节点</summary>
+      <summary>{{ s.readAll(filtered.length) }}</summary>
       <section v-for="era in eraGroups" :key="era.name" class="era">
         <header class="era-head">
           <h2>{{ era.name }}</h2>
@@ -594,15 +669,15 @@ const eraLabel = (era: { from: number; to: number }) =>
             <div class="body">
               <h3>{{ e.title }}</h3>
               <p v-if="e.who" class="who">
-                {{ e.who }}<span class="field-tag">{{ FIELD_LABELS[e.field] }}</span>
+                {{ e.who }}<span class="field-tag">{{ labels[e.field] }}</span>
               </p>
               <p class="why">{{ e.why }}</p>
-              <a v-if="e.link" class="more" :href="withBase(e.link)">进入相关章节</a>
+              <a v-if="e.link" class="more" :href="withBase(e.link)">{{ s.more }}</a>
             </div>
           </li>
         </ol>
       </section>
-      <p v-if="!filtered.length" class="d-empty">这个领域在这条线上还没有节点。</p>
+      <p v-if="!filtered.length" class="d-empty">{{ s.empty }}</p>
     </details>
   </div>
 </template>
