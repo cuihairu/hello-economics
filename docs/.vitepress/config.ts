@@ -79,8 +79,6 @@ export default defineConfig({
     root: { label: 'English', lang: 'en-US' },
     zh: { label: '简体中文', lang: 'zh-CN', link: '/zh/' },
   },
-  // 死链豁免只剩内部审计页（不进导航，不参与双语镜像）。
-  ignoreDeadLinks: [/%E5%AE%A1%E8%AE%A1/],
   themeConfig: {
     logo: '/logo.svg',
     siteTitle: 'Hello Economics',
