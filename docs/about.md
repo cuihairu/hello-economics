@@ -22,7 +22,7 @@ The chapter sequences follow the standard Chinese textbook outlines; the prose i
 - Dates, facts and attributions are cross-checked against the site's economist entries, the timeline, and standard histories of economic thought; omissions are still possible — corrections are welcome.
 - Formulas are typeset in LaTeX and validated for legal commands and delimiters at build time. Diagrams are hand-drawn line SVGs; figures credited to sources come from the textbooks they are cited from.
 - Statistical readings with no single authoritative basis are marked as approximate or as "subject to the latest release".
-- Claims in the docs are reconciled against the source code in batches; the three classes of discrepancy found and fixed are recorded in the [documentation consistency audit](./审计-文档一致性).
+- Claims in the docs are reconciled against the source code in batches; the three classes of discrepancy found and fixed are recorded in the [documentation consistency audit](/zh/审计-文档一致性).
 - The textbooks and bibliographies behind each course are listed in the [bibliography](/reference/参考书目); in-text quotations link back to the [reference](/reference/参考书目) material so sources stay checkable.
 
 ## License
@@ -36,3 +36,21 @@ This site is a set of study notes, not investment advice. Content about data, in
 ## Updates and contact
 
 Content is revised in batches; every change is in the repository history. The repository is [cuihairu/hello-economics](https://github.com/cuihairu/hello-economics) — open an issue on GitHub to report problems.
+
+<!-- BACKLINKS-AUTO -->
+## Related pages
+
+- [books](/books)
+- [Readme](/finance/Readme)
+- [glossary](/glossary)
+- [Readme](/international/Readme)
+- [Readme](/math/Readme)
+- [Readme](/monetary/Readme)
+- [people](/people)
+- [bibliography](/reference/参考书目)
+- [Readme](/socialist/Readme)
+- [timeline](/timeline)
+- [Readme](/western/Readme)
+- [Macroeconomic activity and macroeconomics](/western/宏观经济活动与宏观经济学)
+- [Demand and supply](/western/需求与供给)
+- [documentation consistency audit](/zh/审计-文档一致性)
