@@ -1,8 +1,14 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
-import { withBase } from 'vitepress'
-import { GLOSSARY, COURSES, type GlossaryEntry } from '../data/glossary'
+import { useData, withBase } from 'vitepress'
+import { GLOSSARY, GLOSSARY_EN, COURSES, COURSE_LABELS_EN, type GlossaryEntry } from '../data/glossary'
 import { useReducedMotion } from '../composables/useReducedMotion'
+
+const { localeIndex } = useData()
+const en = computed(() => localeIndex.value === 'root')
+
+// 词条数据按语言取；course 始终是中文课程键（COURSES 为唯一真相），展示层再翻译
+const entries = computed(() => (en.value ? GLOSSARY_EN : GLOSSARY))
 
 const query = ref('')
 const course = ref<'all' | string>('all')
@@ -31,7 +37,7 @@ const hit = (e: GlossaryEntry, q: string) =>
 
 const filtered = computed(() => {
   const q = normalize(query.value)
-  return GLOSSARY.filter(
+  return entries.value.filter(
     (e) =>
       (course.value === 'all' || e.course === course.value) &&
       (q === '' || hit(e, q)),
@@ -52,7 +58,47 @@ watch([query, course], () => {
   if (selected.value && !filtered.value.includes(selected.value)) selected.value = null
 })
 
-const countAll = (c: string) => GLOSSARY.filter((e) => e.course === c).length
+const countAll = (c: string) => entries.value.filter((e) => e.course === c).length
+
+/** 课程名展示：中文键查英文标签，未收录则原样回落 */
+const courseLabel = (c: string) => (en.value ? (COURSE_LABELS_EN[c] ?? c) : c)
+
+/** 词条出处链接是站点绝对路径（不带语言前缀）；中文侧要补 /zh 指向 zh 树同一篇 */
+const sourceHref = (e: GlossaryEntry) =>
+  e.source ? withBase(en.value ? e.source : '/zh' + e.source) : ''
+
+/** 出处标签是中文维基的条目名；英文侧只留域名，避免英文页夹带中文 */
+const citeLabel = (c: { label: string; url: string }) =>
+  en.value ? new URL(c.url).hostname : c.label
+
+const STR = {
+  root: {
+    placeholder: 'Search terms, e.g. discount, elasticity, Pareto',
+    searchAria: 'Search terms',
+    filterAria: 'Filter by course',
+    all: 'All',
+    closeAria: 'Close entry',
+    appearsIn: (c: string) => `From “${c}”`,
+    backToSource: 'Back to source',
+    citeLabel: 'Cited from',
+    hits: (n: number) => `${n} matches`,
+    empty: 'No matching term. Try another phrasing, or clear the filters.',
+  },
+  zh: {
+    placeholder: '检索术语，例如：贴水、弹性、帕累托',
+    searchAria: '检索术语',
+    filterAria: '按专题筛选',
+    all: '全部',
+    closeAria: '关闭词条',
+    appearsIn: (c: string) => `出现于「${c}」`,
+    backToSource: '回到原文',
+    citeLabel: '出处：',
+    hits: (n: number) => `命中 ${n} 条`,
+    empty: '没有命中的术语。换个说法试试，或清空筛选。',
+  },
+} as const
+
+const s = computed(() => STR[localeIndex.value])
 </script>
 
 <template>
@@ -66,21 +112,21 @@ const countAll = (c: string) => GLOSSARY.filter((e) => e.course === c).length
         <input
           v-model="query"
           type="search"
-          placeholder="检索术语，例如：贴水、弹性、帕累托"
-          aria-label="检索术语"
+          :placeholder="s.placeholder"
+          :aria-label="s.searchAria"
         >
       </div>
-      <div class="filters" role="tablist" aria-label="按专题筛选">
+      <div class="filters" role="tablist" :aria-label="s.filterAria">
         <button
           :class="['chip', { 'is-active': course === 'all' }]"
           @click="course = 'all'"
-        >全部 <span class="count">{{ GLOSSARY.length }}</span></button>
+        >{{ s.all }} <span class="count">{{ entries.length }}</span></button>
         <button
           v-for="c in COURSES"
           :key="c"
           :class="['chip', { 'is-active': course === c }]"
           @click="course = c"
-        >{{ c }} <span class="count">{{ countAll(c) }}</span></button>
+        >{{ courseLabel(c) }} <span class="count">{{ countAll(c) }}</span></button>
       </div>
     </div>
 
@@ -89,14 +135,14 @@ const countAll = (c: string) => GLOSSARY.filter((e) => e.course === c).length
       <article v-if="selected" class="detail">
         <header class="detail-head">
           <h2>{{ selected.term }}</h2>
-          <button class="close" aria-label="关闭词条" @click="selected = null">✕</button>
+          <button class="close" :aria-label="s.closeAria" @click="selected = null">✕</button>
         </header>
         <p class="where">
-          出现于「{{ selected.course }}」<template v-if="selected.source">
-            · <a class="source" :href="withBase(selected.source)">回到原文</a></template>
+          {{ s.appearsIn(courseLabel(selected.course)) }}<template v-if="selected.source">
+            · <a class="source" :href="sourceHref(selected)">{{ s.backToSource }}</a></template>
           <template v-if="selected.cite && selected.cite.length">
-            · <span class="cites">出处：<a v-for="(c, i) in selected.cite" :key="i"
-                class="source" :href="c.url" target="_blank" rel="noopener">{{ c.label }}</a></span>
+            · <span class="cites">{{ s.citeLabel }}<a v-for="(c, i) in selected.cite" :key="i"
+                class="source" :href="c.url" target="_blank" rel="noopener">{{ citeLabel(c) }}</a></span>
           </template>
         </p>
         <!-- 定义由构建脚本预渲染为 HTML（含公式 SVG） -->
@@ -106,7 +152,7 @@ const countAll = (c: string) => GLOSSARY.filter((e) => e.course === c).length
     </Transition>
 
     <p class="hint" v-if="searching">
-      命中 {{ filtered.length }} 条
+      {{ s.hits(filtered.length) }}
     </p>
 
     <!-- 搜索结果：平铺清单 -->
@@ -117,7 +163,7 @@ const countAll = (c: string) => GLOSSARY.filter((e) => e.course === c).length
           @click="selected = e"
         >
           <span class="r-term">{{ e.term }}</span>
-          <span class="r-course">{{ e.course }}</span>
+          <span class="r-course">{{ courseLabel(e.course) }}</span>
         </button>
       </li>
     </ul>
@@ -132,7 +178,7 @@ const countAll = (c: string) => GLOSSARY.filter((e) => e.course === c).length
       :visible-once="groupVisible(i)"
       class="group"
     >
-      <h2>{{ g.course }} <span class="g-count">{{ g.entries.length }}</span></h2>
+      <h2>{{ courseLabel(g.course) }} <span class="g-count">{{ g.entries.length }}</span></h2>
       <ul class="terms">
         <li v-for="e in g.entries" :key="e.term">
           <button
@@ -144,7 +190,7 @@ const countAll = (c: string) => GLOSSARY.filter((e) => e.course === c).length
     </section>
 
     <p v-if="filtered.length === 0" class="empty">
-      没有命中的术语。换个说法试试，或清空筛选。
+      {{ s.empty }}
     </p>
   </div>
 </template>
