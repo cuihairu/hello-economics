@@ -1,317 +1,317 @@
-# A history of socialist economics, read as a chain of questions
+# Tracing the Historical Progress of Socialist Economics
 
-This is not a chapter index, but the chain of questions that drives socialist economics forward. The point is not to memorize concepts, but to see clearly how socialist economics developed from a critique of ideas into an institutional theory, and then how it came to face real reforms, market transition, growth and distribution, and the modernization of governance.
+This is not a chapter outline, but the problem-progression chain of socialist economics. The point is not just to memorize a string of concepts, but to see clearly how socialist economics grew from ideological critique into institutional theory, and then how it faces up to the questions of real-world reform, market-oriented transition, growth and distribution, and the modernization of governance.
 
-**A note on angle:** the reading notes here are organized around how the theoretical questions shift. Meeting names, dates, and the threads of the decisions are in the [timeline of major congresses](/socialist/中国共产党重要会议与社会主义经济体制演进); the two pages keep their own perspectives.
+**Angle note:** The notes below are organized around how the theoretical questions shift; for meeting names, dates, and the decision-making threads behind them, see the [timeline of important meetings](/socialist/中国共产党重要会议与社会主义经济体制演进). The two pages keep their own perspective.
 
-## The question tree and the process of finding answers
+## The Problem Tree and the Process of Finding Answers
 
-> How to read this: at each step, record "question pushed forward -> short answer -> corresponding chapter". If a step touches several places in the textbook, list them all.
+> How to read: each step is recorded as "advance the question -> brief answer -> corresponding chapter"; if a step involves multiple textbook locations, all are listed.
 
-### Big question 1: where does socialist thought come from, and why did it develop into scientific socialism
+### Big Question 1: Where does socialist thought come from, and why did it develop into scientific socialism
 
-- Sub-question 1.1: what are the theoretical sources of socialist thought.
+- Sub-question 1.1: What are the theoretical sources of socialist thought.
   Corresponding chapter: [Introduction](/socialist/导论)
-- Sub-question 1.2: what is the essence of the socialist economic system.
-  Corresponding chapter: [Chapter 1 The essential features of the socialist economic system](/socialist/社会主义经济制度的本质特征)
-- The process of finding the answer:
-  1. Utopian socialism put it forward first: an ethical critique of capitalist inequality.
-     Short answer: early socialism first critiqued capitalist inequality and exploitation from a moral standpoint.
+- Sub-question 1.2: What is the essence of the socialist economic system.
+  Corresponding chapter: [Chapter 1: Essential Features of the Socialist Economic System](/socialist/社会主义经济制度的本质特征)
+- The process of finding answers:
+  1. Utopian socialism came first: an ethical critique of capitalist inequality.
+     Brief answer: Early socialism first critiqued capitalist inequality and exploitation on a moral level.
      Corresponding chapter: [Introduction](/socialist/导论)
-  2. Its problem: it offered no historical mechanism and no practical route.
-     Short answer: utopian socialism had a picture of the ideal, but lacked analysis of institutional evolution and of how to get there.
+  2. Its problem: it offered no historical mechanism and no realistic path.
+     Brief answer: Utopian socialism had an ideal picture, but lacked analysis of institutional evolution and a path to realization.
      Corresponding chapter: [Introduction](/socialist/导论)
-  3. Marx and Engels pushed it further: scientific socialism, turning the question into a historical and institutional theory.
-     Short answer: scientific socialism tries to explain why socialism becomes the result of historical development.
-     Corresponding chapter: [Introduction](/socialist/导论) · [Chapter 1 The essential features of the socialist economic system](/socialist/社会主义经济制度的本质特征)
-  4. The conclusion of this round: socialism moves from an ideal picture to a systematic theory.
-     Short answer: socialism develops from an ethical critique into a body of theory with historical explanation and institutional logic.
-     Corresponding chapter: [Introduction](/socialist/导论) · [Chapter 1 The essential features of the socialist economic system](/socialist/社会主义经济制度的本质特征)
+  3. Marx and Engels then pushed it forward to scientific socialism, turning the question into a theory of history and institutions.
+     Brief answer: Scientific socialism tries to explain why socialism would become the outcome of historical development.
+     Corresponding chapter: [Introduction](/socialist/导论) · [Chapter 1: Essential Features of the Socialist Economic System](/socialist/社会主义经济制度的本质特征)
+  4. The conclusion of this round: socialism advanced from an ideal picture to a systematic theory.
+     Brief answer: Socialism developed from an ethical critique into a body of theory with historical explanation and institutional logic.
+     Corresponding chapter: [Introduction](/socialist/导论) · [Chapter 1: Essential Features of the Socialist Economic System](/socialist/社会主义经济制度的本质特征)
 
-### Big question 2: why the socialist system produced the traditional planned system, and why it had to reform
+### Big Question 2: Why did the socialist system form a traditional planned system, and why must it be reformed
 
-- Sub-question 2.1: why did the traditional planned system come about.
-  Corresponding chapter: [Chapter 1 The essential features of the socialist economic system](/socialist/社会主义经济制度的本质特征)
-- Sub-question 2.2: why socialism also needs a market economy.
-  Corresponding chapter: [Chapter 2 Theory of the socialist market economy](/socialist/社会主义市场经济理论)
-- Sub-question 2.3: why reform took the form of gradual transition rather than a one-shot leap.
-  Corresponding chapter: [Chapter 3 Gradual transition to the socialist market economy system](/socialist/向社会主义市场经济体制的渐进过渡)
-- The process of finding the answer:
-  1. The traditional system first turned socialist theory into a real institution.
-     Short answer: the planned system is the institutional expression of socialist theory in reality.
-     Corresponding chapter: [Chapter 1 The essential features of the socialist economic system](/socialist/社会主义经济制度的本质特征)
-  2. But problems of efficiency, incentives, and information kept accumulating, and the old answer grew ever less adequate.
-     Short answer: the highly centralized planned system gradually exposed problems of low efficiency, weak incentives, and distorted information.
-     Corresponding chapter: [Chapter 1 The essential features of the socialist economic system](/socialist/社会主义经济制度的本质特征) · [Chapter 2 Theory of the socialist market economy](/socialist/社会主义市场经济理论)
-  3. Reform and opening up pushed the question forward to: how to rewrite the relationship between plan and market.
-     Short answer: the core of reform is rebuilding the relationship between plan and market in allocating resources.
-     Corresponding chapter: [Chapter 2 Theory of the socialist market economy](/socialist/社会主义市场经济理论)
-  4. Gradual reform theory answered further: why the transition must proceed in stages.
-     Short answer: institutional transition has to balance stability against change, which is why it often takes a gradual path.
-     Corresponding chapter: [Chapter 3 Gradual transition to the socialist market economy system](/socialist/向社会主义市场经济体制的渐进过渡)
-  5. The conclusion of this round: socialist reform does not deny socialism, it rewrites how resources are allocated.
-     Short answer: the point of reform is not to abandon socialism, but to improve the mechanisms of resource allocation and the way the system operates.
-     Corresponding chapter: [Chapter 2 Theory of the socialist market economy](/socialist/社会主义市场经济理论) · [Chapter 3 Gradual transition to the socialist market economy system](/socialist/向社会主义市场经济体制的渐进过渡)
+- Sub-question 2.1: Why did the traditional planned system form.
+  Corresponding chapter: [Chapter 1: Essential Features of the Socialist Economic System](/socialist/社会主义经济制度的本质特征)
+- Sub-question 2.2: Why socialism also has to develop a market economy.
+  Corresponding chapter: [Chapter 2: Theory of the Socialist Market Economy](/socialist/社会主义市场经济理论)
+- Sub-question 2.3: Why reform took a gradual transition rather than a one-time leap.
+  Corresponding chapter: [Chapter 3: Gradual Transition to the Socialist Market Economic System](/socialist/向社会主义市场经济体制的渐进过渡)
+- The process of finding answers:
+  1. The traditional system first turned socialist theory into real institutions.
+     Brief answer: The planned system was the institutionalized expression of socialist theory in practice.
+     Corresponding chapter: [Chapter 1: Essential Features of the Socialist Economic System](/socialist/社会主义经济制度的本质特征)
+  2. But efficiency, incentive, and information problems kept accumulating, and the old answers became increasingly inadequate.
+     Brief answer: The highly centralized planned system gradually exposed problems of low efficiency, weak incentives, and distorted information.
+     Corresponding chapter: [Chapter 1: Essential Features of the Socialist Economic System](/socialist/社会主义经济制度的本质特征) · [Chapter 2: Theory of the Socialist Market Economy](/socialist/社会主义市场经济理论)
+  3. Reform and opening up pushed the question forward to: how to rewrite the relationship between planning and the market.
+     Brief answer: The core of reform is restructuring the role of planning and the market in resource allocation.
+     Corresponding chapter: [Chapter 2: Theory of the Socialist Market Economy](/socialist/社会主义市场经济理论)
+  4. Gradual reform theory answers further: why the transition must be advanced in stages.
+     Brief answer: Institutional transition needs to balance stability and change, so it often follows a gradual path.
+     Corresponding chapter: [Chapter 3: Gradual Transition to the Socialist Market Economic System](/socialist/向社会主义市场经济体制的渐进过渡)
+  5. The conclusion of this round: socialist reform does not negate socialism, but rewrites how resources are allocated.
+     Brief answer: The point of reform is not to abandon socialism, but to improve the mechanism of resource allocation and the way institutions operate.
+     Corresponding chapter: [Chapter 2: Theory of the Socialist Market Economy](/socialist/社会主义市场经济理论) · [Chapter 3: Gradual Transition to the Socialist Market Economic System](/socialist/向社会主义市场经济体制的渐进过渡)
 
-### Big question 3: why socialism also needs a market economy, and how property rights, firms, and distribution are rebuilt
+### Big Question 3: Why does socialism also have to develop a market economy, and how are property rights, enterprises, and distribution restructured
 
-- Sub-question 3.1: why state-owned enterprises had to be reformed after marketization.
-  Corresponding chapter: [Chapter 4 Socialist enterprise systems and state-owned enterprise reform](/socialist/社会主义企业制度与国有企业改革)
-- Sub-question 3.2: after enterprise reform, how can the governance structure actually work.
-  Corresponding chapter: [Chapter 5 Innovation in the governance structure of state-owned enterprises](/socialist/国有企业治理结构的创新)
-- Sub-question 3.3: how to handle efficiency and equity under a socialist market economy.
-  Corresponding chapter: [Chapter 6 The distribution system under a socialist market economy](/socialist/社会主义市场经济条件下的分配制度)
-- The process of finding the answer:
-  1. Theory of the socialist market economy first resolved: can market mechanisms enter socialism.
-     Short answer: the market was redefined as a tool for allocating resources, not a mechanism exclusive to capitalism.
-     Corresponding chapter: [Chapter 2 Theory of the socialist market economy](/socialist/社会主义市场经济理论)
-  2. SOE reform and the modern enterprise system pushed it further to: how micro-level actors are truly brought into the market.
-     Short answer: for a firm to become a genuine market actor, it must undergo property-rights and governance-structure reform.
-     Corresponding chapter: [Chapter 4 Socialist enterprise systems and state-owned enterprise reform](/socialist/社会主义企业制度与国有企业改革) · [Chapter 5 Innovation in the governance structure of state-owned enterprises](/socialist/国有企业治理结构的创新)
-  3. Reform of the distribution system then pushed on to: how to rebalance equity once efficiency has improved.
-     Short answer: after marketization, the distribution system must handle incentive efficiency and social equity at the same time.
-     Corresponding chapter: [Chapter 6 The distribution system under a socialist market economy](/socialist/社会主义市场经济条件下的分配制度)
-  4. The conclusion of this round: the socialist market economy is not just about introducing markets, it must also rebuild enterprise and distribution systems.
-     Short answer: market-oriented reform must rebuild enterprise systems and distribution mechanisms in step if it is to become a complete system.
-     Corresponding chapter: [Chapter 4 Socialist enterprise systems and state-owned enterprise reform](/socialist/社会主义企业制度与国有企业改革) · [Chapter 5 Innovation in the governance structure of state-owned enterprises](/socialist/国有企业治理结构的创新) · [Chapter 6 The distribution system under a socialist market economy](/socialist/社会主义市场经济条件下的分配制度)
+- Sub-question 3.1: After marketization, why must SOEs be reformed.
+  Corresponding chapter: [Chapter 4: The Socialist Enterprise System and State-Owned Enterprise Reform](/socialist/社会主义企业制度与国有企业改革)
+- Sub-question 3.2: After enterprise reform, how can the governance structure operate effectively.
+  Corresponding chapter: [Chapter 5: Innovation in the Corporate Governance Structure of State-Owned Enterprises](/socialist/国有企业治理结构的创新)
+- Sub-question 3.3: Under a socialist market economy, how to handle efficiency and fairness.
+  Corresponding chapter: [Chapter 6: The Distribution System under a Socialist Market Economy](/socialist/社会主义市场经济条件下的分配制度)
+- The process of finding answers:
+  1. The theory of the socialist market economy first resolves: whether the market mechanism can enter socialism.
+     Brief answer: The market is redefined as a tool for allocating resources, rather than a mechanism exclusive to capitalism.
+     Corresponding chapter: [Chapter 2: Theory of the Socialist Market Economy](/socialist/社会主义市场经济理论)
+  2. SOE reform and the modern enterprise system then push forward to: how micro-level actors can be truly marketized.
+     Brief answer: For enterprises to become genuine market actors, they must undergo property-rights and governance-structure reform.
+     Corresponding chapter: [Chapter 4: The Socialist Enterprise System and State-Owned Enterprise Reform](/socialist/社会主义企业制度与国有企业改革) · [Chapter 5: Innovation in the Corporate Governance Structure of State-Owned Enterprises](/socialist/国有企业治理结构的创新)
+  3. Distribution-system reform continues to push forward to: how to rebalance fairness after efficiency improves.
+     Brief answer: After marketization, the distribution system must handle both incentive efficiency and social fairness.
+     Corresponding chapter: [Chapter 6: The Distribution System under a Socialist Market Economy](/socialist/社会主义市场经济条件下的分配制度)
+  4. The conclusion of this round: a socialist market economy is not just about introducing markets, but must also restructure the enterprise and distribution systems.
+     Brief answer: Market-oriented reform must simultaneously rebuild the enterprise system and distribution mechanisms to form a complete system.
+     Corresponding chapter: [Chapter 4: The Socialist Enterprise System and State-Owned Enterprise Reform](/socialist/社会主义企业制度与国有企业改革) · [Chapter 5: Innovation in the Corporate Governance Structure of State-Owned Enterprises](/socialist/国有企业治理结构的创新) · [Chapter 6: The Distribution System under a Socialist Market Economy](/socialist/社会主义市场经济条件下的分配制度)
 
-### Big question 4: how socialist modernization handles growth, structure, opening up, and government regulation
+### Big Question 4: How does socialist modernization handle growth, structure, openness, and government regulation
 
-- Sub-question 4.1: why socialist modernization cannot chase speed alone.
-  Corresponding chapter: [Chapter 7 Socialist economic growth and development](/socialist/社会主义经济增长与经济发展)
-- Sub-question 4.2: why structural adjustment still has to go on after growth.
-  Corresponding chapter: [Chapter 8 Structural adjustment of the economy under a socialist market economy](/socialist/社会主义市场经济条件下的经济结构调整)
-- Sub-question 4.3: how the socialist market economy fits into the global division of labour.
-  Corresponding chapter: [Chapter 9 Socialist foreign economic relations](/socialist/社会主义对外经济关系)
-- Sub-question 4.4: what role the government should still play after marketization.
-  Corresponding chapter: [Chapter 10 Government regulation under a socialist market economy](/socialist/社会主义市场经济条件下的政府调节)
-- The process of finding the answer:
-  1. Once marketization was established, the question was no longer just "whether to reform".
-     Short answer: once the direction toward marketization was clear, the central question shifted to how to achieve high-quality development and effective governance.
-     Corresponding chapter: [Chapter 7 Socialist economic growth and development](/socialist/社会主义经济增长与经济发展) · [Chapter 10 Government regulation under a socialist market economy](/socialist/社会主义市场经济条件下的政府调节)
-  2. Growth and development theory pushed it to: how to avoid chasing speed alone.
-     Short answer: modernization cannot look at the growth rate alone; it must also attend to quality, structure, and the improvement of people's livelihoods.
-     Corresponding chapter: [Chapter 7 Socialist economic growth and development](/socialist/社会主义经济增长与经济发展)
-  3. Structural adjustment theory pushed it to: why structure still needs optimizing after development.
-     Short answer: after growth, efficiency still has to be raised and development imbalances addressed through structural upgrading.
-     Corresponding chapter: [Chapter 8 Structural adjustment of the economy under a socialist market economy](/socialist/社会主义市场经济条件下的经济结构调整)
-  4. Opening-up theory pushed it to: how the socialist market economy fits into the global division of labour.
-     Short answer: opening up requires the socialist market economy to enter the international division of labour and the system of global competition of its own accord.
-     Corresponding chapter: [Chapter 9 Socialist foreign economic relations](/socialist/社会主义对外经济关系)
-  5. Government regulation theory finally pushed it to: how the government should reposition itself after marketization.
-     Short answer: the government must shift from allocating resources directly to supplying rules, public services, and macroeconomic regulation.
-     Corresponding chapter: [Chapter 10 Government regulation under a socialist market economy](/socialist/社会主义市场经济条件下的政府调节)
-  6. The conclusion of this round: socialist modernization ultimately comes down to the unity of development, opening up, and governance.
-     Short answer: socialist modernization ultimately has to bring together development quality, capacity for opening up, and level of governance.
-     Corresponding chapter: [Chapter 7 Socialist economic growth and development](/socialist/社会主义经济增长与经济发展) · [Chapter 8 Structural adjustment of the economy under a socialist market economy](/socialist/社会主义市场经济条件下的经济结构调整) · [Chapter 9 Socialist foreign economic relations](/socialist/社会主义对外经济关系) · [Chapter 10 Government regulation under a socialist market economy](/socialist/社会主义市场经济条件下的政府调节)
+- Sub-question 4.1: Why socialist modernization cannot pursue only speed.
+  Corresponding chapter: [Chapter 7: Socialist Economic Growth and Economic Development](/socialist/社会主义经济增长与经济发展)
+- Sub-question 4.2: Why structural adjustment must continue after growth.
+  Corresponding chapter: [Chapter 8: Economic Structural Adjustment under a Socialist Market Economy](/socialist/社会主义市场经济条件下的经济结构调整)
+- Sub-question 4.3: How the socialist market economy integrates into the global division of labor.
+  Corresponding chapter: [Chapter 9: Socialist External Economic Relations](/socialist/社会主义对外经济关系)
+- Sub-question 4.4: After marketization, what role should the government still play.
+  Corresponding chapter: [Chapter 10: Government Regulation under a Socialist Market Economy](/socialist/社会主义市场经济条件下的政府调节)
+- The process of finding answers:
+  1. Once marketization was established, the question was no longer just "whether we can reform."
+     Brief answer: Once the direction of marketization was clear, the core question turned to how to achieve high-quality development and effective governance.
+     Corresponding chapter: [Chapter 7: Socialist Economic Growth and Economic Development](/socialist/社会主义经济增长与经济发展) · [Chapter 10: Government Regulation under a Socialist Market Economy](/socialist/社会主义市场经济条件下的政府调节)
+  2. Growth and development theory pushed forward to: how to avoid pursuing only speed.
+     Brief answer: Modernization cannot look only at the speed of growth; it must also attend to quality, structure, and improvement in people's livelihoods.
+     Corresponding chapter: [Chapter 7: Socialist Economic Growth and Economic Development](/socialist/社会主义经济增长与经济发展)
+  3. Structural adjustment theory pushed forward to: why the structure must continue to be optimized after development.
+     Brief answer: After growth, structural upgrading is still needed to improve efficiency and resolve imbalances in development.
+     Corresponding chapter: [Chapter 8: Economic Structural Adjustment under a Socialist Market Economy](/socialist/社会主义市场经济条件下的经济结构调整)
+  4. Openness theory pushed forward to: how the socialist market economy integrates into the global division of labor.
+     Brief answer: Openness requires the socialist market economy to proactively enter the international division of labor and the system of global competition.
+     Corresponding chapter: [Chapter 9: Socialist External Economic Relations](/socialist/社会主义对外经济关系)
+  5. Government regulation theory finally pushes forward to: how the government should reposition itself after marketization.
+     Brief answer: The government must shift from directly allocating resources to supplying rules, public services, and macroeconomic regulation.
+     Corresponding chapter: [Chapter 10: Government Regulation under a Socialist Market Economy](/socialist/社会主义市场经济条件下的政府调节)
+  6. The conclusion of this round: socialist modernization ultimately comes down to the unification of development, openness, and governance.
+     Brief answer: Socialist modernization ultimately has to unify the quality of development, the capacity for openness, and the level of governance.
+     Corresponding chapter: [Chapter 7: Socialist Economic Growth and Economic Development](/socialist/社会主义经济增长与经济发展) · [Chapter 8: Economic Structural Adjustment under a Socialist Market Economy](/socialist/社会主义市场经济条件下的经济结构调整) · [Chapter 9: Socialist External Economic Relations](/socialist/社会主义对外经济关系) · [Chapter 10: Government Regulation under a Socialist Market Economy](/socialist/社会主义市场经济条件下的政府调节)
 
-## I. Question 1: where does socialist thought come from, and why did it develop into scientific socialism
+## One, Question 1: Where does socialist thought come from, and why did it develop into scientific socialism
 
-### Before the 19th century: utopian socialism
+### Before the 19th century, utopian socialism
 
 - Transitional figures:
-  Saint-Simon, Fourier, and Owen are the most commonly cited representatives.
-- Influenced by:
-  The moral critique of wealth polarization and social inequality in early capitalism.
-- What it proposed:
-  A critique of private property and poverty, together with a vision of an ideal society.
-- What it set out to explain:
+  Saint-Simon, Fourier, and Owen are the most common representatives.
+- Influenced by whom:
+  Moral critique of the early capitalist divergence between rich and poor and of social inequality.
+- What was put forward:
+  Critique of private ownership and of the problem of poverty, together with a vision of an ideal society.
+- What was being explained:
   Why capitalist society leads to poverty, exploitation, and disorder.
 - Core view:
-  A more equal, more cooperative social system should be built.
-- Advance on the critique of the old order:
-  Turned scattered grievances into institutional designs for the shape of a future society.
-- What remained unsolved:
-  No analysis of historical laws or of a practical route to realization; it was more an ethical ideal.
-- Back to the textbook:
+  More equal and more cooperative social institutions should be built.
+- Progress relative to critiques of the old order:
+  Advanced scattered discontent into an institutional blueprint for a future social form.
+- What was still unresolved:
+  Lacked analysis of historical laws and of a realistic path to realization; it was more an ethical ideal.
+- Corresponding back to the textbook:
   [Introduction](/socialist/导论)
 
-### Mid-19th century: Marx, Engels, scientific socialism
+### Mid-19th century, Marx and Engels, scientific socialism
 
 - Representative works:
-  The *Communist Manifesto*, *Capital*, and the related canonical texts.
-- Influenced by:
-  Directly inherited and critiqued utopian socialism, while drawing on German classical philosophy, British classical political economy, and French socialist thought.
-- What it proposed:
-  Scientific socialism, the theory of surplus value, and a historical materialist framework.
-- What it set out to explain:
+  *The Communist Manifesto*, *Capital*, and the related classical texts.
+- Influenced by whom:
+  Directly inherited from and critiqued utopian socialism, while also absorbing German classical philosophy, British classical political economy, and French socialist thought.
+- What was put forward:
+  Scientific socialism, the theory of surplus value, and the framework of historical materialism.
+- What was being explained:
   Why capitalism generates internal contradictions, and why socialism is not a moral wish but the outcome of historical development.
 - Core view:
-  Relations of production must adapt to the development of productive forces; the internal contradictions of capitalism drive institutional change in society.
-- Advance on utopian socialism:
-  Moved from "what society ought to be built" to a historical explanation of "why history is heading toward this society".
-- Who it directly corrected:
-  It directly corrected the fact that utopian socialism had only an ideal picture, lacking historical mechanism and practical route.
-- What remained unsolved:
-  It gave no complete institutional design for how a future socialist society would actually operate.
-- Back to the textbook:
-  [Introduction](/socialist/导论) · [The essential features of the socialist economic system](/socialist/社会主义经济制度的本质特征)
+  Relations of production must adapt to the development of productive forces; the internal contradictions of capitalism will drive social-institutional change.
+- Progress relative to utopian socialism:
+  Advanced from "what society should be built" to the historical explanation of "why society moves toward that form."
+- Who was directly corrected:
+  The direct correction is of the problem that utopian socialism had only an ideal picture and lacked a historical mechanism and a realistic path.
+- What was still unresolved:
+  No complete institutional design was offered for the concrete operating mechanisms of a future socialist society.
+- Corresponding back to the textbook:
+  [Introduction](/socialist/导论) · [Essential Features of the Socialist Economic System](/socialist/社会主义经济制度的本质特征)
 
-## II. Question 2: why the socialist system produced the traditional planned system, and why it had to reform
+## Two, Question 2: Why did the socialist system form a traditional planned system, and why must it be reformed
 
-### The 20th century: formation of the traditional socialist system
+### 20th century, formation of the traditional socialist system
 
 - Transitional figures:
-  The exploration of socialist construction and the planned system in the Lenin era was a key intermediate step in the theory's institutionalization.
-- Influenced by:
-  Built on Marxist ideas of public ownership and planned allocation of resources, and also shaped by the conditions of war and the task of catch-up industrialization.
-- What it proposed:
+  Lenin-era exploration of socialist construction and of the planned system was an important intermediate link between theory and institutionalization.
+- Influenced by whom:
+  Built on the Marxist ideas of public ownership and of planned allocation of resources, and also shaped by the war environment and by the task of catching up industrially.
+- What was put forward:
   A highly centralized planned economic system.
-- What it set out to explain:
-  How resources are allocated centrally under public ownership, and how the state can drive industrialization quickly.
+- What was being explained:
+  How resources are centrally allocated under public ownership, and how the state rapidly advances industrialization.
 - Core view:
-  Allocating resources by plan rather than by market can concentrate forces on completing heavy industrialization and rebuilding institutions.
-- Advance on early socialist theory:
-  It pushed socialism from a theoretical design into a real system.
-- What remained unsolved:
-  Insufficient incentives, distorted information, structural rigidity, and efficiency problems kept accumulating.
-- Back to the textbook:
-  [The essential features of the socialist economic system](/socialist/社会主义经济制度的本质特征)
+  Allocating resources through planning rather than through the market can concentrate forces to complete heavy industrialization and institutional rebuilding.
+- Progress relative to early socialist theory:
+  Advanced socialism from a theoretical conception to real institutions.
+- What was still unresolved:
+  Insufficient incentives, distorted information, rigid structure, and efficiency problems kept accumulating.
+- Corresponding back to the textbook:
+  [Essential Features of the Socialist Economic System](/socialist/社会主义经济制度的本质特征)
 
-### After 1978: China's reform and opening up begins
+### After 1978, China's reform and opening up began
 
-- Who it directly corrected:
-  It directly corrected the old view that the planned system could allocate resources at high efficiency indefinitely.
-- Influenced by:
-  It responded directly to the efficiency ceiling of the traditional planned system, and also drew on international experience in economic development.
-- What it proposed:
-  Gradual reform, and a reassessment of the relationship between plan and market.
-- What it set out to explain:
-  Why the way resources are allocated must also be reformed under a socialist system.
+- Who was directly corrected:
+  The direct correction is of the old view that "the planned system can allocate resources efficiently over the long run."
+- Influenced by whom:
+  Directly responded to the efficiency bottleneck of the traditional planned system, and also absorbed international experience in economic development.
+- What was put forward:
+  Gradual reform, and a renewed understanding of the relationship between planning and the market.
+- What was being explained:
+  Why, under the socialist system, the way resources are allocated must also be reformed.
 - Core view:
-  Markets do not belong to capitalism by nature; both plan and market are merely tools for allocating resources.
-- Advance on the traditional system:
-  It moved from the view that "the plan is the only correct way" to "both plan and market can serve socialism".
-- What remained unsolved:
-  How to avoid institutional collapse during reform, and how to manage the contradictions of a period when old and new systems coexist, remain highly complex.
-- Back to the textbook:
-  [Theory of the socialist market economy](/socialist/社会主义市场经济理论) · [Gradual transition to the socialist market economy system](/socialist/向社会主义市场经济体制的渐进过渡)
+  The market does not belong to capitalism by nature; planning and the market are both tools for allocating resources.
+- Progress relative to the traditional system:
+  Advanced from the view that "planning alone is correct" to the view that "both planning and the market can serve socialism."
+- What was still unresolved:
+  How reform can avoid institutional breakdown, and how to handle contradictions during the period of coexistence of old and new systems, remained very complex.
+- Corresponding back to the textbook:
+  [Theory of the Socialist Market Economy](/socialist/社会主义市场经济理论) · [Gradual Transition to the Socialist Market Economic System](/socialist/向社会主义市场经济体制的渐进过渡)
 
-## III. Question 3: why socialism also needs a market economy, and how property rights, firms, and distribution are rebuilt
+## Three, Question 3: Why does socialism also have to develop a market economy, and how are property rights, enterprises, and distribution restructured
 
-### After 1992: the socialist market economy is established
+### After 1992, the socialist market economy was established
 
-- Representative turning point:
-  The formal establishment of the socialist market economy system as a target was the key point at which this line of theory moved from exploration to a settled form.
-- Influenced by:
-  Built on the reassessment of the relationship between plan and market since reform and opening up.
-- What it proposed:
-  The socialist market economy system.
-- What it set out to explain:
-  Why socialism also needs market mechanisms.
+- Representative milestones:
+  The formal establishment of the socialist market economic system as a goal was a key milestone at which this theoretical line moved from exploration to crystallization.
+- Influenced by whom:
+  Built on the renewed understanding of the relationship between planning and the market since reform and opening up.
+- What was put forward:
+  The socialist market economic system.
+- What was being explained:
+  Why socialism also needs a market mechanism.
 - Core view:
-  Giving markets a foundational role in allocating resources does not alter the fundamental institutional character of socialism.
-- Advance on the early reform period:
-  It moved from "markets are an auxiliary tool" to "markets are the foundational allocation mechanism".
-- What remained unsolved:
-  After marketization, how to reorganize the state-owned economy, enterprise governance, and income distribution became new problems.
-- Back to the textbook:
-  [Theory of the socialist market economy](/socialist/社会主义市场经济理论)
+  It does not change the essential institutional attributes of socialism for the market to play a foundational role in resource allocation.
+- Progress relative to the early reform period:
+  Advanced from "the market is an auxiliary tool" to "the market is a foundational allocation mechanism."
+- What was still unresolved:
+  After marketization, how to reorganize the state-owned economy, enterprise governance, and income distribution became a new set of hard problems.
+- Corresponding back to the textbook:
+  [Theory of the Socialist Market Economy](/socialist/社会主义市场经济理论)
 
 ### SOE reform and the theory of the modern enterprise system
 
-- Who it directly corrected:
-  It corrected the institutional flaws of the traditional SOE: state and enterprise not separated, property rights blurred, incentives weakened.
-- Influenced by:
-  Built within the framework of the socialist market economy, and drawing on modern corporate governance and property-rights theory.
-- What it proposed:
-  Property-rights reform, the modern enterprise system, and the legal-person governance structure.
-- What it set out to explain:
-  Why traditional SOEs were inefficient in a market environment, and how to remake them as modern market actors.
+- Who was directly corrected:
+  The correction is of the institutional defects of traditional SOEs: blurred government-enterprise boundaries, ambiguous property rights, and weakened incentives.
+- Influenced by whom:
+  Built within the framework of the socialist market economy, and also drawing on modern corporate governance and property-rights theory.
+- What was put forward:
+  Property-rights reform, the modern enterprise system, and the corporate governance structure.
+- What was being explained:
+  Why traditional SOEs are inefficient in a market environment, and how to transform them into modern market actors.
 - Core view:
-  A firm must have clear property rights, clearly defined rights and responsibilities, and effective mechanisms of incentive and constraint.
-- Advance on the traditional SOE system:
-  It pushed the SOE from an administrative appendage into a relatively independent market actor.
-- What remained unsolved:
-  How the SOE can balance efficiency, state control, and public objectives remains a permanent tension.
-- Back to the textbook:
-  [Socialist enterprise systems and state-owned enterprise reform](/socialist/社会主义企业制度与国有企业改革) · [Innovation in the governance structure of state-owned enterprises](/socialist/国有企业治理结构的创新)
+  Enterprises must have clear property rights, clearly defined rights and responsibilities, and effective incentive and constraint mechanisms.
+- Progress relative to the traditional SOE system:
+  Advanced SOEs from administrative appendages to relatively independent market actors.
+- What was still unresolved:
+  How state-owned enterprises can balance efficiency, control, and public goals always involves tension.
+- Corresponding back to the textbook:
+  [The Socialist Enterprise System and State-Owned Enterprise Reform](/socialist/社会主义企业制度与国有企业改革) · [Innovation in the Corporate Governance Structure of State-Owned Enterprises](/socialist/国有企业治理结构的创新)
 
-### Rebuilding the distribution system
+### Restructuring the distribution system
 
-- Influenced by:
-  From the reappearance of the efficiency–equity contradiction after market-oriented reform.
-- What it proposed:
-  Distribution according to work as the mainstay, with several modes of distribution coexisting.
-- What it set out to explain:
-  Why income distribution under a socialist market economy can no longer be handled by the logic of a single planned system.
+- Influenced by whom:
+  Arising from the renewed prominence of the efficiency-fairness contradiction after market-oriented reform.
+- What was put forward:
+  Distribution according to work as the mainstay, coexisting with multiple modes of distribution.
+- What was being explained:
+  Why income distribution under a socialist market economy can no longer be handled with the logic of a single planned system.
 - Core view:
-  While holding to the basic principles of socialism, recognize the contribution of factors of production and market incentives.
-- Advance on traditional egalitarian distribution:
-  It moved the distribution system from single-channel administrative allocation to equal weight on efficiency and equity.
-- What remained unsolved:
-  Widening income gaps, redistribution mechanisms, and the path to common prosperity all still need exploration.
-- Back to the textbook:
-  [The distribution system under a socialist market economy](/socialist/社会主义市场经济条件下的分配制度)
+  While upholding the basic principles of socialism, acknowledge the contributions of factors of production and market incentives.
+- Progress relative to traditional egalitarian distribution:
+  Advanced the distribution system from a single administrative distribution to one that weights both efficiency and fairness.
+- What was still unresolved:
+  Widening income gaps, redistribution mechanisms, and the path to common prosperity still require continued exploration.
+- Corresponding back to the textbook:
+  [The Distribution System under a Socialist Market Economy](/socialist/社会主义市场经济条件下的分配制度)
 
-## IV. Question 4: how socialist modernization handles growth, structure, opening up, and government regulation
+## Four, Question 4: How does socialist modernization handle growth, structure, openness, and government regulation
 
 ### Growth and development theory
 
-- Influenced by:
-  Built on market-oriented reform and the experience of development economics.
-- What it proposed:
-  Distinguishing economic growth from economic development, high-quality development, and analysis of structural upgrading.
-- What it set out to explain:
-  Why socialist modernization cannot look at speed alone, but must also look at quality and structure.
+- Influenced by whom:
+  Built on market-oriented reform and on the experience of development economics.
+- What was put forward:
+  A distinction between economic growth and economic development, high-quality development, and analysis of structural upgrading.
+- What was being explained:
+  Why socialist modernization cannot look only at speed, but also at quality and structure.
 - Core view:
-  Growth is not the goal in itself; development also includes structural optimization, higher efficiency, and improvement of people's livelihoods.
-- Advance on the early extensive-growth approach:
-  It moved development goals from "simple increments" to "unity of quality, efficiency, and structure".
-- What remained unsolved:
-  Balancing the growth rate, employment stability, and structural upgrading during transition remains difficult.
-- Back to the textbook:
-  [Socialist economic growth and development](/socialist/社会主义经济增长与经济发展) · [Structural adjustment of the economy under a socialist market economy](/socialist/社会主义市场经济条件下的经济结构调整)
+  Growth is not the goal itself; development also includes structural optimization, improved efficiency, and improvement in people's livelihoods.
+- Progress relative to the early extensive-growth approach:
+  Advanced the development goal from "mere volume growth" to "unification of quality, efficiency, and structure."
+- What was still unresolved:
+  How to balance the speed of growth, employment stability, and structural upgrading during transition remains difficult.
+- Corresponding back to the textbook:
+  [Socialist Economic Growth and Economic Development](/socialist/社会主义经济增长与经济发展) · [Economic Structural Adjustment under a Socialist Market Economy](/socialist/社会主义市场经济条件下的经济结构调整)
 
 ### Opening up and participation in globalization
 
-- Influenced by:
-  Built on reform and opening up and on the deepening of the international division of labour.
-- What it proposed:
-  A theory of socialist development under conditions of opening up.
-- What it set out to explain:
-  Why the socialist market economy must integrate into the international division of labour and global markets.
+- Influenced by whom:
+  Built on reform and opening up and on the deepening of the international division of labor.
+- What was put forward:
+  The theory of socialist development under opening up.
+- What was being explained:
+  Why the socialist market economy must integrate into the international division of labor and global markets.
 - Core view:
-  Opening up is not an external supplement, but part of the path of modernization.
-- Advance on the closed development model:
-  It pushed domestic reform into a development model of "internal and external linkage".
-- What remained unsolved:
-  Opening up brings external risk, competitive pressure, and industrial-security issues.
-- Back to the textbook:
-  [Socialist foreign economic relations](/socialist/社会主义对外经济关系)
+  Openness is not an external add-on, but part of the path of modernization.
+- Progress relative to a closed development model:
+  Advanced domestic reform into a development model of "internal and external coordination."
+- What was still unresolved:
+  Openness brings external risks, competitive pressure, and industrial-security concerns.
+- Corresponding back to the textbook:
+  [Socialist External Economic Relations](/socialist/社会主义对外经济关系)
 
-### Theory of government regulation
+### Government regulation theory
 
-- Who it directly corrected:
-  It corrected the role of the government under the traditional planned system: taking over everything and directly substituting for the market.
-- Influenced by:
-  Built on the socialist market economy system, and drawing on modern experience in macroeconomic regulation and public governance.
-- What it proposed:
-  The boundary between government and market, and analysis of the functions of macroeconomic regulation and public services.
-- What it set out to explain:
-  Why the government did not withdraw after marketization, but rather needed to transform.
+- Who was directly corrected:
+  The correction is of the role definition in which, under the traditional planned system, the government did everything and directly substituted for the market.
+- Influenced by whom:
+  Built within the socialist market economic system, and also drawing on modern experience in macroeconomic regulation and public governance.
+- What was put forward:
+  The government-market boundary, and analysis of macroeconomic regulation and public-service functions.
+- What was being explained:
+  Why the government did not withdraw after marketization, but instead needed to transform.
 - Core view:
-  The government's task is no longer to substitute for the market directly, but to supply rules, a stable environment, public services, and strategic guidance.
-- Advance on the traditional planned system:
-  It moved the government's role from "allocating resources directly" to "regulation, service, and governance".
-- What remained unsolved:
-  How to prevent overstepping and absence of the administration coexisting is a permanent institutional difficulty.
-- Back to the textbook:
-  [Government regulation under a socialist market economy](/socialist/社会主义市场经济条件下的政府调节)
+  The government's task is no longer to directly substitute for the market, but to provide rules, a stable environment, public services, and strategic guidance.
+- Progress relative to the traditional planned system:
+  Advanced the government's role from "directly allocating resources" to "regulating, serving, and governing."
+- What was still unresolved:
+  How to prevent coexisting administrative overreach and absence remains a persistent institutional difficulty.
+- Corresponding back to the textbook:
+  [Government Regulation under a Socialist Market Economy](/socialist/社会主义市场经济条件下的政府调节)
 
-## V. Finally, compress the whole book into one sentence
+## Five, Finally compressing the whole book into a single sentence
 
-- The order in which socialist economics advanced theoretically is:
-  from a critique of capitalism to scientific socialism, from theory to the planned system, from the planned system to the socialist market economy, and finally to the questions of modernization, opening up, and governance.
+- The order of theoretical progression in socialist economics is:
+  First from critique of capitalism to scientific socialism, then from theory to the planned system, then from the planned system to the socialist market economy, and finally to the questions of modernization, openness, and governance.
 
 ## References
 
-- Wu Jinglian, *Reform of the Chinese Economic System* — an empirical account of institutional change and reform history.
-- The full reading list is in the [bibliography](/reference/参考书目).
+- Wu Jilian, *Economic Reform in Contemporary China* — an empirical narrative of institutional change and of reform history.
+- The full bibliography is in the [bibliography](/reference/参考书目).
 - [Wikipedia · Economic reform in China](https://en.wikipedia.org/wiki/Economic_reform_in_China)
 
 <!-- BACKLINKS-AUTO -->
 ## Related pages
 
 - [Readme](/socialist/Readme)
-- [Major CPC congresses and the evolution of the socialist economic system](/socialist/中国共产党重要会议与社会主义经济体制演进)
+- [Important CPC Meetings and the Evolution of the Socialist Economic System](/socialist/中国共产党重要会议与社会主义经济体制演进)
