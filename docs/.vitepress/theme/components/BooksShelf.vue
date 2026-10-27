@@ -1,13 +1,19 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
-import { withBase } from 'vitepress'
+import { useData, withBase } from 'vitepress'
 import { BOOKS, SCHOOL_LABELS, type Book } from '../data/books'
+import { BOOKS_EN_BY_ID, SCHOOL_LABELS_EN } from '../data/books-en'
 import { PEOPLE_BY_ID } from '../data/people'
+import { PEOPLE_EN_BY_ID } from '../data/people-en'
+
+const { localeIndex } = useData()
+const en = computed(() => localeIndex.value === 'root')
 
 const active = ref<'all' | Book['school']>('all')
 const selectedId = ref<string | null>(null)
 
-const schools = Object.keys(SCHOOL_LABELS) as Book['school'][]
+const labels = computed(() => (en.value ? SCHOOL_LABELS_EN : SCHOOL_LABELS))
+const schools = computed(() => Object.keys(SCHOOL_LABELS) as Book['school'][])
 
 const books = computed(() =>
   [...BOOKS]
@@ -32,50 +38,92 @@ const coverSrc = (b: Book) =>
 
 const authorHref = (peopleId?: string, wiki?: string) =>
   peopleId && PEOPLE_BY_ID[peopleId] ? `${withBase('/people')}#${peopleId}` : wiki ?? ''
+
+/** 作者名：英文侧优先取 people-en 的英文名，再退回 BOOKS_EN 的译名 */
+const authorName = (peopleId: string | undefined, zhName: string, i: number): string => {
+  if (!en.value) return zhName
+  const p = peopleId ? PEOPLE_EN_BY_ID[peopleId] : undefined
+  if (p) return PEOPLE_BY_ID[peopleId].en
+  return BOOKS_EN_BY_ID[selectedId.value ?? '']?.authors[i] ?? zhName
+}
+
+/** 作者行：英文侧按 BOOKS_EN 的译名补齐顺序 */
+const bookAuthors = (b: Book) => {
+  const row = BOOKS_EN_BY_ID[b.id]?.authors
+  if (!en.value || !row) return b.authors.map((a) => a.name)
+  return b.authors.map((a, i) => row[i] ?? a.name)
+}
+
+/** 书名：英文侧取 books.ts 的 en 字段 */
+const titleOf = (b: Book): string => (en.value ? b.en : b.title)
+
+const quote = (t: string) => (en.value ? `*${t}*` : `《${t}》`)
+const SEP = computed(() => (en.value ? ', ' : '、'))
+
+const STR = {
+  root: {
+    filterAria: 'Filter by school',
+    all: 'All',
+    closeAria: 'Close details',
+    coverAlt: (t: string) => `Cover of ${t}`,
+    wikiTitle: 'View on Wikipedia',
+    siteTitle: 'View the site entry',
+  },
+  zh: {
+    filterAria: '按流派筛选',
+    all: '全部',
+    closeAria: '关闭详情',
+    coverAlt: (t: string) => `《${t}》封面`,
+    wikiTitle: '查看维基百科',
+    siteTitle: '查看站内词条',
+  },
+} as const
+
+const s = computed(() => STR[localeIndex.value])
 </script>
 
 <template>
   <div class="shelf">
-    <div class="filters" role="tablist" aria-label="按流派筛选">
+    <div class="filters" role="tablist" :aria-label="s.filterAria">
       <button
         :class="['chip', { 'is-active': active === 'all' }]"
         @click="active = 'all'"
-      >全部 <span class="count">{{ BOOKS.length }}</span></button>
+      >{{ s.all }} <span class="count">{{ BOOKS.length }}</span></button>
       <button
-        v-for="s in schools"
-        :key="s"
-        :class="['chip', { 'is-active': active === s }]"
-        @click="active = s"
-      >{{ SCHOOL_LABELS[s] }} <span class="count">{{ BOOKS.filter((b) => b.school === s).length }}</span></button>
+        v-for="k in schools"
+        :key="k"
+        :class="['chip', { 'is-active': active === k }]"
+        @click="active = k"
+      >{{ labels[k as Book['school']] }} <span class="count">{{ BOOKS.filter((b) => b.school === k).length }}</span></button>
     </div>
 
     <!-- 书籍详情 -->
     <article v-if="selected" class="detail">
-      <button class="close" aria-label="关闭详情" @click="selectedId = null">✕</button>
+      <button class="close" :aria-label="s.closeAria" @click="selectedId = null">✕</button>
       <div class="detail-body">
         <img
           class="detail-cover"
           :src="coverSrc(selected)"
-          :alt="`《${selected.title}》封面`"
+          :alt="s.coverAlt(titleOf(selected))"
           loading="lazy"
           @error="failed[selected.id] = true"
         />
         <div class="detail-text">
-          <h2>《{{ selected.title }}》</h2>
+          <h2>{{ quote(titleOf(selected)) }}</h2>
           <p class="meta">
             <span class="year">{{ selected.year }}</span>
-            <span>{{ SCHOOL_LABELS[selected.school] }}</span>
+            <span>{{ labels[selected.school] }}</span>
           </p>
           <p class="authors">
-            <template v-for="(a, i) in selected.authors" :key="a.name">
-              <span v-if="i > 0" class="author-sep">、</span><a
+            <template v-for="(a, i) in selected.authors" :key="i">
+              <span v-if="i > 0" class="author-sep">{{ SEP }}</span><a
                 v-if="authorHref(a.peopleId, a.wiki)"
                 :href="authorHref(a.peopleId, a.wiki)"
-                :title="a.peopleId && PEOPLE_BY_ID[a.peopleId] ? '查看站内词条' : '查看维基百科'"
-              >{{ a.name }}</a><span v-else>{{ a.name }}</span>
+                :title="a.peopleId && PEOPLE_BY_ID[a.peopleId] ? s.siteTitle : s.wikiTitle"
+              >{{ authorName(a.peopleId, a.name, i) }}</a><span v-else>{{ authorName(a.peopleId, a.name, i) }}</span>
             </template>
           </p>
-          <p class="summary">{{ selected.summary }}</p>
+          <p class="summary">{{ en ? BOOKS_EN_BY_ID[selected.id]?.summary : selected.summary }}</p>
         </div>
       </div>
     </article>
@@ -91,13 +139,13 @@ const authorHref = (peopleId?: string, wiki?: string) =>
             <img
               class="cover"
               :src="coverSrc(b)"
-              :alt="`《${b.title}》封面`"
+              :alt="s.coverAlt(titleOf(b))"
               loading="lazy"
               @error="failed[b.id] = true"
             />
           </span>
-          <span class="b-title">{{ b.title }}</span>
-          <span class="b-author">{{ b.authors.map((a) => a.name).join('、') }}</span>
+          <span class="b-title">{{ quote(titleOf(b)) }}</span>
+          <span class="b-author">{{ bookAuthors(b).join(SEP) }}</span>
           <span class="b-year">{{ b.year }}</span>
         </button>
       </li>

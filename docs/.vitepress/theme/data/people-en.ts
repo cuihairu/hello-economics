@@ -160,3 +160,7 @@ export const FIELD_LABELS_EN = {
   socialist: 'Socialist',
   math: 'Methods',
 } as const
+
+export const PEOPLE_EN_BY_ID: Record<string, PersonEn> = Object.fromEntries(
+  PEOPLE_EN.map((p) => [p.id, p]),
+)

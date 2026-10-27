@@ -1,7 +1,14 @@
 <script setup lang="ts">
 import { computed, ref, watch, onMounted, onBeforeUnmount } from 'vue'
+import { useData } from 'vitepress'
 import { PEOPLE, PEOPLE_BY_ID, FIELD_LABELS, type Person } from '../data/people'
+import { PEOPLE_EN_BY_ID, FIELD_LABELS_EN } from '../data/people-en'
 import { useReducedMotion } from '../composables/useReducedMotion'
+
+const { localeIndex } = useData()
+const en = computed(() => localeIndex.value === 'root')
+
+const labels = computed(() => (en.value ? FIELD_LABELS_EN : FIELD_LABELS))
 
 // 支持 #person-id 深链（名著页等外部入口直达词条）
 const openFromHash = () => {
@@ -30,11 +37,14 @@ const cardVisible = (i: number) =>
 
 // 时代分段（与理论时间线的分期保持一致，出生年决定归属）
 const ERA_BANDS = [
-  { name: '前古典与古典', from: 1500, to: 1870 },
-  { name: '边际革命与新古典', from: 1871, to: 1935 },
-  { name: '凯恩斯革命与综合', from: 1936, to: 1970 },
-  { name: '理性预期与当代', from: 1971, to: 2100 },
+  { zh: '前古典与古典', en: 'Pre-classical and classical', from: 1500, to: 1870 },
+  { zh: '边际革命与新古典', en: 'Marginal revolution and neoclassical', from: 1871, to: 1935 },
+  { zh: '凯恩斯革命与综合', en: 'Keynesian revolution and synthesis', from: 1936, to: 1970 },
+  { zh: '理性预期与当代', en: 'Rational expectations and contemporary', from: 1971, to: 2100 },
 ]
+const eras = computed(() =>
+  ERA_BANDS.map((b) => ({ ...b, name: en.value ? b.en : b.zh })),
+)
 
 const birthOf = (p: Person) => parseInt(p.years, 10)
 
@@ -67,21 +77,56 @@ const span = (p: Person) => {
   const [b, d] = p.years.split('-')
   return { b: parseInt(b, 10), d: d ? parseInt(d, 10) : 2026 }
 }
+
+/** 英文侧的人物词条：按 id 取 people-en（与 PEOPLE 同序配对） */
+const infoOf = (id: string) => (en.value ? PEOPLE_EN_BY_ID[id] : null)
+const nameOf = (id: string) => PEOPLE_BY_ID[id][en.value ? 'en' : 'name']
+const countryOf = (p: Person) => infoOf(p.id)?.country ?? p.country
+const schoolOf = (p: Person) => infoOf(p.id)?.school ?? p.school
+const bioOf = (p: Person) => infoOf(p.id)?.bio ?? p.bio
+const theoriesOf = (p: Person) => infoOf(p.id)?.theories ?? p.theories
+const worksOf = (p: Person) => infoOf(p.id)?.works
+
+const STR = {
+  root: {
+    filterAria: 'Filter by field',
+    all: 'All',
+    closeAria: 'Close details',
+    putForward: 'Put forward and developed',
+    influencedBy: 'Influenced by',
+    noSource: 'The line of thought springs from earlier traditions.',
+    influenced: 'Influenced',
+    noLine: 'This line turns aside in the next generation — see the related chapters of the matching course.',
+  },
+  zh: {
+    filterAria: '按领域筛选',
+    all: '全部',
+    closeAria: '关闭详情',
+    putForward: '提出与发展',
+    influencedBy: '受谁影响',
+    noSource: '思想源头在此之前的传统。',
+    influenced: '影响了谁',
+    noLine: '这条线索在后辈处拐了弯——见对应专题的相关章节。',
+  },
+} as const
+
+const s = computed(() => STR[localeIndex.value])
+
 </script>
 
 <template>
   <div class="people">
-    <div class="filters" role="tablist" aria-label="按领域筛选">
+    <div class="filters" role="tablist" :aria-label="s.filterAria">
       <button
         :class="['chip', { 'is-active': active === 'all' }]"
         @click="active = 'all'"
-      >全部 <span class="count">{{ PEOPLE.length }}</span></button>
+      >{{ s.all }} <span class="count">{{ PEOPLE.length }}</span></button>
       <button
         v-for="f in fields"
         :key="f"
         :class="['chip', { 'is-active': active === f }]"
         @click="active = f"
-      >{{ FIELD_LABELS[f] }} <span class="count">{{ PEOPLE.filter((p) => p.field === f).length }}</span></button>
+      >{{ labels[f as Person['field']] }} <span class="count">{{ PEOPLE.filter((p) => p.field === f).length }}</span></button>
     </div>
 
     <!-- 人物详情：影响网络 -->
@@ -89,21 +134,21 @@ const span = (p: Person) => {
       <article v-if="selected" class="detail">
       <header class="detail-head">
         <div>
-          <h2>{{ selected.name }}</h2>
+          <h2>{{ nameOf(selected.id) }}</h2>
           <p class="meta">
             <span class="years">{{ selected.years }}</span>
-            <span>{{ selected.country }}</span>
-            <span>{{ selected.school }}</span>
-            <span class="field-tag">{{ FIELD_LABELS[selected.field] }}</span>
+            <span>{{ countryOf(selected) }}</span>
+            <span>{{ schoolOf(selected) }}</span>
+            <span class="field-tag">{{ labels[selected.field] }}</span>
           </p>
         </div>
-        <button class="close" aria-label="关闭详情" @click="selectedId = null">✕</button>
+        <button class="close" :aria-label="s.closeAria" @click="selectedId = null">✕</button>
       </header>
 
       <!-- 生卒在时代带上的位置 -->
       <div class="lifebar" aria-hidden="true">
         <div
-          v-for="band in ERA_BANDS"
+          v-for="band in eras"
           :key="band.name"
           class="band"
           :title="band.name"
@@ -119,38 +164,38 @@ const span = (p: Person) => {
         />
       </div>
 
-      <p class="bio">{{ selected.bio }}</p>
+      <p class="bio">{{ bioOf(selected) }}</p>
 
       <div class="cols">
         <div class="col">
-          <h3>提出与发展</h3>
+          <h3>{{ s.putForward }}</h3>
           <ul class="theories">
-            <li v-for="t in selected.theories" :key="t">{{ t }}</li>
+            <li v-for="t in theoriesOf(selected)" :key="t">{{ t }}</li>
           </ul>
-          <ul v-if="selected.works" class="works">
-            <li v-for="w in selected.works" :key="w">{{ w }}</li>
+          <ul v-if="worksOf(selected)" class="works">
+            <li v-for="w in worksOf(selected)!" :key="w">{{ w }}</li>
           </ul>
         </div>
         <div class="col">
-          <h3>受谁影响</h3>
-          <p v-if="selected.influencedBy.length === 0" class="none">思想源头在此之前的传统。</p>
+          <h3>{{ s.influencedBy }}</h3>
+          <p v-if="selected.influencedBy.length === 0" class="none">{{ s.noSource }}</p>
           <div class="links">
             <button
               v-for="id in selected.influencedBy"
               :key="id"
               class="person-chip"
               @click="select(id)"
-            >← {{ PEOPLE_BY_ID[id].name }}</button>
+            >← {{ nameOf(id) }}</button>
           </div>
-          <h3>影响了谁</h3>
-          <p v-if="selected.influenced.length === 0" class="none">这条线索在后辈处拐了弯——见对应专题的相关章节。</p>
+          <h3>{{ s.influenced }}</h3>
+          <p v-if="selected.influenced.length === 0" class="none">{{ s.noLine }}</p>
           <div class="links">
             <button
               v-for="id in selected.influenced"
               :key="id"
               class="person-chip"
               @click="select(id)"
-            >{{ PEOPLE_BY_ID[id].name }} →</button>
+            >{{ nameOf(id) }} →</button>
           </div>
         </div>
       </div>
@@ -170,10 +215,10 @@ const span = (p: Person) => {
           :class="['card', { 'is-active': selectedId === p.id }]"
           @click="toggle(p.id)"
         >
-          <span class="p-name">{{ p.name }}</span>
+          <span class="p-name">{{ nameOf(p.id) }}</span>
           <span class="p-years">{{ p.years }}</span>
-          <span class="p-school">{{ p.school }}</span>
-          <span class="p-theory">{{ p.theories[0] }}</span>
+          <span class="p-school">{{ schoolOf(p) }}</span>
+          <span class="p-theory">{{ theoriesOf(p)[0] }}</span>
         </button>
       </li>
     </ul>
