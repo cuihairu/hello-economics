@@ -5,13 +5,12 @@ layout: page
 <script setup>
 import { PEOPLE } from './.vitepress/theme/data/people'
 import { GLOSSARY } from './.vitepress/theme/data/glossary'
-import { COURSES_EN, EN_READY, shelfFor } from './.vitepress/theme/data/courses'
+import { COURSES_EN, shelfFor } from './.vitepress/theme/data/courses'
 import { withBase } from 'vitepress'
 import { TIMELINE } from './.vitepress/theme/data/timeline'
 
 const chapterTotal = COURSES_EN.reduce((n, c) => n + c.chapters.reduce((m, g) => m + g.items.length, 0), 0)
 const hasShelf = shelfFor('root').length > 0
-const threadsReady = EN_READY.has('index')
 </script>
 
 <div class="ledger-hero">
@@ -43,7 +42,6 @@ const threadsReady = EN_READY.has('index')
   </p>
 </template>
 
-<template v-if="threadsReady">
   <h2 class="home-h2">Three reading threads</h2>
 
   <ol class="threads">
@@ -60,7 +58,6 @@ const threadsReady = EN_READY.has('index')
       <p>Premium, Pareto optimality, the natural-rate hypothesis — {{ GLOSSARY.length }} terms with unified definitions, source chapters marked, searchable and individually linkable.</p>
     </li>
   </ol>
-</template>
 
 <p class="colophon">
   These pages are compiled from open economics textbooks and lecture notes; I am gradually adding the

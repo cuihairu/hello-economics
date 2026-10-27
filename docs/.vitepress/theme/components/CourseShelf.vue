@@ -6,7 +6,7 @@ import { useReducedMotion } from '../composables/useReducedMotion'
 
 // 首页书架：一个专题一个 tab（西方经济学按内容拆成微观 / 宏观两个 tab）。
 // 目录来自 theme/data/courses.ts —— 与侧边栏、专题切换条同一份数据，不会各自漂移。
-// 语言环境：按 useData().localeIndex 取对应语言的书架（英文侧按 EN_READY 过滤）。
+// 语言环境：按 useData().localeIndex 取对应语言的书架（两语言全量）。
 // WAI-ARIA tabs：tablist + roving tabindex，左右方向键切换，Home/End 跳两端。
 
 const { localeIndex } = useData()

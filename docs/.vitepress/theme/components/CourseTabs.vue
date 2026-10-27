@@ -5,7 +5,7 @@ import { courseListFor } from '../data/courses'
 
 // 专题切换条：目录、图标几何全部来自 theme/data/courses.ts
 // 样式在 custom.css 的「专题 Tab」一段（doc-before 槽位属于全局骨架）
-// 语言环境：按 useData().localeIndex 取对应语言的课程列表（英文侧按 EN_READY 过滤）
+// 语言环境：按 useData().localeIndex 取对应语言的课程列表（两语言全量，双语镜像已齐）
 const { localeIndex } = useData()
 const route = useRoute()
 

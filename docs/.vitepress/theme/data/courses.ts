@@ -387,22 +387,12 @@ export const REFERENCE_COURSE_EN: Course = buildReferenceCourse('root')
 export const ALL_COURSES_EN: Course[] = [...COURSES_EN, REFERENCE_COURSE_EN]
 export const SITE_INDEX_EN: CatalogItem[] = buildSiteIndex('root')
 
-/**
- * 过渡期门禁：根目录（英文）已译完的专题 id。
- * 英文侧边栏与首页书架只暴露 EN_READY 里的专题，未译完的不出入口；
- * 'index' 是首页「三条阅读线索」段落的开关（时间线 / 名人篇 / 术语篇）。
- * 全部译完后删掉本集合与相关 filter。
- */
-export const EN_READY: Set<string> = new Set(['knowledge', 'index', 'reference', 'math', 'finance', 'international', 'western', 'monetary'])
-
 export const courseById = (id: string, locale: Locale = 'zh'): Course | undefined =>
   (locale === 'root' ? ALL_COURSES_EN : ALL_COURSES).find((c) => c.id === id)
 
-/** 侧边栏 / 切换条用的课程列表：英文侧按 EN_READY 过滤 */
-export const courseListFor = (locale: Locale = 'zh'): Course[] => {
-  const all = locale === 'root' ? ALL_COURSES_EN : ALL_COURSES
-  return locale === 'root' ? all.filter((c) => EN_READY.has(c.id)) : all
-}
+/** 侧边栏 / 切换条用的课程列表：两语言全量（双语镜像完成后不再门控） */
+export const courseListFor = (locale: Locale = 'zh'): Course[] =>
+  locale === 'root' ? ALL_COURSES_EN : ALL_COURSES
 
 /* ---------- 侧边栏生成 ---------- */
 
@@ -529,11 +519,9 @@ const buildShelf = (locale: Locale): ShelfTab[] => {
 export const SHELF: ShelfTab[] = buildShelf('zh')
 export const SHELF_EN: ShelfTab[] = buildShelf('root')
 
-/** 首页书架用：英文侧只暴露已译完的 tab */
+/** 首页书架用：两语言全量（双语镜像完成后不再门控） */
 export const shelfFor = (locale: Locale = 'zh'): ShelfTab[] =>
-  locale === 'root'
-    ? SHELF_EN.filter((x) => EN_READY.has(x.courseId) || (x.id === 'index' && EN_READY.has('index')))
-    : SHELF
+  locale === 'root' ? SHELF_EN : SHELF
 
 export const chapterCount = (id: string): number => {
   const c = courseById(id)

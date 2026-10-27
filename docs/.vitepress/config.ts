@@ -4,8 +4,6 @@ import {
   courseListFor,
   sidebarFor,
   LOCALE_PREFIX,
-  EN_READY,
-  type Locale,
 } from './theme/data/courses'
 
 // 部署在 GitHub 项目页 cuihairu.github.io/hello-economics/ 下，
@@ -20,18 +18,17 @@ const cjkTokenize = (text: string): string[] =>
     .toLowerCase()
     .match(/[一-鿿]|[a-z0-9]+/g) ?? []
 
-/** 两个语言环境共用的导航骨架：英文在根目录，中文在 /zh/ 下。
- * ready 指向 EN_READY 的伪 id：未译完的模块在英文侧不出入口（中文侧全量）。 */
-const NAV_ITEMS: { path: string; zh: string; en: string; ready?: string }[] = [
+/** 两个语言环境共用的导航骨架：英文在根目录，中文在 /zh/ 下（双语镜像已齐，两语言同一套入口）。 */
+const NAV_ITEMS: { path: string; zh: string; en: string }[] = [
   { path: '/', zh: '首页', en: 'Home' },
-  { path: '/timeline', zh: '理论时间线', en: 'Theory timeline', ready: 'index' },
-  { path: '/people', zh: '名人篇', en: 'Economists', ready: 'index' },
-  { path: '/books', zh: '名著篇', en: 'Books', ready: 'index' },
-  { path: '/glossary', zh: '术语篇', en: 'Glossary', ready: 'index' },
-  { path: '/knowledge', zh: '知识点主文档', en: 'Knowledge', ready: 'knowledge' },
+  { path: '/timeline', zh: '理论时间线', en: 'Theory timeline' },
+  { path: '/people', zh: '名人篇', en: 'Economists' },
+  { path: '/books', zh: '名著篇', en: 'Books' },
+  { path: '/glossary', zh: '术语篇', en: 'Glossary' },
+  { path: '/knowledge', zh: '知识点主文档', en: 'Knowledge' },
   { path: '/about', zh: '关于', en: 'About' },
 ]
-const rootNav = NAV_ITEMS.filter((n) => !n.ready || EN_READY.has(n.ready))
+const rootNav = NAV_ITEMS
 
 const UI_LABELS = {
   root: {
@@ -82,9 +79,8 @@ export default defineConfig({
     root: { label: 'English', lang: 'en-US' },
     zh: { label: '简体中文', lang: 'zh-CN', link: '/zh/' },
   },
-  // 迁移期豁免：根 locale 的站内链指向 EN_READY 尚未放行的模块（英译镜像
-  // 落地即逐个消除），/zh/ 与相对链接仍全量校验。
-  ignoreDeadLinks: [(url) => url.startsWith('/') && !url.startsWith('/zh/'), /%E5%AE%A1%E8%AE%A1/],
+  // 死链豁免只剩内部审计页（不进导航，不参与双语镜像）。
+  ignoreDeadLinks: [/%E5%AE%A1%E8%AE%A1/],
   themeConfig: {
     logo: '/logo.svg',
     siteTitle: 'Hello Economics',
