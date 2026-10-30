@@ -21,7 +21,7 @@
     "@vitest/coverage-v8": "5.0.2",
     "@vue/test-utils": "^2.5.1",
     "@vueuse/motion": "^3.0.3",
-    "happy-dom": "^20.14.5",
+    "happy-dom": "^21.0.4",
     "katex": "^0.18.9",
     "markdown-it": "^15.0.3",
     "vitepress": "^1.6.4",
