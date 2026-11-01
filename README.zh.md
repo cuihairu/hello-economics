@@ -1,6 +1,7 @@
 [English](README.md) | [中文](README.zh.md)
 
-<p align="center"><img src="docs/public/logo.svg" width="64" height="64" alt="logo" /> <a href="https://cuihairu.github.io/hello-economics/zh/"><img src="https://img.shields.io/badge/docs-文档-blue" alt="docs"></a></p>
+<p align="center"><img src="docs/public/logo.svg" width="64" height="64" alt="logo" /> <a href="https://cuihairu.github.io/hello-economics/zh//"><img src="https://img.shields.io/badge/%E6%96%87%E6%A1%A3-blue" alt="docs"></a>
+</p>
 <p align="center"><img src="docs/public/badges/topic.svg" alt="topic" /> <img src="docs/public/badges/docs.svg" alt="docs" /> <img src="docs/public/badges/license.svg" alt="CC BY 4.0" /></p>
 
 # Hello Economics · 经济学知识整理
@@ -11,7 +12,7 @@
 2. 它**如何发展**——谁修正了它，留下了什么新问题？
 3. 它**如何被验证**——现实数据与后来的研究站在哪一边？
 
-知识点主文档：[docs/knowledge.md](https://cuihairu.github.io/hello-economics/zh/knowledge) —— 各专题对应的通行教材、名著时间线、以及本站的年份口径。
+知识点主文档：[docs/knowledge.md](https://cuihairu.github.io/hello-economics/zh//knowledge) —— 各专题对应的通行教材、名著时间线、以及本站的年份口径。
 
 ## 内容索引
 
@@ -48,14 +49,14 @@ pnpm build     # 构建（含死链检查）
 
 ## 专题入口
 
-站点当前专题与章节导航由 [`courses.ts`](docs/.vitepress/theme/data/courses.ts) 生成，并显示在侧边栏。该文件是导航唯一真源；不要在 README 维护第二份章节清单。专题导读和补充页可从侧栏对应入口打开；各专题导读也可直接访问（中文页为主，括注为对应英文页）：[数学基础](docs/zh/math/Readme.md)（[English](docs/math/Readme.md)）、[西方经济学](docs/zh/western/Readme.md)（[理论推进链](docs/zh/western/History.md)；[English](docs/western/Readme.md)）、[货币银行学](docs/zh/monetary/Readme.md)（[历史进程](docs/zh/monetary/History.md)；[English](docs/monetary/Readme.md)）、[财政学](docs/zh/finance/Readme.md)（[历史进程](docs/zh/finance/History.md)；[English](docs/finance/Readme.md)）、[国际经济学](docs/zh/international/Readme.md)（[历史进程](docs/zh/international/History.md)；[English](docs/international/Readme.md)）、[社会主义经济理论](docs/zh/socialist/Readme.md)（[历史进程](docs/zh/socialist/History.md)；[English](docs/socialist/Readme.md)）。
+站点当前专题与章节导航由 [`courses.ts`](docs/.vitepress/theme/data/courses.ts) 生成，并显示在侧边栏。该文件是导航唯一真源；不要在 README 维护第二份章节清单。专题导读和补充页可从侧栏对应入口打开；各专题导读也可直接访问：[数学基础](docs/math/Readme.md)、[西方经济学](docs/western/Readme.md)（[理论推进链](docs/western/History.md)）、[货币银行学](docs/monetary/Readme.md)（[历史进程](docs/monetary/History.md)）、[财政学](docs/finance/Readme.md)（[历史进程](docs/finance/History.md)）、[国际经济学](docs/international/Readme.md)（[历史进程](docs/international/History.md)）、[社会主义经济理论](docs/socialist/Readme.md)（[历史进程](docs/socialist/History.md)）。
 
 ## 公共资料
 
 - [经济学统一术语](经济学-术语.md)
 - [经济学名人](经济学-名人.md)
-- [西方经济学公式总览](docs/zh/western/西方经济学公式总览.md)（[English](docs/western/西方经济学公式总览.md)）
-- [宏观经济模型演进](docs/zh/western/宏观经济模型演进.md)（[English](docs/western/宏观经济模型演进.md)）
+- [西方经济学公式总览](docs/western/西方经济学公式总览.md)
+- [宏观经济模型演进](docs/western/宏观经济模型演进.md)
 
 ## License
 

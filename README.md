@@ -1,6 +1,7 @@
 [English](README.md) | [中文](README.zh.md)
 
-<p align="center"><img src="docs/public/logo.svg" width="64" height="64" alt="logo" /> <a href="https://cuihairu.github.io/hello-economics/"><img src="https://img.shields.io/badge/docs-docs-blue" alt="docs"></a></p>
+<p align="center"><img src="docs/public/logo.svg" width="64" height="64" alt="logo" /> <a href="https://cuihairu.github.io/hello-economics//"><img src="https://img.shields.io/badge/docs-blue" alt="docs"></a>
+</p>
 <p align="center"><img src="docs/public/badges/topic.svg" alt="topic" /> <img src="docs/public/badges/docs.svg" alt="docs" /> <img src="docs/public/badges/license.svg" alt="CC BY 4.0" /></p>
 
 # Hello Economics · An Economics Knowledge Base
@@ -48,14 +49,14 @@ Component testing stack: Vitest + @vue/test-utils + happy-dom, reusing the site'
 
 ## Topic Entry Points
 
-The topic and chapter navigation is generated from [`courses.ts`](docs/.vitepress/theme/data/courses.ts) and rendered in the site's sidebar. Keep that file as the navigation source of truth; do not maintain a second chapter list here. Topic overviews and supplementary notes are linked from the corresponding sidebar groups. Topic overviews are also available directly; the Chinese edition of each page is linked in brackets: [Mathematical Foundations](docs/math/Readme.md) ([中文](docs/zh/math/Readme.md)), [Western Economics](docs/western/Readme.md) ([theory timeline](docs/western/History.md) · [中文导读](docs/zh/western/Readme.md) / [中文时间线](docs/zh/western/History.md)), [Money and Banking](docs/monetary/Readme.md) ([history](docs/monetary/History.md) · [中文导读](docs/zh/monetary/Readme.md) / [中文历史](docs/zh/monetary/History.md)), [Public Finance](docs/finance/Readme.md) ([history](docs/finance/History.md) · [中文导读](docs/zh/finance/Readme.md) / [中文历史](docs/zh/finance/History.md)), [International Economics](docs/international/Readme.md) ([history](docs/international/History.md) · [中文导读](docs/zh/international/Readme.md) / [中文历史](docs/zh/international/History.md)), and [Socialist Economic Theory](docs/socialist/Readme.md) ([history](docs/socialist/History.md) · [中文导读](docs/zh/socialist/Readme.md) / [中文历史](docs/zh/socialist/History.md)).
+The topic and chapter navigation is generated from [`courses.ts`](docs/.vitepress/theme/data/courses.ts) and rendered in the site's sidebar. Keep that file as the navigation source of truth; do not maintain a second chapter list here. Topic overviews and supplementary notes are linked from the corresponding sidebar groups. Topic overviews are also available directly: [Mathematical Foundations](docs/math/Readme.md), [Western Economics](docs/western/Readme.md) ([theory timeline](docs/western/History.md)), [Money and Banking](docs/monetary/Readme.md) ([history](docs/monetary/History.md)), [Public Finance](docs/finance/Readme.md) ([history](docs/finance/History.md)), [International Economics](docs/international/Readme.md) ([history](docs/international/History.md)), and [Socialist Economic Theory](docs/socialist/Readme.md) ([history](docs/socialist/History.md)).
 
 ## Public Materials
 
 - [Unified Economics Glossary](经济学-术语.md)
 - [Notable Economists](经济学-名人.md)
-- [Overview of Western Economics Formulas](docs/western/西方经济学公式总览.md) ([中文](docs/zh/western/西方经济学公式总览.md))
-- [Evolution of Macroeconomic Models](docs/western/宏观经济模型演进.md) ([中文](docs/zh/western/宏观经济模型演进.md))
+- [Overview of Western Economics Formulas](docs/western/西方经济学公式总览.md)
+- [Evolution of Macroeconomic Models](docs/western/宏观经济模型演进.md)
 
 ## License
 
