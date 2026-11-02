@@ -7,7 +7,7 @@ import assert from 'node:assert/strict'
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { COURSES } from '../docs/.vitepress/theme/data/courses.ts'
+import { COURSES, COURSES_ROOT } from '../docs/.vitepress/theme/data/courses.ts'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const DOCS = path.join(ROOT, 'docs')
@@ -29,8 +29,16 @@ const mdRefs = (text) => {
 }
 
 // 双语 README 同防线（第四十八批补 README.zh.md——双语化后中文版链接一直无门禁）
+// 各 README 按自身语种树校验：README.md 对 root（英文）投影，README.zh.md 对 zh 投影。
+
+const LOCALE_COURSES = {
+  'README.md': COURSES_ROOT,
+  'README.zh.md': COURSES,
+}
+
 const READMES = ['README.md', 'README.zh.md'].map((f) => ({
   file: f,
+  courses: LOCALE_COURSES[f],
   refs: mdRefs(fs.readFileSync(path.join(ROOT, f), 'utf8')),
 }))
 
@@ -38,7 +46,7 @@ const READMES = ['README.md', 'README.zh.md'].map((f) => ({
 const resolveRef = (ref) =>
   ref.startsWith('/') ? path.join(DOCS, ref.slice(1)) : path.resolve(ROOT, ref)
 
-for (const { file, refs } of READMES) {
+for (const { file, courses, refs } of READMES) {
   test(`${file} 全部 .md 引用指向存在的文件（check-links 同口径，扫描根为仓根）`, () => {
     assert.ok(refs.length > 0, `${file} 应含 .md 引用`)
     const bad = refs.filter((r) => !fs.existsSync(resolveRef(r.ref)))
@@ -50,7 +58,7 @@ for (const { file, refs } of READMES) {
 
   test(`${file} 各课入口与 courses.ts 对齐：每课导论 + 有 History aux 的课历史页`, () => {
     const hrefs = refs.map((r) => r.ref)
-    for (const c of COURSES) {
+    for (const c of courses) {
       // 导论页（readme 字段，站点绝对路径 → README 里写作 docs/xxx.md）
       const readmeRef = `docs${c.readme}.md`
       assert.ok(hrefs.includes(readmeRef), `缺 ${c.label} 课程导论链接：${readmeRef}`)
@@ -71,7 +79,7 @@ for (const { file, refs } of READMES) {
       assert.ok(fs.existsSync(path.join(ROOT, f)), `根级源资料不在位：${f}`)
     }
     // western aux 中除 Readme/History 外的两页（公式总览、宏观经济模型演进）
-    const westernAux = COURSES.find((c) => c.id === 'western').aux
+    const westernAux = courses.find((c) => c.id === 'western').aux
       .map((a) => `docs${a.link}.md`)
       .filter((r) => !r.endsWith('/Readme.md') && !r.endsWith('/History.md'))
     assert.ok(westernAux.length >= 2, 'western 应有 Readme/History 之外的辅助页')

@@ -378,6 +378,8 @@ const buildSiteIndex = (locale: Locale): CatalogItem[] => SITE_INDEX_SPEC.map((i
 /* ---------- 导出（默认中文：与中文站、既有测试的口径一致） ---------- */
 
 export const COURSES: Course[] = buildCourses('zh')
+/** Root-locale (English) projection; the zh one is COURSES. */
+export const COURSES_ROOT: Course[] = buildCourses('root')
 export const REFERENCE_COURSE: Course = buildReferenceCourse('zh')
 export const ALL_COURSES: Course[] = [...COURSES, REFERENCE_COURSE]
 export const SITE_INDEX: CatalogItem[] = buildSiteIndex('zh')
