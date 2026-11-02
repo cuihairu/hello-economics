@@ -1,8 +1,7 @@
 [English](README.md) | [中文](README.zh.md)
 
-<p align="center"><img src="docs/public/logo.svg" width="64" height="64" alt="logo" /> <a href="https://cuihairu.github.io/hello-economics//"><img src="https://img.shields.io/badge/docs-blue" alt="docs"></a>
-</p>
-<p align="center"><img src="docs/public/badges/topic.svg" alt="topic" /> <img src="docs/public/badges/docs.svg" alt="docs" /> <img src="docs/public/badges/license.svg" alt="CC BY 4.0" /></p>
+<p align="center"><img src="docs/public/logo.svg" width="64" height="64" alt="logo" /></p>
+<p align="center"><a href="https://cuihairu.github.io/hello-economics/"><img src="https://img.shields.io/badge/docs-blue" alt="docs"></a> <img src="docs/public/badges/topic.svg" alt="topic" /> <img src="docs/public/badges/docs.svg" alt="docs" /> <img src="docs/public/badges/license.svg" alt="CC BY 4.0" /></p>
 
 # Hello Economics · An Economics Knowledge Base
 
