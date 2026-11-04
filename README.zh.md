@@ -1,9 +1,20 @@
+<div align="center">
+
 [English](README.md) | [中文](README.zh.md)
 
 <p align="center"><img src="docs/public/logo.svg" width="64" height="64" alt="logo" /></p>
-<p align="center"><a href="https://cuihairu.github.io/hello-economics/zh/"><img src="https://img.shields.io/badge/%E6%96%87%E6%A1%A3-blue" alt="docs"></a> <img src="docs/public/badges/topic.svg" alt="topic" /> <img src="docs/public/badges/docs.svg" alt="docs" /> <img src="docs/public/badges/license.svg" alt="CC BY 4.0" /></p>
 
 # Hello Economics · 经济学知识整理
+
+<p align="center">
+  <img src="docs/public/badges/topic.svg" alt="topic" />
+  <img src="docs/public/badges/docs.svg" alt="docs" />
+  <img src="docs/public/badges/license.svg" alt="license" />
+</p>
+
+</div>
+
+---
 
 这是我整理经济学资料的记录，重点放在三个问题上：
 
@@ -11,7 +22,7 @@
 2. 它**如何发展**——谁修正了它，留下了什么新问题？
 3. 它**如何被验证**——现实数据与后来的研究站在哪一边？
 
-知识点主文档：[docs/knowledge.md](https://cuihairu.github.io/hello-economics/zh//knowledge) —— 各专题对应的通行教材、名著时间线、以及本站的年份口径。
+知识点主文档：[docs/knowledge.md](https://cuihairu.github.io/hello-economics/zh/knowledge) —— 各专题对应的通行教材、名著时间线、以及本站的年份口径。
 
 ## 内容索引
 
