@@ -7,9 +7,7 @@
 # Hello Economics · 经济学知识整理
 
 <p align="center">
-  <img src="docs/public/badges/topic.svg" alt="topic" />
-  <img src="docs/public/badges/docs.svg" alt="docs" />
-  <img src="docs/public/badges/license.svg" alt="license" />
+  <img src="docs/public/badges/topic.svg" alt="topic" /> <a href="https://cuihairu.github.io/hello-economics/zh/"><img src="docs/public/badges/docs.svg" alt="docs" /></a> <img src="docs/public/badges/license.svg" alt="license" />
 </p>
 
 </div>
